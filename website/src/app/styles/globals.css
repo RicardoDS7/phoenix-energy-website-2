@@ -1,0 +1,187 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.h1-display {
+  font-family: 'Inter', 'Helvetica Neue', 'Arial', sans-serif;
+  font-weight: 800; /* Heavy */
+  font-size: 56px;
+  line-height: 85%;
+  letter-spacing: 0;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .h1-display {
+    font-size: 96px;
+    margin-bottom: 32px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .h1-display {
+    font-size: 128px;
+  }
+}
+
+h2 {
+  font-family: 'Inter', 'Helvetica Neue', 'Arial', sans-serif;
+  font-weight: 800; /* Heavy */
+  font-size: 50px;
+  line-height: 85%;
+  letter-spacing: 0;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 78px;
+    margin-bottom: 32px;
+  }
+}
+
+@media (min-width: 1200px) {
+  h2 {
+    font-size: 96px;
+  }
+}
+
+h3 {
+  font-family: 'Inter', 'Helvetica Neue', 'Arial', sans-serif;
+  font-weight: 800; /* Heavy */
+  font-size: 46px;
+  line-height: 85%;
+  letter-spacing: 0;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  h3 {
+    font-size: 58px;
+    margin-bottom: 32px;
+  }
+}
+
+@media (min-width: 1200px) {
+  h3 {
+    font-size: 64px;
+  }
+}
+
+h4 {
+  font-family: 'Inter', 'Helvetica Neue', 'Arial', sans-serif;
+  font-weight: 800; /* Heavy */
+  font-size: 34px;
+  line-height: 85%;
+  letter-spacing: 0;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  h4 {
+    font-size: 40px;
+    margin-bottom: 32px;
+  }
+}
+
+@media (min-width: 1200px) {
+  h4 {
+    font-size: 64px;
+  }
+}
+
+body {
+  font-weight: 400;               /* Regular */
+  font-size: 18px;                /* Font size 18px for small screens */
+  line-height: 26px;              /* Line height 26px for small screens */
+  letter-spacing: -0.005em;       /* Letter spacing -0.5% */
+  margin-bottom: 16px;            /* Paragraph spacing 16px */
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 20px;              /* Font size 20px for larger screens */
+    line-height: 28px;            /* Line height 28px for larger screens */
+  }
+}
+
+body-small {
+  font-weight: 400;               /* Regular */
+  font-size: 14px;                /* Font size 14px for small screens */
+  line-height: 22px;              /* Line height 22px for small screens */
+  letter-spacing: 0.01em;         /* Letter spacing 1% */
+  margin-bottom: 12px;            /* Paragraph spacing 12px */
+}
+
+@media (min-width: 768px) {
+  body-small {
+    font-size: 16px;              /* Font size 16px for larger screens */
+    line-height: 24px;            /* Line height 24px for larger screens */
+    letter-spacing: 0.0125em;     /* Letter spacing 1.25% for larger screens */
+  }
+}
+
+
+link {
+  font-weight: 600;               /* Semi Bold */
+  font-size: 18px;                /* Font size 18px for small screens */
+  line-height: 26px;              /* Line height 26px for small screens */
+  letter-spacing: -0.005em;       /* Letter spacing -0.5% */
+  margin-bottom: 16px;            /* Paragraph spacing 16px */
+  text-decoration: underline;     /* Underlined text */
+}
+
+@media (min-width: 768px) {
+  link {
+    font-size: 20px;              /* Font size 20px for larger screens */
+    line-height: 28px;            /* Line height 28px for larger screens */
+    letter-spacing: 0.01em;       /* Letter spacing 1% for larger screens */
+  }
+}
+
+link-small {
+  font-weight: 600;               /* Semi Bold */
+  font-size: 14px;                /* Font size 14px for small screens */
+  line-height: 22px;              /* Line height 22px for small screens */
+  letter-spacing: 0.01em;         /* Letter spacing 1% */
+  margin-bottom: 12px;            /* Paragraph spacing 12px */
+  text-decoration: underline;     /* Underlined text */
+}
+
+@media (min-width: 768px) {
+  link-small {
+    font-size: 16px;              /* Font size 16px for larger screens */
+    line-height: 24px;            /* Line height 24px for larger screens */
+    letter-spacing: 0.0125em;     /* Letter spacing 1.25% */
+    margin-bottom: 16px;          /* Paragraph spacing 16px */
+  }
+}
+
+
+.nav-bar {
+  font-size: 18px;              /* Font size 16px for larger screens */
+  line-height: 26px;              /* Line height 26px for small screens */
+  letter-spacing: -0.005em;       /* Letter spacing -0.5% */
+  font-weight: 600;
+  @apply text-charcoal;
+}
+
+.get-in-touch-button {
+  font-size: 18px;
+  line-height: 26px;              /* Line height 26px for small screens */
+  letter-spacing: -0.005em;       /* Letter spacing -0.5% */
+  font-weight: 600;
+  @apply text-antiflashWhite;
+  @apply bg-airSuperiorityBlue;
+
+}
+
+.custom-underline-offset::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px; /* Thickness of the underline */
+  background: theme('colors.airSuperiorityBlue'); /* Underline color */
+  transition: width 0.3s ease;
+}
