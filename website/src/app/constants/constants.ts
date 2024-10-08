@@ -5,7 +5,8 @@ export const SITE_DESCRIPTION = 'Providing renewable energy solutions to help cr
 // Define constants for the paths in your app
 export const HOME_PAGE = '/';
 export const ABOUT_PAGE = '/about';
-export const SERVICES_PAGE = '/services';
+export const SOLUTIONS_PAGE = '/#';
+export const PROJECTS_PAGE = '/#';
 export const CONTACT_PAGE = '/contact-us';
 export const SOLAR = '/embedded-systems';
 export const WHEELING = '/wheeling';
@@ -13,11 +14,11 @@ export const WHEELING = '/wheeling';
 // Navigation links using the constants
 export const NAV_LINKS = [
   { name: 'About', path: ABOUT_PAGE, subMenu: []},
-  { name: 'Solutions', path: SERVICES_PAGE , 
+  { name: 'Solutions', path: SOLUTIONS_PAGE , 
     subMenu: [{name: 'Embedded Solar', path: SOLAR},
             {name: 'Wheeled Power', path: WHEELING},
             ]},
-  { name: 'Our Projects', path: SERVICES_PAGE, subMenu: []},
+  { name: 'Our Projects', path: PROJECTS_PAGE, subMenu: []},
   { name: 'Contact', path: CONTACT_PAGE , subMenu: []},
 ];
 

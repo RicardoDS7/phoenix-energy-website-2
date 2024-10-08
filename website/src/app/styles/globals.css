@@ -168,20 +168,72 @@ link-small {
 }
 
 .get-in-touch-button {
-  font-size: 18px;
-  line-height: 26px;              /* Line height 26px for small screens */
-  letter-spacing: -0.005em;       /* Letter spacing -0.5% */
-  font-weight: 600;
-  @apply text-antiflashWhite;
-  @apply bg-airSuperiorityBlue;
-
+  font-size: 18px;                /* Font size for large screens */
+  line-height: 26px;              /* Line height */
+  letter-spacing: -0.005em;       /* Letter spacing */
+  font-weight: 600;               /* Semi-bold font weight */
+  padding: 10px 20px;             /* Add padding to make the button larger and more clickable */
+  border-radius: 8px;             /* Rounded corners */
+  background-color: #769ab0ff;    /* Background color for airSuperiorityBlue */
+  color: #f2f6f8ff;               /* Text color (antiflashWhite) */
+  border: none;                   /* Remove border */
+  cursor: pointer;                /* Show pointer cursor */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
 }
 
-.custom-underline-offset::after {
-  content: '';
-  display: block;
-  width: 0;
+.get-in-touch-button:hover {
+  background-color: #4c7380ff;    /* Darker shade for hover (paynesGray) */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Increase shadow on hover */
+}
+
+.get-in-touch-button:focus {
+  outline: none;                  /* Remove default focus outline */
+  box-shadow: 0 0 0 4px rgba(118, 154, 176, 0.3); /* Add focus ring for accessibility */
+}
+
+.get-in-touch-button:active {
+  background-color: #2b4147ff;    /* Darker color for active state (charcoal) */
+  box-shadow: none;               /* Remove shadow on active state for a pressed effect */
+}
+
+@media (max-width: 768px) {
+  .get-in-touch-button {
+    font-size: 16px;              /* Slightly smaller font size for mobile */
+    padding: 8px 16px;            /* Adjust padding for smaller screens */
+    line-height: 24px;
+  }
+}
+
+
+.nav-item {
+  position: relative;
+  text-decoration: none; /* No default underline */
+  padding: 10px;
+}
+
+.nav-item::after {
+  content: ''; /* This creates the underline */
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0; /* Controls the vertical position (adjust as needed) */
   height: 2px; /* Thickness of the underline */
-  background: theme('colors.airSuperiorityBlue'); /* Underline color */
-  transition: width 0.3s ease;
+  @apply bg-atomicTangerine; /* Use the text color for the underline */
+  transform: scaleX(0); /* Start with no underline (collapsed) */
+  transform-origin: left; /* Transition starts from the left */
+  transition: transform 0.3s ease; /* Smooth transition effect */
+}
+
+.nav-item:hover::after {
+  transform: scaleX(1); /* Full underline when hovered */
+}
+
+.nav-item.active::after {
+  transform: scaleX(1); /* Keeps the underline when active */
+  background-color: #ffa07a; /* Use the same color when active */
+}
+
+.nav-item.active {
+  font-weight: semibold; /* Optional: Bold font for active item */
 }

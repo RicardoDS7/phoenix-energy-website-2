@@ -16,7 +16,7 @@ const GetInTouchButton = () => {
       <button 
         type="button" 
         onClick={handleRedirect}
-        className="get-in-touch-button px-4 py-2 rounded-full hidden md:block"
+        className="get-in-touch-button px-4 py-2 rounded-full hidden lg:block"
       >
         Get In Touch
       </button>
