@@ -14,7 +14,7 @@ const NavBar = () => {
     const pathname = usePathname(); // Get current route
 
     return (
-        <nav className='sticky top-0 flex items-center w-full justify-between py-6 px-2 md:px-6 lg:px-12 xl:px-48 nav-bar z-20 bg-gray-200 bg-opacity-75 backdrop-blur-lg'>
+        <nav className='sticky top-0 flex items-center w-full justify-between py-6 px-2 md:px-6 lg:px-12 xl:px-48 nav-bar z-20 bg-gray-100 bg-opacity-75 backdrop-blur-lg'>
             <Link href={HOME_PAGE} className='flex items-center'>
                 <Image src="/logo.png" alt="phoenix-energy-logo" width={50} height={50}/>
                 <h1 className='font-inter font-bold text-xl'>Phoenix <span className='text-paynesGray font-semibold'>Energy</span></h1>
@@ -58,7 +58,7 @@ const NavBar = () => {
             < GetInTouchButton />
 
         {/* Mobile Menu */}
-        <div className='lg:hidden flex flex-1 justify-end items-center mr-10 md:mr-20'>
+        <div className='lg:hidden flex flex-1 justify-end items-center mr-4'>
           <Image src={toggle ? "/icons/close.svg" : "/icons/menu.svg"} 
           alt='menu'
           width={28}
