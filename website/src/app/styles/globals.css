@@ -226,5 +226,5 @@ link-small {
 }
 
 .nav-item.active {
-  font-weight: 600; /* Optional: Bold font for active item */
+  font-weight: 500; /* Optional: Bold font for active item */
 }

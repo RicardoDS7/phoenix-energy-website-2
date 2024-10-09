@@ -11,6 +11,7 @@ import { SubMenu } from '../types/navLinks';
 const NavBar = () => {
 
     const [hoveredItem,setHoveredItem] = useState<number | null>(null);
+    const [subHoveredItem,setSubHoveredItem] = useState<string | null>(null);
     const [isSubMenuOpen, setIsSubMenuOpen] = useState<string | null>(null);
     const [isMainMenuOpen, setIsMainMenuOpen] = useState<boolean>(true);
     const [activeSubItem, setActiveSubItem] = useState<string | null>(null);
@@ -53,7 +54,7 @@ const NavBar = () => {
 
     return (
         <nav className='sticky top-0 flex items-center w-full justify-between py-6 px-2 md:px-6 lg:px-12 xl:px-48 nav-bar z-20 bg-antiflashWhite backdrop-blur-lg'>
-            <Link href={HOME_PAGE} className='flex items-center z-20'>
+            <Link href={HOME_PAGE} className='flex items-center z-30'>
                 <Image src="/logo.png" alt="phoenix-energy-logo" width={50} height={50}/>
                 <h1 className='font-inter font-bold text-lg'>Phoenix <span className='text-paynesGray font-semibold'>Energy</span></h1>
             </Link>
@@ -68,19 +69,22 @@ const NavBar = () => {
                         <Link href={link.path}>
                             {link.name}
                         </Link>
-
+                        
                         {hoveredItem === index && link.subMenu.length > 0 && (
-                            
-                            <div className="absolute left-1/2 rounded-lg transform -translate-x-1/2 grid grid-cols-2 gap-0 w-max bg-powderBlue">
-                                <div className="mt-0 rounded-lg p-4 bg-powderBlue">
-                                    <h5 className='text-antiflashWhite'>Save</h5>
-                                    <hr className="h-[2px] mt-2 bg-antiflashWhite border-none" />
+                        <div className='absolute w-full left-1/2'> 
+                            <div className="z-20 mt-4 left-1/2 rounded-lg transform -translate-x-1/2 grid grid-cols-2 gap-0 min-w-[400px] bg-white shadow-xl">
+                                <div className="mt-0 rounded-lg p-4 bg-white">
+                                    <p className='text-charcoal text-center text-[14px]'>Maximize Savings</p>
+                                    <hr className="mt-2 h-[2px] bg-atomicTangerine border-none" />
                                     <ul>
                                         {link.subMenu.map((subItem) => (
                                             subItem.category === 'save' && (
                                             <li key={subItem.name}
-                                            className={`nav-item mr-0 ${pathname.startsWith(subItem.path) ? 'active' : ''}`}>
+                                            onMouseEnter={() => setSubHoveredItem(subItem.name)}
+                                            onMouseLeave={() => setSubHoveredItem(null)}
+                                            className={`mt-2 font-normal text-center text-[14px]`}>
                                                 <Link href={subItem.path}
+                                                    className={`mt-2 ${subHoveredItem === subItem.name? 'font-semibold text-atomicTangerine' : ''}`}
                                                     onClick={() => handleSubItemClick(subItem)}>
                                                     {subItem.name}
                                                 </Link>
@@ -89,15 +93,18 @@ const NavBar = () => {
                                         ))}
                                     </ul>
                                 </div>
-                                <div className="mt-0 p-4 rounded-lg bg-powderBlue">
-                                    <h5 className='text-antiflashWhite'>Earn</h5>
-                                    <hr className="h-[2px] mt-2 bg-antiflashWhite border-none" />
+                                <div className="mt-0 p-4 rounded-lg bg-white">
+                                    <h5 className='text-charcoal text-center text-[14px]'>Increase Revenue</h5>
+                                    <hr className="mt-2 h-[2px] bg-atomicTangerine border-none" />
                                     <ul>
                                         {link.subMenu.map((subItem) => (
                                             subItem.category === 'earn' && (
                                             <li key={subItem.name}
-                                            className={`mr-5 nav-item ${pathname.startsWith(subItem.path) ? 'active' : ''}`}>
+                                            onMouseEnter={() => setSubHoveredItem(subItem.name)}
+                                            onMouseLeave={() => setSubHoveredItem(null)}
+                                            className={`mt-2 font-normal text-center text-[14px]`}>
                                                 <Link href={subItem.path}
+                                                    className={`mt-2 ${subHoveredItem === subItem.name? 'font-semibold text-atomicTangerine' : ''}`}
                                                     onClick={() => handleSubItemClick(subItem)}>
                                                     {subItem.name}
                                                 </Link>
@@ -107,8 +114,9 @@ const NavBar = () => {
                                     </ul>
                                 </div>
                             </div>
-                            
-                            )}
+                        </div>
+                        )}
+                        
 
                     </li>
 
