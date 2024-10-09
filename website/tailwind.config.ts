@@ -16,7 +16,7 @@ const config: Config = {
         paynesGray: '#4c7380ff',
         airSuperiorityBlue: '#769ab0ff',
         powderBlue: '#97b3c4ff',
-        antiflashWhite: '#f2f6f8ff',
+        antiflashWhite: 'rgba(245, 245, 245, 1)',
         atomicTangerine: '#ffa07a', /**Accent Color**/
       },
     },

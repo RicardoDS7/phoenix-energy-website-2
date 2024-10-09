@@ -93,16 +93,16 @@ h4 {
 
 body {
   font-weight: 400;               /* Regular */
-  font-size: 18px;                /* Font size 18px for small screens */
-  line-height: 26px;              /* Line height 26px for small screens */
+  font-size: 15px;                /* Font size 18px for small screens */
+  line-height: 24px;              /* Line height 26px for small screens */
   letter-spacing: -0.005em;       /* Letter spacing -0.5% */
   margin-bottom: 16px;            /* Paragraph spacing 16px */
 }
 
 @media (min-width: 768px) {
   body {
-    font-size: 20px;              /* Font size 20px for larger screens */
-    line-height: 28px;            /* Line height 28px for larger screens */
+    font-size: 15px;              /* Font size 20px for larger screens */
+    line-height: 24px;            /* Line height 28px for larger screens */
   }
 }
 
@@ -168,8 +168,8 @@ link-small {
 }
 
 .get-in-touch-button {
-  font-size: 18px;                /* Font size for large screens */
-  line-height: 26px;              /* Line height */
+  font-size: 15px;                /* Font size for large screens */
+  line-height: 24px;              /* Line height */
   letter-spacing: -0.005em;       /* Letter spacing */
   font-weight: 600;               /* Semi-bold font weight */
   padding: 10px 20px;             /* Add padding to make the button larger and more clickable */
@@ -197,17 +197,9 @@ link-small {
   box-shadow: none;               /* Remove shadow on active state for a pressed effect */
 }
 
-@media (max-width: 768px) {
-  .get-in-touch-button {
-    font-size: 16px;              /* Slightly smaller font size for mobile */
-    padding: 8px 16px;            /* Adjust padding for smaller screens */
-    line-height: 24px;
-  }
-}
-
-
 .nav-item {
   position: relative;
+  font-size: 15px;
   text-decoration: none; /* No default underline */
   padding: 10px;
 }
@@ -219,7 +211,7 @@ link-small {
   right: 0;
   bottom: 0; /* Controls the vertical position (adjust as needed) */
   height: 2px; /* Thickness of the underline */
-  @apply bg-atomicTangerine; /* Use the text color for the underline */
+  background-color: #ffa07a; /* Default underline color */
   transform: scaleX(0); /* Start with no underline (collapsed) */
   transform-origin: left; /* Transition starts from the left */
   transition: transform 0.3s ease; /* Smooth transition effect */
@@ -231,9 +223,8 @@ link-small {
 
 .nav-item.active::after {
   transform: scaleX(1); /* Keeps the underline when active */
-  background-color: #ffa07a; /* Use the same color when active */
 }
 
 .nav-item.active {
-  font-weight: semibold; /* Optional: Bold font for active item */
+  font-weight: 600; /* Optional: Bold font for active item */
 }
