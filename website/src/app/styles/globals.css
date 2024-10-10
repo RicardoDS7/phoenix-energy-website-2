@@ -71,24 +71,12 @@ h3 {
 
 h4 {
   font-family: 'Inter', 'Helvetica Neue', 'Arial', sans-serif;
-  font-weight: 800; /* Heavy */
-  font-size: 34px;
+  font-weight: 700; /* Heavy */
+  font-size: 1rem;
+  @apply text-charcoal;
   line-height: 85%;
   letter-spacing: 0;
-  margin-bottom: 20px;
-}
-
-@media (min-width: 768px) {
-  h4 {
-    font-size: 40px;
-    margin-bottom: 32px;
-  }
-}
-
-@media (min-width: 1200px) {
-  h4 {
-    font-size: 64px;
-  }
+  margin-bottom: 10px;
 }
 
 body {
@@ -160,16 +148,16 @@ link-small {
 
 
 .nav-bar {
-  font-size: 18px;              /* Font size 16px for larger screens */
-  line-height: 26px;              /* Line height 26px for small screens */
+  font-size: 1.125rem;              /* Font size 16px for larger screens */
+  line-height: 1.75rem;              /* Line height 26px for small screens */
   letter-spacing: -0.005em;       /* Letter spacing -0.5% */
   font-weight: 600;
   @apply text-charcoal;
 }
 
 .get-in-touch-button {
-  font-size: 15px;                /* Font size for large screens */
-  line-height: 24px;              /* Line height */
+  font-size: 1rem;                /* Font size for large screens */
+  line-height: 1.5rem;              /* Line height */
   letter-spacing: -0.005em;       /* Letter spacing */
   font-weight: 600;               /* Semi-bold font weight */
   padding: 10px 20px;             /* Add padding to make the button larger and more clickable */
@@ -199,7 +187,8 @@ link-small {
 
 .nav-item {
   position: relative;
-  font-size: 15px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   text-decoration: none; /* No default underline */
   padding: 10px;
 }
@@ -227,4 +216,25 @@ link-small {
 
 .nav-item.active {
   font-weight: 500; /* Optional: Bold font for active item */
+}
+
+.footer-item {
+  position: relative;
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration: none; /* No default underline */
+  padding: 5px;
+
+}
+
+
+.footer-item:hover {
+  @apply text-atomicTangerine;
+  font-weight: 600;
+}
+
+
+.footer-item.active {
+  font-weight: 600; /* Optional: Bold font for active item */
+  @apply text-atomicTangerine;
 }

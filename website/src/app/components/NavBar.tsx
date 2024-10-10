@@ -30,9 +30,9 @@ const NavBar = () => {
       const handleSubItemClick = (subItem: SubMenu) => {
         setActiveSubItem(subItem.name); // Remember the clicked sub-item
         setIsMainMenuOpen(true); // Close the main menu when a sub-item is selected
+        setIsSubMenuOpen(null);
         console.log(`Navigating to ${subItem.path}`);
-        // Perform the navigation here, for example using React Router's `useNavigate()`
-        // navigate(subItem.path);
+
       };
 
       const toggleMainMenu = () => {
@@ -61,58 +61,58 @@ const NavBar = () => {
 
             {/* Desktop Menu */}
             <ul className='list-none lg:flex hidden justify-center items-center flex-1'>
-                {NAV_LINKS.map((link,index) => (
-                    <li key={link.name} 
-                        className={`mr-5 nav-item ${pathname.startsWith(link.path) ? 'active' : ''}`}
+                {NAV_LINKS.map((mainItem,index) => (
+                    <li key={`${mainItem.name}-menu`} 
+                        className={`mr-5 nav-item ${pathname.startsWith(mainItem.path) ? 'active' : ''}`}
                         onMouseEnter={() => setHoveredItem(index)}
                         onMouseLeave={() => setHoveredItem(null)}>
-                        <Link href={link.path}>
-                            {link.name}
+                        <Link href={mainItem.path}>
+                            {mainItem.name}
                         </Link>
                         
-                        {hoveredItem === index && link.subMenu.length > 0 && (
+                        {hoveredItem === index && mainItem.subMenu.length > 0 && (
                         <div className='absolute w-full -left-1'> 
                             <div className="z-20 mt-4 rounded-lg transform -translate-x-44 grid grid-cols-2 gap-0 min-w-[450px] bg-white shadow-xl">
-                                <div className="mt-0 rounded-lg p-4 bg-white">
-                                    <p className='text-charcoal text-center text-[14px]'>Maximize Savings</p>
+                                <div className="rounded-lg p-4 bg-white">
+                                    <p className='text-charcoal text-center text-sm'>Maximize Savings</p>
                                     <hr className="mt-2 h-[2px] bg-atomicTangerine border-none" />
                                     <ul>
-                                        {link.subMenu.map((subItem) => (
-                                            subItem.category === 'save' && (
-                                            <li key={subItem.name}
-                                            onMouseEnter={() => setSubHoveredItem(subItem.name)}
+                                        {mainItem.subMenu.map((saveItem) => (
+                                            saveItem.category === 'save' && (
+                                            <li key={`${saveItem.name}-save`}
+                                            onMouseEnter={() => setSubHoveredItem(saveItem.name)}
                                             onMouseLeave={() => setSubHoveredItem(null)}
-                                            className={`mt-4 font-normal align-middle flex items-center text-[14px]`}>
-                                                <Image className={'object-fill mr-2'} src={subItem.icon} alt={`${subItem.name} menu icon`} width={20} height={20} />
-                                                <Link href={subItem.path}
-                                                    className={`justify-normal ${subHoveredItem === subItem.name? 'font-semibold text-atomicTangerine' : ''}`}
-                                                    onClick={() => handleSubItemClick(subItem)}>
-                                                    {subItem.name}
+                                            className={`mt-4 font-normal flex items-center text-[14px]`}>
+                                                <Image className={'object-fill mr-2'} src={saveItem.icon} alt={`${saveItem.name} menu icon`} width={20} height={20} />
+                                                <Link href={saveItem.path}
+                                                    className={`justify-normal text-sm ${subHoveredItem === saveItem.name? 'font-semibold text-atomicTangerine' : ''}`}
+                                                    onClick={() => handleSubItemClick(saveItem)}>
+                                                    {saveItem.name}
                                                 </Link>
                                             </li>
                                             )
                                         ))}
                                     </ul>
                                 </div>
-                                <div className="mt-0 p-4 rounded-lg bg-white">
-                                    <h5 className='text-charcoal text-center text-[14px]'>Increase Revenue</h5>
+                                <div className="p-4 rounded-lg bg-white">
+                                    <p className='text-charcoal text-center text-sm'>Increase Revenue</p>
                                     <hr className="mt-2 h-[2px] bg-atomicTangerine border-none" />
                                     <ul>
-                                    {link.subMenu.map((subItem) => (
-                                            subItem.category === 'earn' && (
-                                            <li key={subItem.name}
-                                            onMouseEnter={() => setSubHoveredItem(subItem.name)}
-                                            onMouseLeave={() => setSubHoveredItem(null)}
-                                            className={`mt-4 font-normal align-middle flex items-center text-[14px]`}>
-                                                <Image className={'object-fill mr-2'} src={subItem.icon} alt={`${subItem.name} menu icon`} width={20} height={20} />
-                                                <Link href={subItem.path}
-                                                    className={`justify-normal ${subHoveredItem === subItem.name? 'font-semibold text-atomicTangerine' : ''}`}
-                                                    onClick={() => handleSubItemClick(subItem)}>
-                                                    {subItem.name}
-                                                </Link>
-                                            </li>
-                                            )
-                                        ))}
+                                        {mainItem.subMenu.map((earnItem) => (
+                                                earnItem.category === 'earn' && (
+                                                <li key={`${earnItem.name}-submenu`}
+                                                onMouseEnter={() => setSubHoveredItem(earnItem.name)}
+                                                onMouseLeave={() => setSubHoveredItem(null)}
+                                                className={`mt-4 font-normal flex items-center text-sm`}>
+                                                    <Image className={'object-fill mr-2'} src={earnItem.icon} alt={`${earnItem.name} menu icon`} width={20} height={20} />
+                                                    <Link href={earnItem.path}
+                                                        className={`justify-normal text-sm ${subHoveredItem === earnItem.name? 'font-semibold text-atomicTangerine' : ''}`}
+                                                        onClick={() => handleSubItemClick(earnItem)}>
+                                                        {earnItem.name}
+                                                    </Link>
+                                                </li>
+                                                )
+                                            ))}
                                     </ul>
                                 </div>
                             </div>
@@ -147,7 +147,7 @@ const NavBar = () => {
                 <ul className='list-none mt-24 px-4 lg:flex justify-center items-center flex-1'>
                 {NAV_LINKS.map((link) => (
                     <div>
-                    <li key={link.name} 
+                    <li key={`${link.name}-mobile-menu`}
                         className={`mr-5 nav-item ${pathname.startsWith(link.path) ? 'active' : ''}`}>
                         <Link href={link.path}
                             onClick={() => handleItemClick(link.name, link.subMenu)}>
@@ -158,7 +158,7 @@ const NavBar = () => {
                     {isSubMenuOpen === link.name && (
                             <ul className='ml-4 mt-2'>
                                 {link.subMenu.map((dropDownItem) => (
-                                <li key={dropDownItem.name}
+                                <li key={`${dropDownItem.name}-mobile-submenu`}
                                 className={`mr-5 nav-item ${pathname.startsWith(dropDownItem.path) ? 'active' : ''}`}>
                                     <Link href={dropDownItem.path}
                                         onClick={() => handleSubItemClick(dropDownItem)}>
