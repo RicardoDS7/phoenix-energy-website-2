@@ -83,7 +83,7 @@ const NavBar = () => {
                                             onMouseEnter={() => setSubHoveredItem(saveItem.name)}
                                             onMouseLeave={() => setSubHoveredItem(null)}
                                             className={`mt-4 font-normal flex items-center text-[14px]`}>
-                                                <Image className={'object-fill mr-2'} src={saveItem.icon} alt={`${saveItem.name} menu icon`} width={20} height={20} />
+                                                <Image className={'object-fill mr-2'} src={saveItem.icon} alt={`${saveItem.name} menu icon`} width={16} height={16} />
                                                 <Link href={saveItem.path}
                                                     className={`justify-normal text-sm ${subHoveredItem === saveItem.name? 'font-semibold text-atomicTangerine' : ''}`}
                                                     onClick={() => handleSubItemClick(saveItem)}>
@@ -104,7 +104,7 @@ const NavBar = () => {
                                                 onMouseEnter={() => setSubHoveredItem(earnItem.name)}
                                                 onMouseLeave={() => setSubHoveredItem(null)}
                                                 className={`mt-4 font-normal flex items-center text-sm`}>
-                                                    <Image className={'object-fill mr-2'} src={earnItem.icon} alt={`${earnItem.name} menu icon`} width={20} height={20} />
+                                                    <Image className={'object-fill mr-2'} src={earnItem.icon} alt={`${earnItem.name} menu icon`} width={16} height={16} />
                                                     <Link href={earnItem.path}
                                                         className={`justify-normal text-sm ${subHoveredItem === earnItem.name? 'font-semibold text-atomicTangerine' : ''}`}
                                                         onClick={() => handleSubItemClick(earnItem)}>

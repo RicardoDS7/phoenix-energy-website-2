@@ -16,6 +16,8 @@ export const WHEELING = '/solutions/wheeling';
 export const CARBON_CREDITS = '/solutions/carbon-credits';
 export const WASTE_VALOR = '/solutions/waste-valorization';
 export const HYDROGEN = '/solutions/hydrogen-technologies';
+export const CAREERS = 'https://linkedin.com/';
+export const PRIVACY_POLICY = '/privacy-policy';
 
 // Navigation links using the constants
 export const NAV_LINKS: NavLink[] = [
@@ -36,11 +38,24 @@ export const NAV_LINKS: NavLink[] = [
   ];
 
 
-// URL-related constants
-export const BASE_URL = 'https://phoenixenergy.com';
+// Navigation links using the constants
+export const COMPANY_LINKS = [
+    { name: 'About', path: ABOUT_PAGE },
+    { name: 'Our Projects', path: PROJECTS_PAGE},
+    { name: 'Careers', path: CAREERS},
+    { name: 'Contact', path: CONTACT_PAGE},
+    { name: 'Privacy Policy', path: CONTACT_PAGE},
+  ];
 
+// URL-related constants
+export const BASE_URL = 'https://phoenixenergy.tech';
 
 
 // Other constants (e.g., API endpoints, contact info)
-export const CONTACT_EMAIL = 'info@phoenixenergy.com';
+export const SOCIAL_PROFILES = [
+    {account: 'linkedin', path: 'https://linkedin.com', icon: '/icons/linkedin.svg' },
+    {account: 'facebook', path: 'https://facebook.com', icon: '/icons/facebook.svg' },
+]
+export const CONTACT_EMAIL = 'info@phoenixenergy.tech';
 export const PHONE_NUMBER = '+123 456 7890';
+export const ADDRESS = '123 Street, Johannesburg, South Africa';

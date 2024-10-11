@@ -13,4 +13,10 @@ export interface SubMenu {
     path: string;
     subMenu: SubMenu[]; // Array of SubMenu objects
   }
+
+   // Define the structure for a navigation link
+   export interface FooterLink {
+    name: string;
+    path: string;
+  }
   
