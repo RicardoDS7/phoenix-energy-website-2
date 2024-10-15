@@ -1,7 +1,6 @@
 import './styles/globals.css';  // Import global styles
 import NavBar from './components/NavBar';  // Import NavBar component
 import Footer from './components/Footer';  // Import Footer component
-import getConfig from 'next/config';
 
 export const metadata = {
   title: 'Phoenix Energy - Renewable Energy Solutions',
@@ -16,8 +15,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
 
-  const { publicRuntimeConfig = {} } = getConfig();  // Provide a default empty object
-  const basePath = publicRuntimeConfig.basePath || '';  // Fallback to an empty string if undefined
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
   return (
     <html lang="en">

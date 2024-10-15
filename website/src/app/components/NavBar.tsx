@@ -7,12 +7,10 @@ import GetInTouchButton from './GetInTouchButton';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { SubMenu } from '../types/navLinks';
-import getConfig from 'next/config';
 
 const NavBar = () => {
 
-    const { publicRuntimeConfig = {} } = getConfig();  // Provide a default empty object
-    const basePath = publicRuntimeConfig.basePath || '';  // Fallback to an empty string if undefined
+    const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
     const [hoveredItem,setHoveredItem] = useState<number | null>(null);
     const [subHoveredItem,setSubHoveredItem] = useState<string | null>(null);
