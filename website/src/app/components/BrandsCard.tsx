@@ -10,6 +10,8 @@ const BrandsCard: React.FC<BrandsCard> = ({ logoPath, altText, link }) => {
 
     const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
+    console.log(`Brand Image ${logoPath} for ${basePath}`)
+
     return (
         <div className="flex items-center justify-center w-full">
             {/* Outer container with rounded corners */}
