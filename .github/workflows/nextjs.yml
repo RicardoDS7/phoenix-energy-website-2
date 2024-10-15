@@ -25,6 +25,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Set GitHub Pages environment variable
+        run: echo "GITHUB_PAGES=true" >> $GITHUB_ENV  # Set GITHUB_PAGES=true
+
       - name: Detect package manager
         id: detect-package-manager
         run: |
