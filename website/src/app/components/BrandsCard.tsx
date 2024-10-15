@@ -20,7 +20,7 @@ const BrandsCard: React.FC<BrandsCard> = ({ logoPath, altText, link }) => {
                 className="bg-white p-6 rounded-3xl shadow-md w-[150px] h-[150px] flex items-center justify-center"
             >
                 {/* Logo */}
-                <Image
+                <img
                 src={`${basePath}${logoPath}`}
                 alt={altText}
                 className='p-2'
