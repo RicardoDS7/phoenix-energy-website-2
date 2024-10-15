@@ -6,11 +6,13 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "echo > website/out/.nojekyll",
     "start": "next start",
     "lint": "next lint",
     "export": "next export",
     "predeploy": "npm run build && npm run export",
-    "deploy": "gh-pages -d website/out"
+    "deploy": "gh-pages -d website/out",
+    "create-nojekyll": "mkdir -p website/out && echo > website/out/.nojekyll"
   },
   "dependencies": {
     "autoprefixer": "^10.4.20",
