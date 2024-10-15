@@ -1,3 +1,5 @@
+import webpack from 'webpack';
+
 /** @type {import('next').NextConfig} */
 const isGithubPages = process.env.GITHUB_PAGES === 'true';
 
