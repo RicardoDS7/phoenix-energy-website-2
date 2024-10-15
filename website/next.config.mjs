@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const isGithubPages = process.env.GITHUB_PAGES === 'true';
 
+console.log('Is GitHub Pages?', isGithubPages);  // Debugging
+
 const nextConfig = {
   output: 'export',
   images: {
