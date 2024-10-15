@@ -1,11 +1,13 @@
 /** @type {import('next').NextConfig} */
+const isGithubPages = process.env.GITHUB_PAGES === 'true';
+
 const nextConfig = {
-    output: 'export',       // Enables static export
-    assetPrefix: './',      // Ensures relative paths for assets like CSS, JS
-    basePath: '/phoenix-energy-website-2',
-    images: {
-        unoptimized: true,  // Disable Next.js Image Optimization just for GitHub
-      },
+  output: 'export',
+  images: {
+    unoptimized: true,  // Disable image optimization for static export
+  },
+  assetPrefix: isGithubPages ? '/phoenix-energy-website-2/' : '',  // GitHub Pages vs. local/other deployment
+  basePath: isGithubPages ? '/phoenix-energy-website-2' : '',  // Conditionally set basePath
 };
 
 export default nextConfig;
