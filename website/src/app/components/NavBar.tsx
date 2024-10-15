@@ -11,8 +11,8 @@ import getConfig from 'next/config';
 
 const NavBar = () => {
 
-    const { publicRuntimeConfig } = getConfig();
-    const basePath = publicRuntimeConfig.basePath;
+    const { publicRuntimeConfig = {} } = getConfig();  // Provide a default empty object
+    const basePath = publicRuntimeConfig.basePath || '';  // Fallback to an empty string if undefined
 
     const [hoveredItem,setHoveredItem] = useState<number | null>(null);
     const [subHoveredItem,setSubHoveredItem] = useState<string | null>(null);

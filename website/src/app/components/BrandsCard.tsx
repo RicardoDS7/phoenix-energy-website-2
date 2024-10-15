@@ -9,8 +9,8 @@ interface BrandsCard {
 
 const BrandsCard: React.FC<BrandsCard> = ({ logoPath, altText, link }) => {
 
-    const { publicRuntimeConfig } = getConfig();
-    const basePath = publicRuntimeConfig.basePath;
+    const { publicRuntimeConfig = {} } = getConfig();  // Provide a default empty object
+    const basePath = publicRuntimeConfig.basePath || '';  // Fallback to an empty string if undefined
 
     return (
         <div className="flex items-center justify-center w-full">

@@ -16,8 +16,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
 
-  const { publicRuntimeConfig } = getConfig();
-  const basePath = publicRuntimeConfig.basePath;
+  const { publicRuntimeConfig = {} } = getConfig();  // Provide a default empty object
+  const basePath = publicRuntimeConfig.basePath || '';  // Fallback to an empty string if undefined
 
   return (
     <html lang="en">
