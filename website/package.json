@@ -1,5 +1,5 @@
 {
-  "homepage": "https://RicardoDS7.github.io/phoenix-energy-website-2",
+  "homepage": "https://ricardods7.github.io/phoenix-energy-website-2",
   "name": "website",
   "version": "0.1.0",
   "private": true,
@@ -10,7 +10,7 @@
     "lint": "next lint",
     "export": "next export",
     "predeploy": "npm run build && npm run export",
-    "deploy": "gh-pages -d out"
+    "deploy": "gh-pages -d website/out"
   },
   "dependencies": {
     "autoprefixer": "^10.4.20",
