@@ -1,4 +1,4 @@
-import Image from 'next/image';
+// import Image from 'next/image';
 
 interface BrandsCard {
     logoPath: string;  // Path to the logo image
