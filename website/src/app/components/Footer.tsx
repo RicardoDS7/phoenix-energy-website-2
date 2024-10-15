@@ -1,10 +1,9 @@
 'use client';
 import { NAV_LINKS, HOME_PAGE, COMPANY_LINKS, SOCIAL_PROFILES, PHONE_NUMBER, ADDRESS, CONTACT_EMAIL } from '../constants/constants';  // Import the constants
 import Link from 'next/link';
-import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
-import { SubMenu, FooterLink } from '../types/navLinks';
+import { SubMenu } from '../types/navLinks';
 
 const Footer = () => {
 
@@ -18,7 +17,7 @@ const Footer = () => {
     
 
     return (
-        <div className=" flex flex-col md:flex-row items-center md:items-start w-full py-10 px-4 md:px-6 lg:px-12 xl:px-24 gap-8 bg-antiflashWhite">
+        <div className="flex flex-col md:flex-row items-center md:items-start w-full py-10 px-4 md:px-6 lg:px-12 xl:px-24 gap-8 bg-antiflashWhite">
 
             <div className='flex-2 md:w-1/4 w-full min-w-[150px] text-center md:text-left'>
                 <Link href={HOME_PAGE} className='flex items-center justify-center md:justify-start'>
@@ -31,7 +30,7 @@ const Footer = () => {
             <div className='flex-2 md:w-1/4 w-full min-w-[150px]'>
                 <h4>Solutions</h4>
                 <ul className="space-y-2 mt-2">
-                    {solutionFoot.map((item,index) => (
+                    {solutionFoot.map((item) => (
                         <li key={item.name} 
                         className={`mr-5 footer-item ${pathname.startsWith(item.path) ? 'active' : ''}`}>
                         <Link href={item.path}>
@@ -76,7 +75,7 @@ const Footer = () => {
                         {ADDRESS}
                     </li>
                     <ul className='flex space-x-3 mt-4'>
-                        {SOCIAL_PROFILES.map((socialItem,index) => (
+                        {SOCIAL_PROFILES.map((socialItem) => (
                             <li key={socialItem.account} 
                             className={`px-1 mt-2`}>
                                 <Link href={socialItem.path} target='_blank' rel='noopener noreferrer'>

@@ -53,7 +53,7 @@ const NavBar = () => {
       }, [isSubMenuOpen]);
 
     return (
-        <nav className='sticky top-0 flex items-center w-full justify-between py-3 px-2 md:px-6 lg:px-12 xl:px-48 nav-bar z-20 bg-antiflashWhite backdrop-blur-lg'>
+        <nav className='fixed top-0 flex items-center w-full justify-between py-3 px-2 md:px-6 lg:px-12 xl:px-48 nav-bar z-20 bg-antiflashWhite backdrop-blur-lg'>
             <Link href={HOME_PAGE} className='flex items-center z-30'>
                 <Image src="/logo.png" alt="phoenix-energy-logo" width={50} height={50}/>
                 <h1 className='font-inter font-bold text-lg'>Phoenix <span className='text-paynesGray font-semibold'>Energy</span></h1>
@@ -146,7 +146,7 @@ const NavBar = () => {
             >
                 <ul className='list-none mt-24 px-4 lg:flex justify-center items-center flex-1'>
                 {NAV_LINKS.map((link) => (
-                    <div>
+                    <div key={`${link.name}-mobile-container`}>
                     <li key={`${link.name}-mobile-menu`}
                         className={`mr-5 nav-item ${pathname.startsWith(link.path) ? 'active' : ''}`}>
                         <Link href={link.path}

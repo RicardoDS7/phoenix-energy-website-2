@@ -18,7 +18,7 @@ const GetInTouchButton = () => {
         onClick={handleRedirect}
         className="get-in-touch-button px-4 py-2 rounded-full hidden lg:block"
       >
-        Get In Touch
+        Get in touch
       </button>
     );
   };

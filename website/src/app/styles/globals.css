@@ -157,14 +157,17 @@ link-small {
 
 .get-in-touch-button {
   font-size: 1rem;                /* Font size for large screens */
+  display: flex;
+  align-items: center;
+  justify-items: center;
   line-height: 1.5rem;              /* Line height */
   letter-spacing: -0.005em;       /* Letter spacing */
   font-weight: 600;               /* Semi-bold font weight */
   padding: 10px 20px;             /* Add padding to make the button larger and more clickable */
-  border-radius: 8px;             /* Rounded corners */
+  border-radius: 'full';             /* Rounded corners */
   background-color: #769ab0ff;    /* Background color for airSuperiorityBlue */
   color: #f2f6f8ff;               /* Text color (antiflashWhite) */
-  border: none;                   /* Remove border */
+  @apply border-paynesGray;                   /* Remove border */
   cursor: pointer;                /* Show pointer cursor */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
@@ -181,6 +184,40 @@ link-small {
 }
 
 .get-in-touch-button:active {
+  background-color: #2b4147ff;    /* Darker color for active state (charcoal) */
+  box-shadow: none;               /* Remove shadow on active state for a pressed effect */
+}
+
+.how-it-works-button {
+  font-size: 1rem;                /* Font size for large screens */
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  line-height: 1.5rem;              /* Line height */
+  letter-spacing: -0.005em;       /* Letter spacing */
+  font-weight: 600;               /* Semi-bold font weight */
+  padding: 10px 20px;             /* Add padding to make the button larger and more clickable */
+  border-radius: 'full';             /* Rounded corners */
+  background-color: white;    /* Background color for airSuperiorityBlue */
+  @apply text-charcoal;               /* Text color (antiflashWhite) */
+  @apply border-airSuperiorityBlue;
+  border-width: 1px;                   /* Remove border */
+  cursor: pointer;                /* Show pointer cursor */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+.how-it-works-button:hover {
+  background-color: #4c7380ff;    /* Darker shade for hover (paynesGray) */
+  @apply text-antiflashWhite; 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Increase shadow on hover */
+}
+
+.how-it-works-button:focus {
+  outline: none;                  /* Remove default focus outline */
+  box-shadow: 0 0 0 4px rgba(118, 154, 176, 0.3); /* Add focus ring for accessibility */
+}
+
+.how-it-works-button:active {
   background-color: #2b4147ff;    /* Darker color for active state (charcoal) */
   box-shadow: none;               /* Remove shadow on active state for a pressed effect */
 }
@@ -237,4 +274,8 @@ link-small {
 .footer-item.active {
   font-weight: 600; /* Optional: Bold font for active item */
   @apply text-atomicTangerine;
+}
+
+.clip-path-custom {
+  clip-path: polygon(0 0, 100% 0%, 100% 40%, 0% 80%);
 }
