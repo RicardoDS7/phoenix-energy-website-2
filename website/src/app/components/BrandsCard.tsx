@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import getConfig from 'next/config';
 
 interface BrandsCard {
     logoPath: string;  // Path to the logo image
@@ -7,6 +8,9 @@ interface BrandsCard {
   }
 
 const BrandsCard: React.FC<BrandsCard> = ({ logoPath, altText, link }) => {
+
+    const { publicRuntimeConfig } = getConfig();
+    const basePath = publicRuntimeConfig.basePath;
 
     return (
         <div className="flex items-center justify-center w-full">
@@ -19,7 +23,7 @@ const BrandsCard: React.FC<BrandsCard> = ({ logoPath, altText, link }) => {
             >
                 {/* Logo */}
                 <Image
-                src={logoPath}
+                src={`${basePath}${logoPath}`}
                 alt={altText}
                 className='p-2'
                 width={512}

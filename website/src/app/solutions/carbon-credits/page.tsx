@@ -3,7 +3,9 @@ import  HeroSection from '../../components/HeroSection';
 import  GetInTouchButton from '../../components/GetInTouchButton';
 import BrandsCard from '@/app/components/BrandsCard';
 
+
 const CarbonCredits = () => {
+
     return (
             <div>
             <HeroSection 

@@ -10,6 +10,9 @@ const nextConfig = {
   },
   assetPrefix: isGithubPages ? '/phoenix-energy-website-2/' : '',  // GitHub Pages vs. local/other deployment
   basePath: isGithubPages ? '/phoenix-energy-website-2' : '',  // Conditionally set basePath
+  publicRuntimeConfig: {
+    basePath: isGithubPages ? '/phoenix-energy-website-2' : '',
+  },
 };
 
 export default nextConfig;

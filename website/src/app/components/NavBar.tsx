@@ -7,8 +7,12 @@ import GetInTouchButton from './GetInTouchButton';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { SubMenu } from '../types/navLinks';
+import getConfig from 'next/config';
 
 const NavBar = () => {
+
+    const { publicRuntimeConfig } = getConfig();
+    const basePath = publicRuntimeConfig.basePath;
 
     const [hoveredItem,setHoveredItem] = useState<number | null>(null);
     const [subHoveredItem,setSubHoveredItem] = useState<string | null>(null);
@@ -55,7 +59,7 @@ const NavBar = () => {
     return (
         <nav className='fixed top-0 flex items-center w-full justify-between py-3 px-2 md:px-6 lg:px-12 xl:px-48 nav-bar z-20 bg-antiflashWhite backdrop-blur-lg'>
             <Link href={HOME_PAGE} className='flex items-center z-30'>
-                <Image src="/logo.png" alt="phoenix-energy-logo" width={50} height={50}/>
+                <Image src={`${basePath}/logo.png`} alt="phoenix-energy-logo" width={50} height={50}/>
                 <h1 className='font-inter font-bold text-lg'>Phoenix <span className='text-paynesGray font-semibold'>Energy</span></h1>
             </Link>
 
@@ -130,7 +134,7 @@ const NavBar = () => {
         {/* Mobile Menu */}
         <div className='lg:hidden flex flex-1 justify-end items-center mr-4 z-20'>
             <div className='z-20'>
-                <Image src={isMainMenuOpen ? "/icons/Menu-1.svg" : "/icons/Close.svg"} 
+                <Image src={isMainMenuOpen ? `${basePath}/icons/Menu-1.svg` : `${basePath}/icons/Close.svg`} 
                 alt='menu'
                 width={28}
                 height={28}
