@@ -1,5 +1,4 @@
 'use client';
-import  HeroSection from '../../components/HeroSection';
 import  GetInTouchButton from '../../components/GetInTouchButton';
 import AltGetInTouchButton from '../../components/AltGetInTouchButton';
 import BrandsCard from '@/app/components/BrandsCard';

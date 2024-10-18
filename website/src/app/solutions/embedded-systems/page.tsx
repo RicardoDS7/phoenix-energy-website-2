@@ -2,7 +2,6 @@
 import  GetInTouchButton from '../../components/GetInTouchButton';
 import AltGetInTouchButton from '../../components/AltGetInTouchButton';
 import BrandsCard from '@/app/components/BrandsCard';
-import Image from 'next/image';
 import FAQ from '@/app/components/FAQ';
 import HeroSectionS2S from '@/app/components/HeroSectionS2S';
 
