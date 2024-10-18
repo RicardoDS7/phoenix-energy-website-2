@@ -198,7 +198,7 @@ const CarbonCredits = () => {
                     </div>
 
                     <div className='rounded-3xl'>
-                        <Image className='rounded-3xl object-cover' src={`${basePath}/images/banner_home_page.png`} alt="why carbon credits matter" width={540} height={800} />
+                        <Image className='rounded-3xl object-cover' src={`${basePath}/images/home_page_banner.png`} alt="why carbon credits matter" width={540} height={800} />
                     </div>
 
                 </section>
