@@ -76,7 +76,7 @@ const CarbonCredits = () => {
                             {/*Implement Renewable Energy */}
                             <div className="bg-antiflashWhite p-6 rounded-3xl shadow-md w-full flex flex-col items-start justify-start text-start space-y-4">
                                 <div className="rounded-full bg-powderBlue p-4 justify-end items-end">
-                                    <Image src={`${basePath}/icons/green-electric.svg`} alt='icon' width={25} height={25} />
+                                    <img src={`${basePath}/icons/green-electric.svg`} alt='icon' width={25} height={25} />
                                 </div>
                                 <h3 className="text-5xl font-inter font-bold text-paynesGray whitespace-pre-wrap">
                                     <span className='block'>Implement</span>
@@ -98,7 +98,7 @@ const CarbonCredits = () => {
                             {/*Implement Renewable Energy */}
                             <div className="bg-antiflashWhite p-6 rounded-3xl shadow-md w-full flex flex-col items-start justify-start text-start space-y-4">
                                 <div className="rounded-full bg-powderBlue p-4 justify-end items-end">
-                                    <Image src={`${basePath}/icons/green-electric.svg`} alt='icon' width={25} height={25} />
+                                    <img src={`${basePath}/icons/green-electric.svg`} alt='icon' width={25} height={25} />
                                 </div>
                                 <h3 className="text-5xl font-inter font-bold text-paynesGray whitespace-pre-wrap">
                                     <span className='block'>Boost</span>
@@ -120,7 +120,7 @@ const CarbonCredits = () => {
                             {/*Implement Renewable Energy */}
                             <div className="bg-antiflashWhite p-6 rounded-3xl shadow-md w-full flex flex-col items-start justify-start text-start space-y-4">
                                 <div className="rounded-full bg-powderBlue p-4 justify-end items-end">
-                                    <Image src={`${basePath}/icons/green-electric.svg`} alt='icon' width={25} height={25} />
+                                    <img src={`${basePath}/icons/green-electric.svg`} alt='icon' width={25} height={25} />
                                 </div>
                                 <h3 className="text-5xl font-inter font-bold text-paynesGray whitespace-pre-wrap">
                                     <span className='block'>Support</span>
@@ -158,7 +158,7 @@ const CarbonCredits = () => {
                             <ul className='space-y-10'>
                                 <li className='flex flex-row align-middle items-center gap-6'>
                                     <div className="rounded-full bg-powderBlue p-4 justify-end items-end">
-                                            <Image src={`${basePath}/icons/green-electric.svg`} alt='icon' width={25} height={25} />
+                                            <img src={`${basePath}/icons/green-electric.svg`} alt='icon' width={25} height={25} />
                                     </div>
                                     <div className='flex flex-col justify-start items-start'>
                                         <p className='text-2xl font-bold'>Create a New Revenue Stream</p>
@@ -169,7 +169,7 @@ const CarbonCredits = () => {
                                 <hr />
                                 <li className='flex flex-row align-middle items-center gap-6'>
                                     <div className="rounded-full bg-powderBlue p-4 justify-end items-end">
-                                            <Image src={`${basePath}/icons/green-electric.svg`} alt='icon' width={25} height={25} />
+                                            <img src={`${basePath}/icons/green-electric.svg`} alt='icon' width={25} height={25} />
                                     </div>
                                     <div className='flex flex-col justify-start items-start'>
                                         <p className='text-2xl font-bold'>Create a New Revenue Stream</p>
@@ -181,7 +181,7 @@ const CarbonCredits = () => {
 
                                 <li className='flex flex-row align-middle items-center gap-6'>
                                     <div className="rounded-full bg-powderBlue p-4 justify-end items-end">
-                                            <Image src={`${basePath}/icons/green-electric.svg`} alt='icon' width={25} height={25} />
+                                            <img src={`${basePath}/icons/green-electric.svg`} alt='icon' width={25} height={25} />
                                     </div>
                                     <div className='flex flex-col justify-start items-start'>
                                         <p className='text-2xl font-bold'>Create a New Revenue Stream</p>
