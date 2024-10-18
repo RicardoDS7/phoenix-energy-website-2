@@ -18,7 +18,7 @@ export default function RootLayout({
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
   return (
-    <html lang="en">
+    <html lang="en" className='smooth-scroll'>
       <head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />

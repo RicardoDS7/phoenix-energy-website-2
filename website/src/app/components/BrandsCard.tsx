@@ -13,23 +13,16 @@ const BrandsCard: React.FC<BrandsCard> = ({ logoPath, altText, link }) => {
     console.log(`Brand Image ${logoPath} for ${basePath}`)
 
     return (
-        <div className="flex items-center justify-center w-full">
+        <div className="bg-antiflashWhite rounded-3xl shadow-md w-[150px] h-[150px] flex items-center justify-center">
             {/* Outer container with rounded corners */}
-            <a
-                href={link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white p-6 rounded-3xl shadow-md w-[150px] h-[150px] flex items-center justify-center"
-            >
                 {/* Logo */}
                 <img
                 src={`${basePath}${logoPath}`}
                 alt={altText}
-                className='p-2'
+                className='rounded-3xl'
                 width={512}
                 height={512}
                 />
-            </a>
         </div>
     )
 }
