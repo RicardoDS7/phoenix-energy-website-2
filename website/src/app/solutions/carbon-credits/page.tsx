@@ -29,7 +29,6 @@ const CarbonCredits = () => {
                                 <BrandsCard
                                 logoPath = '/images/brands/nedbank-logo.png'
                                 altText = 'nedbank-logo'   // Alt text for the logo
-                                link= '#'
                                 />
                             </li>
 
@@ -37,7 +36,6 @@ const CarbonCredits = () => {
                                 <BrandsCard
                                 logoPath = '/images/brands/sasol-logo.png'
                                 altText = 'sasol-logo'   // Alt text for the logo
-                                link= '#'
                                 />
                             </li>
 
@@ -45,7 +43,6 @@ const CarbonCredits = () => {
                                 <BrandsCard
                                 logoPath = '/images/brands/vw-logo.png'
                                 altText = 'volkswagen-logo'   // Alt text for the logo
-                                link= '#'
                                 />
                             </li>
 
@@ -53,7 +50,6 @@ const CarbonCredits = () => {
                                 <BrandsCard
                                 logoPath = '/images/brands/anglo-american-logo.png'
                                 altText = 'anglo-american-logo'   // Alt text for the logo
-                                link= '#'
                                 />
                             </li>
                         </ul>

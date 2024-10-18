@@ -3,10 +3,9 @@
 interface BrandsCard {
     logoPath: string;  // Path to the logo image
     altText: string;   // Alt text for the logo
-    link: string;      // Link to redirect when the card is clicked
   }
 
-const BrandsCard: React.FC<BrandsCard> = ({ logoPath, altText, link }) => {
+const BrandsCard: React.FC<BrandsCard> = ({ logoPath, altText }) => {
 
     const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 

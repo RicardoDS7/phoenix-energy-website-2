@@ -46,7 +46,6 @@ const EmbeddedSystems = () => {
                                     <BrandsCard
                                     logoPath = '/images/brands/nedbank-logo.svg'
                                     altText = 'nedbank-logo'   // Alt text for the logo
-                                    link= '#'
                                     />
                                 </li>
 
@@ -54,7 +53,6 @@ const EmbeddedSystems = () => {
                                     <BrandsCard
                                     logoPath = '/images/brands/sasol-logo.svg'
                                     altText = 'sasol-logo'   // Alt text for the logo
-                                    link= '#'
                                     />
                                 </li>
 
@@ -62,7 +60,6 @@ const EmbeddedSystems = () => {
                                     <BrandsCard
                                     logoPath = '/images/brands/vw-logo.svg'
                                     altText = 'volkswagen-logo'   // Alt text for the logo
-                                    link= '#'
                                     />
                                 </li>
                             </ul>
