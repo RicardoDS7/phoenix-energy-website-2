@@ -7,12 +7,14 @@ import HeroSectionS2S from '@/app/components/HeroSectionS2S';
 
 const EmbeddedSystems = () => {
 
+    const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
     return (
             <div className='bg-antiflashWhite'>
                 <HeroSectionS2S
                     title='Embedded Systems'
                     subtitle='A complete turnkey solar solution.'
-                    imagePath='/images/Embedded Systems-Hero.png'
+                    imagePath={`${basePath}/images/Embedded Systems-Hero.png`}
                     altText='Solar Panel Image'
                     width={2048}
                     height={2048}

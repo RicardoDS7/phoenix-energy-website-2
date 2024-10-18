@@ -8,12 +8,14 @@ import HeroSectionS2S from '@/app/components/HeroSectionS2S';
 
 const CarbonCredits = () => {
 
+    const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
     return (
             <div className='bg-antiflashWhite'>
                 <HeroSectionS2S 
                     title='Sustainable Revenue From Carbon Credits'
                     subtitle='A carbon credit is a certificate representing the reduction of one ton of CO₂ from the atmosphere. Businesses can earn or purchase them by investing in emission-reducing projects like renewable energy or reforestation.'
-                    imagePath='/images/Carbon-Credits-Hero.png'
+                    imagePath={`${basePath}/images/Carbon-Credits-Hero.png`}
                     altText='Carbon Credits Coin'
                     width={2048}
                     height={2048}
@@ -74,7 +76,7 @@ const CarbonCredits = () => {
                             {/*Implement Renewable Energy */}
                             <div className="bg-antiflashWhite p-6 rounded-3xl shadow-md w-full flex flex-col items-start justify-start text-start space-y-4">
                                 <div className="rounded-full bg-powderBlue p-4 justify-end items-end">
-                                    <Image src="/icons/green-electric.svg" alt='icon' width={25} height={25} />
+                                    <Image src={`${basePath}/icons/green-electric.sv`} alt='icon' width={25} height={25} />
                                 </div>
                                 <h3 className="text-5xl font-inter font-bold text-paynesGray whitespace-pre-wrap">
                                     <span className='block'>Implement</span>
@@ -96,7 +98,7 @@ const CarbonCredits = () => {
                             {/*Implement Renewable Energy */}
                             <div className="bg-antiflashWhite p-6 rounded-3xl shadow-md w-full flex flex-col items-start justify-start text-start space-y-4">
                                 <div className="rounded-full bg-powderBlue p-4 justify-end items-end">
-                                    <Image src="/icons/green-electric.svg" alt='icon' width={25} height={25} />
+                                    <Image src={`${basePath}/icons/green-electric.sv`} alt='icon' width={25} height={25} />
                                 </div>
                                 <h3 className="text-5xl font-inter font-bold text-paynesGray whitespace-pre-wrap">
                                     <span className='block'>Boost</span>
@@ -118,7 +120,7 @@ const CarbonCredits = () => {
                             {/*Implement Renewable Energy */}
                             <div className="bg-antiflashWhite p-6 rounded-3xl shadow-md w-full flex flex-col items-start justify-start text-start space-y-4">
                                 <div className="rounded-full bg-powderBlue p-4 justify-end items-end">
-                                    <Image src="/icons/green-electric.svg" alt='icon' width={25} height={25} />
+                                    <Image src={`${basePath}/icons/green-electric.sv`} alt='icon' width={25} height={25} />
                                 </div>
                                 <h3 className="text-5xl font-inter font-bold text-paynesGray whitespace-pre-wrap">
                                     <span className='block'>Support</span>
@@ -156,7 +158,7 @@ const CarbonCredits = () => {
                             <ul className='space-y-10'>
                                 <li className='flex flex-row align-middle items-center gap-6'>
                                     <div className="rounded-full bg-powderBlue p-4 justify-end items-end">
-                                            <Image src="/icons/green-electric.svg" alt='icon' width={25} height={25} />
+                                            <Image src={`${basePath}/icons/green-electric.sv`} alt='icon' width={25} height={25} />
                                     </div>
                                     <div className='flex flex-col justify-start items-start'>
                                         <p className='text-2xl font-bold'>Create a New Revenue Stream</p>
@@ -167,7 +169,7 @@ const CarbonCredits = () => {
                                 <hr />
                                 <li className='flex flex-row align-middle items-center gap-6'>
                                     <div className="rounded-full bg-powderBlue p-4 justify-end items-end">
-                                            <Image src="/icons/green-electric.svg" alt='icon' width={25} height={25} />
+                                            <Image src={`${basePath}/icons/green-electric.sv`} alt='icon' width={25} height={25} />
                                     </div>
                                     <div className='flex flex-col justify-start items-start'>
                                         <p className='text-2xl font-bold'>Create a New Revenue Stream</p>
@@ -179,7 +181,7 @@ const CarbonCredits = () => {
 
                                 <li className='flex flex-row align-middle items-center gap-6'>
                                     <div className="rounded-full bg-powderBlue p-4 justify-end items-end">
-                                            <Image src="/icons/green-electric.svg" alt='icon' width={25} height={25} />
+                                            <Image src={`${basePath}/icons/green-electric.sv`} alt='icon' width={25} height={25} />
                                     </div>
                                     <div className='flex flex-col justify-start items-start'>
                                         <p className='text-2xl font-bold'>Create a New Revenue Stream</p>
@@ -196,7 +198,7 @@ const CarbonCredits = () => {
                     </div>
 
                     <div className='rounded-3xl'>
-                        <Image className='rounded-3xl object-cover' src={"/images/home_page_banner.png"} alt="why carbon credits matter" width={540} height={800} />
+                        <Image className='rounded-3xl object-cover' src={`${basePath}/images/banner_home_page.png`} alt="why carbon credits matter" width={540} height={800} />
                     </div>
 
                 </section>
