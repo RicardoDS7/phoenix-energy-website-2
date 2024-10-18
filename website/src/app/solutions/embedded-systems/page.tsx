@@ -1,22 +1,24 @@
 'use client';
-import  HeroSection from '../../components/HeroSection';
 import  GetInTouchButton from '../../components/GetInTouchButton';
 import AltGetInTouchButton from '../../components/AltGetInTouchButton';
 import BrandsCard from '@/app/components/BrandsCard';
 import Image from 'next/image';
 import FAQ from '@/app/components/FAQ';
+import HeroSectionS2S from '@/app/components/HeroSectionS2S';
 
 const EmbeddedSystems = () => {
 
     return (
-            <div>
-                <HeroSection 
+            <div className='bg-antiflashWhite'>
+                <HeroSectionS2S
                     title='Embedded Systems'
                     subtitle='A complete turnkey solar solution.'
+                    imagePath='/images/Embedded Systems-Hero.png'
+                    altText='Solar Panel Image'
+                    width={2048}
+                    height={2048}
                 />
-                <div className='flex items-center justify-center -mt-36'>
-                    <Image src={"/images/Embedded Systems-Hero.png"} alt='Carbon Credits Coin' width={750} height={750} />
-                </div>
+
                 {/* What Are carbon Credits? */}
                 <section className="relative w-full p-14 bg-paynesGray flex items-center justify-center overflow-hidden">
 

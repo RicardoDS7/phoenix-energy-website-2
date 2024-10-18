@@ -5,82 +5,76 @@ import AltGetInTouchButton from '../../components/AltGetInTouchButton';
 import BrandsCard from '@/app/components/BrandsCard';
 import Image from 'next/image';
 import FAQ from '@/app/components/FAQ';
+import HeroSectionS2S from '@/app/components/HeroSectionS2S';
 
 const CarbonCredits = () => {
 
     return (
-            <div>
-                <HeroSection 
-                    title='Carbon Credits'
-                    subtitle='Earn more with Carbon Credits'
+            <div className='bg-antiflashWhite'>
+                <HeroSectionS2S 
+                    title='Sustainable Revenue From Carbon Credits'
+                    subtitle='A carbon credit is a certificate representing the reduction of one ton of CO₂ from the atmosphere. Businesses can earn or purchase them by investing in emission-reducing projects like renewable energy or reforestation.'
+                    imagePath='/images/Carbon-Credits-Hero.png'
+                    altText='Carbon Credits Coin'
+                    width={2048}
+                    height={2048}
                 />
-                <div className='flex items-center justify-center h-[1/3vh] -mt-6'>
-                    <Image src={"/images/Carbon-Credits-Hero.png"} alt='Carbon Credits Coin' width={512} height={512} />
-                </div>
                 {/* What Are carbon Credits? */}
-                <section className="h-[1/3vh] -mt-16 relative w-full flex items-center justify-center">
+                <section className="relative w-full flex flex-col gap-8 py-10 items-center justify-center px-4 lg:px-12 xl:px-48">
 
-                    <div className='flex flex-col py-10 lg:flex-row gap-8 items-center justify-center overflow-hidden w-[80%]'>
-                        <div className="relative z-10 text-start w-full lg:w-1/2">
-                            <h2 className="text-4xl text-charcoal font-inter md:text-5xl lg:text-6xl font-bold">What are Carbon Credits?</h2>
-                            <p className='text-lg text-charcoal text-start font-inter'>
-                                A carbon credit is a certificate representing the reduction of one ton of CO₂ from the atmosphere. Businesses can earn or purchase them by investing in emission-reducing projects like renewable energy or reforestation.
-                            </p>
+                        {/* Companies buying Carbon Credits */}    
+                    <h2 className="text-paynesGray text-4xl font-medium">Leading companies are investing in carbon credits</h2>
+                    <div className='flex-col lg:flex-row'>
+                        <ul className='flex justify-evenly flex-wrap gap-x-4 gap-y-4'>
+                            <li>
+                                <BrandsCard
+                                logoPath = '/images/brands/nedbank-logo.png'
+                                altText = 'nedbank-logo'   // Alt text for the logo
+                                link= '#'
+                                />
+                            </li>
 
-                        </div>
+                            <li>
+                                <BrandsCard
+                                logoPath = '/images/brands/sasol-logo.png'
+                                altText = 'sasol-logo'   // Alt text for the logo
+                                link= '#'
+                                />
+                            </li>
 
-                        {/* Companies buying Carbon Credits */}
-                        <div className="relative z-10 text-center w-full lg:w-1/2">
-                            <h3 className="text-4xl text-paynesGray font-inter md:text-3xl lg:text-3xl font-semibold">Major companies buying Carbon Credits</h3>
+                            <li>
+                                <BrandsCard
+                                logoPath = '/images/brands/vw-logo.png'
+                                altText = 'volkswagen-logo'   // Alt text for the logo
+                                link= '#'
+                                />
+                            </li>
 
-                            <div className='flex-col md:flex-row'>
-                                <ul className='flex justify-evenly'>
-                                    <li>
-                                        <BrandsCard
-                                        logoPath = '/images/brands/nedbank-logo.png'
-                                        altText = 'nedbank-logo'   // Alt text for the logo
-                                        link= '#'
-                                        />
-                                    </li>
-
-                                    <li>
-                                        <BrandsCard
-                                        logoPath = '/images/brands/sasol-logo.png'
-                                        altText = 'sasol-logo'   // Alt text for the logo
-                                        link= '#'
-                                        />
-                                    </li>
-
-                                    <li>
-                                        <BrandsCard
-                                        logoPath = '/images/brands/vw-logo.png'
-                                        altText = 'volkswagen-logo'   // Alt text for the logo
-                                        link= '#'
-                                        />
-                                    </li>
-
-                                    <li>
-                                        <BrandsCard
-                                        logoPath = '/images/brands/anglo-american-logo.png'
-                                        altText = 'anglo-american-logo'   // Alt text for the logo
-                                        link= '#'
-                                        />
-                                    </li>
-                                </ul>
-                            </div>
-
-                        </div>
+                            <li>
+                                <BrandsCard
+                                logoPath = '/images/brands/anglo-american-logo.png'
+                                altText = 'anglo-american-logo'   // Alt text for the logo
+                                link= '#'
+                                />
+                            </li>
+                        </ul>
                     </div>
-
                 </section>
 
                 {/* Who is Elibible for Carbon Credits? */}
-                <section id='carbon-credits-eligibility' className="relative bg-paynesGray w-full p-14 flex items-center justify-center overflow-hidden">
+                <section id='carbon-credits-eligibility' className="relative 
+                                                                bg-paynesGray 
+                                                                w-full 
+                                                                lg:py-10 lg:px-48 
+                                                                flex 
+                                                                items-center 
+                                                                justify-center 
+                                                                overflow-hidden">
 
-                    <div className="relative z-10 text-center  px-4">
+                    <div className="relative z-10 text-center">
                         <h2 className="text-3xl text-antiflashWhite font-inter md:text-5xl lg:text-6xl font-bold">Earn carbon credits for your business</h2>
                     
-                        <div className='mt-8 flex flex-col md:flex-row gap-8 px-24'>
+                        <div className='mt-8 flex flex-col md:flex-row gap-8'>
                             
                             {/*Implement Renewable Energy */}
                             <div className="bg-antiflashWhite p-6 rounded-3xl shadow-md w-full flex flex-col items-start justify-start text-start space-y-4">
@@ -158,32 +152,60 @@ const CarbonCredits = () => {
 
 
                 {/* How to earn Carbon Credits? */}
-                <section id='carbon-credits-eco-system' className="relative w-full p-14 flex items-center justify-center overflow-hidden">
+                <section id='carbon-credits-eco-system' className="flex flex-row items-center justify-center gap-16 py-10 xl:px-48">
 
-                    <div className="relative z-10 text-center  px-4">
-                        <h2 className="text-4xl text-charcoal font-inter md:text-5xl lg:text-6xl font-bold">Carbon Credits Ecosystem</h2>
+                    <div className="relative z-10 text-start">
+                        <h2 className="text-4xl text-charcoal font-inter md:text-5xl lg:text-6xl font-bold">Why it matters for your business</h2>
                     
-                        <div className='mt-6 flex align-middle items-center justify-center'>
+                        <div className='py-10'>
+                            <ul className='space-y-10'>
+                                <li className='flex flex-row align-middle items-center gap-6'>
+                                    <div className="rounded-full bg-powderBlue p-4 justify-end items-end">
+                                            <Image src="/icons/green-electric.svg" alt='icon' width={25} height={25} />
+                                    </div>
+                                    <div className='flex flex-col justify-start items-start'>
+                                        <p className='text-2xl font-bold'>Create a New Revenue Stream</p>
+                                        <p className='text-xl'>Sell the carbon credits you earn to other businesses looking to offset their emissions.</p>
+                                    </div>
+                                </li>
+
+                                <hr />
+                                <li className='flex flex-row align-middle items-center gap-6'>
+                                    <div className="rounded-full bg-powderBlue p-4 justify-end items-end">
+                                            <Image src="/icons/green-electric.svg" alt='icon' width={25} height={25} />
+                                    </div>
+                                    <div className='flex flex-col justify-start items-start'>
+                                        <p className='text-2xl font-bold'>Create a New Revenue Stream</p>
+                                        <p className='text-xl'>Sell the carbon credits you earn to other businesses looking to offset their emissions.</p>
+                                    </div>
+                                </li>
+
+                                <hr />
+
+                                <li className='flex flex-row align-middle items-center gap-6'>
+                                    <div className="rounded-full bg-powderBlue p-4 justify-end items-end">
+                                            <Image src="/icons/green-electric.svg" alt='icon' width={25} height={25} />
+                                    </div>
+                                    <div className='flex flex-col justify-start items-start'>
+                                        <p className='text-2xl font-bold'>Create a New Revenue Stream</p>
+                                        <p className='text-xl'>Sell the carbon credits you earn to other businesses looking to offset their emissions.</p>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div className='mt-6 flex align-middle items-start justify-start'>
                             <GetInTouchButton />
                         </div>
 
                     </div>
 
-                </section>
-
-                {/* How to earn Carbon Credits? */}
-                <section className="relative w-full p-14 bg-antiflashWhite flex items-center justify-center overflow-hidden">
-
-                    <div className="relative z-10 text-center  px-4">
-                        <h2 className="text-4xl text-charcoal font-inter md:text-5xl lg:text-6xl font-bold">How can I earn Carbon Credits?</h2>
-                    
-                        <div className='mt-6 flex align-middle items-center justify-center'>
-                            <GetInTouchButton />
-                        </div>
-
+                    <div className='rounded-3xl'>
+                        <Image className='rounded-3xl object-cover' src={"/images/home_page_banner.png"} alt="why carbon credits matter" width={540} height={800} />
                     </div>
 
                 </section>
+
 
                 {/* How to earn Carbon Credits? */}
                 <section id='how-it-works-carbon-credits' className="relative w-full p-14 flex items-center justify-center overflow-hidden">
