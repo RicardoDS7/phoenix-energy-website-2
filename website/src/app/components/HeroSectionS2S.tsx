@@ -15,7 +15,7 @@ interface HeroSectionProps {
 const HeroSectionS2S: React.FC<HeroSectionProps> = ({title, subtitle,imagePath,altText,width,height }) => {
 
   return (
-    <section className="relative pt-28 w-full flex items-center justify-center px-4 lg:px-12 xl:px-48">
+    <section className="relative pt-28 w-full flex items-center justify-center px-6 lg:px-12 xl:px-48">
       {/* Hero Content */}
       <div className="flex flex-col md:flex-row w-full justify-center items-center gap-8">
         

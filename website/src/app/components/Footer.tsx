@@ -17,7 +17,7 @@ const Footer = () => {
     
 
     return (
-        <div className="flex flex-col md:flex-row items-center md:items-start w-full py-10 px-4 md:px-6 lg:px-12 xl:px-24 gap-8 bg-antiflashWhite">
+        <div className="flex flex-col md:flex-row items-center md:items-start w-full py-10 px-4 md:px-6 lg:px-12 xl:px-48 gap-8 bg-antiflashWhite">
 
             <div className='flex-2 md:w-1/4 w-full min-w-[150px] text-center md:text-left'>
                 <Link href={HOME_PAGE} className='flex items-center justify-center md:justify-start'>

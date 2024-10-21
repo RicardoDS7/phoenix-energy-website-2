@@ -21,10 +21,10 @@ const CarbonCredits = () => {
                     height={2048}
                 />
                 {/* What Are carbon Credits? */}
-                <section className="relative w-full flex flex-col gap-8 py-10 items-center justify-center px-4 lg:px-12 xl:px-48">
+                <section className="relative w-full flex flex-col gap-8 py-10 items-center justify-center px-6 lg:px-12 xl:px-48">
 
                         {/* Companies buying Carbon Credits */}    
-                    <h2 className="text-paynesGray text-4xl font-medium">Leading companies are investing in carbon credits</h2>
+                    <h3 className="text-paynesGray font-medium text-center">Leading companies are investing in carbon credits</h3>
                     <div className='flex-col lg:flex-row'>
                         <ul className='flex justify-evenly flex-wrap gap-x-4 gap-y-4'>
                             <li>
@@ -61,82 +61,91 @@ const CarbonCredits = () => {
                 {/* Who is Elibible for Carbon Credits? */}
                 <section id='carbon-credits-eligibility' className="relative 
                                                                 bg-paynesGray 
-                                                                w-full 
-                                                                lg:py-10 lg:px-48 
+                                                                w-full
+                                                                p-6 xl:px-48 
                                                                 flex 
                                                                 items-center 
                                                                 justify-center 
                                                                 overflow-hidden">
 
-                    <div className="relative z-10 text-center">
-                        <h2 className="text-3xl text-antiflashWhite font-inter md:text-5xl lg:text-6xl font-bold">Earn carbon credits for your business</h2>
+                    <div className="text-center">
+                        <h2 className="text-antiflashWhite">Earn carbon credits for your business</h2>
                     
-                        <div className='mt-8 flex flex-col md:flex-row gap-8'>
+                        <div className='mt-8 flex flex-col w-full lg:flex-row gap-8'>
                             
                             {/*Implement Renewable Energy */}
-                            <div className="bg-antiflashWhite p-6 rounded-3xl shadow-md w-full flex flex-col items-start justify-start text-start space-y-4">
+                            <div className="bg-antiflashWhite p-4 rounded-3xl shadow-md w-full lg:w-1/3 flex-grow flex flex-col items-start justify-start text-start space-y-4">
                                 <div className="rounded-full bg-powderBlue p-4 justify-end items-end">
                                     <img src={`${basePath}/icons/Green-Electric.svg`} alt='icon' width={25} height={25} />
                                 </div>
-                                <h3 className="text-5xl font-inter font-bold text-paynesGray whitespace-pre-wrap">
-                                    <span className='block'>Implement</span>
-                                    <span  className='block'>Renewable</span>
-                                    <span  className='block'>Energy</span>
+                                <h3 className="text-paynesGray whitespace-pre-wrap font-bold">
+                                    Implement Renewable Energy
                                 </h3>
-                                <p className="font-inter text-lg text-charcoal">
-                                Solar Power Installations
-                                Equip your business with solar panels to harness clean, renewable energy, significantly reducing electricity costs and CO₂ emissions.
+                                <div className="font-inter text-lg text-charcoal">
+                                    <ul className='list-disc px-5'>
+                                        <li className='mb-2'>
+                                            Install embedded solar systems to reduce grid dependence and improve energy security.
+                                        </li>
 
-                                Wind Turbines
-                                Install wind turbines on-site or invest in off-site wind farms to generate green energy and cut back on fossil fuel dependency.
+                                        <li className='mb-2'>
+                                            Integrate hydrogen fuel cells for backup or primary power in critical operations.
+                                        </li>
 
-                                Geothermal Energy Systems
-                                Use geothermal heat pumps to provide sustainable heating and cooling solutions for your buildings, reducing energy use and emissions.
-                                </p>
+                                        <li className='mb-2'>
+                                            Explore wheeled power solutions for areas with limited infrastructure
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
 
                             {/*Implement Renewable Energy */}
-                            <div className="bg-antiflashWhite p-6 rounded-3xl shadow-md w-full flex flex-col items-start justify-start text-start space-y-4">
+                            <div className="bg-antiflashWhite p-4 rounded-3xl shadow-md w-full lg:w-1/3 flex flex-grow flex-col items-start justify-start text-start space-y-4">
                                 <div className="rounded-full bg-powderBlue p-4 justify-end items-end">
-                                    <img src={`${basePath}/icons/Green-Electric.svg`} alt='icon' width={25} height={25} />
+                                    <img src={`${basePath}/icons/efficiency.png`} alt='icon' width={25} height={25} />
                                 </div>
-                                <h3 className="text-5xl font-inter font-bold text-paynesGray whitespace-pre-wrap">
-                                    <span className='block'>Boost</span>
-                                    <span  className='block'>Energy</span>
-                                    <span  className='block'>Efficiency</span>
+                                <h3 className="font-bold text-paynesGray whitespace-pre-wrap">
+                                    Boost Energy Efficiecny
                                 </h3>
-                                <p className="font-inter text-lg text-charcoal">
-                                Solar Power Installations
-                                Equip your business with solar panels to harness clean, renewable energy, significantly reducing electricity costs and CO₂ emissions.
+                                <div className="font-inter text-lg text-charcoal">
+                                    <ul className='list-disc px-5'>
+                                        <li className='mb-2'>
+                                            Install embedded solar systems to reduce grid dependence and improve energy security.
+                                        </li>
 
-                                Wind Turbines
-                                Install wind turbines on-site or invest in off-site wind farms to generate green energy and cut back on fossil fuel dependency.
+                                        <li className='mb-2'>
+                                            Integrate hydrogen fuel cells for backup or primary power in critical operations.
+                                        </li>
 
-                                Geothermal Energy Systems
-                                Use geothermal heat pumps to provide sustainable heating and cooling solutions for your buildings, reducing energy use and emissions.
-                                </p>
+                                        <li className='mb-2'>
+                                            Explore wheeled power solutions for areas with limited infrastructure
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
 
                             {/*Implement Renewable Energy */}
-                            <div className="bg-antiflashWhite p-6 rounded-3xl shadow-md w-full flex flex-col items-start justify-start text-start space-y-4">
+                            <div className="bg-antiflashWhite p-4 rounded-3xl shadow-md w-full lg:w-1/3 flex flex-grow flex-col items-start justify-start text-start space-y-4">
                                 <div className="rounded-full bg-powderBlue p-4 justify-end items-end">
-                                    <img src={`${basePath}/icons/Green-Electric.svg`} alt='icon' width={25} height={25} />
+                                    <img src={`${basePath}/icons/sustainable.png`} alt='icon' width={25} height={25} />
                                 </div>
-                                <h3 className="text-5xl font-inter font-bold text-paynesGray whitespace-pre-wrap">
-                                    <span className='block'>Support</span>
-                                    <span  className='block'>Sustainable</span>
-                                    <span  className='block'>Projects</span>
+                                <h3 className="font-bold text-paynesGray whitespace-pre-wrap">
+                                    Support Sustainable Projects
                                 </h3>
-                                <p className="font-inter text-lg text-charcoal">
-                                Solar Power Installations
-                                Equip your business with solar panels to harness clean, renewable energy, significantly reducing electricity costs and CO₂ emissions.
+                                <div className="font-inter text-lg text-charcoal">
+                                    <ul className='list-disc px-5'>
+                                        <li className='mb-2'>
+                                            Install embedded solar systems to reduce grid dependence and improve energy security.
+                                        </li>
 
-                                Wind Turbines
-                                Install wind turbines on-site or invest in off-site wind farms to generate green energy and cut back on fossil fuel dependency.
+                                        <li className='mb-2'>
+                                            Integrate hydrogen fuel cells for backup or primary power in critical operations.
+                                        </li>
 
-                                Geothermal Energy Systems
-                                Use geothermal heat pumps to provide sustainable heating and cooling solutions for your buildings, reducing energy use and emissions.
-                                </p>
+                                        <li className='mb-2'>
+                                            Explore wheeled power solutions for areas with limited infrastructure
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     
@@ -148,20 +157,20 @@ const CarbonCredits = () => {
                 </ section>
 
 
-                {/* How to earn Carbon Credits? */}
-                <section id='carbon-credits-eco-system' className="flex flex-row items-center justify-center gap-16 py-10 xl:px-48">
+                {/*Why is matters for your business? */}
+                <section id='carbon-credits-eco-system' className="flex flex-col lg:flex-row items-center justify-center px-6 gap-16 py-10 xl:px-48">
 
                     <div className="relative z-10 text-start">
-                        <h2 className="text-4xl text-charcoal font-inter md:text-5xl lg:text-6xl font-bold">Why it matters for your business</h2>
+                        <h2 className="text-charcoal">Why it matters for your business</h2>
                     
                         <div className='py-10'>
                             <ul className='space-y-10'>
                                 <li className='flex flex-row align-middle items-center gap-6'>
                                     <div className="rounded-full bg-powderBlue p-4 justify-end items-end">
-                                            <img src={`${basePath}/icons/Green-Electric.svg`} alt='icon' width={25} height={25} />
+                                            <img src={`${basePath}/icons/benefits.png`} alt='icon' width={50} height={50} />
                                     </div>
                                     <div className='flex flex-col justify-start items-start'>
-                                        <p className='text-2xl font-bold'>Create a New Revenue Stream</p>
+                                        <p className='text-2xl font-bold'>Financial Incentives and Cost Savings</p>
                                         <p className='text-xl'>Sell the carbon credits you earn to other businesses looking to offset their emissions.</p>
                                     </div>
                                 </li>
@@ -169,10 +178,10 @@ const CarbonCredits = () => {
                                 <hr />
                                 <li className='flex flex-row align-middle items-center gap-6'>
                                     <div className="rounded-full bg-powderBlue p-4 justify-end items-end">
-                                            <img src={`${basePath}/icons/Green-Electric.svg`} alt='icon' width={25} height={25} />
+                                            <img src={`${basePath}/icons/compliance.png`} alt='icon' width={50} height={50} />
                                     </div>
                                     <div className='flex flex-col justify-start items-start'>
-                                        <p className='text-2xl font-bold'>Create a New Revenue Stream</p>
+                                        <p className='text-2xl font-bold'>Regulatory Compliance and Market Access</p>
                                         <p className='text-xl'>Sell the carbon credits you earn to other businesses looking to offset their emissions.</p>
                                     </div>
                                 </li>
@@ -181,34 +190,34 @@ const CarbonCredits = () => {
 
                                 <li className='flex flex-row align-middle items-center gap-6'>
                                     <div className="rounded-full bg-powderBlue p-4 justify-end items-end">
-                                            <img src={`${basePath}/icons/Green-Electric.svg`} alt='icon' width={25} height={25} />
+                                            <img src={`${basePath}/icons/brand-rep.png`} alt='icon' width={50} height={50} />
                                     </div>
                                     <div className='flex flex-col justify-start items-start'>
-                                        <p className='text-2xl font-bold'>Create a New Revenue Stream</p>
+                                        <p className='text-2xl font-bold'>Strengthen Brand Reputation and Competitiveness</p>
                                         <p className='text-xl'>Sell the carbon credits you earn to other businesses looking to offset their emissions.</p>
                                     </div>
                                 </li>
 
                             </ul>
                         </div>
-                        <div className='mt-6 flex align-middle items-start justify-start'>
+                        <div className='mt-6 flex align-middle items-center justify-center lg:items-start lg:justify-start'>
                             <GetInTouchButton />
                         </div>
 
                     </div>
 
-                    <div className='rounded-3xl'>
-                        <Image className='rounded-3xl object-cover' src={`${basePath}/images/home_page_banner.png`} alt="why carbon credits matter" width={540} height={800} />
+                    <div className='flex rounded-3xl h-full lg:h-[640px]'>
+                        <Image className='rounded-3xl object-cover h-full transform -scale-x-100' src={`${basePath}/images/home_page_banner.png`} alt="why carbon credits matter" width={540} height={640} />
                     </div>
 
                 </section>
 
 
-                {/* How to earn Carbon Credits? */}
-                <section id='how-it-works-carbon-credits' className="relative w-full p-14 flex items-center justify-center overflow-hidden">
+                {/* Our Process */}
+                <section id='how-it-works-carbon-credits' className="relative w-full flex p-6 items-center justify-center">
 
-                    <div className="relative z-10 text-center  px-4">
-                        <h2 className="text-4xl text-charcoal font-inter md:text-5xl lg:text-6xl font-bold">Register your project</h2>
+                    <div className="relative text-center">
+                        <h2 className="text-charcoal">Register your project</h2>
                     
                         <div className='mt-6 flex align-middle items-center justify-center'>
                             <GetInTouchButton />
@@ -219,10 +228,10 @@ const CarbonCredits = () => {
                 </section>
 
                 {/* FAQ */}
-                <section id='carbon-credits-faq' className="relative w-full p-14 flex items-center justify-center overflow-hidden">
+                <section id='carbon-credits-faq' className="relative w-full p-6 flex items-center justify-center">
 
-                    <div className="relative z-10 text-center  px-4">
-                        <h2 className="text-4xl text-charcoal font-inter md:text-5xl lg:text-6xl font-bold">Frequently asked questions</h2>
+                    <div className="text-xl relative text-center md:w-[600px] lg:w-[800px]">
+                        <h2 className="text-charcoal">Frequently asked questions</h2>
                        
                         < FAQ />
 
