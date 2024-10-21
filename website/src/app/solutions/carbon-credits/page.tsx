@@ -103,7 +103,7 @@ const CarbonCredits = () => {
                             {/*Implement Renewable Energy */}
                             <div className="bg-antiflashWhite p-4 rounded-3xl shadow-md w-full lg:w-1/3 flex flex-grow flex-col items-start justify-start text-start space-y-4">
                                 <div className="rounded-full bg-powderBlue p-4 justify-end items-end">
-                                    <img src={`${basePath}/icons/efficiency.png`} alt='icon' width={25} height={25} />
+                                    <img src={`${basePath}/icons/Efficiency.png`} alt='icon' width={25} height={25} />
                                 </div>
                                 <h3 className="font-bold text-paynesGray whitespace-pre-wrap">
                                     Boost Energy Efficiecny

@@ -1,7 +1,5 @@
 // components/StepProcess.tsx
 
-import Image from 'next/image';
-
 // Define the type for each step
 type Step = {
   title: string;
