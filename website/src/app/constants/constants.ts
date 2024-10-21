@@ -59,3 +59,27 @@ export const SOCIAL_PROFILES = [
 export const CONTACT_EMAIL = 'info@phoenixenergy.tech';
 export const PHONE_NUMBER = '+123 456 7890';
 export const ADDRESS = '123 Street, Johannesburg, South Africa';
+
+//Carbon Credits Process
+export const CarbonCreditsProcess = [
+    {
+      title: "Financial Incentives and Cost Savings",
+      description: "Sell the carbon credits you earn to other businesses looking to offset their emissions.",
+      icon: "/icons/benefits.png"
+    },
+    {
+      title: "Regulatory Compliance and Market Access",
+      description: "Ensure compliance with carbon regulations while opening new markets for your business.",
+      icon: "/icons/compliance.png"
+    },
+    {
+      title: "Next Step",
+      description: "Ensure compliance with carbon regulations while opening new markets for your business.",
+      icon: "/icons/compliance.png"
+    },
+    {
+      title: "Strengthen Brand Reputation and Competitiveness",
+      description: "Enhance your brand by showcasing your commitment to sustainability.",
+      icon: "/icons/brand-rep.png"
+    }
+  ];

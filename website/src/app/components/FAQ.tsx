@@ -15,13 +15,13 @@ const FAQItem: React.FC<FAQItemProps> = ({ question, answer }) => {
   };
 
   return (
-    <div className="border-b-2 border-gray-200 p-2 w-full">
+    <div className="border-b-2 border-gray-200 w-full">
       <button
         onClick={toggleOpen}
         className="w-full flex justify-between items-center py-4 font-semibold text-gray-800 hover:text-gray-600 focus:outline-none"
       >
         <span className="text-start">{question}</span>
-        <span className="text-gray-500">
+        <span className="text-gray-500 px-2">
           {isOpen ? <FaMinus /> : <FaPlus />}
         </span>
       </button>
