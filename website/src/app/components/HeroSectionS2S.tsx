@@ -20,7 +20,7 @@ const HeroSectionS2S: React.FC<HeroSectionProps> = ({title, subtitle,imagePath,a
       <div className="flex flex-col md:flex-row w-full justify-center items-center gap-8">
         
         {/* Text Content */}
-        <div className="w-full lg:w-3/5 text-center md:text-left space-y-6">
+        <div className="w-full lg:w-1/2 text-center md:text-left space-y-6">
           <h1 className="text-charcoal">{title}</h1>
           {subtitle && (
             <p className="mt-4 text-lg md:text-xl text-paynesGray">{subtitle}</p>
@@ -32,7 +32,7 @@ const HeroSectionS2S: React.FC<HeroSectionProps> = ({title, subtitle,imagePath,a
         </div>
 
         {/* Image Content */}
-        <div className="w-full lg:w-2/5 flex justify-center">
+        <div className="w-full lg:w-1/2 flex justify-center">
           <Image src={imagePath} alt={altText} width={width} height={height} className="rounded-lg object-cover" />
         </div>
       </div>
