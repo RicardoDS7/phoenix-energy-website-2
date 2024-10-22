@@ -46,7 +46,7 @@ h3 {
 
 h4 {
   @apply font-inter;
-  @apply text-xl md:text-2xl lg:text-3xl;
+  @apply text-xl md:text-2xl lg:text-2xl;
   @apply font-bold;
 }
 

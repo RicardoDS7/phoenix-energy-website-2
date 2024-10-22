@@ -14,7 +14,7 @@ type StepProcessProps = {
 
 const StepProcess: React.FC<StepProcessProps> = ({ steps }) => {
   return (
-    <div className="mt-12">
+    <div className="mt-10">
         <ol className="relative ml-6">
             {steps.map((step, index) => (
             <li
@@ -25,9 +25,9 @@ const StepProcess: React.FC<StepProcessProps> = ({ steps }) => {
                 <span className="absolute -left-[13px] top-0 bg-powderBlue rounded-full w-6 h-6"></span>
 
                 {/* Text and Description */}
-                <div className="ml-6 transform -translate-y-3">
-                <h4 className="text-start font-semibold">{step.title}</h4>
-                <p className="text-sm text-start text-gray-600">{step.description}</p>
+                <div className='ml-6 transform -translate-y-1.5 flex flex-col justify-start items-start gap-2'>
+                    <h4 className="text-start">{step.title}</h4>
+                    <p className="text-start text-gray-600">{step.description}</p>
                 </div>
             </li>
             ))}

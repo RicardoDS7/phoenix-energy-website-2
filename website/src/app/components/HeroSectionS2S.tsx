@@ -21,7 +21,7 @@ const HeroSectionS2S: React.FC<HeroSectionProps> = ({title, subtitle,imagePath,a
         
         {/* Text Content */}
         <div className="w-full lg:w-3/5 text-center md:text-left space-y-6">
-          <h1 className="text-charcoal text-3xl md:text-7xl font-bold">{title}</h1>
+          <h1 className="text-charcoal">{title}</h1>
           {subtitle && (
             <p className="mt-4 text-lg md:text-xl text-paynesGray">{subtitle}</p>
           )}

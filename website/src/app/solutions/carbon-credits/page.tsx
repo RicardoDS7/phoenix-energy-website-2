@@ -166,13 +166,13 @@ const CarbonCredits = () => {
                         <h2 className="text-charcoal">Why it matters for your business</h2>
                     
                         <div className='py-10'>
-                            <ul className='space-y-10'>
+                            <ul className='space-y-6'>
                                 <li className='flex flex-col md:flex-row align-middle items-start md:items-center gap-6'>
                                     <div className="rounded-full bg-powderBlue p-4 justify-end items-end flex-shrink-0">
                                             <img src={`${basePath}/icons/benefits.png`} alt='icon' width={25} height={25} />
                                     </div>
                                     <div className='flex flex-col justify-start items-start gap-2'>
-                                        <p className='text-2xl font-bold'>Financial Incentives and Cost Savings</p>
+                                        <h4 >Financial Incentives and Cost Savings</h4>
                                         <p className='text-xl'>Sell the carbon credits you earn to other businesses looking to offset their emissions.</p>
                                     </div>
                                 </li>
@@ -183,7 +183,7 @@ const CarbonCredits = () => {
                                             <img src={`${basePath}/icons/compliance.png`} alt='icon' width={25} height={25} />
                                     </div>
                                     <div className='flex flex-col justify-start items-start gap-2'>
-                                        <p className='text-2xl font-bold'>Regulatory Compliance and Market Access</p>
+                                        <h4 >Regulatory Compliance and Market Access</h4>
                                         <p className='text-xl'>Sell the carbon credits you earn to other businesses looking to offset their emissions.</p>
                                     </div>
                                 </li>
@@ -195,7 +195,7 @@ const CarbonCredits = () => {
                                             <img src={`${basePath}/icons/brand-rep.png`} alt='icon' width={25} height={25} />
                                     </div>
                                     <div className='flex flex-col justify-start items-start gap-2'>
-                                        <p className='text-2xl font-bold'>Strengthen Brand Reputation and Competitiveness</p>
+                                        <h4 >Strengthen Brand Reputation and Competitiveness</h4>
                                         <p className='text-xl'>Sell the carbon credits you earn to other businesses looking to offset their emissions.</p>
                                     </div>
                                 </li>
@@ -219,7 +219,7 @@ const CarbonCredits = () => {
                 <section id='how-it-works-carbon-credits' className="relative w-full flex p-6 items-center justify-center">
 
                     <div className="relative text-center">
-                        <h2 className="text-charcoal">Register your project</h2>
+                        <h2 className="text-charcoal">How it works</h2>
 
                         < StepProcess 
                         steps={CarbonCreditsProcess}/>
