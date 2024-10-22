@@ -7,6 +7,7 @@ import FAQ from '@/app/components/FAQ';
 import HeroSectionS2S from '@/app/components/HeroSectionS2S';
 import StepProcess from '@/app/components/OurProcess';
 import { CarbonCreditsProcess } from '@/app/constants/constants';
+import { CarbonCreditsFAQs } from '@/app/constants/constants';
 
 const CarbonCredits = () => {
 
@@ -23,7 +24,7 @@ const CarbonCredits = () => {
                     height={2048}
                 />
                 {/* What Are carbon Credits? */}
-                <section className="relative w-full flex flex-col gap-8 py-10 items-center justify-center px-6 lg:px-12 xl:px-48">
+                <section className="relative w-full flex flex-col gap-8 py-14 items-center justify-center px-6 lg:px-12 xl:px-48">
 
                         {/* Companies buying Carbon Credits */}    
                     <h3 className="text-paynesGray font-medium text-center">Leading companies are investing in carbon credits</h3>
@@ -60,11 +61,12 @@ const CarbonCredits = () => {
                     </div>
                 </section>
 
-                {/* Who is Elibible for Carbon Credits? */}
+                {/* Earn Carbon Credits For Your Business */}
                 <section id='carbon-credits-eligibility' className="relative 
                                                                 bg-paynesGray 
                                                                 w-full
-                                                                p-6 xl:px-48 
+                                                                py-14
+                                                                px-6 xl:px-48 
                                                                 flex 
                                                                 items-center 
                                                                 justify-center 
@@ -76,7 +78,7 @@ const CarbonCredits = () => {
                         <div className='mt-8 flex flex-col w-full lg:flex-row gap-8'>
                             
                             {/*Implement Renewable Energy */}
-                            <div className="bg-antiflashWhite p-4 rounded-3xl shadow-md w-full lg:w-1/3 flex-grow flex flex-col items-start justify-start text-start space-y-4">
+                            <div className="bg-antiflashWhite p-6 rounded-3xl shadow-md w-full lg:w-1/3 flex-grow flex flex-col items-start justify-start text-start space-y-4">
                                 <div className="rounded-full bg-powderBlue p-4 justify-end items-end">
                                     <img src={`${basePath}/icons/Green-Electric.svg`} alt='icon' width={25} height={25} />
                                 </div>
@@ -84,24 +86,14 @@ const CarbonCredits = () => {
                                     Implement Renewable Energy
                                 </h3>
                                 <div className="font-inter text-lg text-charcoal">
-                                    <ul className='list-disc px-5'>
-                                        <li className='mb-2'>
-                                            Install embedded solar systems to reduce grid dependence and improve energy security.
-                                        </li>
-
-                                        <li className='mb-2'>
-                                            Integrate hydrogen fuel cells for backup or primary power in critical operations.
-                                        </li>
-
-                                        <li className='mb-2'>
-                                            Explore wheeled power solutions for areas with limited infrastructure
-                                        </li>
-                                    </ul>
+                                    <p>
+                                    Earn carbon credits by integrating renewable energy sources like solar and wheeling into your business operations. For example, installing solar panels on your premises reduces reliance on fossil fuels, lowers carbon emissions, and generates valuable carbon credits for every ton of CO2 saved.
+                                    </p>
                                 </div>
                             </div>
 
                             {/*Implement Renewable Energy */}
-                            <div className="bg-antiflashWhite p-4 rounded-3xl shadow-md w-full lg:w-1/3 flex flex-grow flex-col items-start justify-start text-start space-y-4">
+                            <div className="bg-antiflashWhite p-6 rounded-3xl shadow-md w-full lg:w-1/3 flex flex-grow flex-col items-start justify-start text-start space-y-4">
                                 <div className="rounded-full bg-powderBlue p-4 justify-end items-end">
                                     <img src={`${basePath}/icons/Efficiency.png`} alt='icon' width={25} height={25} />
                                 </div>
@@ -109,24 +101,14 @@ const CarbonCredits = () => {
                                     Boost Energy Efficiecny
                                 </h3>
                                 <div className="font-inter text-lg text-charcoal">
-                                    <ul className='list-disc px-5'>
-                                        <li className='mb-2'>
-                                            Install embedded solar systems to reduce grid dependence and improve energy security.
-                                        </li>
-
-                                        <li className='mb-2'>
-                                            Integrate hydrogen fuel cells for backup or primary power in critical operations.
-                                        </li>
-
-                                        <li className='mb-2'>
-                                            Explore wheeled power solutions for areas with limited infrastructure
-                                        </li>
-                                    </ul>
+                                    <p>
+                                    Improve your energy efficiency and earn carbon credits by upgrading lighting systems, optimizing HVAC, or adopting energy-efficient equipment. By cutting energy use, your business reduces its carbon footprint, with each kilowatt-hour saved resulting in significant emissions reductions and valuable carbon credits.
+                                    </p>
                                 </div>
                             </div>
 
                             {/*Implement Renewable Energy */}
-                            <div className="bg-antiflashWhite p-4 rounded-3xl shadow-md w-full lg:w-1/3 flex flex-grow flex-col items-start justify-start text-start space-y-4">
+                            <div className="bg-antiflashWhite p-6 rounded-3xl shadow-md w-full lg:w-1/3 flex flex-grow flex-col items-start justify-start text-start space-y-4">
                                 <div className="rounded-full bg-powderBlue p-4 justify-end items-end">
                                     <img src={`${basePath}/icons/sustainable.png`} alt='icon' width={25} height={25} />
                                 </div>
@@ -134,19 +116,9 @@ const CarbonCredits = () => {
                                     Support Sustainable Projects
                                 </h3>
                                 <div className="font-inter text-lg text-charcoal">
-                                    <ul className='list-disc px-5'>
-                                        <li className='mb-2'>
-                                            Install embedded solar systems to reduce grid dependence and improve energy security.
-                                        </li>
-
-                                        <li className='mb-2'>
-                                            Integrate hydrogen fuel cells for backup or primary power in critical operations.
-                                        </li>
-
-                                        <li className='mb-2'>
-                                            Explore wheeled power solutions for areas with limited infrastructure
-                                        </li>
-                                    </ul>
+                                    <p>
+                                    Support certified sustainability projects like carbon sequestration, reforestation, or sustainable agriculture to earn carbon credits. These initiatives capture carbon, reduce emissions, and offset your business's footprint while promoting environmental protection and benefiting global communities.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -160,7 +132,7 @@ const CarbonCredits = () => {
 
 
                 {/*Why is matters for your business? */}
-                <section id='carbon-credits-eco-system' className="flex flex-col lg:flex-row items-center justify-center px-6 gap-16 py-10 xl:px-48">
+                <section id='carbon-credits-eco-system' className="flex flex-col lg:flex-row items-center justify-center px-6 gap-16 py-14 xl:px-48">
 
                     <div className="relative text-start">
                         <h2 className="text-charcoal">Why it matters for your business</h2>
@@ -173,7 +145,7 @@ const CarbonCredits = () => {
                                     </div>
                                     <div className='flex flex-col justify-start items-start gap-2'>
                                         <h4 >Financial Incentives and Cost Savings</h4>
-                                        <p className='text-xl'>Sell the carbon credits you earn to other businesses looking to offset their emissions.</p>
+                                        <p className='text-xl'>Businesses can sell carbon credits to offset emissions, generating revenue while reducing operational costs and boosting profits.</p>
                                     </div>
                                 </li>
 
@@ -183,8 +155,8 @@ const CarbonCredits = () => {
                                             <img src={`${basePath}/icons/compliance.png`} alt='icon' width={25} height={25} />
                                     </div>
                                     <div className='flex flex-col justify-start items-start gap-2'>
-                                        <h4 >Regulatory Compliance and Market Access</h4>
-                                        <p className='text-xl'>Sell the carbon credits you earn to other businesses looking to offset their emissions.</p>
+                                        <h4 >Regulatory Compliance</h4>
+                                        <p className='text-xl'>Carbon credits offset the Carbon Tax under the South African Carbon Tax Act of 2019, which is set to rise to R462 per ton of CO₂ by 2030.</p>
                                     </div>
                                 </li>
 
@@ -196,7 +168,7 @@ const CarbonCredits = () => {
                                     </div>
                                     <div className='flex flex-col justify-start items-start gap-2'>
                                         <h4 >Strengthen Brand Reputation and Competitiveness</h4>
-                                        <p className='text-xl'>Sell the carbon credits you earn to other businesses looking to offset their emissions.</p>
+                                        <p className='text-xl'>Earning carbon credits strengthens your brand's sustainability reputation, attracting eco-conscious investors and giving you a competitive edge.</p>
                                     </div>
                                 </li>
 
@@ -214,9 +186,39 @@ const CarbonCredits = () => {
 
                 </section>
 
+                {/* Credible Credits & Partners */}
+                <section id='carbon-credits-eligibility' className="relative 
+                                                                bg-paynesGray 
+                                                                w-full
+                                                                py-14
+                                                                px-6 xl:px-48 
+                                                                flex 
+                                                                items-center 
+                                                                justify-center 
+                                                                overflow-hidden">
+
+                    <div className="text-center">
+                        
+                        <div className='mt-8 flex flex-col w-full lg:flex-row gap-8'>
+                            <div className='text-start w-1/2'>
+                                <h2 className="text-antiflashWhite">Achieve Global Recognition with Verra-Verified Carbon Credits</h2>
+                                <p className='text-antiflashWhite py-6'>
+                                We register your carbon credits under Verra, the world’s top certification standard, with third-party validation from a Verra-accredited auditor to ensure unmatched credibility.
+                                </p>
+                            </div>
+                            
+                        </div>
+                    
+                        <div className='mt-6 flex align-middle items-start justify-start'>
+                            <AltGetInTouchButton />
+                        </div>
+
+                    </div>
+                </ section>
+
 
                 {/* Our Process */}
-                <section id='how-it-works-carbon-credits' className="relative w-full flex p-6 items-center justify-center">
+                <section id='how-it-works-carbon-credits' className="relative w-full flex px-6 py-14 items-center justify-center">
 
                     <div className="relative text-center">
                         <h2 className="text-charcoal">How it works</h2>
@@ -233,12 +235,13 @@ const CarbonCredits = () => {
                 </section>
 
                 {/* FAQ */}
-                <section id='carbon-credits-faq' className="relative w-full p-6 flex items-center justify-center">
+                <section id='carbon-credits-faq' className="relative w-full px-6 py-14 flex items-center justify-center">
 
                     <div className="text-xl relative text-center md:w-[600px] lg:w-[800px]">
                         <h2 className="text-charcoal">Frequently asked questions</h2>
                        
-                        < FAQ />
+                        < FAQ 
+                        faqItems={CarbonCreditsFAQs}/>
 
                     </div>
 

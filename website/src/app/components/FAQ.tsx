@@ -7,6 +7,10 @@ interface FAQItemProps {
   answer: string;
 }
 
+interface FAQProps {
+  faqItems: FAQItemProps[]
+}
+
 const FAQItem: React.FC<FAQItemProps> = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -34,20 +38,8 @@ const FAQItem: React.FC<FAQItemProps> = ({ question, answer }) => {
   );
 };
 
-const FAQ: React.FC = () => {
-  const faqItems = [
-    {
-      question: "What is a carbon credit?",
-      answer:
-        "A carbon credit is a permit that allows the emission of one ton of carbon dioxide or equivalent greenhouse gases.",
-    },
-    {
-      question: "How do carbon credits help with climate change?",
-      answer:
-        "Carbon credits reduce the overall amount of greenhouse gases by funding projects like reforestation and renewable energy.",
-    },
-    // Add more FAQs here
-  ];
+const FAQ: React.FC<FAQProps> = ({ faqItems }) => {
+  
 
   return (
     <div className="flex justify-center items-center">

@@ -4,7 +4,6 @@
 type Step = {
   title: string;
   description: string;
-  icon: string;
 };
 
 // Define the props type for StepProcess

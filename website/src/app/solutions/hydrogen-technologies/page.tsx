@@ -17,7 +17,7 @@ const HydrogenTechnologies = () => {
                 <HeroSectionS2S 
                     title='Maximize Generator & Engine Efficiency With Hydrogen'
                     subtitle='A carbon credit is a certificate representing the reduction of one ton of CO₂ from the atmosphere. Businesses can earn or purchase them by investing in emission-reducing projects like renewable energy or reforestation.'
-                    imagePath={`${basePath}/images/Hydrogen-Hero-Image.png`}
+                    imagePath={`${basePath}/images/Hydrogen-Hero-Image-2.png`}
                     altText='Three Wind Turbines'
                     width={1920}
                     height={1080}
