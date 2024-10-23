@@ -13,7 +13,7 @@ type StepProcessProps = {
 
 const StepProcess: React.FC<StepProcessProps> = ({ steps }) => {
   return (
-    <div className="mt-10">
+    <div className="mt-12">
         <ol className="relative ml-6">
             {steps.map((step, index) => (
             <li
