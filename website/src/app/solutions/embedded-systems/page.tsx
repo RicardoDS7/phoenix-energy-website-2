@@ -8,6 +8,7 @@ import HeroSectionS2S from '@/app/components/HeroSectionS2S';
 import StepProcess from '@/app/components/OurProcess';
 import { CarbonCreditsProcess } from '@/app/constants/constants';
 import { CarbonCreditsFAQs } from '@/app/constants/constants';
+import FinanceOptionsButton from '@/app/components/FinanceOptionsButton';
 
 
 const EmbeddedSystems = () => {
@@ -80,8 +81,11 @@ const EmbeddedSystems = () => {
                                                                 overflow-hidden">
 
                     <div className="max-w-[1400px] mx-auto">
-                        <h2 className="text-antiflashWhite text-center">Earn carbon credits for your business</h2>
+                        <h2 className="text-antiflashWhite text-center">Versatile solar solutions tailored to your needs</h2>
                     
+                        <p className='text-antiflashWhite text-center mt-12'>
+                        Explore our range of solar solutions designed to meet your unique energy needs – whether you're looking for seamless grid integration, reliable battery storage, or backup power with generator integration, we've got you covered.
+                        </p>
                         <div className='mt-12 flex flex-col w-full lg:flex-row gap-8'>
                             
                             {/*Implement Renewable Energy */}
@@ -90,7 +94,7 @@ const EmbeddedSystems = () => {
                                     <img src={`${basePath}/icons/Green-Electric.svg`} alt='icon' width={25} height={25} />
                                 </div>
                                 <h3 className="text-paynesGray whitespace-pre-wrap font-bold">
-                                    Implement Renewable Energy
+                                    Grid-Tied Solar
                                 </h3>
                                 <div className="font-inter text-lg text-charcoal">
                                     <p>
@@ -105,7 +109,7 @@ const EmbeddedSystems = () => {
                                     <img src={`${basePath}/icons/Efficiency.png`} alt='icon' width={25} height={25} />
                                 </div>
                                 <h3 className="font-bold text-paynesGray whitespace-pre-wrap">
-                                    Boost Energy Efficiecny
+                                    Solar + Battery Storage
                                 </h3>
                                 <div className="font-inter text-lg text-charcoal">
                                     <p>
@@ -120,7 +124,7 @@ const EmbeddedSystems = () => {
                                     <img src={`${basePath}/icons/sustainable.png`} alt='icon' width={25} height={25} />
                                 </div>
                                 <h3 className="font-bold text-paynesGray whitespace-pre-wrap">
-                                    Support Sustainable Projects
+                                    Solar-Generator Integration
                                 </h3>
                                 <div className="font-inter text-lg text-charcoal">
                                     <p>
@@ -132,6 +136,8 @@ const EmbeddedSystems = () => {
                     
                         <div className='mt-6 flex align-middle items-center justify-center'>
                             <AltGetInTouchButton />
+                            <FinanceOptionsButton 
+                            sectionID='solar-finance-options'/>
                         </div>
 
                     </div>
