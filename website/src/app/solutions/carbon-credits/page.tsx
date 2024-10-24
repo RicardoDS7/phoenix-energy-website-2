@@ -68,7 +68,7 @@ const CarbonCredits = () => {
                 </section>
 
                 {/* Earn Carbon Credits For Your Business */}
-                <section id='carbon-credits-eligibility' className="relative 
+                <section id='earn-carbon-credits' className="relative 
                                                                 bg-paynesGray 
                                                                 w-full
                                                                 py-14
@@ -138,7 +138,7 @@ const CarbonCredits = () => {
 
 
                 {/*Why is matters for your business? */}
-                <section id='carbon-credits-eco-system' className="py-14 px-4">
+                <section id='why-carbon-credits-matters' className="py-14 px-4">
 
                     <div className="max-w-[1400px] mx-auto flex flex-col lg:flex-row lg:gap-12 space-y-12">
                         <div className="relative text-start lg:w-2/3">
@@ -194,7 +194,7 @@ const CarbonCredits = () => {
                 </section>
 
                 {/* Credible Credits & Partners */}
-                <section id='carbon-credits-eligibility' className="relative 
+                <section id='carbon-credits-verra' className="relative 
                                                                 bg-paynesGray 
                                                                 w-full
                                                                 py-14

@@ -141,7 +141,7 @@ link-small {
   font-weight: 600;               /* Semi-bold font weight */
   padding: 10px 20px;             /* Add padding to make the button larger and more clickable */
   border-radius: 'full';             /* Rounded corners */
-  background-color: #769ab0ff;    /* Background color for airSuperiorityBlue */
+  @apply bg-paynesGray;
   color: #f2f6f8ff;               /* Text color (antiflashWhite) */
   @apply border-paynesGray;                   /* Remove border */
   cursor: pointer;                /* Show pointer cursor */
@@ -150,7 +150,7 @@ link-small {
 }
 
 .get-in-touch-button:hover {
-  background-color: #4c7380ff;    /* Darker shade for hover (paynesGray) */
+ @apply bg-paynesGrayHighlight;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Increase shadow on hover */
 }
 

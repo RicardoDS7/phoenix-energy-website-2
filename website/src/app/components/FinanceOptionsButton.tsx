@@ -27,7 +27,7 @@ const FinanceOptionsButton: React.FC<ButtonProps> = ({sectionID}) => {
       <button 
         type="button" 
         onClick={scrollToSection}
-        className="how-it-works-button px-4 py-2 rounded-full hidden lg:block"
+        className="get-in-touch-button-alt px-4 py-2 rounded-full hidden lg:block"
       >
         See Finance Options
       </button>

@@ -14,6 +14,7 @@ const config: Config = {
       colors: {
         charcoal: '#2b4147ff',
         paynesGray: '#4c7380ff',
+        paynesGrayHighlight: '#557F8D',
         airSuperiorityBlue: '#769ab0ff',
         powderBlue: '#97b3c4ff',
         antiflashWhite: 'rgba(245, 245, 245, 1)',
