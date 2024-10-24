@@ -34,35 +34,63 @@ const EmbeddedSystems = () => {
                 <section className="relative flex flex-col gap-8 px-4 py-14 items-center justify-center">
                     <div className="max-w-[1400px] mx-auto">
                           
-                        <h3 className="text-paynesGray font-medium text-center">Leading companies are investing in carbon credits</h3>
+                        <h3 className="text-paynesGray font-medium text-center">Partnering with industry leaders for quality solutions backed by experience</h3>
                         <div className="flex-col lg:flex-row mt-12">
                             <ul className="flex justify-evenly flex-wrap gap-x-4 gap-y-4">
                                 <li>
-                                    <BrandsCard
-                                    logoPath = "/images/brands/nedbank-logo.png"
-                                    altText = "nedbank-logo"   // Alt text for the logo
-                                    />
+                                    <div className="flex items-center justify-center bg-white shadow-none rounded-full h-[150px] w-[150px] p-4">
+                                        <Image
+                                        src = {"/images/brands/solar-supply-logo.png"}
+                                        alt= {"nedbank-logo"}   // Alt text for the logo
+                                        width={150}
+                                        height={150}
+                                        />
+                                    </div>
                                 </li>
 
                                 <li>
-                                    <BrandsCard
-                                    logoPath = "/images/brands/sasol-logo.png"
-                                    altText = "sasol-logo"   // Alt text for the logo
-                                    />
+                                    <div className="flex items-center justify-center bg-white shadow-none rounded-full h-[150px] w-[150px] p-4">
+                                        <Image
+                                        src = {"/images/brands/daisy-logo.png"}
+                                        alt= {"nedbank-logo"}   // Alt text for the logo
+                                        width={150}
+                                        height={150}
+                                        />
+                                    </div>
                                 </li>
 
                                 <li>
-                                    <BrandsCard
-                                    logoPath = "/images/brands/vw-logo.png"
-                                    altText = "volkswagen-logo"   // Alt text for the logo
-                                    />
+                                    <div className="flex items-center justify-center bg-white shadow-none rounded-full h-[150px] w-[150px] p-4">
+                                        <Image
+                                        src = {"/images/brands/edf-logo.png"}
+                                        alt= {"nedbank-logo"}   // Alt text for the logo
+                                        width={150}
+                                        height={150}
+                                        />
+                                    </div>
+                                </li>
+
+
+                                <li>
+                                    <div className="flex items-center justify-center bg-white shadow-none rounded-full h-[150px] w-[150px] p-4">
+                                        <Image
+                                        src = {"/images/brands/standard-bank-logo.png"}
+                                        alt= {"standard bank logo"}   // Alt text for the logo
+                                        width={150}
+                                        height={150}
+                                        />
+                                    </div>
                                 </li>
 
                                 <li>
-                                    <BrandsCard
-                                    logoPath = "/images/brands/anglo-american-logo.png"
-                                    altText = "anglo-american-logo"   // Alt text for the logo
-                                    />
+                                    <div className="flex items-center justify-center bg-white shadow-none rounded-full h-[150px] w-[150px] p-4">
+                                        <Image
+                                        src = {"/images/brands/captive-power-logo.png"}
+                                        alt= {"captive power logo"}   // Alt text for the logo
+                                        width={150}
+                                        height={150}
+                                        />
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -73,7 +101,7 @@ const EmbeddedSystems = () => {
                 <section id="carbon-credits-eligibility" className="relative 
                                                                 bg-antiflashWhite 
                                                                 w-full
-                                                                py-14
+                                                                pb-14
                                                                 px-4
                                                                 flex 
                                                                 items-center 
