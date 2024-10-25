@@ -1,7 +1,6 @@
 "use client";
 import  GetInTouchButton from "../../components/GetInTouchButton";
 import AltGetInTouchButton from "../../components/AltGetInTouchButton";
-import BrandsCard from "@/app/components/BrandsCard";
 import Image from "next/image";
 import FAQ from "@/app/components/FAQ";
 import HeroSectionS2S from "@/app/components/HeroSectionS2S";
@@ -9,6 +8,8 @@ import StepProcess from "@/app/components/OurProcess";
 import { CarbonCreditsProcess } from "@/app/constants/constants";
 import { CarbonCreditsFAQs } from "@/app/constants/constants";
 import FinanceOptionsButton from "@/app/components/FinanceOptionsButton";
+import Carousel from "@/app/components/SuccessStoriesCarousel";
+import { projectDetails } from "@/app/projects/projectConstants";
 
 
 const EmbeddedSystems = () => {
@@ -38,7 +39,7 @@ const EmbeddedSystems = () => {
                         <div className="flex-col lg:flex-row mt-12">
                             <ul className="flex justify-evenly flex-wrap gap-x-4 gap-y-4">
                                 <li>
-                                    <div className="flex items-center justify-center bg-white shadow-none rounded-full h-[150px] w-[150px] p-4">
+                                    <div className="flex items-center justify-center bg-white shadow rounded-3xl h-[150px] p-4">
                                         <Image
                                         src = {"/images/brands/solar-supply-logo.png"}
                                         alt= {"nedbank-logo"}   // Alt text for the logo
@@ -49,7 +50,7 @@ const EmbeddedSystems = () => {
                                 </li>
 
                                 <li>
-                                    <div className="flex items-center justify-center bg-white shadow-none rounded-full h-[150px] w-[150px] p-4">
+                                    <div className="flex items-center justify-center bg-white shadow rounded-3xl h-[150px] p-4">
                                         <Image
                                         src = {"/images/brands/daisy-logo.png"}
                                         alt= {"nedbank-logo"}   // Alt text for the logo
@@ -60,7 +61,7 @@ const EmbeddedSystems = () => {
                                 </li>
 
                                 <li>
-                                    <div className="flex items-center justify-center bg-white shadow-none rounded-full h-[150px] w-[150px] p-4">
+                                    <div className="flex items-center justify-center bg-white shadow rounded-3xl h-[150px] p-4">
                                         <Image
                                         src = {"/images/brands/edf-logo.png"}
                                         alt= {"nedbank-logo"}   // Alt text for the logo
@@ -72,7 +73,7 @@ const EmbeddedSystems = () => {
 
 
                                 <li>
-                                    <div className="flex items-center justify-center bg-white shadow-none rounded-full h-[150px] w-[150px] p-4">
+                                    <div className="flex items-center justify-center bg-white shadow rounded-3xl h-[150px] p-4">
                                         <Image
                                         src = {"/images/brands/standard-bank-logo.png"}
                                         alt= {"standard bank logo"}   // Alt text for the logo
@@ -83,7 +84,7 @@ const EmbeddedSystems = () => {
                                 </li>
 
                                 <li>
-                                    <div className="flex items-center justify-center bg-white shadow-none rounded-full h-[150px] w-[150px] p-4">
+                                    <div className="flex items-center justify-center bg-white shadow rounded-3xl h-[150px] p-4">
                                         <Image
                                         src = {"/images/brands/captive-power-logo.png"}
                                         alt= {"captive power logo"}   // Alt text for the logo
@@ -163,7 +164,6 @@ const EmbeddedSystems = () => {
                                 <div className="flex flex-col md:flex-row mt-6 align-middle justify-start items-start md:items-center md:justify-center gap-4">
                                     <FinanceOptionsButton 
                                     sectionID="solar-finance-options"/>
-                                    <AltGetInTouchButton />
                                 </div>
 
                             </div>
@@ -222,7 +222,6 @@ const EmbeddedSystems = () => {
                                 <div className="flex flex-col md:flex-row mt-6 align-middle justify-start items-start md:items-center md:justify-center gap-4">
                                     <FinanceOptionsButton 
                                     sectionID="solar-finance-options"/>
-                                    <AltGetInTouchButton />
                                 </div>
 
                             </div>
@@ -280,7 +279,6 @@ const EmbeddedSystems = () => {
                                 <div className="flex flex-col md:flex-row mt-6 align-middle justify-start items-start md:items-center md:justify-center gap-4">
                                     <FinanceOptionsButton 
                                     sectionID="solar-finance-options"/>
-                                    <AltGetInTouchButton />
                                 </div>
 
                             </div>
@@ -296,59 +294,16 @@ const EmbeddedSystems = () => {
 
 
                 {/*Why is matters for your business? */}
-                <section id="carbon-credits-eco-system" className="py-14 px-4">
-
-                    <div className="max-w-[1400px] mx-auto flex flex-col lg:flex-row lg:gap-12 space-y-12">
-                        <div className="relative text-start lg:w-2/3">
-                            <h2 className="text-charcoal">Why it matters for your business</h2>
-                        
-                            <div className="py-10">
-                                <ul className="space-y-6">
-                                    <li className="flex flex-col md:flex-row align-middle items-start md:items-center gap-6">
-                                        <div className="rounded-full bg-powderBlue p-4 justify-end items-end flex-shrink-0">
-                                                <img src={`${basePath}/icons/benefits.png`} alt="icon" width={25} height={25} />
-                                        </div>
-                                        <div className="flex flex-col justify-start items-start gap-2">
-                                            <h4 >Financial Incentives and Cost Savings</h4>
-                                            <p className="text-xl">Businesses can sell carbon credits to offset emissions, generating revenue while reducing operational costs and boosting profits.</p>
-                                        </div>
-                                    </li>
-
-                                    <hr />
-                                    <li className="flex flex-col md:flex-row align-middle items-start md:items-center gap-6">
-                                        <div className="rounded-full bg-powderBlue p-4 justify-end items-end flex-shrink-0" >
-                                                <img src={`${basePath}/icons/compliance.png`} alt="icon" width={25} height={25} />
-                                        </div>
-                                        <div className="flex flex-col justify-start items-start gap-2">
-                                            <h4 >Regulatory Compliance</h4>
-                                            <p className="text-xl">Carbon credits offset the Carbon Tax under the South African Carbon Tax Act of 2019, which is set to rise to R462 per ton of CO₂ by 2030.</p>
-                                        </div>
-                                    </li>
-
-                                    <hr />
-
-                                    <li className="flex flex-col md:flex-row align-middle items-start md:items-center gap-6">
-                                        <div className="rounded-full bg-powderBlue p-4 justify-end items-end flex-shrink-0">
-                                                <img src={`${basePath}/icons/brand-rep.png`} alt="icon" width={25} height={25} />
-                                        </div>
-                                        <div className="flex flex-col justify-start items-start gap-2">
-                                            <h4 >Strengthen Brand Reputation and Competitiveness</h4>
-                                            <p className="text-xl">Earning carbon credits strengthens your brand&apos;s sustainability reputation, attracting eco-conscious investors and giving you a competitive edge.</p>
-                                        </div>
-                                    </li>
-
-                                </ul>
-                            </div>
-                            <div className="mt-6 flex align-middle items-center justify-center lg:items-start lg:justify-start">
-                                <GetInTouchButton />
-                            </div>
-
+                <section id="solar-success-stories" className="py-14 px-4">
+                    <div className="block overflow-hidden">
+                    
+                        <Carousel 
+                        testimonials={projectDetails}/>
+                        <div className="mt-6 flex align-middle items-center justify-center lg:items-start lg:justify-start max-w-[1400px] mx-auto">
+                            <GetInTouchButton />
                         </div>
 
-                        <div className="flex rounded-3xl h-[560px] lg:w-1/3">
-                            <Image className="rounded-3xl object-cover h-full w-full transform -scale-x-100" src={`${basePath}/images/home_page_banner.png`} alt="why carbon credits matter" width={360} height={640} />
-                        </div>
-                    </div>
+                    </div>                        
                 </section>
 
                 {/* Earn Carbon Credits For Your Business */}
