@@ -55,14 +55,6 @@ p {
   @apply text-xl;
 }
 
-body {
-  font-weight: 400;               /* Regular */
-  font-size: 15px;                /* Font size 18px for small screens */
-  line-height: 24px;              /* Line height 26px for small screens */
-  letter-spacing: -0.005em;       /* Letter spacing -0.5% */
-  margin-bottom: 16px;            /* Paragraph spacing 16px */
-}
-
 @media (min-width: 768px) {
   body {
     font-size: 15px;              /* Font size 20px for larger screens */

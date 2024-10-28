@@ -114,13 +114,13 @@ export default function Carousel({testimonials}: CarouselProps) {
             {testimonials.map((testimonial) => (
                 <div
                 key={testimonial.id}
-                className="relative flex flex-col w-[85%] md:w-1/3 flex-shrink-0 bg-powderBlue pb-6 rounded-3xl"
+                className="relative flex flex-col w-[85%] md:w-1/3 flex-shrink-0 shadow bg-colombiaBlue pb-6 rounded-3xl"
                 >
                     <Image className={'rounded-3xl w-full h-[300px]'} src={testimonial.featured_image} alt={`${testimonial.name} case study`} width={300} height={300} />
                     <div className='relative text-center p-6 space-y-2 justify-center items-center'>
-                        <p className="text-xl text-charcoal font-semibold mb-4">&quot;{testimonial.text}&quot;</p>
+                        <p className="text-xl text-charcoal italic font-semibold mb-4">&quot;{testimonial.text}&quot;</p>
                         <p className="text-xl font-black text-charcoal">{testimonial.name}</p>
-                        <p className="text-lg text-antiflashWhite font-medium">{testimonial.solutions}</p>
+                        <p className="text-lg text-paynesGray font-semibold">{testimonial.solutions}</p>
                         
                     </div>
 
