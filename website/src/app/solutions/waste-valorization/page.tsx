@@ -1,7 +1,6 @@
 'use client';
 
 import HeroSectionS2S from '@/app/components/HeroSectionS2S';
-import FinanceOptionsButton from '@/app/components/FinanceOptionsButton';
 import Image from 'next/image';
 import AltGetInTouchButton from '@/app/components/AltGetInTouchButton';
 import GetInTouchButton from '@/app/components/GetInTouchButton';
@@ -64,7 +63,7 @@ const WasteValorization = () => {
                         
                             <div className="bg-paynesGray p-6 rounded-3xl shadow-md w-full lg:w-2/3 flex flex-grow flex-col items-start justify-start text-start space-y-8">
                                 <div className="rounded-full bg-antiflashWhite p-4 justify-end items-end">
-                                    <img src={`${basePath}/icons/flame.png`} alt="icon" width={25} height={25} />
+                                    <Image src={`${basePath}/icons/flame.png`} alt="icon" width={25} height={25} />
                                 </div>
                                 <h2 className="font-bold text-antiflashWhite whitespace-pre-wrap">
                                     Pyrolysis
@@ -80,7 +79,7 @@ const WasteValorization = () => {
                                             
                                             <li className="gap-4 w-full">
                                                 <div className="flex flex-row gap-4">
-                                                    <img className="object-scale-down object-top" src={`${basePath}/icons/waste.png`} alt="icon" width={25} height={25} />
+                                                    <Image className="object-scale-down object-top" src={`${basePath}/icons/waste.png`} alt="icon" width={25} height={25} />
                                                     <div className="flex flex-col space-y-0">
                                                         <p className="font-bold">Plastic Waste</p>
                                                         <p className="">Low-grade plastics that are difficult to recycle.</p>
@@ -90,7 +89,7 @@ const WasteValorization = () => {
 
                                             <li className="gap-4 w-full">
                                                 <div className="flex flex-row gap-4">
-                                                    <img className="object-scale-down object-top" src={`${basePath}/icons/waste.png`} alt="icon" width={25} height={25} />
+                                                    <Image className="object-scale-down object-top" src={`${basePath}/icons/waste.png`} alt="icon" width={25} height={25} />
                                                     <div className="flex flex-col space-y-0">
                                                         <p className="font-bold">Rubber</p>
                                                         <p className="">Waste rubber, including used tyres.</p>
@@ -100,7 +99,7 @@ const WasteValorization = () => {
 
                                             <li className="gap-4 w-full">
                                                 <div className="flex flex-row gap-4">
-                                                    <img className="object-scale-down object-top" src={`${basePath}/icons/waste.png`} alt="icon" width={25} height={25} />
+                                                    <Image className="object-scale-down object-top" src={`${basePath}/icons/waste.png`} alt="icon" width={25} height={25} />
                                                     <div className="flex flex-col space-y-0">
                                                         <p className="font-bold">Biomass</p>
                                                         <p className="">Low-moisture organic materials such as wood chips and crop residues.</p>
@@ -110,7 +109,7 @@ const WasteValorization = () => {
 
                                             <li className="gap-4 w-full">
                                                 <div className="flex flex-row gap-4">
-                                                    <img className="object-scale-down object-top" src={`${basePath}/icons/waste.png`} alt="icon" width={25} height={25} />
+                                                    <Image className="object-scale-down object-top" src={`${basePath}/icons/waste.png`} alt="icon" width={25} height={25} />
                                                     <div className="flex flex-col space-y-0">
                                                         <p className="font-bold">Organic Industrial Waste</p>
                                                         <p className="">Carbon-based residues from industrial processes.</p>
@@ -129,7 +128,7 @@ const WasteValorization = () => {
                                             
                                             <li className="gap-4 w-full">
                                                 <div className="flex flex-row gap-4">
-                                                    <img className="object-scale-down object-top" src={`${basePath}/icons/product.png`} alt="icon" width={25} height={25} />
+                                                    <Image className="object-scale-down object-top" src={`${basePath}/icons/product.png`} alt="icon" width={25} height={25} />
                                                     <div className="flex flex-col space-y-0">
                                                         <p className="font-bold">Bio-oil</p>
                                                         <p className="">A synthetic oil that can be refined into valuable chemicals and fuels.</p>
@@ -139,7 +138,7 @@ const WasteValorization = () => {
 
                                             <li className="gap-4 w-full">
                                                 <div className="flex flex-row gap-4">
-                                                    <img className="object-scale-down object-top" src={`${basePath}/icons/product.png`} alt="icon" width={25} height={25} />
+                                                    <Image className="object-scale-down object-top" src={`${basePath}/icons/product.png`} alt="icon" width={25} height={25} />
                                                     <div className="flex flex-col space-y-0">
                                                         <p className="font-bold">Biochar</p>
                                                         <p className="">Enhances soil quality and captures carbon for sustainable agriculture.</p>
@@ -149,7 +148,7 @@ const WasteValorization = () => {
 
                                             <li className="gap-4 w-full">
                                                 <div className="flex flex-row gap-4">
-                                                    <img className="object-scale-down object-top" src={`${basePath}/icons/product.png`} alt="icon" width={25} height={25} />
+                                                    <Image className="object-scale-down object-top" src={`${basePath}/icons/product.png`} alt="icon" width={25} height={25} />
                                                     <div className="flex flex-col space-y-0">
                                                         <p className="font-bold">Syngas</p>
                                                         <p className="">A flexible fuel source used in power generation and chemical production.</p>
@@ -159,7 +158,7 @@ const WasteValorization = () => {
 
                                             <li className="gap-4 w-full">
                                                 <div className="flex flex-row gap-4">
-                                                    <img className="object-scale-down object-top" src={`${basePath}/icons/product.png`} alt="icon" width={25} height={25} />
+                                                    <Image className="object-scale-down object-top" src={`${basePath}/icons/product.png`} alt="icon" width={25} height={25} />
                                                     <div className="flex flex-col space-y-0">
                                                         <p className="font-bold">Carbon Black</p>
                                                         <p className="">An valuable industrial material for rubber, inks, and coatings.</p>
@@ -187,7 +186,7 @@ const WasteValorization = () => {
                         
                             <div className="bg-paynesGray p-6 rounded-3xl shadow-md w-full lg:w-2/3 flex flex-grow flex-col items-start justify-start text-start space-y-8">
                                 <div className="rounded-full bg-antiflashWhite p-4 justify-end items-end">
-                                    <img src={`${basePath}/icons/flame.png`} alt="icon" width={25} height={25} />
+                                    <Image src={`${basePath}/icons/flame.png`} alt="icon" width={25} height={25} />
                                 </div>
                                 <h2 className="font-bold text-antiflashWhite whitespace-pre-wrap">
                                     Anaerobic Digestion
@@ -203,7 +202,7 @@ const WasteValorization = () => {
                                             
                                             <li className="gap-4 w-full">
                                                 <div className="flex flex-row gap-4">
-                                                    <img className="object-scale-down object-top" src={`${basePath}/icons/waste.png`} alt="icon" width={25} height={25} />
+                                                    <Image className="object-scale-down object-top" src={`${basePath}/icons/waste.png`} alt="icon" width={25} height={25} />
                                                     <div className="flex flex-col space-y-0">
                                                         <p className="font-bold">Food Waste</p>
                                                         <p className="">Organic food scraps from households, restaurants, and food processing facilities.</p>
@@ -213,7 +212,7 @@ const WasteValorization = () => {
 
                                             <li className="gap-4 w-full">
                                                 <div className="flex flex-row gap-4">
-                                                    <img className="object-scale-down object-top" src={`${basePath}/icons/waste.png`} alt="icon" width={25} height={25} />
+                                                    <Image className="object-scale-down object-top" src={`${basePath}/icons/waste.png`} alt="icon" width={25} height={25} />
                                                     <div className="flex flex-col space-y-0">
                                                         <p className="font-bold">Agricultural Residues</p>
                                                         <p className="">Crop residues, manure, and other organic farm waste.</p>
@@ -223,7 +222,7 @@ const WasteValorization = () => {
 
                                             <li className="gap-4 w-full">
                                                 <div className="flex flex-row gap-4">
-                                                    <img className="object-scale-down object-top" src={`${basePath}/icons/waste.png`} alt="icon" width={25} height={25} />
+                                                    <Image className="object-scale-down object-top" src={`${basePath}/icons/waste.png`} alt="icon" width={25} height={25} />
                                                     <div className="flex flex-col space-y-0">
                                                         <p className="font-bold">Sewage Sludge</p>
                                                         <p className="">Organic material from wastewater treatment plants, ideal for biogas production.</p>
@@ -241,7 +240,7 @@ const WasteValorization = () => {
                                             
                                             <li className="gap-4 w-full">
                                                 <div className="flex flex-row gap-4">
-                                                    <img className="object-scale-down object-top" src={`${basePath}/icons/product.png`} alt="icon" width={25} height={25} />
+                                                    <Image className="object-scale-down object-top" src={`${basePath}/icons/product.png`} alt="icon" width={25} height={25} />
                                                     <div className="flex flex-col space-y-0">
                                                         <p className="font-bold">Biogas</p>
                                                         <p className="">A renewable energy source used for electricity, heating, or as vehicle fuel.</p>
@@ -251,7 +250,7 @@ const WasteValorization = () => {
 
                                             <li className="gap-4 w-full">
                                                 <div className="flex flex-row gap-4">
-                                                    <img className="object-scale-down object-top" src={`${basePath}/icons/product.png`} alt="icon" width={25} height={25} />
+                                                    <Image className="object-scale-down object-top" src={`${basePath}/icons/product.png`} alt="icon" width={25} height={25} />
                                                     <div className="flex flex-col space-y-0">
                                                         <p className="font-bold">Biofertilizer</p>
                                                         <p className="">A nutrient-rich organic fertilizer that enhances soil health and supports sustainable agriculture.</p>
@@ -261,7 +260,7 @@ const WasteValorization = () => {
 
                                             <li className="gap-4 w-full">
                                                 <div className="flex flex-row gap-4">
-                                                    <img className="object-scale-down object-top" src={`${basePath}/icons/product.png`} alt="icon" width={25} height={25} />
+                                                    <Image className="object-scale-down object-top" src={`${basePath}/icons/product.png`} alt="icon" width={25} height={25} />
                                                     <div className="flex flex-col space-y-0">
                                                         <p className="font-bold">Digestate</p>
                                                         <p className="">The solid by-product left after digestion, used in soil conditioning and as a compost additive.</p>

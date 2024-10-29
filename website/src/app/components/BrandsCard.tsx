@@ -1,4 +1,4 @@
-// import Image from 'next/image';
+import Image from 'next/image';
 
 interface BrandsCard {
     logoPath: string;  // Path to the logo image
@@ -15,7 +15,7 @@ const BrandsCard: React.FC<BrandsCard> = ({ logoPath, altText }) => {
         <div className="bg-antiflashWhite rounded-3xl shadow w-[150px] h-[150px] flex items-center justify-center">
             {/* Outer container with rounded corners */}
                 {/* Logo */}
-                <img
+                <Image
                 src={`${basePath}${logoPath}`}
                 alt={altText}
                 className='rounded-3xl'

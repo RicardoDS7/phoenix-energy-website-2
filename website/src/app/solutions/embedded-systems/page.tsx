@@ -121,7 +121,7 @@ const EmbeddedSystems = () => {
                         
                             <div className="bg-paynesGray p-6 rounded-3xl shadow-md w-full lg:w-2/3 flex flex-grow flex-col items-start justify-start text-start space-y-8">
                                 <div className="rounded-full bg-antiflashWhite p-4 justify-end items-end">
-                                    <img src={`${basePath}/icons/Solar.svg`} alt="icon" width={25} height={25} />
+                                    <Image src={`${basePath}/icons/Solar.svg`} alt="icon" width={25} height={25} />
                                 </div>
                                 <h3 className="font-bold text-antiflashWhite whitespace-pre-wrap">
                                     Grid-Tied Solar Systems
@@ -132,7 +132,7 @@ const EmbeddedSystems = () => {
                                         
                                         <li className="gap-4 w-full">
                                             <div className="flex flex-row gap-4">
-                                                <img className="object-scale-down object-top" src={`${basePath}/icons/Check-Alt.png`} alt="icon" width={25} height={25} />
+                                                <Image className="object-scale-down object-top" src={`${basePath}/icons/Check-Alt.png`} alt="icon" width={25} height={25} />
                                                 <div className="flex flex-col space-y-2">
                                                     <p className="font-bold">Cost Savings</p>
                                                     <p className="">Reduces monthly electricity costs by offsetting grid usage.</p>
@@ -142,7 +142,7 @@ const EmbeddedSystems = () => {
 
                                         <li className="gap-4 w-full">
                                             <div className="flex flex-row gap-4">
-                                                <img className="object-scale-down object-top" src={`${basePath}/icons/Check-Alt.png`} alt="icon" width={25} height={25} />
+                                                <Image className="object-scale-down object-top" src={`${basePath}/icons/Check-Alt.png`} alt="icon" width={25} height={25} />
                                                 <div className="flex flex-col space-y-2">
                                                     <p className="font-bold">Grid Backup</p>
                                                     <p className="">Ensures a reliable power supply when solar output is low.</p>
@@ -152,7 +152,7 @@ const EmbeddedSystems = () => {
 
                                         <li className="gap-4 w-full">
                                             <div className="flex flex-row gap-4">
-                                                <img className="object-scale-down object-top" src={`${basePath}/icons/Check-Alt.png`} alt="icon" width={25} height={25} />
+                                                <Image className="object-scale-down object-top" src={`${basePath}/icons/Check-Alt.png`} alt="icon" width={25} height={25} />
                                                 <div className="flex flex-col space-y-2">
                                                     <p className="font-bold">Net Metering</p>
                                                     <p className="">Earn credits for excess energy sent back to the grid, further lowering bills.</p>
@@ -179,7 +179,7 @@ const EmbeddedSystems = () => {
                         
                             <div className="bg-paynesGray p-6 rounded-3xl shadow-md w-full lg:w-2/3 flex flex-grow flex-col items-start justify-start text-start space-y-8">
                                 <div className="rounded-full bg-antiflashWhite p-4 justify-end items-end">
-                                    <img src={`${basePath}/icons/Battery-2.png`} alt="icon" width={25} height={25} />
+                                    <Image src={`${basePath}/icons/Battery-2.png`} alt="icon" width={25} height={25} />
                                 </div>
                                 <h3 className="font-bold text-antiflashWhite whitespace-pre-wrap">
                                     Battery Energy Storage Systems
@@ -190,7 +190,7 @@ const EmbeddedSystems = () => {
                                         
                                         <li className="gap-4 w-full">
                                             <div className="flex flex-row gap-4">
-                                                <img className="object-scale-down object-top" src={`${basePath}/icons/Check-Alt.png`} alt="icon" width={25} height={25} />
+                                                <Image className="object-scale-down object-top" src={`${basePath}/icons/Check-Alt.png`} alt="icon" width={25} height={25} />
                                                 <div className="flex flex-col space-y-2">
                                                     <p className="font-bold">Energy Independence</p>
                                                     <p className="">Reduces reliance on the grid and supports energy needs during outages.</p>
@@ -200,7 +200,7 @@ const EmbeddedSystems = () => {
 
                                         <li className="gap-4 w-full">
                                             <div className="flex flex-row gap-4">
-                                                <img className="object-scale-down object-top" src={`${basePath}/icons/Check-Alt.png`} alt="icon" width={25} height={25} />
+                                                <Image className="object-scale-down object-top" src={`${basePath}/icons/Check-Alt.png`} alt="icon" width={25} height={25} />
                                                 <div className="flex flex-col space-y-2">
                                                     <p className="font-bold">Maximizes Solar Penetration</p>
                                                     <p className=""> Battery storage provides a consistent power supply during grid outages or renewable energy dips, ensuring uninterrupted operations</p>
@@ -210,7 +210,7 @@ const EmbeddedSystems = () => {
 
                                         <li className="gap-4 w-full">
                                             <div className="flex flex-row gap-4">
-                                                <img className="object-scale-down object-top" src={`${basePath}/icons/Check-Alt.png`} alt="icon" width={25} height={25} />
+                                                <Image className="object-scale-down object-top" src={`${basePath}/icons/Check-Alt.png`} alt="icon" width={25} height={25} />
                                                 <div className="flex flex-col space-y-2">
                                                     <p className="font-bold">Peak Demand Savings</p>
                                                     <p className="">Uses stored power during high-rate periods, lowering energy costs.</p>
@@ -237,7 +237,7 @@ const EmbeddedSystems = () => {
                         
                             <div className="bg-paynesGray p-6 rounded-3xl shadow-md w-full lg:w-2/3 flex flex-grow flex-col items-start justify-start text-start space-y-8">
                                 <div className="rounded-full bg-antiflashWhite p-4 justify-end items-end">
-                                    <img src={`${basePath}/icons/Integration.png`} alt="icon" width={25} height={25} />
+                                    <Image src={`${basePath}/icons/Integration.png`} alt="icon" width={25} height={25} />
                                 </div>
                                 <h3 className="font-bold text-antiflashWhite whitespace-pre-wrap">
                                     Solar-Generator Integration
@@ -248,7 +248,7 @@ const EmbeddedSystems = () => {
                                         
                                         <li className="gap-4 w-full">
                                             <div className="flex flex-row gap-4">
-                                                <img className="object-scale-down object-top" src={`${basePath}/icons/Check-Alt.png`} alt="icon" width={25} height={25} />
+                                                <Image className="object-scale-down object-top" src={`${basePath}/icons/Check-Alt.png`} alt="icon" width={25} height={25} />
                                                 <div className="flex flex-col space-y-2">
                                                     <p className="font-bold">Enhanced Energy Security</p>
                                                     <p className=""> Combines solar and generator power for reliable, continuous back-up energy.</p>
@@ -258,7 +258,7 @@ const EmbeddedSystems = () => {
 
                                         <li className="gap-4 w-full">
                                             <div className="flex flex-row gap-4">
-                                                <img className="object-scale-down object-top" src={`${basePath}/icons/Check-Alt.png`} alt="icon" width={25} height={25} />
+                                                <Image className="object-scale-down object-top" src={`${basePath}/icons/Check-Alt.png`} alt="icon" width={25} height={25} />
                                                 <div className="flex flex-col space-y-2">
                                                     <p className="font-bold">Reduced Fuel Consumption</p>
                                                     <p className="">Solar reduces the generator’s fuel load, lowering operational costs.</p>
@@ -268,7 +268,7 @@ const EmbeddedSystems = () => {
 
                                         <li className="gap-4 w-full">
                                             <div className="flex flex-row gap-4">
-                                                <img className="object-scale-down object-top" src={`${basePath}/icons/Check-Alt.png`} alt="icon" width={25} height={25} />
+                                                <Image className="object-scale-down object-top" src={`${basePath}/icons/Check-Alt.png`} alt="icon" width={25} height={25} />
                                                 <div className="flex flex-col space-y-2">
                                                     <p className="font-bold">Improved Efficiency</p>
                                                     <p className="">Solar lessens strain on the generator, extending its lifespan and optimizing performance.</p>
@@ -342,7 +342,7 @@ const EmbeddedSystems = () => {
                                         
                                         <li className="gap-4 w-full">
                                             <div className="flex flex-row gap-4">
-                                                <img className="object-scale-down object-top" src={`${basePath}/icons/Check.png`} alt="icon" width={25} height={25} />
+                                                <Image className="object-scale-down object-top" src={`${basePath}/icons/Check.png`} alt="icon" width={25} height={25} />
                                                 <div className="flex flex-col space-y-2">
                                                     <p className="font-bold">No Upfront Cost</p>
                                                     
@@ -352,7 +352,7 @@ const EmbeddedSystems = () => {
 
                                         <li className="gap-4 w-full">
                                             <div className="flex flex-row gap-4">
-                                                <img className="object-scale-down object-top" src={`${basePath}/icons/Check.png`} alt="icon" width={25} height={25} />
+                                                <Image className="object-scale-down object-top" src={`${basePath}/icons/Check.png`} alt="icon" width={25} height={25} />
                                                 <div className="flex flex-col space-y-2">
                                                     <p className="font-bold">Fixed Energy Costs</p>
                                                     
@@ -362,7 +362,7 @@ const EmbeddedSystems = () => {
 
                                         <li className="gap-4 w-full">
                                             <div className="flex flex-row gap-4">
-                                                <img className="object-scale-down object-top" src={`${basePath}/icons/Check.png`} alt="icon" width={25} height={25} />
+                                                <Image className="object-scale-down object-top" src={`${basePath}/icons/Check.png`} alt="icon" width={25} height={25} />
                                                 <div className="flex flex-col space-y-2">
                                                     <p className="font-bold">Hands-Free Maintenance</p>
                                                     
@@ -393,7 +393,7 @@ const EmbeddedSystems = () => {
                                         
                                         <li className="gap-4 w-full">
                                             <div className="flex flex-row gap-4">
-                                                <img className="object-scale-down object-top" src={`${basePath}/icons/Check.png`} alt="icon" width={25} height={25} />
+                                                <Image className="object-scale-down object-top" src={`${basePath}/icons/Check.png`} alt="icon" width={25} height={25} />
                                                 <div className="flex flex-col space-y-2">
                                                     <p className="font-bold">Maximum Savings & ROI</p>
                                 
@@ -403,7 +403,7 @@ const EmbeddedSystems = () => {
 
                                         <li className="gap-4 w-full">
                                             <div className="flex flex-row gap-4">
-                                                <img className="object-scale-down object-top" src={`${basePath}/icons/Check.png`} alt="icon" width={25} height={25} />
+                                                <Image className="object-scale-down object-top" src={`${basePath}/icons/Check.png`} alt="icon" width={25} height={25} />
                                                 <div className="flex flex-col space-y-2">
                                                     <p className="font-bold">Full Ownership</p>
                                                     
@@ -413,7 +413,7 @@ const EmbeddedSystems = () => {
 
                                         <li className="gap-4 w-full">
                                             <div className="flex flex-row gap-4">
-                                                <img className="object-scale-down object-top" src={`${basePath}/icons/Check.png`} alt="icon" width={25} height={25} />
+                                                <Image className="object-scale-down object-top" src={`${basePath}/icons/Check.png`} alt="icon" width={25} height={25} />
                                                 <div className="flex flex-col space-y-2">
                                                     <p className="font-bold">Tax Incentives</p>
                                                     
@@ -444,7 +444,7 @@ const EmbeddedSystems = () => {
                                         
                                         <li className="gap-4 w-full">
                                             <div className="flex flex-row gap-4">
-                                                <img className="object-scale-down object-top" src={`${basePath}/icons/Check.png`} alt="icon" width={25} height={25} />
+                                                <Image className="object-scale-down object-top" src={`${basePath}/icons/Check.png`} alt="icon" width={25} height={25} />
                                                 <div className="flex flex-col space-y-2">
                                                     <p className="font-bold">Flexible Payments</p>
                                                     
@@ -454,7 +454,7 @@ const EmbeddedSystems = () => {
 
                                         <li className="gap-4 w-full">
                                             <div className="flex flex-row gap-4">
-                                                <img className="object-scale-down object-top" src={`${basePath}/icons/Check.png`} alt="icon" width={25} height={25} />
+                                                <Image className="object-scale-down object-top" src={`${basePath}/icons/Check.png`} alt="icon" width={25} height={25} />
                                                 <div className="flex flex-col space-y-2">
                                                     <p className="font-bold">Ownership Benefits</p>
                                                     
@@ -464,7 +464,7 @@ const EmbeddedSystems = () => {
 
                                         <li className="gap-4 w-full">
                                             <div className="flex flex-row gap-4">
-                                                <img className="object-scale-down object-top" src={`${basePath}/icons/Check.png`} alt="icon" width={25} height={25} />
+                                                <Image className="object-scale-down object-top" src={`${basePath}/icons/Check.png`} alt="icon" width={25} height={25} />
                                                 <div className="flex flex-col space-y-2">
                                                     <p className="font-bold">Immediate Savings</p>
                                                     
