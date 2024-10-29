@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import { PHONE_NUMBER } from "../constants/constants";
 
 const ContactUs = () => {
 
@@ -233,7 +232,7 @@ const ContactUs = () => {
                     <p className="text-paynesGray text-sm">
                     Phoenix Energy needs the contact information you provide to us to contact you about our products and services. By completing this form, you consent to receiving communications from us. You may unsubscribe from these communications at any time. For information on how to unsubscribe, as well as our privacy practices and commitment to protecting your privacy, please review our <Link className="font-semibold hover:text-atomicTangerine" href="/privacy-policy">Privacy Policy</Link>.
                     </p>
-                    <button type="submit" className="p-2 bg-paynesGray text-antiflashWhite rounded-3xl ">
+                    <button type="submit" onSubmit={handleSubmit} className="p-2 bg-paynesGray text-antiflashWhite rounded-3xl ">
                         Submit
                     </button>
                 </form>
