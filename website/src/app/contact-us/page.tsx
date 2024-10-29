@@ -17,7 +17,7 @@ const ContactUs = () => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
-    const handleSubmit = (e: React.FormEvent<HTMLButtonElement>) => {
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         console.log(formData); // Replace with API call
     };
@@ -33,7 +33,7 @@ const ContactUs = () => {
                     <p className="text-paynesGray">Reach out to learn how our tailored renewable energy solutions can help your business save money and generate new revenue through green technology.</p>
                 </div>
 
-                <form className="flex flex-col space-y-4 w-full">
+                <form onSubmit={handleSubmit} className="flex flex-col space-y-4 w-full">
                     <div className="flex flex-col md:flex-row w-full gap-4">
                         <div className="flex flex-col w-full">
                             <label className="font-inter text-paynesGray">First Name</label>
@@ -232,7 +232,7 @@ const ContactUs = () => {
                     <p className="text-paynesGray text-sm">
                     Phoenix Energy needs the contact information you provide to us to contact you about our products and services. By completing this form, you consent to receiving communications from us. You may unsubscribe from these communications at any time. For information on how to unsubscribe, as well as our privacy practices and commitment to protecting your privacy, please review our <Link className="font-semibold hover:text-atomicTangerine" href="/privacy-policy">Privacy Policy</Link>.
                     </p>
-                    <button type="submit" onSubmit={handleSubmit} className="p-2 bg-paynesGray text-antiflashWhite rounded-3xl ">
+                    <button type="submit" className="p-2 bg-paynesGray text-antiflashWhite rounded-3xl ">
                         Submit
                     </button>
                 </form>
