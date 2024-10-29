@@ -5,7 +5,9 @@ import Image from 'next/image';
 import AltGetInTouchButton from '@/app/components/AltGetInTouchButton';
 import GetInTouchButton from '@/app/components/GetInTouchButton';
 import ProductCarousel from '@/app/components/WasteProductsCarousel';
-import { WasteValorizationProducts } from '@/app/constants/constants';
+import { WasteValorizationProducts, WasteValorizationProcess, WasteValorizationFAQs } from '@/app/constants/constants';
+import StepProcess from '@/app/components/OurProcess';
+import FAQ from '@/app/components/FAQ';
 
 
 const WasteValorization = () => {
@@ -61,7 +63,7 @@ const WasteValorization = () => {
                         {/* Pyrolysis */}
                         <div className="mt-12 flex flex-col w-full lg:flex-row gap-8">
                         
-                            <div className="bg-paynesGray p-6 rounded-3xl shadow-md w-full lg:w-2/3 flex flex-grow flex-col items-start justify-start text-start space-y-8">
+                            <div className="bg-paynesGray p-6 rounded-3xl shadow-md w-full lg:w-2/3 flex flex-grow flex-col items-start justify-start text-start space-y-6">
                                 <div className="rounded-full bg-antiflashWhite p-4 justify-end items-end">
                                     <Image src={`${basePath}/icons/flame.png`} alt="icon" width={25} height={25} />
                                 </div>
@@ -184,7 +186,7 @@ const WasteValorization = () => {
                         {/* Anaeribuc Digestion */}
                         <div className="mt-12 flex flex-col w-full lg:flex-row-reverse gap-8">
                         
-                            <div className="bg-paynesGray p-6 rounded-3xl shadow-md w-full lg:w-2/3 flex flex-grow flex-col items-start justify-start text-start space-y-8">
+                            <div className="bg-paynesGray p-6 rounded-3xl shadow-md w-full lg:w-2/3 flex flex-grow flex-col items-start justify-start text-start space-y-6">
                                 <div className="rounded-full bg-antiflashWhite p-4 justify-end items-end">
                                     <Image src={`${basePath}/icons/flame.png`} alt="icon" width={25} height={25} />
                                 </div>
@@ -340,6 +342,38 @@ const WasteValorization = () => {
                         <Image className="rounded-3xl object-cover h-full w-full" src={`${basePath}/images/Waste-Valorization.png`} alt="why carbon credits matter" width={360} height={640} />
                     </div>
                 </div>
+                </section>
+
+                {/* Our Process */}
+                <section id="how-it-works-carbon-credits" className="relative w-full flex px-4 py-14 items-center justify-center">
+
+                    <div className="relative text-center max-w-[1400px] mx-auto">
+                        <h2 className="text-charcoal">How it works</h2>
+
+                        <div className='flex mx-auto w-full lg:w-1/2 justify-center items-center'>
+                            < StepProcess 
+                            steps={WasteValorizationProcess}/>
+                        </div>
+
+                        <div className="mt-12 flex align-middle items-center justify-center">
+                                <GetInTouchButton />
+                        </div>
+
+                    </div>
+
+                </section>
+
+                {/* FAQ */}
+                <section id="carbon-credits-faq" className="relative w-full pb-14 px-4 flex items-center justify-center">
+
+                    <div className="text-xl relative text-center max-w-[1400px] mx-auto">
+                        <h2 className="text-charcoal">Frequently asked questions</h2>
+                       
+                        < FAQ 
+                        faqItems={WasteValorizationFAQs}/>
+
+                    </div>
+
                 </section>
               
           </div>

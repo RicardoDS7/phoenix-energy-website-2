@@ -16,12 +16,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({title, subtitle }) => {
       <div className="relative z-10 text-center text-white px-4 mt-8">
         <h1 className="text-charcoal">{title}</h1>
         {subtitle && <p className="mt-4 text-xl font-inter text-paynesGray md:text-2xl">{subtitle}</p>}
-        
-        <div className='py-6 flex align-middle items-center justify-center gap-2'>
-          <HowItWorksButton 
-          sectionID = 'how-it-works-carbon-credits'/>
-          <GetInTouchButton />
-        </div>
 
       </div>
       

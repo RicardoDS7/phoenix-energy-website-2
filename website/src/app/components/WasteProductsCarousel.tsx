@@ -125,7 +125,7 @@ export default function ProductCarousel({products}: CarouselProps) {
                     <div className='relative text-center p-6 space-y-2 justify-center items-center'>
                         
                         <p className="text-lg md:text-xl font-black text-charcoal">{product.productName}</p>
-                        <p className="text-charcoal font-semibold mb-4">{product.description}</p>
+                        <p className="text-charcoal mb-4">{product.description}</p>
                         
                     </div>
 

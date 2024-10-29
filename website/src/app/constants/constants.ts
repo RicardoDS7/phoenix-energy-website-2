@@ -189,6 +189,91 @@ export const CarbonCreditsProcess: ProcessSteps[] = [
     
   ]
 
+
+  //Embedded System process Steps
+  export const WasteValorizationProcess: ProcessSteps[] = [
+      {
+          title: "Initial Consultation",
+          description: "We begin by understanding your business's waste streams, energy needs, and sustainability goals to determine the best valorization approach for you."
+      },
+      {
+          title: "Site Assessment",
+          description: "Our team conducts an on-site assessment to analyze available waste feedstocks, assess energy infrastructure, and determine project feasibility."
+      },
+      {
+          title: "Customized Feasibility Study",
+          description: "We prepare a detailed feasibility study, including financial modeling, expected ROI, and recommended technologies tailored to your industry."
+      },
+      {
+          title: "Solution Design and Engineering",
+          description: "Based on the feasibility study, we design a waste valorization system optimized for efficiency, energy output, and integration with your existing processes."
+      },
+      {
+          title: "Proposal and Approval",
+          description: "We present a comprehensive project proposal covering system design, timelines, costs, and projected outcomes, and proceed upon your approval."
+      },
+      {
+          title: "System Installation and Integration",
+          description: "Our engineering team installs the valorization system, ensuring seamless integration with your operations while minimizing disruptions."
+      },
+      {
+          title: "Testing and Commissioning",
+          description: "After installation, we rigorously test and commission the system to ensure it operates efficiently and meets all regulatory standards."
+      },
+      {
+          title: "Training and Handover",
+          description: "We provide training for your team on system operation, maintenance, and safety protocols, ensuring smooth, long-term operation."
+      },
+      {
+          title: "Ongoing Support and Optimization",
+          description: "Our team offers continuous support, monitoring, and optimization services to ensure maximum efficiency and profitability from your valorization system."
+      }
+  
+  ];
+
+  export const WasteValorizationFAQs = [
+      {
+          question: "What is waste valorization?",
+          answer: "Waste valorization is the process of converting waste materials into valuable products, such as energy or raw materials, which can reduce disposal costs and generate new revenue streams."
+      },
+      {
+          question: "How does anaerobic digestion work?",
+          answer: "Anaerobic digestion is a biological process where microorganisms break down organic waste in the absence of oxygen, producing biogas (for energy) and digestate (used as biofertilizer)."
+      },
+      {
+          question: "What is pyrolysis, and what does it produce?",
+          answer: "Pyrolysis is a high-temperature process that decomposes organic materials in an oxygen-free environment, creating products like bio-oil, biochar, and syngas, used in energy production and as industrial feedstocks."
+      },
+      {
+          question: "Which industries benefit most from anaerobic digestion?",
+          answer: "Industries like agriculture, food processing, and wastewater treatment benefit from anaerobic digestion, as it provides renewable energy and biofertilizer from organic waste."
+      },
+      {
+          question: "What types of waste can be used in pyrolysis?",
+          answer: "Pyrolysis is suited for carbon-rich waste types such as plastics, biomass, rubber, and some industrial residues, which can be converted into valuable by-products."
+      },
+      {
+          question: "How does waste valorization contribute to sustainability?",
+          answer: "Waste valorization reduces landfill waste, lowers emissions, and transforms waste into usable resources, promoting a circular economy and sustainable practices across industries."
+      },
+      {
+          question: "What are the benefits of biogas from anaerobic digestion?",
+          answer: "Biogas is a renewable energy source used for heating, electricity, and as vehicle fuel, which can reduce dependency on fossil fuels and lower greenhouse gas emissions."
+      },
+      {
+          question: "Can pyrolysis and anaerobic digestion be combined?",
+          answer: "Yes, combining these processes can enhance energy recovery and efficiency. For example, biochar from pyrolysis can improve biogas yields in anaerobic digestion."
+      },
+      {
+          question: "What is bio-oil, and how can it be used?",
+          answer: "Bio-oil, a product of pyrolysis, can be refined into bio-diesel, bio-lubricants, and other chemical feedstocks, making it valuable for industries seeking sustainable alternatives to petroleum-based products."
+      },
+      {
+          question: "What factors determine the choice between anaerobic digestion and pyrolysis?",
+          answer: "The choice depends on waste type, moisture content, and desired end-products; anaerobic digestion is ideal for high-moisture organic waste, while pyrolysis is best for low-moisture, carbon-based materials like plastics and rubber."
+      }
+  ]
+
   export const WasteValorizationProducts = [
     {
       "id": 1,

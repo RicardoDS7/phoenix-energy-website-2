@@ -491,8 +491,10 @@ const EmbeddedSystems = () => {
                     <div className="relative text-center max-w-[1400px] mx-auto">
                         <h2 className="text-charcoal">How it works</h2>
 
-                        < StepProcess 
-                        steps={SolarProcess}/>
+                        <div className='flex mx-auto w-full lg:w-1/2 justify-center items-center'>
+                            < StepProcess 
+                            steps={SolarProcess}/>
+                        </div>
                     
                         <div className="mt-12 flex align-middle items-center justify-center">
                             <GetInTouchButton />

@@ -114,6 +114,16 @@ link-small {
   }
 }
 
+.custom-select {
+  padding-right: 2rem; /* Add padding to allow space for the arrow */
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='gray'><path d='M7 10l5 5 5-5H7z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 0.5rem center;
+  background-size: 1rem;
+  -webkit-appearance: none; /* Removes default styling */
+  -moz-appearance: none;
+  appearance: none;
+}
 
 .nav-bar {
   font-size: 1.125rem;              /* Font size 16px for larger screens */
