@@ -326,7 +326,7 @@ const EmbeddedSystems = () => {
                             {/*Purchase Power Agreement */}
                             <div className="bg-antiflashWhite p-6 rounded-3xl shadow-md w-full lg:w-1/3 flex-grow flex flex-col items-start justify-start text-start space-y-4">
                                 <div className="rounded-full bg-powderBlue p-4 justify-end items-end">
-                                    <img src={`${basePath}/icons/Green-Electric.svg`} alt="icon" width={25} height={25} />
+                                    <Image src={`${basePath}/icons/PPA.png`} alt="ppa-icon" width={25} height={25} />
                                 </div>
                                 <h3 className="text-paynesGray whitespace-pre-wrap font-bold">
                                     Purchase Power Agreement (PPA)
@@ -377,7 +377,7 @@ const EmbeddedSystems = () => {
                             {/* Cash Purchase */}
                             <div className="bg-antiflashWhite p-6 rounded-3xl shadow-md w-full lg:w-1/3 flex-grow flex flex-col items-start justify-start text-start space-y-6">
                                 <div className="rounded-full bg-powderBlue p-4 justify-end items-end">
-                                    <img src={`${basePath}/icons/Green-Electric.svg`} alt="icon" width={25} height={25} />
+                                    <Image src={`${basePath}/icons/Cash-Purchase.png`} alt="cash-purchase-icon" width={25} height={25} />
                                 </div>
                                 <h3 className="text-paynesGray whitespace-pre-wrap font-bold">
                                     Cash Purchase
@@ -428,7 +428,7 @@ const EmbeddedSystems = () => {
                             {/*Load Purchase */}
                             <div className="bg-antiflashWhite p-6 rounded-3xl shadow-md w-full lg:w-1/3 flex-grow flex flex-col items-start justify-start text-start space-y-4">
                                 <div className="rounded-full bg-powderBlue p-4 justify-end items-end">
-                                    <img src={`${basePath}/icons/Green-Electric.svg`} alt="icon" width={25} height={25} />
+                                    <Image src={`${basePath}/icons/Loan-Purchase.png`} alt="loan-purchase-icon" width={25} height={25} />
                                 </div>
                                 <h3 className="text-paynesGray whitespace-pre-wrap font-bold">
                                     Loan Purchase

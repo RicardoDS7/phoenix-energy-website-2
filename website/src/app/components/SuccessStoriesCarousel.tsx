@@ -36,12 +36,16 @@ export default function Carousel({testimonials}: CarouselProps) {
 
   useEffect(() => {
     const screenWidth = window.innerWidth;
-    const gap = 32; // 32px gap between items
+    const gap = 24; // 24px gap between items
     let baseTranslate: number;
     let pixelOffset: number;
 
-    if (screenWidth >= 768) {
+    if (screenWidth >= 768 && screenWidth < 1024) {
       // For medium screens and up (3 items in view)
+      baseTranslate = (currentIndex * 100) / 2;
+      pixelOffset = currentIndex * gap;
+    } else if (screenWidth >= 1024) {
+        // For medium screens and up (3 items in view)
       baseTranslate = (currentIndex * 100) / 3;
       pixelOffset = currentIndex * gap;
     } else {
@@ -105,7 +109,7 @@ export default function Carousel({testimonials}: CarouselProps) {
         </div>
         {/* Carousel Content */}
             <div
-            className="flex w-full gap-8 transition-transform duration-500"
+            className="flex w-full gap-6 transition-transform duration-500"
             style={{
                 transform: `translateX(var(--carousel-translate))`,
                 ...translateStyle,
@@ -114,13 +118,13 @@ export default function Carousel({testimonials}: CarouselProps) {
             {testimonials.map((testimonial) => (
                 <div
                 key={testimonial.id}
-                className="relative flex flex-col w-[85%] md:w-1/3 flex-shrink-0 shadow bg-colombiaBlue pb-6 rounded-3xl"
+                className="relative flex flex-col w-[85%] md:w-1/2 lg:w-1/3 flex-shrink-0 shadow bg-colombiaBlue pb-6 rounded-3xl"
                 >
-                    <Image className={'rounded-3xl w-full h-[300px]'} src={testimonial.featured_image} alt={`${testimonial.name} case study`} width={300} height={300} />
+                    <Image className={'rounded-3xl w-full h-[250px] object-cover'} src={testimonial.featured_image} alt={`${testimonial.name} case study`} width={300} height={300} />
                     <div className='relative text-center p-6 space-y-2 justify-center items-center'>
-                        <p className="text-xl text-charcoal italic font-semibold mb-4">&quot;{testimonial.text}&quot;</p>
-                        <p className="text-xl font-black text-charcoal">{testimonial.name}</p>
-                        <p className="text-lg text-paynesGray font-semibold">{testimonial.solutions}</p>
+                        <p className="text-base md:text-lg text-charcoal italic font-semibold mb-4">&quot;{testimonial.text}&quot;</p>
+                        <p className="text-lg md:text-xl font-black text-charcoal">{testimonial.name}</p>
+                        <p className="text-base md:text-lg text-paynesGray font-semibold">{testimonial.solutions}</p>
                         
                     </div>
 

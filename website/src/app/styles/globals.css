@@ -52,7 +52,7 @@ h4 {
 
 p {
   @apply font-inter;
-  @apply text-xl;
+  @apply text-base md:text-lg lg:text-xl;
 }
 
 @media (min-width: 768px) {

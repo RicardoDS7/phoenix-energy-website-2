@@ -152,7 +152,7 @@ const CarbonCredits = () => {
                                         </div>
                                         <div className="flex flex-col justify-start items-start gap-2">
                                             <h4 >Financial Incentives and Cost Savings</h4>
-                                            <p className="text-xl">Businesses can sell carbon credits to offset emissions, generating revenue while reducing operational costs and boosting profits.</p>
+                                            <p className="">Businesses can sell carbon credits to offset emissions, generating revenue while reducing operational costs and boosting profits.</p>
                                         </div>
                                     </li>
 
@@ -163,7 +163,7 @@ const CarbonCredits = () => {
                                         </div>
                                         <div className="flex flex-col justify-start items-start gap-2">
                                             <h4 >Regulatory Compliance</h4>
-                                            <p className="text-xl">Carbon credits offset the Carbon Tax under the South African Carbon Tax Act of 2019, which is set to rise to R462 per ton of CO₂ by 2030.</p>
+                                            <p className="">Carbon credits offset the Carbon Tax under the South African Carbon Tax Act of 2019, which is set to rise to R462 per ton of CO₂ by 2030.</p>
                                         </div>
                                     </li>
 
@@ -175,7 +175,7 @@ const CarbonCredits = () => {
                                         </div>
                                         <div className="flex flex-col justify-start items-start gap-2">
                                             <h4 >Strengthen Brand Reputation and Competitiveness</h4>
-                                            <p className="text-xl">Earning carbon credits strengthens your brand&apos;s sustainability reputation, attracting eco-conscious investors and giving you a competitive edge.</p>
+                                            <p className="">Earning carbon credits strengthens your brand&apos;s sustainability reputation, attracting eco-conscious investors and giving you a competitive edge.</p>
                                         </div>
                                     </li>
 
@@ -220,7 +220,7 @@ const CarbonCredits = () => {
 
                             </div>
 
-                            <div className="flex bg-antiflashWhite rounded-3xl px-4 lg:w-1/2 items-center justify-center">
+                            <div className="flex bg-antiflashWhite rounded-3xl px-4 lg:w-1/2 items-center justify-center shadow">
                                 <Image src={`${basePath}/images/brands/Verra.png`} alt="Vera Carbon Credits" width={640} height={240} />
                             </div>
                             

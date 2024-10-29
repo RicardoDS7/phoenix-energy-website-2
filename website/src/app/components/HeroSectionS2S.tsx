@@ -23,7 +23,7 @@ const HeroSectionS2S: React.FC<HeroSectionProps> = ({title, subtitle,imagePath,a
         <div className="w-full lg:w-1/2 text-center md:text-left space-y-6">
           <h1 className="text-charcoal">{title}</h1>
           {subtitle && (
-            <p className="mt-4 text-lg md:text-xl text-paynesGray">{subtitle}</p>
+            <p className="mt-4 text-paynesGray">{subtitle}</p>
           )}
           <div className="mt-6 flex flex-row gap-4 justify-center md:justify-start items-center">
             <HowItWorksButton sectionID="how-it-works-carbon-credits" />
