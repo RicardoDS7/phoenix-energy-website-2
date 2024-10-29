@@ -16,6 +16,8 @@ interface Product {
 
 export default function ProductCarousel({products}: CarouselProps) {
 
+    const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const [translateStyle, setTranslateStyle] = useState<{ [key: string]: string }>({});
   const [startX, setStartX] = useState(0);
@@ -119,7 +121,7 @@ export default function ProductCarousel({products}: CarouselProps) {
                 key={product.id}
                 className="relative flex flex-col w-[85%] md:w-1/2 lg:w-1/3 flex-shrink-0 shadow bg-colombiaBlue pb-6 rounded-3xl"
                 >
-                    <Image className={'rounded-3xl w-full h-[250px] object-cover'} src={product.featuredImage} alt={`${product.productName} case study`} width={300} height={300} />
+                    <Image className={'rounded-3xl w-full h-[250px] object-cover'} src={`${basePath}${product.featuredImage}`} alt={`${product.productName} case study`} width={300} height={300} />
                     <div className='relative text-center p-6 space-y-2 justify-center items-center'>
                         
                         <p className="text-lg md:text-xl font-black text-charcoal">{product.productName}</p>
