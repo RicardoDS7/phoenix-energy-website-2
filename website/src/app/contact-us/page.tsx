@@ -8,16 +8,16 @@ const ContactUs = () => {
                                                 operatingSchedule: '', batStorage: '', existBackup: '', eskomBill: '', message: '' });
     const [selectedSolution, setSelectedSolution] = useState("");
 
-    const handleSolutionChange = (e) => {
+    const handleSolutionChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
         setSelectedSolution(e.target.value);
         setFormData({ ...formData, [e.target.name]: e.target.value });
       };
 
-    const handleChange = (e) => {
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (e: React.FormEvent<HTMLButtonElement>) => {
         e.preventDefault();
         console.log(formData); // Replace with API call
     };
