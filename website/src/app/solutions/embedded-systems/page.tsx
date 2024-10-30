@@ -290,6 +290,63 @@ const EmbeddedSystems = () => {
                                 <Image className="object-cover h-full rounded-3xl" src={`${basePath}/images/Solar-Generator.png`} alt="Battery Storage System" width={500} height={500} />
                             </div>
                         </div>
+
+                        {/*Solar Pumps */}
+                        <div className="mt-12 flex flex-col w-full lg:flex-row gap-8">
+                        
+                            <div className="bg-paynesGray p-6 rounded-3xl shadow-md w-full lg:w-2/3 flex flex-grow flex-col items-start justify-start text-start space-y-8">
+                                <div className="rounded-full bg-antiflashWhite p-4 justify-end items-end">
+                                    <Image src={`${basePath}/icons/pump.png`} alt="icon" width={25} height={25} />
+                                </div>
+                                <h3 className="font-bold text-antiflashWhite whitespace-pre-wrap">
+                                    Solar Pumps
+                                </h3>
+                                <p className="text-antiflashWhite">Solar pumps offer a sustainable, efficient way to meet diverse water pumping needs across agricultural, industrial, and domestic applications. Designed to operate independently of the grid, these pumps are ideal for remote and off-grid locations, drastically reducing energy costs while ensuring reliable water supply. We offer a range of durable and cost-effective options, including <span className="text-atomicTangerine">submersible solar pumps</span>, <span className="text-atomicTangerine">surface solar pumps</span>, and <span className="text-atomicTangerine">DC/AC hybrid solar pumps</span>.</p>
+                                <div className="font-inter text-lg text-antiflashWhite">
+                                    <ul className="space-y-6">
+                                        
+                                        <li className="gap-4 w-full">
+                                            <div className="flex flex-row gap-4">
+                                                <Image className="object-scale-down object-top" src={`${basePath}/icons/Check-Alt.png`} alt="icon" width={25} height={25} />
+                                                <div className="flex flex-col space-y-2">
+                                                    <p className="font-bold">Cost Savings</p>
+                                                    <p className="">Significantly lowers electricity costs by eliminating reliance on costly grid power.</p>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li className="gap-4 w-full">
+                                            <div className="flex flex-row gap-4">
+                                                <Image className="object-scale-down object-top" src={`${basePath}/icons/Check-Alt.png`} alt="icon" width={25} height={25} />
+                                                <div className="flex flex-col space-y-2">
+                                                    <p className="font-bold">Longer Lifespan</p>
+                                                    <p className="">Solar pumps are more durable and require less maintenance than conventional pumps.</p>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li className="gap-4 w-full">
+                                            <div className="flex flex-row gap-4">
+                                                <Image className="object-scale-down object-top" src={`${basePath}/icons/Check-Alt.png`} alt="icon" width={25} height={25} />
+                                                <div className="flex flex-col space-y-2">
+                                                    <p className="font-bold">Suitable For Remote Locations</p>
+                                                    <p className="">Dependable water supply, even in off-grid and reomte areas.</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    
+                                </div>
+                                <div className="flex flex-col md:flex-row mt-6 align-middle justify-start items-start md:items-center md:justify-center gap-4">
+                                    <AltGetInTouchButton/>
+                                </div>
+
+                            </div>
+
+                            <div className="hidden lg:block rounded-3xl shadow-md w-full lg:w-1/3 flex flex-grow flex-col items-start justify-start text-start space-y-4">
+                                <Image className="object-cover object-right-[5 h-full rounded-3xl" src={`${basePath}/images/solar-pump.png`} alt="Battery Storage System" width={500} height={500} />
+                            </div>
+                        </div>
                     
                     </div>
                 </ section>
@@ -506,7 +563,7 @@ const EmbeddedSystems = () => {
                 </section>
 
                 {/* FAQ */}
-                <section id="carbon-credits-faq" className="relative w-full pb-14 px-4 flex items-center justify-center">
+                <section id="carbon-credits-faq" className="relative w-full px-4 flex items-center justify-center">
 
                     <div className="text-xl relative text-center max-w-[1400px] mx-auto">
                         <h2 className="text-charcoal">Frequently asked questions</h2>
@@ -522,12 +579,15 @@ const EmbeddedSystems = () => {
                 <section id="solar-cta" className="relative w-full flex items-center justify-center h-[50vh]"
                 >
                     <div className="absolute inset-0 bg-paynesGrayOverlay"></div>
-                    <div className="flex bg-[url('/images/Solar-CTA.png')] bg-cover bg-top w-full h-full py-14 items-center justify-center">
+                    <div className="flex bg-cover bg-bottom w-full h-full py-14 items-center justify-center"
+                        style={{
+                            backgroundImage: `url(${basePath}/images/Solar-CTA.png)`,
+                          }}>
                         <div className="text-xl relative text-center max-w-[1400px] mx-auto">
                         
                             < CallToAction 
-                            headline="TURN YOUR CARBON SAVINGS INTO REVENUE"
-                            subtitle=""/>
+                            headline="POWERING TOMORROW, SAVING TODAY."
+                            subtitle="SWITCH TO SOLAR."/>
 
                         </div>
 

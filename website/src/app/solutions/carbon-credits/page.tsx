@@ -262,16 +262,17 @@ const CarbonCredits = () => {
                 </section>
 
                 {/* CTA */}
-                {/* Overlay */}
-                
                 <section id="carbon-credits-cta" className="relative w-full flex items-center justify-center h-[50vh]"
                 >
                     <div className="absolute inset-0 bg-paynesGrayOverlay"></div>
-                    <div className="flex bg-[url('/images/Carbon-Credits-CTA.png')] bg-cover bg-bottom w-full h-full py-14 items-center justify-center">
+                    <div className="flex bg-cover bg-bottom w-full h-full py-14 items-center justify-center"
+                        style={{
+                            backgroundImage: `url(${basePath}/images/Carbon-Credits-CTA.png)`,
+                          }}>
                         <div className="text-xl relative text-center max-w-[1400px] mx-auto">
                         
                             < CallToAction 
-                            headline="TURN YOUR CARBON SAVINGS INTO REVENUE"
+                            headline="GET REWARDED FOR GOING GREEN."
                             subtitle=""/>
 
                         </div>

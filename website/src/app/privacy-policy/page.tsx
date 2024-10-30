@@ -1,7 +1,7 @@
 const PrivacyPolicy = () => {
     return (
         <div className="bg-antiflashWhite">
-            <section className="max-w-[1024px] mx-auto px-4 text-charcoal pt-28 space-y-6">
+            <section className="max-w-[1024px] mx-auto px-4 text-charcoal pt-28 space-y-6 pb-14">
                 <h1>Privacy Policy</h1>
 
                 <p className="italic">Last Updated: 30 October 2024</p>

@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
+import CallToAction from "../components/CallToAction";
 
 const ContactUs = () => {
 
@@ -28,8 +29,8 @@ const ContactUs = () => {
         <div className="bg-antiflashWhite">
 
         
-        <section className="max-w-[1400px] mx-auto px-4 pt-28 flex flex-col lg:flex-row gap-8">
-            <div className="flex flex-col gap-8 w-2/3 mx-auto">
+        <section className="max-w-[1400px] mx-auto px-4 pt-28 flex flex-col lg:flex-row gap-8 pb-14">
+            <div className="flex flex-col gap-8 w-full lg:w-2/3 mx-auto">
                 <div className="flex flex-col justify-center items-center w-full gap-6">
                     <h1 className="text-charcoal">Partner with us for Sustainable Growth</h1>
                     <p className="text-paynesGray">Reach out to learn how our tailored renewable energy solutions can help your business save money and generate new revenue through green technology.</p>
@@ -422,7 +423,7 @@ const ContactUs = () => {
                     </button>
                 </form>
             </div>
-            <div className="flex flex-col gap-8 w-1/3 mx-auto">
+            <div className="flex flex-col gap-8 w-full lg:w-1/3 mx-auto">
                 <div className="bg-colombiaBlue rounded-3xl p-6 space-y-6">
                     <h4 className="text-charcoal">South Africa</h4>
                     <p>
