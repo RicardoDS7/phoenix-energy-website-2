@@ -44,7 +44,7 @@ export const COMPANY_LINKS = [
     { name: 'Our Projects', path: PROJECTS_PAGE},
     { name: 'Careers', path: CAREERS},
     { name: 'Contact', path: CONTACT_PAGE},
-    { name: 'Privacy Policy', path: CONTACT_PAGE},
+    { name: 'Privacy Policy', path: PRIVACY_POLICY},
   ];
 
 // URL-related constants

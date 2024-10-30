@@ -8,7 +8,7 @@ import ProductCarousel from '@/app/components/WasteProductsCarousel';
 import { WasteValorizationProducts, WasteValorizationProcess, WasteValorizationFAQs } from '@/app/constants/constants';
 import StepProcess from '@/app/components/OurProcess';
 import FAQ from '@/app/components/FAQ';
-
+import CallToAction from '@/app/components/CallToAction';
 
 const WasteValorization = () => {
 
@@ -374,6 +374,22 @@ const WasteValorization = () => {
 
                     </div>
 
+                </section>
+
+                {/* CTA */}
+                <section id="carbon-credits-cta" className="relative w-full flex items-center justify-center h-[50vh]"
+                >
+                    <div className="absolute inset-0 bg-paynesGrayOverlay"></div>
+                    <div className="flex bg-[url('/images/Waste-Valorization-CTA.png')] bg-cover bg-bottom w-full h-full py-14 items-center justify-center">
+                        <div className="text-xl relative text-center max-w-[1400px] mx-auto">
+                        
+                            < CallToAction 
+                            headline="TURN YOUR CARBON SAVINGS INTO REVENUE"
+                            subtitle=""/>
+
+                        </div>
+
+                    </div>
                 </section>
               
           </div>

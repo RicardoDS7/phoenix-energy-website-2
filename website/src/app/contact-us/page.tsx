@@ -5,7 +5,9 @@ import Link from "next/link";
 const ContactUs = () => {
 
     const [formData, setFormData] = useState({ firstName: '', lastName: '', email: '',phone: '', companyName: '', role: '', solutions: '', 
-                                                operatingSchedule: '', batStorage: '', existBackup: '', eskomBill: '', message: '' });
+                                                operatingSchedule: '', batStorage: '', existBackup: '', billFrom: '', monthlyBill: '', solarObjective: '',
+                                                 existSolar: '',hydroApp: '', hydroConsump: '', hydroFueType: '',
+                                                 feedstock: '', wasteGoal: '', message: '' });
     const [selectedSolution, setSelectedSolution] = useState("");
 
     const handleSolutionChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
@@ -36,7 +38,7 @@ const ContactUs = () => {
                 <form onSubmit={handleSubmit} className="flex flex-col space-y-4 w-full">
                     <div className="flex flex-col md:flex-row w-full gap-4">
                         <div className="flex flex-col w-full">
-                            <label className="font-inter text-paynesGray">First Name</label>
+                            <label className="font-inter text-paynesGray">First Name<span className="required">*</span></label>
                             <input
                                 type="text"
                                 name="firstName"
@@ -48,7 +50,7 @@ const ContactUs = () => {
                             />
                         </div>
                         <div className="flex flex-col w-full">
-                            <label className="font-inter text-paynesGray">Last Name</label>
+                            <label className="font-inter text-paynesGray">Last Name<span className="required">*</span></label>
                             <input
                                 type="text"
                                 name="lastName"
@@ -63,7 +65,7 @@ const ContactUs = () => {
 
                     <div className="flex flex-col md:flex-row w-full gap-4">
                         <div className="flex flex-col w-full">
-                            <label className="font-inter text-paynesGray">Work Email</label>
+                            <label className="font-inter text-paynesGray">Work Email<span className="required">*</span></label>
                             <input
                                 type="email"
                                 name="email"
@@ -75,7 +77,7 @@ const ContactUs = () => {
                             />
                         </div>
                         <div className="flex flex-col w-full">
-                            <label className="font-inter text-paynesGray">Phone</label>
+                            <label className="font-inter text-paynesGray">Phone<span className="required">*</span></label>
                             <input
                                 type="tel"
                                 name="phone"
@@ -90,7 +92,7 @@ const ContactUs = () => {
 
                     <div className="flex flex-col md:flex-row w-full gap-4">
                         <div className="flex flex-col w-full">
-                            <label className="font-inter text-paynesGray">Company Name</label>
+                            <label className="font-inter text-paynesGray">Company Name<span className="required">*</span></label>
                             <input
                                 type="text"
                                 name="companyName"
@@ -102,7 +104,7 @@ const ContactUs = () => {
                             />
                         </div>
                         <div className="flex flex-col w-full">
-                            <label className="font-inter text-paynesGray">Your Role</label>
+                            <label className="font-inter text-paynesGray">Your Role<span className="required">*</span></label>
                             <input
                                 type="text"
                                 name="role"
@@ -118,7 +120,7 @@ const ContactUs = () => {
 
                     <div className="flex flex-col md:flex-row w-full gap-4">
                         <div className="flex flex-col w-full">
-                            <label className="font-inter text-paynesGray">What solutions are your interested in?</label>
+                            <label className="font-inter text-paynesGray">What solutions are your interested in?<span className="required">*</span></label>
                             <select
                                 name="solutions"
                                 value={formData.solutions}
@@ -142,14 +144,32 @@ const ContactUs = () => {
                     <div
                         key={selectedSolution} // Changing key forces re-render
                         className={`overflow-hidden transition-[max-height] duration-500 ease-out ${
-                        selectedSolution ? "max-h-96" : "max-h-0"
+                        selectedSolution ? "max-h-full" : "max-h-0"
                         } transform origin-top`}
                     >
                         {/* Solar-specific Questions */}
                         {selectedSolution === "solar" && (
-                            <section className="flex flex-col w-full gap-3">
-                                <div className="flex flex-col m-0.5">
-                                    <label className="font-inter text-paynesGray">What is your business operating schedule?</label>
+                            <section className="flex flex-col w-full gap-4">
+
+                                <div className="flex flex-col p-0.5">
+                                    <label className="font-inter text-paynesGray">What is your business objective for installing solar?</label>
+                                    <select
+                                        name="solarObjective"
+                                        value={formData.solarObjective}
+                                        onChange={handleChange}
+                                        className="py-2 px-4 border rounded-lg custom-select focus:ring-1 focus:ring-paynesGray focus:outline-none"
+                                        required
+                                    >
+                                        <option value="" disabled>Select an option...</option>
+                                        <option value="solarGoal1">Reduce costs.</option>
+                                        <option value="solarGoal2">Energy security and independence.</option>
+                                        <option value="solarGoal3">Load reduction.</option>
+                                        <option value="solarGoal4">All of the above.</option>
+                                    </select>
+                                </div>
+
+                                <div className="flex flex-col p-0.5">
+                                    <label className="font-inter text-paynesGray">What would best describe your business&apos;s operating hours?</label>
                                     <select
                                         name="operatingSchedule"
                                         value={formData.operatingSchedule}
@@ -165,7 +185,24 @@ const ContactUs = () => {
                                     </select>
                                 </div>
 
-                                <div className="flex flex-col m-0.5">
+                                <div className="flex flex-col p-0.5">
+                                    <label className="font-inter text-paynesGray">What is your estimated monthly electrcity bill?</label>
+                                    <select
+                                        name="monthlyBill"
+                                        value={formData.monthlyBill}
+                                        onChange={handleChange}
+                                        className="py-2 px-4 border rounded-lg custom-select focus:ring-1 focus:ring-paynesGray focus:outline-none"
+                                        required
+                                    >
+                                        <option value="" disabled>Select an option...</option>
+                                        <option value="bill100">Less than R100,000</option>
+                                        <option value="bill250">Between R100,000 and R250,000</option>
+                                        <option value="opsSchedule247">Between R250,000 and R500,000</option>
+                                        <option value="opsScheduleOther">More than R500,000</option>
+                                    </select>
+                                </div>
+
+                                <div className="flex flex-col p-0.5">
                                     <label className="font-inter text-paynesGray">Are you interested in integrating battery storage with your solar solution?</label>
                                     <select
                                         name="batStorage"
@@ -181,8 +218,8 @@ const ContactUs = () => {
                                     </select>
                                 </div>
 
-                                <div className="flex flex-col m-0.5">
-                                    <label className="font-inter text-paynesGray">Do you have existing backup power sources, such as generators, you’d like to integrate?</label>
+                                <div className="flex flex-col p-0.5">
+                                    <label className="font-inter text-paynesGray">Do you have any existing alternative power sources, such as generators or solar solutions, that you&apos;d like to integrate?</label>
                                     <select
                                         name="existBackup"
                                         value={formData.existBackup}
@@ -203,32 +240,180 @@ const ContactUs = () => {
 
                         {/* Wheeling-specific Questions */}
                         {selectedSolution === "wheeling" && (
-                            <div className="flex flex-col m-0.5">
-                                <label className="font-inter text-paynesGray">Do you receive your electricity bill directly from Eskom?</label>
-                                <select
-                                    name="eskomBill"
-                                    value={formData.eskomBill}
-                                    onChange={handleChange}
-                                    className="py-2 px-4 border rounded-lg custom-select focus:ring-1 focus:ring-paynesGray focus:outline-none"
-                                    required
-                                >
-                                    <option value="" disabled>Select option...</option>
-                                    <option value="eskomBillYes">Yes</option>
-                                    <option value="eskomBillNo">No</option>
-                                    <option value="eskomBillNotSure">Not Sure</option>
-                                </select>
-                            </div>
+                            <section className="flex flex-col w-full gap-4">
+                                <div className="flex flex-col m-0.5">
+                                    <label className="font-inter text-paynesGray">Do you receive your electricity bill directly from Eskom or through your municipality?</label>
+                                    <select
+                                        name="billFrom"
+                                        value={formData.billFrom}
+                                        onChange={handleChange}
+                                        className="py-2 px-4 border rounded-lg custom-select focus:ring-1 focus:ring-paynesGray focus:outline-none"
+                                        required
+                                    >
+                                        <option value="" disabled>Select option...</option>
+                                        <option value="fromEskom">Eskom</option>
+                                        <option value="fromCPT">City of Cape Town Metropolitan</option>
+                                        <option value="fromJHB">City of Johannesburg Metropolitan</option>
+                                        <option value="fromTSH">City of Tshwane Metropolitan</option>
+                                        <option value="fromEKU">City of Ekurhuleni Metropolitan</option>
+                                        <option value="fromETK">eThekwini Metropolitan</option>
+                                        <option value="fromNMB">Nelson Mandela Bay Metropolitan</option>
+                                        <option value="fromBFC">Buffalo City Metropolitan</option>
+                                        <option value="fromMAN">Mangaung Metropolitan</option>
+                                        <option value="fromOther">Other municipality</option>
+                                    </select>
+                                </div>
+
+                                <div className="flex flex-col p-0.5">
+                                    <label className="font-inter text-paynesGray">What is your estimated monthly electrcity bill?</label>
+                                    <select
+                                        name="monthlyBill"
+                                        value={formData.monthlyBill}
+                                        onChange={handleChange}
+                                        className="py-2 px-4 border rounded-lg custom-select focus:ring-1 focus:ring-paynesGray focus:outline-none"
+                                        required
+                                    >
+                                        <option value="" disabled>Select an option...</option>
+                                        <option value="bill100">Less than R100,000</option>
+                                        <option value="bill250">Between R100,000 and R250,000</option>
+                                        <option value="opsSchedule247">Between R250,000 and R500,000</option>
+                                        <option value="opsScheduleOther">More than R500,000</option>
+                                    </select>
+                                </div>
+
+                                <div className="flex flex-col p-0.5">
+                                    <label className="font-inter text-paynesGray">Do you have any existing on-site solar implementations??</label>
+                                    <select
+                                        name="existSolar"
+                                        value={formData.existSolar}
+                                        onChange={handleChange}
+                                        className="py-2 px-4 border rounded-lg custom-select focus:ring-1 focus:ring-paynesGray focus:outline-none"
+                                        required
+                                    >
+                                        <option value="" disabled>Select an option...</option>
+                                        <option value="existSolarYes">Yes</option>
+                                        <option value="existSolarNo">No</option>
+                                        <option value="existSolarNotSure">Not Sure</option>
+                                        
+                                    </select>
+                                </div>
+                            </section>
                         )}
+
+                        {/* Hydrogen-specific Questions */}
+                        {selectedSolution === "hydrogen" && (
+                            <section className="flex flex-col w-full gap-4">
+                                <div className="flex flex-col m-0.5">
+                                    <label className="font-inter text-paynesGray">What is your intended hydrogen technology application?</label>
+                                    <select
+                                        name="hydroApp"
+                                        value={formData.hydroApp}
+                                        onChange={handleChange}
+                                        className="py-2 px-4 border rounded-lg custom-select focus:ring-1 focus:ring-paynesGray focus:outline-none"
+                                        required
+                                    >
+                                        <option value="" disabled>Select option...</option>
+                                        <option value="fromEskom">Stationary generators</option>
+                                        <option value="fromCPT">Road vehicles</option>
+                                        <option value="fromJHB">Heavy Machinery</option>
+                                        <option value="fromTSH">Marine</option>
+                                    </select>
+                                </div>
+
+                                <div className="flex flex-col m-0.5">
+                                    <label className="font-inter text-paynesGray">On average, how many hours per day does your vehicle(s) or generator(s) operate?</label>
+                                    <select
+                                        name="hydroConsump"
+                                        value={formData.hydroConsump}
+                                        onChange={handleChange}
+                                        className="py-2 px-4 border rounded-lg custom-select focus:ring-1 focus:ring-paynesGray focus:outline-none"
+                                        required
+                                    >
+                                        <option value="" disabled>Select option...</option>
+                                        <option value="statGen">Stationary generators</option>
+                                        <option value="roadVeh">Road vehicles</option>
+                                        <option value="heavyMach">Heavy Machinery</option>
+                                        <option value="marine">Marine</option>
+                                    </select>
+                                </div>
+
+                                <div className="flex flex-col p-0.5">
+                                    <label className="font-inter text-paynesGray">What fuel type does your vehicle(s) or gnerator(s) use?</label>
+                                    <select
+                                        name="hydroFuelType"
+                                        value={formData.hydroFueType}
+                                        onChange={handleChange}
+                                        className="py-2 px-4 border rounded-lg custom-select focus:ring-1 focus:ring-paynesGray focus:outline-none"
+                                        required
+                                    >
+                                        <option value="" disabled>Select an option...</option>
+                                        <option value="diesel">Diesel</option>
+                                        <option value="petrol">Petrol</option>
+                                        <option value="hfo">Engine Fuel Oil (HFO)</option>
+                                        <option value="otherFuel">Other</option>
+                                        
+                                    </select>
+                                </div>
+                            </section>
+                        )}
+
+                        {/* Waste Valorization-specific Questions */}
+                        {selectedSolution === "waste-valorization" && (
+                            <section className="flex flex-col w-full gap-4">
+                                <div className="flex flex-col m-0.5">
+                                    <label className="font-inter text-paynesGray">What type of waste does your business produce?</label>
+                                    <select
+                                        name="feedstock"
+                                        value={formData.feedstock}
+                                        onChange={handleChange}
+                                        className="py-2 px-4 border rounded-lg custom-select focus:ring-1 focus:ring-paynesGray focus:outline-none"
+                                        required
+                                    >
+                                        <option value="" disabled>Select option...</option>
+                                        <option value="wasteTyres">Waste tyres</option>
+                                        <option value="wastePlastic">Plastic waste</option>
+                                        <option value="wasteWood">Woodchips</option>
+                                        <option value="wasteAgri">Agricultural residue (e.g. bagasse, corn husks, nut shells etc.)</option>
+                                        <option value="wasteManure">Animal manure</option>
+                                        <option value="wasteFood">Food waste</option>
+                                        <option value="wasteSludge">Sewage sludge</option>
+                                        <option value="wasteOther">Other</option>
+                                    </select>
+                                </div>
+
+                                <div className="flex flex-col p-0.5">
+                                    <label className="font-inter text-paynesGray">What is your primary business objective in implementing waste valorization?</label>
+                                    <select
+                                        name="wasteGoal"
+                                        value={formData.wasteGoal}
+                                        onChange={handleChange}
+                                        className="py-2 px-4 border rounded-lg custom-select focus:ring-1 focus:ring-paynesGray focus:outline-none"
+                                        required
+                                    >
+                                        <option value="" disabled>Select option...</option>
+                                        <option value="dispose">Dispose of waste on-site</option>
+                                        <option value="sell">Generate additional revenue by selling by-products</option>
+                                        <option value="utilize">Utilize by-products within my own business</option>
+                                    </select>
+                                </div>
+
+                            </section>
+                        )}
+
 
                     </div>
 
-                    <textarea
-                        name="message"
-                        placeholder="(Optional) Describe any specific requirements, or additional info we should know about..."
-                        value={formData.message}
-                        onChange={handleChange}
-                        className="p-2 border rounded focus:ring-1 focus:ring-paynesGray focus:outline-none"
-                    />
+                    <div className="flex flex-col p-0.5">
+                        <label className="font-inter text-paynesGray">Describe any specific requirements, or additional info we should know about...</label>
+                        <textarea
+                            name="message"
+                            placeholder=""
+                            value={formData.message}
+                            onChange={handleChange}
+                            className="p-2 border rounded focus:ring-1 focus:ring-paynesGray focus:outline-none"
+                        />
+                    </div>
+
                     <p className="text-paynesGray text-sm">
                     Phoenix Energy needs the contact information you provide to us to contact you about our products and services. By completing this form, you consent to receiving communications from us. You may unsubscribe from these communications at any time. For information on how to unsubscribe, as well as our privacy practices and commitment to protecting your privacy, please review our <Link className="font-semibold hover:text-atomicTangerine" href="/privacy-policy">Privacy Policy</Link>.
                     </p>

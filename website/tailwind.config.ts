@@ -11,9 +11,11 @@ const config: Config = {
       fontFamily: {
         inter: ['Inter', 'Helvetica Neue', 'Arial', 'sans-serif'],
       },
+      
       colors: {
         charcoal: '#2b4147ff',
         paynesGray: '#4c7380ff',
+        paynesGrayOverlay: 'rgba(76, 115, 128, 0.5)',
         paynesGrayHighlight: '#557F8D',
         airSuperiorityBlue: '#769ab0ff',
         powderBlue: '#97b3c4ff',
