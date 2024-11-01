@@ -211,11 +211,11 @@ const Wheeling = () => {
                 </ section>
 
 
-                {/* Solar Solutions + Benefits */}
+                {/* Wheeling Industries */}
                 <section id="carbon-credits-eligibility" className="relative 
                                                                 bg-antiflashWhite 
                                                                 w-full
-                                                                py-14
+                                                                pb-14
                                                                 px-4
                                                                 flex 
                                                                 items-center 
@@ -528,7 +528,7 @@ const Wheeling = () => {
             </section>
 
             {/* FAQ */}
-            <section id="carbon-credits-faq" className="relative w-full px-4 py-14 flex items-center justify-center">
+            <section id="carbon-credits-faq" className="relative w-full px-4 pb-14 flex items-center justify-center">
 
                 <div className="text-xl relative text-center max-w-[1400px] mx-auto">
                     <h2 className="text-charcoal">Frequently asked questions</h2>

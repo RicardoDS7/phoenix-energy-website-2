@@ -35,7 +35,7 @@ const CarbonCredits = () => {
                           
                         <h3 className="text-paynesGray font-medium text-center">Leading companies are investing in carbon credits</h3>
                         <div className="flex-col lg:flex-row mt-12">
-                            <ul className="flex justify-evenly flex-wrap gap-x-4 gap-y-4">
+                            <ul className="flex justify-center items-center flex-wrap gap-4">
                                 <li>
                                     <BrandsCard
                                     logoPath = "/images/brands/nedbank-logo.png"
