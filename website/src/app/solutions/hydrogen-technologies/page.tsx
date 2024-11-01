@@ -23,10 +23,10 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
               </section>
 
               {/* CTA */}
-              <section id="carbon-credits-cta" className="relative w-full flex items-center justify-center h-[50vh]"
+              <section id="carbon-credits-cta" className="relative w-full flex items-center justify-center"
                 >
                     <div className="absolute inset-0 bg-paynesGrayOverlay"></div>
-                    <div className="flex bg-cover bg-bottom w-full h-full py-14 items-center justify-center"
+                    <div className="flex bg-cover bg-top w-full h-full py-14 items-center justify-center"
                          style={{
                             backgroundImage: `url(${basePath}/images/Hydrogen-CTA.png)`,
                           }}>

@@ -8,12 +8,40 @@ import GetInTouchButton from '@/app/components/GetInTouchButton';
 import StepProcess from '@/app/components/OurProcess';
 import Image from 'next/image';
 import AltGetInTouchButton from '@/app/components/AltGetInTouchButton';
-import BrandsCard from '@/app/components/BrandsCard';
 import OptimizedVideo from '@/app/components/Video';
+import React, { useRef, useEffect, useState } from 'react';
 
 const Wheeling = () => {
 
     const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
+    // Separate refs and heights for each section
+    const manufacturingRef = useRef<HTMLDivElement>(null);
+    const [manufacturingHeight, setManufacturingHeight] = useState(0);
+
+    const miningRef = useRef<HTMLDivElement>(null);
+    const [miningHeight, setMiningHeight] = useState(0);
+
+    const commercialRef = useRef<HTMLDivElement>(null);
+    const [commercialHeight, setCommercialHeight] = useState(0);
+
+    const agriRef = useRef<HTMLDivElement>(null);
+    const [agriHeight, setAgriHeight] = useState(0);
+
+    useEffect(() => {
+        if (manufacturingRef.current) {
+            setManufacturingHeight(manufacturingRef.current.clientHeight);
+        }
+        if (miningRef.current) {
+            setMiningHeight(miningRef.current.clientHeight);
+        }
+        if (commercialRef.current) {
+            setCommercialHeight(commercialRef.current.clientHeight);
+        }
+        if (agriRef.current) {
+            setAgriHeight(agriRef.current.clientHeight);
+        }
+    }, []);
 
   return (
           <div className='bg-antiflashWhite'>
@@ -30,40 +58,47 @@ const Wheeling = () => {
                   />
               </section>
 
-              {/* Companies buying Carbon Credits */}  
+              {/* Companies using Wheeling */}  
               <section className="relative flex flex-col gap-8 px-4 py-14 items-center justify-center">
                     <div className="max-w-[1400px] mx-auto">
                           
                         <h3 className="text-paynesGray font-medium text-center">Businesses that have switched to wheeled power</h3>
                         <div className="flex-col lg:flex-row mt-12">
-                            <ul className="flex justify-evenly flex-wrap gap-x-4 gap-y-4">
+                            <ul className="flex flex-wrap items-center justify-center gap-x-4 gap-y-4">
                                 <li>
-                                    <BrandsCard
-                                    logoPath = "/images/brands/nedbank-logo.png"
-                                    altText = "nedbank-logo"   // Alt text for the logo
-                                    />
+                                    <div className="flex items-center justify-center bg-white shadow rounded-3xl h-[150px] p-4">
+                                        <Image
+                                        src = {`${basePath}/images/brands/shoprite-logo.png`}
+                                        alt= {"shoprite-logo"}   // Alt text for the logo
+                                        width={150}
+                                        height={150}
+                                        />
+                                    </div>
                                 </li>
 
                                 <li>
-                                    <BrandsCard
-                                    logoPath = "/images/brands/sasol-logo.png"
-                                    altText = "sasol-logo"   // Alt text for the logo
-                                    />
+                                    <div className="flex items-center justify-center bg-white shadow rounded-3xl h-[150px] p-4">
+                                        <Image
+                                        src = {`${basePath}/images/brands/vodacom-logo.png`}
+                                        alt= {"vodacom-logo"}   // Alt text for the logo
+                                        width={150}
+                                        height={150}
+                                        />
+                                    </div>
                                 </li>
 
                                 <li>
-                                    <BrandsCard
-                                    logoPath = "/images/brands/vw-logo.png"
-                                    altText = "volkswagen-logo"   // Alt text for the logo
-                                    />
+                                    <div className="flex items-center justify-center bg-white shadow rounded-3xl h-[150px] p-4">
+                                        <Image
+                                        src = {`${basePath}/images/brands/growthpoint-logo.png`}
+                                        alt= {"growth-point-logo"}   // Alt text for the logo
+                                        width={150}
+                                        height={150}
+                                        />
+                                    </div>
                                 </li>
 
-                                <li>
-                                    <BrandsCard
-                                    logoPath = "/images/brands/anglo-american-logo.png"
-                                    altText = "anglo-american-logo"   // Alt text for the logo
-                                    />
-                                </li>
+                                
                             </ul>
                         </div>
                     </div>
@@ -72,14 +107,17 @@ const Wheeling = () => {
               {/* What is Wheeling? */}
               <section className='bg-paynesGray'>
                 <div className='max-w-[1400px] mx-auto px-4 py-14'>
-                <div className='flex gap-8 w-full items-center justify-center text-charcoal'>
+                <div className='flex flex-col-reverse lg:flex-row gap-8 w-full items-start justify-center text-charcoal'>
 
-                    <div className='flex w-1/2 flex-col gap-6 text-antiflashWhite'>
+                    <div className='flex w-full lg:w-1/2 flex-col gap-6 text-antiflashWhite'>
                         <h2>Wheeling explained</h2>
-                        <p>Wheeling is a process that enables businesses to purchase renewable energy from an independent power provider and receive it through the existing grid infrastructure. Instead of requiring on-site generation, energy is produced remotely and “wheeled” through the grid to the business location, providing a reliable, sustainable power supply that aligns with modern energy and sustainability goals.</p>
+                        <p>Wheeling is a process that enables businesses to purchase renewable energy from an independent power provider (IPP) and receive it through the existing grid infrastructure. Instead of requiring on-site generation, energy is produced remotely and “wheeled” through the grid to your business location, providing a reliable, sustainable power supply that aligns with modern energy and sustainability goals.</p>
+                        <div>
+                            < AltGetInTouchButton />
+                        </div>
                     </div>
 
-                    <div className='flex w-1/2 flex-col gap-6'>
+                    <div className='flex w-full lg:w-1/2 flex-col gap-6'>
                         <OptimizedVideo 
                         src={`${basePath}/videos/WHEELING-EXPLAINED.mp4`}
                         poster={`${basePath}/images/Wheeling-Explained-Poster.png`}
@@ -107,7 +145,7 @@ const Wheeling = () => {
                             {/*Implement Renewable Energy */}
                             <div className="bg-paynesGray p-6 rounded-3xl shadow-md w-full lg:w-1/3 flex-grow flex flex-col items-start justify-start text-start space-y-4">
                                 <div className="rounded-full bg-powderBlue p-4 justify-end items-end">
-                                    <Image src={`${basePath}/icons/Green-Electric.svg`} alt="icon" width={25} height={25} />
+                                    <Image src={`${basePath}/icons/growth.png`} alt="icon" width={25} height={25} />
                                 </div>
                                 <h3 className="text-antiflashWhite whitespace-pre-wrap font-bold">
                                     Effortless Scalability for Growing Needs
@@ -122,7 +160,7 @@ const Wheeling = () => {
                             {/*Implement Renewable Energy */}
                             <div className="bg-paynesGray p-6 rounded-3xl shadow-md w-full lg:w-1/3 flex flex-grow flex-col items-start justify-start text-start space-y-4">
                                 <div className="rounded-full bg-powderBlue p-4 justify-end items-end">
-                                    <Image src={`${basePath}/icons/Efficiency.png`} alt="icon" width={25} height={25} />
+                                    <Image src={`${basePath}/icons/none-icon.png`} alt="icon" width={25} height={25} />
                                 </div>
                                 <h3 className="font-bold text-antiflashWhite whitespace-pre-wrap">
                                     Zero Infrastructure & Maintenance
@@ -137,7 +175,7 @@ const Wheeling = () => {
                             {/*Implement Renewable Energy */}
                             <div className="bg-paynesGray p-6 rounded-3xl shadow-md w-full lg:w-1/3 flex flex-grow flex-col items-start justify-start text-start space-y-4">
                                 <div className="rounded-full bg-powderBlue p-4 justify-end items-end">
-                                    <Image src={`${basePath}/icons/sustainable.png`} alt="icon" width={25} height={25} />
+                                    <Image src={`${basePath}/icons/brand-rep.png`} alt="icon" width={25} height={25} />
                                 </div>
                                 <h3 className="font-bold text-antiflashWhite whitespace-pre-wrap">
                                     Affordable & Stable Energy Rates
@@ -149,10 +187,10 @@ const Wheeling = () => {
                                 </div>
                             </div>
 
-                            {/*Implement Renewable Energy */}
+                            {/*Maximized Renewable Integration */}
                             <div className="bg-paynesGray p-6 rounded-3xl shadow-md w-full lg:w-1/3 flex flex-grow flex-col items-start justify-start text-start space-y-4">
                                 <div className="rounded-full bg-powderBlue p-4 justify-end items-end">
-                                    <Image src={`${basePath}/icons/sustainable.png`} alt="icon" width={25} height={25} />
+                                    <Image src={`${basePath}/icons/maximize.png`} alt="icon" width={25} height={25} />
                                 </div>
                                 <h3 className="font-bold text-antiflashWhite whitespace-pre-wrap">
                                     Maximized Renewable Integration
@@ -177,8 +215,7 @@ const Wheeling = () => {
                 <section id="carbon-credits-eligibility" className="relative 
                                                                 bg-antiflashWhite 
                                                                 w-full
-                                                                pb-14
-                                                                pt-14
+                                                                py-14
                                                                 px-4
                                                                 flex 
                                                                 items-center 
@@ -186,18 +223,23 @@ const Wheeling = () => {
                                                                 overflow-hidden">
 
                     <div className="max-w-[1400px] mx-auto">
+
                         <h2 className="text-charcoal text-center">Industries that can benefit the most from wheeling</h2>
                     
-                        <p className="text-charcoal text-center mt-12 text-xl">
+                        <p className="text-charcoal text-center mt-6 text-xl">
                         Whether you&apos;re looking for seamless grid integration, reliable battery storage, or backup power with generator integration, we&apos;ve got you covered.
                         </p>
 
-                        {/*Manufacturing */}
-                        <div className="mt-12 flex flex-col w-full lg:flex-row-reverse gap-8">
-                        
-                            <div className="bg-paynesGray p-6 rounded-3xl shadow-md w-full lg:w-2/3 flex flex-grow flex-col items-start justify-start text-start space-y-8">
+                        {/* Manufacturing */}
+                        <div className="mt-12 flex flex-col gap-8">
+                        <div className="flex flex-col w-full lg:flex-row-reverse gap-8 items-start">
+                            
+                            <div 
+                            ref={manufacturingRef}
+                            className="bg-paynesGray p-6 rounded-3xl shadow-md w-full lg:w-2/3 flex flex-col items-start justify-start text-start space-y-8"
+                            >
                                 <div className="rounded-full bg-antiflashWhite p-4 justify-end items-end">
-                                    <Image src={`${basePath}/icons/Solar.svg`} alt="icon" width={25} height={25} />
+                                    <Image src={`${basePath}/icons/factory.png`} alt="manufacturing-icon" width={25} height={25} />
                                 </div>
                                 <h3 className="font-bold text-antiflashWhite whitespace-pre-wrap">
                                     Manufacturing
@@ -210,7 +252,7 @@ const Wheeling = () => {
                                                 <Image className="object-scale-down object-top" src={`${basePath}/icons/Check-Alt.png`} alt="icon" width={25} height={25} />
                                                 <div className="flex flex-col space-y-2">
                                                     <p className="font-bold">Supports High Production Demands</p>
-                                                    <p className="">Wheeling delivers reliable, high-capacity power, ensuring manufacturers can meet intense production schedules that can not be met with on-site power generation alone.</p>
+                                                    <p>Wheeling delivers reliable, high-capacity power, ensuring manufacturers can meet intense production schedules that can not be met with on-site power generation alone.</p>
                                                 </div>
                                             </div>
                                         </li>
@@ -220,7 +262,7 @@ const Wheeling = () => {
                                                 <Image className="object-scale-down object-top" src={`${basePath}/icons/Check-Alt.png`} alt="icon" width={25} height={25} />
                                                 <div className="flex flex-col space-y-2">
                                                     <p className="font-bold">Stable, Cost-Efficient Energy Supply</p>
-                                                    <p className="">With wheeling, manufacturers secure consistent renewable energy at predictable rates, reducing costs and shielding against market price spikes.</p>
+                                                    <p>With wheeling, manufacturers secure consistent renewable energy at predictable rates, reducing costs and shielding against market price spikes.</p>
                                                 </div>
                                             </div>
                                         </li>
@@ -230,30 +272,40 @@ const Wheeling = () => {
                                                 <Image className="object-scale-down object-top" src={`${basePath}/icons/Check-Alt.png`} alt="icon" width={25} height={25} />
                                                 <div className="flex flex-col space-y-2">
                                                     <p className="font-bold">Lower Carbon Footprint for Compliance</p>
-                                                    <p className="">Clean, wheeled energy helps manufacturers cut emissions, meet sustainability standards, and stay aligned with industry regulations.</p>
+                                                    <p>Clean, wheeled energy helps manufacturers cut emissions, meet sustainability standards, and stay aligned with industry regulations.</p>
                                                 </div>
                                             </div>
                                         </li>
                                     </ul>
-                                    
                                 </div>
                                 <div className="flex flex-col md:flex-row mt-6 align-middle justify-start items-start md:items-center md:justify-center gap-4">
                                     <AltGetInTouchButton/>
                                 </div>
-
                             </div>
 
-                            <div className="hidden lg:block rounded-3xl shadow-md w-full lg:w-1/3 flex flex-grow flex-col items-start justify-start text-start space-y-4">
-                                <Image className="object-cover h-full rounded-3xl" src={`${basePath}/images/Solar-Hero.png`} alt="Battery Storage System" width={500} height={500} />
+                            {/* Image container scales according to text container height */}
+                            <div className="hidden lg:flex rounded-3xl shadow-md w-full lg:w-1/3"
+                            style={{ height: `${manufacturingHeight}px` }}>
+                                <Image 
+                                    src={`${basePath}/images/Factory-Image.png`}
+                                    alt="Manufacturing Industry" 
+                                    width={500} 
+                                    height={500} 
+                                    className="object-cover rounded-3xl"
+                                />
                             </div>
                         </div>
 
+
                         {/*Mining */}
-                        <div className="mt-12 flex flex-col w-full lg:flex-row gap-8">
+                        <div className="flex flex-col w-full lg:flex-row gap-8">
                         
-                            <div className="bg-paynesGray p-6 rounded-3xl shadow-md w-full lg:w-2/3 flex flex-grow flex-col items-start justify-start text-start space-y-8">
+                            <div 
+                            ref={miningRef}
+                            className="bg-paynesGray p-6 rounded-3xl shadow-md w-full lg:w-2/3 flex flex-col items-start justify-start text-start space-y-8"
+                            >
                                 <div className="rounded-full bg-antiflashWhite p-4 justify-end items-end">
-                                    <Image src={`${basePath}/icons/Battery-2.png`} alt="icon" width={25} height={25} />
+                                    <Image src={`${basePath}/icons/pickaxe.png`} alt="mining-icon" width={25} height={25} />
                                 </div>
                                 <h3 className="font-bold text-antiflashWhite whitespace-pre-wrap">
                                     Mining
@@ -301,17 +353,25 @@ const Wheeling = () => {
 
                             </div>
 
-                            <div className="hidden lg:block rounded-3xl shadow-md w-full lg:w-1/3 flex flex-grow flex-col items-start justify-start text-start space-y-4">
-                                <Image className="object-cover h-full rounded-3xl" src={`${basePath}/images/Battery-Storage.png`} alt="Battery Storage System" width={500} height={500} />
+                            <div className="hidden lg:flex rounded-3xl shadow-md w-full lg:w-1/3"
+                            style={{ height: `${miningHeight}px` }}>
+                                <Image className="object-cover rounded-3xl" 
+                                src={`${basePath}/images/Mining-Image.png`} 
+                                alt="Mining Industry" 
+                                width={500} 
+                                height={500} />
                             </div>
                         </div>
 
                         {/*Commercial Real Estate */}
-                        <div className="mt-12 flex flex-col w-full lg:flex-row-reverse gap-8">
+                        <div className="flex flex-col w-full lg:flex-row-reverse gap-8">
                         
-                            <div className="bg-paynesGray p-6 rounded-3xl shadow-md w-full lg:w-2/3 flex flex-grow flex-col items-start justify-start text-start space-y-8">
+                            <div 
+                            ref={commercialRef}
+                            className="bg-paynesGray p-6 rounded-3xl shadow-md w-full lg:w-2/3 flex flex-grow flex-col items-start justify-start text-start space-y-8"
+                            >
                                 <div className="rounded-full bg-antiflashWhite p-4 justify-end items-end">
-                                    <Image src={`${basePath}/icons/Integration.png`} alt="icon" width={25} height={25} />
+                                    <Image src={`${basePath}/icons/apartments.png`} alt="commercial-real-estate-icon" width={25} height={25} />
                                 </div>
                                 <h3 className="font-bold text-antiflashWhite whitespace-pre-wrap">
                                     Commercial Real Estate
@@ -358,70 +418,95 @@ const Wheeling = () => {
 
                             </div>
 
-                            <div className="hidden lg:block rounded-3xl shadow-md w-full lg:w-1/3 flex flex-grow flex-col items-start justify-start text-start space-y-4">
-                                <Image className="object-cover h-full rounded-3xl" src={`${basePath}/images/Solar-Generator.png`} alt="Battery Storage System" width={500} height={500} />
+                            <div className="hidden lg:flex rounded-3xl shadow-md w-full lg:w-1/3"
+                            style={{ height: `${commercialHeight}px` }}>
+                                <Image className="object-cover rounded-3xl" 
+                                src={`${basePath}/images/Commercial-Real-Estate-Image.png`} 
+                                alt="Mining Industry" 
+                                width={500} 
+                                height={500} />
                             </div>
                         </div>
 
                         {/*Agriculture */}
-                        <div className="mt-12 flex flex-col w-full lg:flex-row gap-8">
-                        
-                            <div className="bg-paynesGray p-6 rounded-3xl shadow-md w-full lg:w-2/3 flex flex-grow flex-col items-start justify-start text-start space-y-8">
+                        <div className="flex flex-col w-full lg:flex-row gap-8">
+                            <div 
+                            ref={agriRef}
+                            className="bg-paynesGray p-6 rounded-3xl shadow-md w-full lg:w-2/3 flex flex-col items-start justify-start text-start space-y-8"
+                            >
                                 <div className="rounded-full bg-antiflashWhite p-4 justify-end items-end">
-                                    <Image src={`${basePath}/icons/pump.png`} alt="icon" width={25} height={25} />
+                                    <Image src={`${basePath}/icons/tractor.png`} alt="agriculture-icon" width={25} height={25} />
                                 </div>
-                                <h3 className="font-bold text-antiflashWhite whitespace-pre-wrap">
-                                    Agriculture
-                                </h3>
-                                <p className="text-antiflashWhite">Solar pumps offer a sustainable, efficient way to meet diverse water pumping needs across agricultural, industrial, and domestic applications. Designed to operate independently of the grid, these pumps are ideal for remote and off-grid locations, drastically reducing energy costs while ensuring reliable water supply. We offer a range of durable and cost-effective options, including <span className="text-atomicTangerine">submersible solar pumps</span>, <span className="text-atomicTangerine">surface solar pumps</span>, and <span className="text-atomicTangerine">DC/AC hybrid solar pumps</span>.</p>
+                                <h3 className="font-bold text-antiflashWhite whitespace-pre-wrap">Agriculture</h3>
+
                                 <div className="font-inter text-lg text-antiflashWhite">
                                     <ul className="space-y-6">
-                                        
                                         <li className="gap-4 w-full">
                                             <div className="flex flex-row gap-4">
                                                 <Image className="object-scale-down object-top" src={`${basePath}/icons/Check-Alt.png`} alt="icon" width={25} height={25} />
                                                 <div className="flex flex-col space-y-2">
-                                                    <p className="font-bold">Cost Savings</p>
-                                                    <p className="">Significantly lowers electricity costs by eliminating reliance on costly grid power.</p>
+                                                    <p className="font-bold">Seasonal Cost Efficiency</p>
+                                                    <p>Wheeling offers stable, predictable energy rates that help manage seasonal energy costs, allowing farms to efficiently budget and allocate resources throughout peak and off-peak periods.</p>
                                                 </div>
                                             </div>
                                         </li>
-
                                         <li className="gap-4 w-full">
                                             <div className="flex flex-row gap-4">
                                                 <Image className="object-scale-down object-top" src={`${basePath}/icons/Check-Alt.png`} alt="icon" width={25} height={25} />
                                                 <div className="flex flex-col space-y-2">
-                                                    <p className="font-bold">Longer Lifespan</p>
-                                                    <p className="">Solar pumps are more durable and require less maintenance than conventional pumps.</p>
+                                                    <p className="font-bold">Supports Sustainable Farming Practices</p>
+                                                    <p>By sourcing renewable energy through wheeling, farms can significantly reduce their carbon footprint, aligning with sustainable agriculture practices that meet consumer and regulatory demands.</p>
                                                 </div>
                                             </div>
                                         </li>
-
                                         <li className="gap-4 w-full">
                                             <div className="flex flex-row gap-4">
                                                 <Image className="object-scale-down object-top" src={`${basePath}/icons/Check-Alt.png`} alt="icon" width={25} height={25} />
                                                 <div className="flex flex-col space-y-2">
-                                                    <p className="font-bold">Suitable For Remote Locations</p>
-                                                    <p className="">Dependable water supply, even in off-grid and reomte areas.</p>
+                                                    <p className="font-bold">Compliance with Eco-Certifications</p>
+                                                    <p>Access to clean energy through wheeling supports eligibility for eco-certifications, boosting farm value and opening doors to new markets focused on environmentally responsible produce.</p>
                                                 </div>
                                             </div>
                                         </li>
                                     </ul>
-                                    
                                 </div>
                                 <div className="flex flex-col md:flex-row mt-6 align-middle justify-start items-start md:items-center md:justify-center gap-4">
-                                    <AltGetInTouchButton/>
+                                    <AltGetInTouchButton />
                                 </div>
-
                             </div>
 
-                            <div className="hidden lg:block rounded-3xl shadow-md w-full lg:w-1/3 flex flex-grow flex-col items-start justify-start text-start space-y-4">
-                                <Image className="object-cover object-right-[5 h-full rounded-3xl" src={`${basePath}/images/solar-pump.png`} alt="Battery Storage System" width={500} height={500} />
+                            <div className="hidden lg:flex rounded-3xl shadow-md w-full lg:w-1/3"
+                            style={{ height: `${agriHeight}px` }}>
+                                <Image className="object-cover rounded-3xl" 
+                                src={`${basePath}/images/Agriculture-Image.png`} 
+                                alt="Agriculture Industry" 
+                                width={500} 
+                                height={500} />
                             </div>
                         </div>
-                    
+                    </div>
                     </div>
             </ section>
+
+            {/* IPP Partners */}
+            <section className='bg-paynesGray'>
+                <div className='max-w-[1400px] mx-auto px-4 py-14'>
+                <div className='flex flex-col-reverse md:flex-row gap-8 w-full items-center justify-center text-charcoal'>
+
+                    <div className='flex w-full lg:w-1/2 flex-col gap-6 text-antiflashWhite'>
+                        <h2>Partnering with the worlds largest low-carbon IPP</h2>
+                        <p>We&apos;re proud to partner with EDF, the world&apos;s largest low-carbon Independent Power Producer (IPP) and a NERSA-registered provider in South Africa. Through this partnership, we can offer wheeling services to local businesses, enabling access to EDF&apos;s nearly 750 MW of renewable energy projects across South Africa.</p>
+                        <div>
+                            < AltGetInTouchButton />
+                        </div>
+                    </div>
+
+                    <div className='flex w-full lg:w-1/2 flex-col gap-6 items-center justify-center'>
+                        <Image className="h-[120px] w-auto md:h-[360px] object-cover" src={`${basePath}/images/brands/EDF-Alt.png`} width={300} height={300} alt='EDF-logo' />
+                    </div>
+                </div>
+                </div>
+              </section>
 
             {/* Our Process */}
             <section id="how-it-works-carbon-credits" className="relative w-full flex px-4 py-14 items-center justify-center">
@@ -443,7 +528,7 @@ const Wheeling = () => {
             </section>
 
             {/* FAQ */}
-            <section id="carbon-credits-faq" className="relative w-full px-4 flex items-center justify-center">
+            <section id="carbon-credits-faq" className="relative w-full px-4 py-14 flex items-center justify-center">
 
                 <div className="text-xl relative text-center max-w-[1400px] mx-auto">
                     <h2 className="text-charcoal">Frequently asked questions</h2>
@@ -456,14 +541,14 @@ const Wheeling = () => {
             </section>
 
             {/* CTA */}
-            <section id="carbon-credits-cta" className="relative w-full flex items-center justify-center h-[50vh]"
+            <section id="carbon-credits-cta" className="relative w-full flex items-center justify-center"
                 >
                     <div className="absolute inset-0 bg-paynesGrayOverlay"></div>
                     <div className="flex bg-cover bg-bottom w-full h-full py-14 items-center justify-center"
                          style={{
                             backgroundImage: `url(${basePath}/images/Wheeling-CTA.png)`,
                           }}>
-                        <div className="text-xl relative text-center max-w-[1400px] mx-auto">
+                        <div className="text-xl relative text-center max-w-[1400px] mx-auto items-center justify-center">
                         
                             < CallToAction 
                             headline="LIMITLESS GREEN ENERGY,"

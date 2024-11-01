@@ -38,7 +38,7 @@ const EmbeddedSystems = () => {
                           
                         <h3 className="text-paynesGray font-medium text-center">Partnering with industry leaders for quality solutions backed by experience</h3>
                         <div className="flex-col lg:flex-row mt-12">
-                            <ul className="flex justify-evenly flex-wrap gap-x-4 gap-y-4">
+                            <ul className="flex flex-wrap items-center justify-center gap-x-4 gap-y-4">
                                 <li>
                                     <div className="flex items-center justify-center bg-white shadow rounded-3xl h-[150px] p-4">
                                         <Image
@@ -576,7 +576,7 @@ const EmbeddedSystems = () => {
                 </section>
 
                 {/* CTA */}
-                <section id="solar-cta" className="relative w-full flex items-center justify-center h-[50vh]"
+                <section id="solar-cta" className="relative w-full flex items-center justify-center"
                 >
                     <div className="absolute inset-0 bg-paynesGrayOverlay"></div>
                     <div className="flex bg-cover bg-bottom w-full h-full py-14 items-center justify-center"

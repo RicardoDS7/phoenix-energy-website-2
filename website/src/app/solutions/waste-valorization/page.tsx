@@ -377,7 +377,7 @@ const WasteValorization = () => {
                 </section>
 
                 {/* CTA */}
-                <section id="carbon-credits-cta" className="relative w-full flex items-center justify-center h-[50vh]"
+                <section id="carbon-credits-cta" className="relative w-full flex items-center justify-center"
                 >
                     <div className="absolute inset-0 bg-paynesGrayOverlay"></div>
                     <div className="flex bg-cover bg-bottom w-full h-full py-14 items-center justify-center"
@@ -387,8 +387,8 @@ const WasteValorization = () => {
                         <div className="text-xl relative text-center max-w-[1400px] mx-auto">
                         
                             < CallToAction 
-                            headline="WASTE LESS, GAIN MORE - GET STARTED TODAY."
-                            subtitle=""/>
+                            headline="WASTE LESS"
+                            subtitle="GAIN MORE."/>
 
                         </div>
 
