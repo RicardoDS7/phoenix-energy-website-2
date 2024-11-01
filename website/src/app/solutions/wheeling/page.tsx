@@ -230,8 +230,8 @@ const Wheeling = () => {
                         Whether you&apos;re looking for seamless grid integration, reliable battery storage, or backup power with generator integration, we&apos;ve got you covered.
                         </p>
 
-                        {/* Manufacturing */}
                         <div className="mt-12 flex flex-col gap-8">
+                        {/* Manufacturing */}
                         <div className="flex flex-col w-full lg:flex-row-reverse gap-8 items-start">
                             
                             <div 

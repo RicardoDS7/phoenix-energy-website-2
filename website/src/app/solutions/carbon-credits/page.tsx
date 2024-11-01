@@ -249,7 +249,7 @@ const CarbonCredits = () => {
                 </section>
 
                 {/* FAQ */}
-                <section id="carbon-credits-faq" className="relative w-full px-4 flex items-center justify-center">
+                <section id="carbon-credits-faq" className="relative w-full px-4 pb-14 flex items-center justify-center">
 
                     <div className="text-xl relative text-center max-w-[1400px] mx-auto">
                         <h2 className="text-charcoal">Frequently asked questions</h2>

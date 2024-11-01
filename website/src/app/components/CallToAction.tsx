@@ -10,8 +10,8 @@ const CallToAction: React.FC<CTAProps> = ({ headline, subtitle }) => {
     return (
         <section className="">
             <div className="flex flex-col rounded-3xl w-full items-center justify-center gap-4 text-antiflashWhite">
-                <h2 className="font-bold">{headline}</h2>
-                <h2 className="font-bold">{subtitle}</h2>
+                <h2 className="font-extrabold">{headline}</h2>
+                <h2 className="font-extrabold">{subtitle}</h2>
                 <AltGetInTouchButton />
             </div>
         </section>

@@ -11,11 +11,39 @@ import FinanceOptionsButton from "@/app/components/FinanceOptionsButton";
 import Carousel from "@/app/components/SuccessStoriesCarousel";
 import { projectDetails } from "@/app/projects/projectConstants";
 import CallToAction from "@/app/components/CallToAction";
-
+import React, { useRef, useEffect, useState } from 'react';
 
 const EmbeddedSystems = () => {
 
     const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
+    // Separate refs and heights for each section
+    const gridTiedRef = useRef<HTMLDivElement>(null);
+    const [gridTiedHeight, setgridTiedHeight] = useState(0);
+
+    const bessRef = useRef<HTMLDivElement>(null);
+    const [bessHeight, setBessHeight] = useState(0);
+
+    const solarGenRef = useRef<HTMLDivElement>(null);
+    const [solarGenHeight, setSolarGenHeight] = useState(0);
+
+    const pumpRef = useRef<HTMLDivElement>(null);
+    const [pumpHeight, setPumpHeight] = useState(0);
+
+    useEffect(() => {
+        if (gridTiedRef.current) {
+            setgridTiedHeight(gridTiedRef.current.clientHeight);
+        }
+        if (bessRef.current) {
+            setBessHeight(bessRef.current.clientHeight);
+        }
+        if (solarGenRef.current) {
+            setSolarGenHeight(solarGenRef.current.clientHeight);
+        }
+        if (pumpRef.current) {
+            setPumpHeight(pumpRef.current.clientHeight);
+        }
+    }, []);
 
     return (
             <div className="bg-antiflashWhite">
@@ -113,14 +141,17 @@ const EmbeddedSystems = () => {
                     <div className="max-w-[1400px] mx-auto">
                         <h2 className="text-charcoal text-center">Versatile solar solutions tailored to your needs</h2>
                     
-                        <p className="text-charcoal text-center mt-12 text-xl">
+                        <p className="text-charcoal text-center mt-6 text-xl">
                         Whether you&apos;re looking for seamless grid integration, reliable battery storage, or backup power with generator integration, we&apos;ve got you covered.
                         </p>
 
+                        <div className="mt-12 flex flex-col gap-8">
                         {/*Grid Tied */}
-                        <div className="mt-12 flex flex-col w-full lg:flex-row-reverse gap-8">
+                        <div className="flex flex-col w-full lg:flex-row-reverse gap-8">
                         
-                            <div className="bg-paynesGray p-6 rounded-3xl shadow-md w-full lg:w-2/3 flex flex-grow flex-col items-start justify-start text-start space-y-8">
+                            <div 
+                            ref={gridTiedRef}
+                            className="bg-paynesGray p-6 rounded-3xl shadow-md w-full lg:w-2/3 flex flex-grow flex-col items-start justify-start text-start space-y-8">
                                 <div className="rounded-full bg-antiflashWhite p-4 justify-end items-end">
                                     <Image src={`${basePath}/icons/Solar.svg`} alt="icon" width={25} height={25} />
                                 </div>
@@ -170,15 +201,24 @@ const EmbeddedSystems = () => {
 
                             </div>
 
-                            <div className="hidden lg:block rounded-3xl shadow-md w-full lg:w-1/3 flex flex-grow flex-col items-start justify-start text-start space-y-4">
-                                <Image className="object-cover h-full rounded-3xl" src={`${basePath}/images/Solar-Hero.png`} alt="Battery Storage System" width={500} height={500} />
+                            <div className="hidden lg:flex rounded-3xl shadow-md w-full lg:w-1/3"
+                            style={{ height: `${gridTiedHeight}px` }}>
+                                <Image 
+                                    src={`${basePath}/images/Solar-Hero.png`}
+                                    alt="Solar Panels" 
+                                    width={500} 
+                                    height={500} 
+                                    className="object-cover rounded-3xl"
+                                />
                             </div>
                         </div>
 
                         {/*Battery Systems */}
-                        <div className="mt-12 flex flex-col w-full lg:flex-row gap-8">
+                        <div className="flex flex-col w-full lg:flex-row gap-8">
                         
-                            <div className="bg-paynesGray p-6 rounded-3xl shadow-md w-full lg:w-2/3 flex flex-grow flex-col items-start justify-start text-start space-y-8">
+                            <div 
+                            ref={bessRef}
+                            className="bg-paynesGray p-6 rounded-3xl shadow-md w-full lg:w-2/3 flex flex-grow flex-col items-start justify-start text-start space-y-8">
                                 <div className="rounded-full bg-antiflashWhite p-4 justify-end items-end">
                                     <Image src={`${basePath}/icons/Battery-2.png`} alt="icon" width={25} height={25} />
                                 </div>
@@ -228,15 +268,24 @@ const EmbeddedSystems = () => {
 
                             </div>
 
-                            <div className="hidden lg:block rounded-3xl shadow-md w-full lg:w-1/3 flex flex-grow flex-col items-start justify-start text-start space-y-4">
-                                <Image className="object-cover h-full rounded-3xl" src={`${basePath}/images/Battery-Storage.png`} alt="Battery Storage System" width={500} height={500} />
+                            <div className="hidden lg:flex rounded-3xl shadow-md w-full lg:w-1/3"
+                            style={{ height: `${bessHeight}px` }}>
+                                <Image 
+                                    src={`${basePath}/images/Battery-Storage.png`}
+                                    alt="Battery storage for solar power" 
+                                    width={500} 
+                                    height={500} 
+                                    className="object-cover rounded-3xl"
+                                />
                             </div>
                         </div>
 
                         {/*Solar-Gen Integration */}
-                        <div className="mt-12 flex flex-col w-full lg:flex-row-reverse gap-8">
+                        <div className="flex flex-col w-full lg:flex-row-reverse gap-8">
                         
-                            <div className="bg-paynesGray p-6 rounded-3xl shadow-md w-full lg:w-2/3 flex flex-grow flex-col items-start justify-start text-start space-y-8">
+                            <div 
+                            ref={solarGenRef}
+                            className="bg-paynesGray p-6 rounded-3xl shadow-md w-full lg:w-2/3 flex flex-grow flex-col items-start justify-start text-start space-y-8">
                                 <div className="rounded-full bg-antiflashWhite p-4 justify-end items-end">
                                     <Image src={`${basePath}/icons/Integration.png`} alt="icon" width={25} height={25} />
                                 </div>
@@ -286,15 +335,24 @@ const EmbeddedSystems = () => {
 
                             </div>
 
-                            <div className="hidden lg:block rounded-3xl shadow-md w-full lg:w-1/3 flex flex-grow flex-col items-start justify-start text-start space-y-4">
-                                <Image className="object-cover h-full rounded-3xl" src={`${basePath}/images/Solar-Generator.png`} alt="Battery Storage System" width={500} height={500} />
+                            <div className="hidden lg:flex rounded-3xl shadow-md w-full lg:w-1/3"
+                            style={{ height: `${solarGenHeight}px` }}>
+                                <Image 
+                                    src={`${basePath}/images/Solar-Generator.png`}
+                                    alt="Solar Generator Integration" 
+                                    width={500} 
+                                    height={500} 
+                                    className="object-cover rounded-3xl"
+                                />
                             </div>
                         </div>
 
                         {/*Solar Pumps */}
-                        <div className="mt-12 flex flex-col w-full lg:flex-row gap-8">
+                        <div className="flex flex-col w-full lg:flex-row gap-8">
                         
-                            <div className="bg-paynesGray p-6 rounded-3xl shadow-md w-full lg:w-2/3 flex flex-grow flex-col items-start justify-start text-start space-y-8">
+                            <div 
+                            ref={pumpRef}
+                            className="bg-paynesGray p-6 rounded-3xl shadow-md w-full lg:w-2/3 flex flex-grow flex-col items-start justify-start text-start space-y-8">
                                 <div className="rounded-full bg-antiflashWhite p-4 justify-end items-end">
                                     <Image src={`${basePath}/icons/pump.png`} alt="icon" width={25} height={25} />
                                 </div>
@@ -343,17 +401,24 @@ const EmbeddedSystems = () => {
 
                             </div>
 
-                            <div className="hidden lg:block rounded-3xl shadow-md w-full lg:w-1/3 flex flex-grow flex-col items-start justify-start text-start space-y-4">
-                                <Image className="object-cover object-right-[5 h-full rounded-3xl" src={`${basePath}/images/solar-pump.png`} alt="Battery Storage System" width={500} height={500} />
+                            <div className="hidden lg:flex rounded-3xl shadow-md w-full lg:w-1/3"
+                            style={{ height: `${pumpHeight}px` }}>
+                                <Image 
+                                    src={`${basePath}/images/solar-pump.png`}
+                                    alt="Solar Pump for Farms" 
+                                    width={500} 
+                                    height={500} 
+                                    className="object-cover rounded-3xl"
+                                />
                             </div>
                         </div>
-                    
+                        </div>
                     </div>
                 </ section>
 
 
                 {/*Business Case Studies */}
-                <section id="solar-success-stories" className="py-14 px-4">
+                <section id="solar-success-stories" className="pb-14 px-4">
                     <div className="block overflow-hidden">
                     
                         <Carousel 
@@ -563,7 +628,7 @@ const EmbeddedSystems = () => {
                 </section>
 
                 {/* FAQ */}
-                <section id="carbon-credits-faq" className="relative w-full px-4 flex items-center justify-center">
+                <section id="carbon-credits-faq" className="relative w-full px-4 pb-14 flex items-center justify-center">
 
                     <div className="text-xl relative text-center max-w-[1400px] mx-auto">
                         <h2 className="text-charcoal">Frequently asked questions</h2>

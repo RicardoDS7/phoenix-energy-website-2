@@ -363,3 +363,28 @@ export const CarbonCreditsProcess: ProcessSteps[] = [
         answer: "Yes, load-shedding affects wheeling since power delivery relies on the national grid infrastructure, such as Eskom’s grid. During load-shedding periods, wheeled energy cannot be delivered to the customer if the grid is offline. Customers using wheeling may consider additional backup options, like battery storage, to mitigate load-shedding interruptions."
     }
 ]
+
+//Hyrdogen
+export const HydrogenFAQs = [
+  {
+      question: "How does a hydrogen diesel engine work?",
+      answer: "A hydrogen diesel engine operates by injecting hydrogen into the air intake along with diesel fuel. During combustion, the hydrogen-diesel mix ignites, with hydrogen burning faster and at a higher temperature, leading to more complete combustion of diesel fuel. This process improves engine efficiency and reduces emissions, making it a cleaner alternative to traditional diesel engines."
+  },
+  {
+      question: "How does hydrogen injection improve diesel engine efficiency?",
+      answer: "Hydrogen burns faster and more completely than diesel, promoting a more efficient combustion process. This results in better fuel economy and reduced emissions."
+  },
+  {
+      question: "What are the environmental benefits of hydrogen injection in diesel engines?",
+      answer: "Integrating hydrogen can significantly lower harmful emissions, including carbon dioxide (CO₂), nitrogen oxides (NOₓ), and particulate matter, due to more complete combustion and lower peak combustion temperatures."
+  },
+  {
+      question: "Can existing diesel engines be retrofitted for hydrogen injection?",
+      answer: "Yes, many existing diesel engines can be retrofitted with hydrogen injection systems, allowing operators to enhance efficiency and reduce emissions without replacing their current engines."
+  },
+  {
+      question: "How does hydrogen injection affect engine performance?",
+      answer: "Hydrogen injection can enhance engine performance by increasing torque and responsiveness, especially under heavy loads, due to the faster combustion properties of hydrogen."
+  }
+];
+
