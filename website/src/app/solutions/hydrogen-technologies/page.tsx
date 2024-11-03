@@ -18,21 +18,23 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
               {/* Hero Section */} 
               <section className='max-w-[1400px] mx-auto px-4'>
                   <HeroSectionS2S 
-                      title='Maximize Generator Efficiency With Hydrogen'
-                      subtitle='A carbon credit is a certificate representing the reduction of one ton of CO₂ from the atmosphere. Businesses can earn or purchase them by investing in emission-reducing projects like renewable energy or reforestation.'
+                      title='Unlock superior performance'
+                      subtitle='Achieve lower emissions, greater efficiency, and reduced fuel costs by integrating hydrogen fuel injection into your engine or generator.'
                       imagePath={`${basePath}/images/Hydrogen-Hero-Image-2.png`}
                       altText='Carbon Credits Coin'
                       width={2048}
                       height={2048}
+                      sectionID=''
+                      howItWorksActive={false}
                   />
                   
               </section>
 
-              {/* Earn Carbon Credits For Your Business */}
+              {/* Benefits of Hydrogen Technology*/}
               <section id="earn-carbon-credits" className="relative 
-                                                                bg-paynesGray 
+                                                                bg-antiflashWhite 
                                                                 w-full
-                                                                py-14
+                                                                pt-14
                                                                 px-4
                                                                 flex 
                                                                 items-center 
@@ -40,51 +42,51 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
                                                                 overflow-hidden">
 
                     <div className="max-w-[1400px] mx-auto">
-                        <h2 className="text-antiflashWhite text-center">Earn carbon credits for your business</h2>
+                        <h2 className="text-charcoal text-center">The Power of Hydrogen Fuel Injection</h2>
                     
                         <div className="mt-12 flex flex-col w-full lg:flex-row gap-8">
                             
                             {/*Higher Efficiency */}
-                            <div className="bg-antiflashWhite p-6 rounded-3xl shadow-md w-full lg:w-1/3 flex-grow flex flex-col items-start justify-start text-start space-y-4">
+                            <div className="bg-paynesGray p-6 rounded-3xl shadow-md w-full lg:w-1/3 flex-grow flex flex-col items-start justify-start text-start space-y-4">
                                 <div className="rounded-full bg-powderBlue p-4 justify-end items-end">
                                     <Image src={`${basePath}/icons/Green-Electric.svg`} alt="icon" width={25} height={25} />
                                 </div>
-                                <h3 className="text-paynesGray whitespace-pre-wrap font-bold">
+                                <h3 className="text-antiflashWhite whitespace-pre-wrap font-bold">
                                     Higher Efficiency
                                 </h3>
-                                <div className="font-inter text-lg text-charcoal">
+                                <div className="font-inter text-lg text-antiflashWhite">
                                     <p>
-                                    Increases generator efficiency by up to 15% through better fuel utilization.
+                                    Achieve up to 15% greater generator efficiency by maximizing fuel utilization and getting more power out of every drop.
                                     </p>
                                 </div>
                             </div>
 
-                            {/*Implement Renewable Energy */}
-                            <div className="bg-antiflashWhite p-6 rounded-3xl shadow-md w-full lg:w-1/3 flex flex-grow flex-col items-start justify-start text-start space-y-4">
+                            {/* Lower Fuel Costs */}
+                            <div className="bg-paynesGray p-6 rounded-3xl shadow-md w-full lg:w-1/3 flex flex-grow flex-col items-start justify-start text-start space-y-4">
                                 <div className="rounded-full bg-powderBlue p-4 justify-end items-end">
                                     <Image src={`${basePath}/icons/Efficiency.png`} alt="icon" width={25} height={25} />
                                 </div>
-                                <h3 className="font-bold text-paynesGray whitespace-pre-wrap">
+                                <h3 className="font-bold text-antiflashWhite whitespace-pre-wrap">
                                     Lower Fuel Costs
                                 </h3>
-                                <div className="font-inter text-lg text-charcoal">
+                                <div className="font-inter text-lg text-antiflashWhite">
                                     <p>
-                                    Reduces fuel consumption by 10-20%, leading to substantial cost savings.
+                                    Reduce fuel consumption by 10-20%, translating into significant cost savings and more sustainable operations.
                                     </p>
                                 </div>
                             </div>
 
-                            {/*Implement Renewable Energy */}
-                            <div className="bg-antiflashWhite p-6 rounded-3xl shadow-md w-full lg:w-1/3 flex flex-grow flex-col items-start justify-start text-start space-y-4">
+                            {/*Better Combustion */}
+                            <div className="bg-paynesGray p-6 rounded-3xl shadow-md w-full lg:w-1/3 flex flex-grow flex-col items-start justify-start text-start space-y-4">
                                 <div className="rounded-full bg-powderBlue p-4 justify-end items-end">
                                     <Image src={`${basePath}/icons/sustainable.png`} alt="icon" width={25} height={25} />
                                 </div>
-                                <h3 className="font-bold text-paynesGray whitespace-pre-wrap">
+                                <h3 className="font-bold text-antiflashWhite whitespace-pre-wrap">
                                     Better Combustion
                                 </h3>
-                                <div className="font-inter text-lg text-charcoal">
+                                <div className="font-inter text-lg text-antiflashWhite">
                                     <p>
-                                        Enhances combustion quality, potentially reducing emissions by 20-30%, making energy production cleaner.
+                                    Improve combustion quality by reducing emissions up to 30%, enabling cleaner and more eco-friendly power production.
                                     </p>
                                 </div>
                             </div>
@@ -103,7 +105,7 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
                     <div className="max-w-[1400px] mx-auto flex flex-col lg:flex-row lg:gap-12 space-y-12">
                         <div className="relative text-start lg:w-2/3">
-                            <h2 className="text-charcoal">Applications for Hydrogen Generators</h2>
+                            <h2 className="text-charcoal">Powering Possibilities</h2>
                         
                             <div className="py-10">
                                 <ul className="space-y-6">
@@ -113,7 +115,7 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
                                         </div>
                                         <div className="flex flex-col justify-start items-start gap-2">
                                             <h4 >Stationary Generators</h4>
-                                            <p className="">Businesses can sell carbon credits to offset emissions, generating revenue while reducing operational costs and boosting profits.</p>
+                                            <p className="">Hydrogen injection optimizes combustion, extending the lifespan of stationary generators and reducing maintenance needs, ultimately lowering lifetime operating costs.</p>
                                         </div>
                                     </li>
 
@@ -124,7 +126,7 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
                                         </div>
                                         <div className="flex flex-col justify-start items-start gap-2">
                                             <h4 >Heavy Machinery & Earth Moving Equipment</h4>
-                                            <p className="">Carbon credits offset the Carbon Tax under the South African Carbon Tax Act of 2019, which is set to rise to R462 per ton of CO₂ by 2030.</p>
+                                            <p className="">Heavy machinery burns through fuel fast—hydrogen injection maximizes combustion efficiency, enabling engines to run longer and drive massive fuel cost savings. </p>
                                         </div>
                                     </li>
 
@@ -135,8 +137,8 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
                                                 <Image src={`${basePath}/icons/brand-rep.png`} alt="icon" width={25} height={25} />
                                         </div>
                                         <div className="flex flex-col justify-start items-start gap-2">
-                                            <h4 >Maritime</h4>
-                                            <p className="">Earning carbon credits strengthens your brand&apos;s sustainability reputation, attracting eco-conscious investors and giving you a competitive edge.</p>
+                                            <h4 >Maritime Ships</h4>
+                                            <p className="">In maritime shipping, hydrogen injection reduces greenhouse gas emissions and boosts fuel efficiency, helping fleets meet sustainability goals with cleaner, responsible ocean transport.</p>
                                         </div>
                                     </li>
 
@@ -147,8 +149,8 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
                                                 <Image src={`${basePath}/icons/brand-rep.png`} alt="icon" width={25} height={25} />
                                         </div>
                                         <div className="flex flex-col justify-start items-start gap-2">
-                                            <h4 >Logistics Vehiclesw</h4>
-                                            <p className="">Earning carbon credits strengthens your brand&apos;s sustainability reputation, attracting eco-conscious investors and giving you a competitive edge.</p>
+                                            <h4 >Logistics Vehicles</h4>
+                                            <p className="">In a margin-tight industry, every gain in fuel efficiency matters. Hydrogen injection enables logistics fleets to operate smarter and more sustainably, reducing costs while supporting greener operations.</p>
                                         </div>
                                     </li>
 
@@ -161,7 +163,7 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
                         </div>
 
                         <div className="flex rounded-3xl h-[560px] lg:w-1/3">
-                            <Image className="rounded-3xl object-cover h-full w-full transform -scale-x-100" src={`${basePath}/images/home_page_banner.png`} alt="why carbon credits matter" width={360} height={640} />
+                            <Image className="rounded-3xl object-cover h-full w-full" src={`${basePath}/images/h2pod.png`} alt="why carbon credits matter" width={360} height={640} />
                         </div>
                     </div>
                 </section>
@@ -180,7 +182,7 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
             </section>
 
               {/* CTA */}
-              <section id="carbon-credits-cta" className="relative w-full flex items-center justify-center"
+              <section id="hydrogen-cta" className="relative w-full flex items-center justify-center"
                 >
                     <div className="absolute inset-0 bg-paynesGrayOverlay"></div>
                     <div className="flex bg-cover bg-top w-full h-full py-14 items-center justify-center"

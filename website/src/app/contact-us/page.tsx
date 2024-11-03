@@ -30,8 +30,8 @@ const ContactUs = () => {
         
         <section className="max-w-[1400px] mx-auto px-4 pt-28 flex flex-col lg:flex-row gap-8 pb-14">
             <div className="flex flex-col gap-8 w-full lg:w-2/3 mx-auto">
-                <div className="flex flex-col justify-center items-center w-full gap-6">
-                    <h1 className="text-charcoal">Partner with us for Sustainable Growth</h1>
+                <div className="flex flex-col justify-start items-start w-full gap-6">
+                    <h1 className="text-charcoal uppercase font-extrabold">Partner with us</h1>
                     <p className="text-paynesGray">Reach out to learn how our tailored renewable energy solutions can help your business save money and generate new revenue through green technology.</p>
                 </div>
 

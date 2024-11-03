@@ -388,3 +388,35 @@ export const HydrogenFAQs = [
   }
 ];
 
+//Team Details
+export interface TeamInfoProps {
+  fullname: string;
+  bio: string;
+  headshot: string;
+}
+
+export const teamInfo: TeamInfoProps[] = [
+
+  {
+    fullname: "Tristen O'Brien",
+    bio: "The Visionary",
+    headshot: "/images/team/tristen-headshot.png"
+  },
+  {
+    fullname: "Erin Berman-Levy",
+    bio: "The Strategist",
+    headshot: "/images/team/erin-headshot.png"
+  },
+  {
+    fullname: "Ricardo De Sousa",
+    bio: "The Innovator",
+    headshot: "/images/team/ricardo-headshot.png"
+  },
+  {
+    fullname: "Russel Swanepoel",
+    bio: "The Trailblazer",
+    headshot: "/images/team/russel-headshot.png"
+  },
+
+]
+

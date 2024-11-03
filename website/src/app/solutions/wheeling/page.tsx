@@ -55,6 +55,8 @@ const Wheeling = () => {
                       altText='Wind Turbines'
                       width={2048}
                       height={2048}
+                      sectionID='how-it-works-wheeling'
+                      howItWorksActive={true}
                   />
               </section>
 
@@ -509,7 +511,7 @@ const Wheeling = () => {
               </section>
 
             {/* Our Process */}
-            <section id="how-it-works-carbon-credits" className="relative w-full flex px-4 py-14 items-center justify-center">
+            <section id="how-it-works-wheeling" className="relative w-full flex px-4 py-14 items-center justify-center">
 
                 <div className="relative text-center max-w-[1400px] mx-auto">
                     <h2 className="text-charcoal">How it works</h2>

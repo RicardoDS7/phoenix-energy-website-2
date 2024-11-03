@@ -26,6 +26,8 @@ const WasteValorization = () => {
                       altText='Carbon Credits Coin'
                       width={2048}
                       height={2048}
+                      sectionID='how-it-works-waste-valorization'
+                      howItWorksActive={true}
                   />
               </section>
 
@@ -345,7 +347,7 @@ const WasteValorization = () => {
                 </section>
 
                 {/* Our Process */}
-                <section id="how-it-works-carbon-credits" className="relative w-full flex px-4 py-14 items-center justify-center">
+                <section id="how-it-works-waste-valorization" className="relative w-full flex px-4 py-14 items-center justify-center">
 
                     <div className="relative text-center max-w-[1400px] mx-auto">
                         <h2 className="text-charcoal">How it works</h2>

@@ -26,6 +26,8 @@ const CarbonCredits = () => {
                         altText="Carbon Credits Coin"
                         width={2048}
                         height={2048}
+                        sectionID="how-it-works-carbon-credits"
+                        howItWorksActive={true}
                     />
                 </section>
 
