@@ -2,20 +2,20 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 // Define the interface for a single testimonial
-interface Testimonial {
+interface Projects {
     id: number;
-    text: string;
-    name: string;
+    testimonial: string;
+    company: string;
     solutions: string;
     featured_image: string; // Path or URL to the image
   }
   
   // Define the interface for Carousel props
   interface CarouselProps {
-    testimonials: Testimonial[];
+    projects: Projects[];
   }
 
-export default function Carousel({testimonials}: CarouselProps) {
+export default function Carousel({projects}: CarouselProps) {
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [translateStyle, setTranslateStyle] = useState<{ [key: string]: string }>({});
@@ -24,13 +24,13 @@ export default function Carousel({testimonials}: CarouselProps) {
 
   const prevSlide = () => {
     setCurrentIndex((prev) =>
-      prev === 0 ? testimonials.length - 1 : prev - 1
+      prev === 0 ? projects.length - 1 : prev - 1
     );
   };
 
   const nextSlide = () => {
     setCurrentIndex((prev) =>
-      prev === testimonials.length - 1 ? 0 : prev + 1
+      prev === projects.length - 1 ? 0 : prev + 1
     );
   };
 
@@ -58,7 +58,7 @@ export default function Carousel({testimonials}: CarouselProps) {
     setTranslateStyle({
       '--carousel-translate': `calc(-${baseTranslate}% - ${pixelOffset}px)`,
     });
-  }, [currentIndex, testimonials.length]);
+  }, [currentIndex, projects.length]);
 
   const handleTouchStart = (e: React.TouchEvent) => {
     setStartX(e.touches[0].clientX);
@@ -115,16 +115,16 @@ export default function Carousel({testimonials}: CarouselProps) {
                 ...translateStyle,
               }}
             >
-            {testimonials.map((testimonial) => (
+            {projects.map((project) => (
                 <div
-                key={testimonial.id}
+                key={project.id}
                 className="relative flex flex-col w-[85%] md:w-1/2 lg:w-1/3 flex-shrink-0 shadow bg-colombiaBlue pb-6 rounded-3xl"
                 >
-                    <Image className={'rounded-3xl w-full h-[250px] object-cover'} src={testimonial.featured_image} alt={`${testimonial.name} case study`} width={300} height={300} />
+                    <Image className={'rounded-3xl w-full h-[250px] object-cover'} src={project.featured_image} alt={`${project.company} case study`} width={300} height={300} />
                     <div className='relative text-center p-6 space-y-2 justify-center items-center'>
-                        <p className="text-base md:text-lg text-charcoal italic font-semibold mb-4">&quot;{testimonial.text}&quot;</p>
-                        <p className="text-lg md:text-xl font-black text-charcoal">{testimonial.name}</p>
-                        <p className="text-base md:text-lg text-paynesGray font-semibold">{testimonial.solutions}</p>
+                        <p className="text-base md:text-lg text-charcoal italic font-semibold mb-4">&quot;{project.testimonial}&quot;</p>
+                        <p className="text-lg md:text-xl font-black text-charcoal">{project.company}</p>
+                        <p className="text-base md:text-lg text-paynesGray font-semibold">{project.solutions}</p>
                         
                     </div>
 

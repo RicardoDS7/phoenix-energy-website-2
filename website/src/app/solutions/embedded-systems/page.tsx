@@ -424,7 +424,7 @@ const EmbeddedSystems = () => {
                     <div className="block overflow-hidden">
                     
                         <Carousel 
-                        testimonials={projectDetails}/>
+                        projects={projectDetails}/>
                         <div className="mt-6 flex align-middle items-center justify-center lg:items-start lg:justify-start max-w-[1400px] mx-auto">
                             <GetInTouchButton />
                         </div>

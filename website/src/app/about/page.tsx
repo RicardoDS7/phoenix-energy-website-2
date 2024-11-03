@@ -2,7 +2,6 @@
 import Image from "next/image";
 import TeamMemberCard from "../components/TeamMemberCard";
 import { teamInfo } from "../constants/constants";
-import CallToAction from "../components/CallToAction";
 
 const About = () => {
 
@@ -38,10 +37,10 @@ const About = () => {
 
             <div className="mt-12 flex flex-wrap justify-center w-full gap-8">
                             
-              {/*Empath */}
+              {/*Empathy */}
               <div className="bg-paynesGray p-6 rounded-3xl shadow-md w-full lg:w-1/4 flex flex-col items-start justify-start text-start space-y-4">
                   <div className="rounded-full bg-powderBlue p-4 justify-end items-end">
-                      <Image src={`${basePath}/icons/Green-Electric.svg`} alt="icon" width={25} height={25} />
+                      <Image src={`${basePath}/icons/empathy.png`} alt="icon" width={25} height={25} />
                   </div>
                   <h3 className="text-antiflashWhite whitespace-pre-wrap font-bold">
                       Empathy
@@ -53,10 +52,10 @@ const About = () => {
                   </div>
               </div>
 
-              {/* Lower Fuel Costs */}
+              {/* Pioneering */}
               <div className="bg-paynesGray p-6 rounded-3xl shadow-md w-full lg:w-1/4 flex flex-col items-start justify-start text-start space-y-4">
                   <div className="rounded-full bg-powderBlue p-4 justify-end items-end">
-                      <Image src={`${basePath}/icons/Efficiency.png`} alt="icon" width={25} height={25} />
+                      <Image src={`${basePath}/icons/pioneering.png`} alt="icon" width={25} height={25} />
                   </div>
                   <h3 className="font-bold text-antiflashWhite whitespace-pre-wrap">
                       Pioneering
@@ -68,10 +67,10 @@ const About = () => {
                   </div>
               </div>
 
-              {/*Better Combustion */}
+              {/*Trust */}
               <div className="bg-paynesGray p-6 rounded-3xl shadow-md w-full lg:w-1/4 flex flex-col items-start justify-start text-start space-y-4">
                   <div className="rounded-full bg-powderBlue p-4 justify-end items-end">
-                      <Image src={`${basePath}/icons/sustainable.png`} alt="icon" width={25} height={25} />
+                      <Image src={`${basePath}/icons/brand-rep.png`} alt="icon" width={25} height={25} />
                   </div>
                   <h3 className="font-bold text-antiflashWhite whitespace-pre-wrap">
                       Trust
@@ -101,7 +100,7 @@ const About = () => {
               {/*Better Combustion */}
               <div className="bg-paynesGray p-6 rounded-3xl shadow-md w-full lg:w-1/4 flex flex-col items-start justify-start text-start space-y-4">
                   <div className="rounded-full bg-powderBlue p-4 justify-end items-end">
-                      <Image src={`${basePath}/icons/sustainable.png`} alt="icon" width={25} height={25} />
+                      <Image src={`${basePath}/icons/flame.png`} alt="icon" width={25} height={25} />
                   </div>
                   <h3 className="font-bold text-antiflashWhite whitespace-pre-wrap">
                   Inspiration
