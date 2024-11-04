@@ -21,8 +21,8 @@ const HomePage = () => {
             <HeroSectionS2S 
                 title="SAVE, EARN, & GROW WITH RENEWABLE ENERGY"
                 subtitle="Our turnkey embedded solar solutions deliver the flexibility, efficiency, and reliability your business needs, from custom design to goal-oriented financing."
-                imagePath={`${basePath}/images/Solar-Hero_Image.png`}
-                altText="Carbon Credits Coin"
+                imagePath={`${basePath}/images/Home-Page-Hero.png`}
+                altText="Home Page Hero Image"
                 width={2048}
                 height={2048}
                 sectionID='how-it-works-solar'

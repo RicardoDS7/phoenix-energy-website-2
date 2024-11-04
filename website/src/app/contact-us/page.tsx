@@ -1,6 +1,8 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
+import { useEffect } from "react";
+import ZohoFormEmbed from "../components/ZohoForm";
 
 const ContactUs = () => {
 
@@ -282,7 +284,7 @@ const ContactUs = () => {
                                 </div>
 
                                 <div className="flex flex-col p-0.5">
-                                    <label className="font-inter text-paynesGray">Do you have any existing on-site solar implementations??</label>
+                                    <label className="font-inter text-paynesGray">Do you have any existing on-site solar implementations?</label>
                                     <select
                                         name="existSolar"
                                         value={formData.existSolar}
@@ -421,6 +423,9 @@ const ContactUs = () => {
                         Submit
                     </button>
                 </form>
+
+                <ZohoFormEmbed />
+                
             </div>
             <div className="flex flex-col gap-8 w-full lg:w-1/3 mx-auto">
                 <div className="bg-colombiaBlue rounded-3xl p-6 space-y-6">
