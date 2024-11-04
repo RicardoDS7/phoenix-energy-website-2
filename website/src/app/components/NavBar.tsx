@@ -94,7 +94,7 @@ const NavBar = () => {
                                             >
                                               <Image
                                                 className={'object-fill mr-2'}
-                                                src={saveItem.icon}
+                                                src={`${basePath}${saveItem.icon}`}
                                                 alt={`${saveItem.name} menu icon`}
                                                 width={16}
                                                 height={16}
@@ -130,7 +130,7 @@ const NavBar = () => {
                                             >
                                               <Image
                                                 className={'object-fill mr-2'}
-                                                src={earnItem.icon}
+                                                src={`${basePath}${earnItem.icon}`}
                                                 alt={`${earnItem.name} menu icon`}
                                                 width={16}
                                                 height={16}

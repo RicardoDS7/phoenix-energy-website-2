@@ -22,7 +22,7 @@ const Footer = () => {
 
                 <div className='flex-1 md:w-1/4 w-full min-w-[150px] text-center md:text-left'>
                     <Link href={HOME_PAGE} className='flex items-center justify-center md:justify-start'>
-                        <Image src="/logo.png" alt="phoenix-energy-logo" width={50} height={50}/>
+                        <Image src={`${basePath}/logo.png`} alt="phoenix-energy-logo" width={50} height={50}/>
                         <h1 className='font-inter font-bold text-lg'>Phoenix <span className='text-paynesGray font-semibold'>Energy</span></h1>
                     </Link>
                     <p className='mt-4 font-inter text-sm'>© Copyright 2024 | All rights reserved</p>
