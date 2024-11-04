@@ -237,6 +237,11 @@ link-small {
 }
 
 .nav-item::after {
+  content: none; /* Remove the pseudo-element on small screens */
+}
+
+@media (min-width: 1024px) {
+.nav-item::after {
   content: ''; /* This creates the underline */
   position: absolute;
   left: 0;
@@ -256,7 +261,7 @@ link-small {
 .nav-item.active::after {
   transform: scaleX(1); /* Keeps the underline when active */
 }
-
+}
 .nav-item.active {
   font-weight: 500; /* Optional: Bold font for active item */
 }

@@ -67,7 +67,7 @@ const Footer = () => {
                         </li>
                         <li className={`mr-5 footer-item flex items-center`}>
                             <Image className={'object-fill mr-2'} src={`${basePath}/icons/phone.svg`} alt={`phone icon`} width={15} height={15} />
-                            <Link className={'underline '} href={`tel:${CONTACT_EMAIL}`}>
+                            <Link className={'underline '} href={`tel:${PHONE_NUMBER}`}>
                                 {PHONE_NUMBER}
                             </Link>
                         </li>
