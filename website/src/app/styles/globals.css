@@ -125,14 +125,6 @@ link-small {
   appearance: none;
 }
 
-.nav-bar {
-  font-size: 1.125rem;              /* Font size 16px for larger screens */
-  line-height: 1.75rem;              /* Line height 26px for small screens */
-  letter-spacing: -0.005em;       /* Letter spacing -0.5% */
-  font-weight: 600;
-  @apply text-charcoal;
-}
-
 .get-in-touch-button {
   font-size: 1rem;                /* Font size for large screens */
   display: flex;
@@ -238,8 +230,8 @@ link-small {
 
 .nav-item {
   position: relative;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  @apply text-base;
+  @apply text-charcoal;
   text-decoration: none; /* No default underline */
   padding: 10px;
 }
@@ -271,10 +263,8 @@ link-small {
 
 .footer-item {
   position: relative;
-  font-size: 14px;
-  line-height: 24px;
+  @apply text-base;
   text-decoration: none; /* No default underline */
-  padding: 5px;
 
 }
 

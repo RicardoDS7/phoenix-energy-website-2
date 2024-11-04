@@ -14,7 +14,7 @@ const Projects = () => {
         <section className='flex max-w-[1400px] pb-14 mx-auto px-4 pt-28 justify-center items-center'>
           <div className="flex flex-col text-center  items-center justify-center space-y-6">
             <h1 className="text-charcoal uppercase font-extrabold">Our <span className="text-paynesGray">Projects</span></h1>
-            <p className="mt-4 text-paynesGray max-w-[1000px]">Founded in 2024, Phoenix Energy was created to make renewable energy both accessible and transformative across Africa. We set ourselves apart by providing bespoke, turnkey solutions that go beyond conventional energy savings. Our approach gives businesses a comprehensive roadmap and an array of renewable energy solutions designed not only to drive them toward Net Zero Carbon Emissions but also to enhance efficiency and unlock new revenue streams. For us, it&apos;s not just about saving—it&apos;s about empowering businesses to earn, grow, and thrive sustainably. </p>
+            <p className="mt-4 text-paynesGray max-w-[1000px]">From embedded solar and battery storage to wheeled power, waste valorization, hydrogen injection, and carbon credits, we empower businesses across all industries to earn, save, and thrive. Our tailored renewable energy projects drive real growth and lasting impact, transforming energy into a strategic advantage.</p>
           </div>
         </section>
 
