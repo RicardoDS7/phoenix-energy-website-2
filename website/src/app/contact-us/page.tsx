@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import { useEffect } from "react";
 import ZohoFormEmbed from "../components/ZohoForm";
 
 const ContactUs = () => {
