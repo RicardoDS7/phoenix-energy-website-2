@@ -70,17 +70,17 @@ const EmbeddedSystems = () => {
                         <div className="flex-col lg:flex-row mt-12">
                             <ul className="flex flex-wrap items-center justify-center gap-x-4 gap-y-4">
                                 <li>
-                                    <div className="flex items-center justify-center bg-white shadow rounded-3xl h-[150px] p-4">
+                                    <div className="flex items-center justify-center bg-white shadow rounded-3xl w-[150px] lg:w-[200px] h-[112.5px] lg:h-[150px] p-4">
                                         <Image
                                         src = {`${basePath}/images/brands/solar-supply-logo.png`}
-                                        alt= {"nedbank-logo"}   // Alt text for the logo
+                                        alt= {"solar supply logo"}   // Alt text for the logo
                                         width={150}
                                         height={150}
                                         />
                                     </div>
                                 </li>
 
-                                <li>
+                                {/* <li>
                                     <div className="flex items-center justify-center bg-white shadow rounded-3xl h-[150px] p-4">
                                         <Image
                                         src = {`${basePath}/images/brands/daisy-logo.png`}
@@ -89,13 +89,13 @@ const EmbeddedSystems = () => {
                                         height={150}
                                         />
                                     </div>
-                                </li>
+                                </li> */}
 
                                 <li>
-                                    <div className="flex items-center justify-center bg-white shadow rounded-3xl h-[150px] p-4">
+                                    <div className="flex items-center justify-center bg-white shadow rounded-3xl w-[150px] lg:w-[200px] h-[112.5px] lg:h-[150px] p-4">
                                         <Image
                                         src = {`${basePath}/images/brands/edf-logo.png`}
-                                        alt= {"nedbank-logo"}   // Alt text for the logo
+                                        alt= {"edf-logo"}   // Alt text for the logo
                                         width={150}
                                         height={150}
                                         />
@@ -104,7 +104,7 @@ const EmbeddedSystems = () => {
 
 
                                 <li>
-                                    <div className="flex items-center justify-center bg-white shadow rounded-3xl h-[150px] p-4">
+                                    <div className="flex items-center justify-center bg-white shadow rounded-3xl w-[150px] lg:w-[200px] h-[112.5px] lg:h-[150px] p-4">
                                         <Image
                                         src = {`${basePath}/images/brands/standard-bank-logo.png`}
                                         alt= {"standard bank logo"}   // Alt text for the logo
@@ -115,7 +115,7 @@ const EmbeddedSystems = () => {
                                 </li>
 
                                 <li>
-                                    <div className="flex items-center justify-center bg-white shadow rounded-3xl h-[150px] p-4">
+                                    <div className="flex items-center justify-center bg-white shadow rounded-3xl w-[150px] lg:w-[200px] h-[112.5px] lg:h-[150px] p-4">
                                         <Image
                                         src = {`${basePath}/images/brands/captive-power-logo.png`}
                                         alt= {"captive power logo"}   // Alt text for the logo
@@ -143,7 +143,7 @@ const EmbeddedSystems = () => {
                     <div className="max-w-[1400px] mx-auto">
                         <h2 className="text-charcoal text-center">Versatile solar solutions tailored to your needs</h2>
                     
-                        <p className="text-charcoal text-center mt-6 text-xl">
+                        <p className="text-charcoal text-center mt-6">
                         Whether you&apos;re looking for seamless grid integration, reliable battery storage, or backup power with generator integration, we&apos;ve got you covered.
                         </p>
 
@@ -245,7 +245,7 @@ const EmbeddedSystems = () => {
                                             <div className="flex flex-row gap-4">
                                                 <Image className="object-scale-down object-top" src={`${basePath}/icons/Check-Alt.png`} alt="icon" width={25} height={25} />
                                                 <div className="flex flex-col space-y-2">
-                                                    <p className="font-bold">Maximizes Solar Penetration</p>
+                                                    <p className="font-bold">Maximises Solar Penetration</p>
                                                     <p className=""> Battery storage provides a consistent power supply during grid outages or renewable energy dips, ensuring uninterrupted operations</p>
                                                 </div>
                                             </div>
@@ -323,7 +323,7 @@ const EmbeddedSystems = () => {
                                                 <Image className="object-scale-down object-top" src={`${basePath}/icons/Check-Alt.png`} alt="icon" width={25} height={25} />
                                                 <div className="flex flex-col space-y-2">
                                                     <p className="font-bold">Improved Efficiency</p>
-                                                    <p className="">Solar lessens strain on the generator, extending its lifespan and optimizing performance.</p>
+                                                    <p className="">Solar lessens strain on the generator, extending its lifespan and optimising performance.</p>
                                                 </div>
                                             </div>
                                         </li>
@@ -479,7 +479,7 @@ const EmbeddedSystems = () => {
                                             <div className="flex flex-row gap-4">
                                                 <Image className="object-scale-down object-top" src={`${basePath}/icons/Check.png`} alt="icon" width={25} height={25} />
                                                 <div className="flex flex-col space-y-2">
-                                                    <p className="font-bold">Fixed Energy Costs</p>
+                                                    <p className="font-bold">Predictable Energy Costs</p>
                                                     
                                                 </div>
                                             </div>
@@ -489,7 +489,7 @@ const EmbeddedSystems = () => {
                                             <div className="flex flex-row gap-4">
                                                 <Image className="object-scale-down object-top" src={`${basePath}/icons/Check.png`} alt="icon" width={25} height={25} />
                                                 <div className="flex flex-col space-y-2">
-                                                    <p className="font-bold">Hands-Free Maintenance</p>
+                                                    <p className="font-bold">Hassle-Free Maintenance</p>
                                                     
                                                 </div>
                                             </div>
@@ -505,7 +505,7 @@ const EmbeddedSystems = () => {
                                     <Image src={`${basePath}/icons/Cash-Purchase.png`} alt="cash-purchase-icon" width={25} height={25} />
                                 </div>
                                 <h3 className="text-paynesGray whitespace-pre-wrap font-bold">
-                                    Cash Purchase
+                                    Outright Purchase
                                 </h3>
                                 <div className="font-inter text-lg text-charcoal space-y-6">
                                     <p>
@@ -540,7 +540,7 @@ const EmbeddedSystems = () => {
                                             <div className="flex flex-row gap-4">
                                                 <Image className="object-scale-down object-top" src={`${basePath}/icons/Check.png`} alt="icon" width={25} height={25} />
                                                 <div className="flex flex-col space-y-2">
-                                                    <p className="font-bold">Tax Incentives</p>
+                                                    <p className="font-bold">Section 12B Tax benefit</p>
                                                     
                                                 </div>
                                             </div>
@@ -556,11 +556,11 @@ const EmbeddedSystems = () => {
                                     <Image src={`${basePath}/icons/Loan-Purchase.png`} alt="loan-purchase-icon" width={25} height={25} />
                                 </div>
                                 <h3 className="text-paynesGray whitespace-pre-wrap font-bold">
-                                    Loan Purchase
+                                    Fixed-Term Lease
                                 </h3>
                                 <div className="font-inter text-lg text-charcoal space-y-6">
                                     <p>
-                                        A loan purchase allows your business to finance the solar system through a loan from your preferred bank, spreading out payments over time while still gaining the benefits of system ownership. This approach lets you start saving on energy costs immediately, while gradually paying off the system.
+                                        This option allows your business to finance the solar system through affordable fixed payments over time while still gaining the benefits of system ownership. This approach lets you start saving on energy costs immediately, while gradually paying off the system.
                                     </p>
 
                                     <p className="font-bold text-2xl">Benefits:</p>

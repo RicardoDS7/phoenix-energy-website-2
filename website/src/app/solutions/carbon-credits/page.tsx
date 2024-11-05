@@ -1,7 +1,6 @@
 "use client";
 import  GetInTouchButton from "../../components/GetInTouchButton";
 import AltGetInTouchButton from "../../components/AltGetInTouchButton";
-import BrandsCard from "@/app/components/BrandsCard";
 import Image from "next/image";
 import FAQ from "@/app/components/FAQ";
 import HeroSectionS2S from "@/app/components/HeroSectionS2S";
@@ -31,40 +30,69 @@ const CarbonCredits = () => {
                     />
                 </section>
 
-                {/* Companies buying Carbon Credits */}  
+                {/* Partners Logos */}  
                 <section className="relative flex flex-col gap-8 px-4 py-14 items-center justify-center">
                     <div className="max-w-[1400px] mx-auto">
                           
                         <h3 className="text-paynesGray font-medium text-center">Leading companies are investing in carbon credits</h3>
                         <div className="flex-col lg:flex-row mt-12">
-                            <ul className="flex justify-center items-center flex-wrap gap-4">
+                            <ul className="flex flex-wrap items-center justify-center gap-x-4 gap-y-4">
                                 <li>
-                                    <BrandsCard
-                                    logoPath = "/images/brands/nedbank-logo.png"
-                                    altText = "nedbank-logo"   // Alt text for the logo
-                                    />
+                                    <div className="flex items-center justify-center bg-white shadow rounded-3xl w-[150px] lg:w-[200px] h-[112.5px] lg:h-[150px] p-4">
+                                        <Image
+                                        src = {`${basePath}/images/brands/vw-logo.png`}
+                                        alt= {"vw-logo"}   // Alt text for the logo
+                                        width={150}
+                                        height={150}
+                                        />
+                                    </div>
+                                </li>
+
+                                {/* <li>
+                                    <div className="flex items-center justify-center bg-white shadow rounded-3xl h-[150px] p-4">
+                                        <Image
+                                        src = {`${basePath}/images/brands/daisy-logo.png`}
+                                        alt= {"nedbank-logo"}   // Alt text for the logo
+                                        width={150}
+                                        height={150}
+                                        />
+                                    </div>
+                                </li> */}
+
+
+                                <li>
+                                    <div className="flex items-center justify-center bg-white shadow rounded-3xl w-[150px] lg:w-[200px] h-[112.5px] lg:h-[150px] p-4">
+                                        <Image
+                                        src = {`${basePath}/images/brands/nedbank-logo.png`}
+                                        alt= {"nedbank logo"}   // Alt text for the logo
+                                        width={150}
+                                        height={150}
+                                        />
+                                    </div>
                                 </li>
 
                                 <li>
-                                    <BrandsCard
-                                    logoPath = "/images/brands/sasol-logo.png"
-                                    altText = "sasol-logo"   // Alt text for the logo
-                                    />
+                                    <div className="flex items-center justify-center bg-white shadow rounded-3xl w-[150px] lg:w-[200px] h-[112.5px] lg:h-[150px] p-4">
+                                        <Image
+                                        src = {`${basePath}/images/brands/anglo-american-logo.png`}
+                                        alt= {"anglo american logo"}   // Alt text for the logo
+                                        width={150}
+                                        height={150}
+                                        />
+                                    </div>
                                 </li>
 
                                 <li>
-                                    <BrandsCard
-                                    logoPath = "/images/brands/vw-logo.png"
-                                    altText = "volkswagen-logo"   // Alt text for the logo
-                                    />
+                                    <div className="flex items-center justify-center bg-white shadow rounded-3xl w-[150px] lg:w-[200px] h-[112.5px] lg:h-[150px] p-4">
+                                        <Image
+                                        src = {`${basePath}/images/brands/sasol-logo.png`}
+                                        alt= {"sasol-logo"}   // Alt text for the logo
+                                        width={150}
+                                        height={150}
+                                        />
+                                    </div>
                                 </li>
 
-                                <li>
-                                    <BrandsCard
-                                    logoPath = "/images/brands/anglo-american-logo.png"
-                                    altText = "anglo-american-logo"   // Alt text for the logo
-                                    />
-                                </li>
                             </ul>
                         </div>
                     </div>

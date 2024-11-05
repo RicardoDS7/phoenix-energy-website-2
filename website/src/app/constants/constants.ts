@@ -14,7 +14,7 @@ export const CONTACT_PAGE = '/contact-us';
 export const SOLAR = '/solutions/embedded-systems';
 export const WHEELING = '/solutions/wheeling';
 export const CARBON_CREDITS = '/solutions/carbon-credits';
-export const WASTE_VALOR = '/solutions/waste-valorization';
+export const WASTE_VALOR = '/solutions/waste-valorisation';
 export const HYDROGEN = '/solutions/hydrogen-technologies';
 export const CAREERS = 'https://linkedin.com/';
 export const PRIVACY_POLICY = '/privacy-policy';
@@ -28,7 +28,7 @@ export const NAV_LINKS: NavLink[] = [
       subMenu: [
         { name: 'Embedded Solar', path: SOLAR, category: 'save', icon: '/icons/Solar.svg' },
         { name: 'Wheeled Power', path: WHEELING, category: 'save', icon: '/icons/Wheeling.svg' },
-        { name: 'Waste Valorization', path: WASTE_VALOR, category: 'earn' , icon: '/icons/product-alt.png'},
+        { name: 'Waste Valorisation', path: WASTE_VALOR, category: 'earn' , icon: '/icons/product-alt.png'},
         { name: 'Carbon Credits', path: CARBON_CREDITS, category: 'earn' , icon: '/icons/Carbon-Credits.svg'},
         { name: 'Hydrogen Technologies', path: HYDROGEN, category: 'save' , icon: '/icons/Hydrogen.svg'},
       ],
@@ -133,19 +133,19 @@ export const CarbonCreditsProcess: ProcessSteps[] = [
     },
     {
       title: "Energy Assessment",
-      description: "Send us your latest electricity bills, business address, and operating days. This helps us assess your energy usage and confirm the best solution for you."
+      description: "Send us your latest electricity bills, business address, and operating hours. This helps us assess your energy usage and confirm the best solution for you."
     },
     {
       title: "Initial Proposal",
-      description: "We’ll present a preliminary proposal outlining system options, expected savings, and potential financing, tailored to your business needs."
+      description: "We’ll present a preliminary proposal outlining system design, expected savings, and potential financing options, tailored to your business needs."
     },
     {
       title: "Planning & Site Visit",
-      description: "Once the initial proposal has been accepted, our engineers will evaluate your property to confirm it can support the proposed solar design. We’ll assess any structural or electrical enhancements needed to safely install and integrate the system, ensuring long-term stability and compliance."
+      description: "Once the initial proposal has been accepted, our engineers will gather your energy consumption data, assess all structural or electrical requirements needed to safely install and integrate the system. Ensuring long-term stability and compliance."
     },    
     {
       title: "Final Proposal",
-      description: "With insights from the site visit, we’ll finalize your custom solar plan, including costs, timelines, and installation details."
+      description: "With the insights gathered from your site visit, we’ll finalise your bespoke solar solution, including costs, timelines, and installation details."
     },
     {
       title: "Construction & Installation",
@@ -164,15 +164,15 @@ export const CarbonCreditsProcess: ProcessSteps[] = [
     },    
     {
       question: "What is the expected payback period for a commercial solar system?",
-      answer: "The payback period typically ranges from 4 to 8 years, depending on factors like system size and electricity usage. Our team can calculate the exact return on investment for your business, helping you understand when your system will start delivering savings."
+      answer: "The payback period typically ranges from 2 to 8 years, depending on factors like system size and electricity usage. Our team can calculate the exact return on investment for your business, helping you understand when your system will start delivering savings."
     },
     {
       question: "What financing options are available for commercial solar installations?",
-      answer: "We offer flexible financing options, including power purchase agreements (PPAs), solar loans, and leasing. With a PPA, you can get started with minimal upfront costs, while loans and leases offer other ownership benefits. Our team can guide you through the options and find the best fit for your budget and goals."
+      answer: "We offer flexible financing options, including power purchase agreements (PPAs), fixed-term loans, and leasing. With a PPA, you can get started with minimal upfront costs, while loans and leases offer other ownership benefits. Our team can guide you through the options and find the best fit for your budget and goals."
   },
     {
       question: "What tax incentives or rebates can South African businesses access for solar installations?",
-      answer: "South Africa's Section 12B tax incentive allows businesses to deduct 100% of the cost of solar systems in the first year. This can make solar an even smarter investment. We can help you understand how to leverage this incentive for maximum savings on your project."
+      answer: "South Africa's Section 12B tax incentive allows businesses to depreciate 100% of the cost of solar systems in the first year. This can result in a saving to your business of up to 27% of the cost of the system. We can help you understand how to leverage this incentive for maximum savings on your project."
     },
     {
       question: "What maintenance is required for solar systems?",
@@ -194,19 +194,19 @@ export const CarbonCreditsProcess: ProcessSteps[] = [
   export const WasteValorizationProcess: ProcessSteps[] = [
       {
           title: "Initial Consultation",
-          description: "We begin by understanding your business's waste streams, energy needs, and sustainability goals to determine the best valorization approach for you."
+          description: "We begin by understanding your business's waste streams, energy needs, and sustainability goals to determine the best valorisation approach for you."
       },
       {
           title: "Site Assessment",
-          description: "Our team conducts an on-site assessment to analyze available waste feedstocks, assess energy infrastructure, and determine project feasibility."
+          description: "Our team conducts an on-site assessment to analyse available waste feedstocks, assess energy infrastructure, and determine project feasibility."
       },
       {
-          title: "Customized Feasibility Study",
+          title: "Customised Feasibility Study",
           description: "We prepare a detailed feasibility study, including financial modeling, expected ROI, and recommended technologies tailored to your industry."
       },
       {
           title: "Solution Design and Engineering",
-          description: "Based on the feasibility study, we design a waste valorization system optimized for efficiency, energy output, and integration with your existing processes."
+          description: "Based on the feasibility study, we design a waste valorisation system optimised for efficiency, energy output, and integration with your existing processes."
       },
       {
           title: "Proposal and Approval",
@@ -214,7 +214,7 @@ export const CarbonCreditsProcess: ProcessSteps[] = [
       },
       {
           title: "System Installation and Integration",
-          description: "Our engineering team installs the valorization system, ensuring seamless integration with your operations while minimizing disruptions."
+          description: "Our engineering team installs the valorisation system, ensuring seamless integration with your operations while minimising disruptions."
       },
       {
           title: "Testing and Commissioning",
@@ -225,20 +225,20 @@ export const CarbonCreditsProcess: ProcessSteps[] = [
           description: "We provide training for your team on system operation, maintenance, and safety protocols, ensuring smooth, long-term operation."
       },
       {
-          title: "Ongoing Support and Optimization",
-          description: "Our team offers continuous support, monitoring, and optimization services to ensure maximum efficiency and profitability from your valorization system."
+          title: "Ongoing Support and Optimisation",
+          description: "Our team offers continuous support, monitoring, and optimisation services to ensure maximum efficiency and profitability from your valorisation system."
       }
   
   ];
 
   export const WasteValorizationFAQs = [
       {
-          question: "What is waste valorization?",
-          answer: "Waste valorization is the process of converting waste materials into valuable products, such as energy or raw materials, which can reduce disposal costs and generate new revenue streams."
+          question: "What is waste valorisation?",
+          answer: "Waste valorisation is the process of converting waste materials into valuable products, such as energy or raw materials, which can reduce disposal costs and generate new revenue streams."
       },
       {
           question: "How does anaerobic digestion work?",
-          answer: "Anaerobic digestion is a biological process where microorganisms break down organic waste in the absence of oxygen, producing biogas (for energy) and digestate (used as biofertilizer)."
+          answer: "Anaerobic digestion is a biological process where microorganisms break down organic waste in the absence of oxygen, producing biogas (for energy) and digestate (used as biofertiliser)."
       },
       {
           question: "What is pyrolysis, and what does it produce?",
@@ -246,15 +246,15 @@ export const CarbonCreditsProcess: ProcessSteps[] = [
       },
       {
           question: "Which industries benefit most from anaerobic digestion?",
-          answer: "Industries like agriculture, food processing, and wastewater treatment benefit from anaerobic digestion, as it provides renewable energy and biofertilizer from organic waste."
+          answer: "Industries like agriculture, food processing, and wastewater treatment benefit from anaerobic digestion, as it provides renewable energy and biofertiliser from organic waste."
       },
       {
           question: "What types of waste can be used in pyrolysis?",
           answer: "Pyrolysis is suited for carbon-rich waste types such as plastics, biomass, rubber, and some industrial residues, which can be converted into valuable by-products."
       },
       {
-          question: "How does waste valorization contribute to sustainability?",
-          answer: "Waste valorization reduces landfill waste, lowers emissions, and transforms waste into usable resources, promoting a circular economy and sustainable practices across industries."
+          question: "How does waste valorisation contribute to sustainability?",
+          answer: "Waste valorisation reduces landfill waste, lowers emissions, and transforms waste into usable resources, promoting a circular economy and sustainable practices across industries."
       },
       {
           question: "What are the benefits of biogas from anaerobic digestion?",
@@ -301,9 +301,9 @@ export const CarbonCreditsProcess: ProcessSteps[] = [
     },
     {
         "id": 6,
-        "productName": "Biofertilizer",
-        "description": "A nutrient-rich fertilizer derived from the digestate of anaerobic digestion, used to improve soil fertility and crop yields.",
-        "featuredImage": "/images/bio-fertilizer.png"
+        "productName": "Biofertiliser",
+        "description": "A nutrient-rich fertiliser derived from the digestate of anaerobic digestion, used to improve soil fertility and crop yields.",
+        "featuredImage": "/images/bio-fertiliser.png"
     },
     
   ];
@@ -320,11 +320,11 @@ export const CarbonCreditsProcess: ProcessSteps[] = [
     },
     {
         title: "Proposal and Agreement Drafting",
-        description: "Based on your energy profile and assessment results, we prepare a customized proposal outlining the terms of the wheeling agreement. This proposal includes the proposed rate at which your business will purchase electricity, as well as any additional costs, responsibilities, and projected benefits. After your review and feedback, a final wheeling agreement is drafted for your approval."
+        description: "Based on your energy profile and assessment results, we prepare a customised proposal outlining the terms of the wheeling agreement. This proposal includes the proposed rate at which your business will purchase electricity, as well as any additional costs, responsibilities, and projected benefits. After your review and feedback, a final wheeling agreement is drafted for your approval."
     },
     {
         title: "Agreement Confirmation with IPP",
-        description: "Phoenix Energy finalizes the agreement with EDF, our trusted independent power provider, for your wheeling needs. EDF will generate the renewable energy that will be wheeled to your facility through the grid."
+        description: "Phoenix Energy finalises the agreement with EDF, our trusted independent power provider, for your wheeling needs. EDF will generate the renewable energy that will be wheeled to your facility through the grid."
     },
     {
         title: "Grid Coordination with Eskom",
@@ -332,7 +332,7 @@ export const CarbonCreditsProcess: ProcessSteps[] = [
     },
     {
         title: "Begin Wheeling and Monitor Progress",
-        description: "Once all agreements are finalized and infrastructure is in place, your wheeling service begins."
+        description: "Once all agreements are finalised and infrastructure is in place, your wheeling service begins."
     }
 ]
 
@@ -348,7 +348,7 @@ export const CarbonCreditsProcess: ProcessSteps[] = [
     },
     {
         question: "How does energy wheeling work?",
-        answer: "Energy wheeling works by allowing electricity from an independent power producer (IPP) to be transported across the existing grid infrastructure to the final customer. The customer purchases power from the IPP, which is then wheeled through the grid, such as Eskom’s network, to reach the client’s facilities. This system provides access to renewable energy while utilizing the grid for delivery, supporting sustainable power usage."
+        answer: "Energy wheeling works by allowing electricity from an independent power producer (IPP) to be transported across the existing grid infrastructure to the final customer. The customer purchases power from the IPP, which is then wheeled through the grid, such as Eskom’s network, to reach the client’s facilities. This system provides access to renewable energy while utilising the grid for delivery, supporting sustainable power usage."
     },
     {
         question: "What are the benefits of wheeling electricity?",
@@ -356,7 +356,7 @@ export const CarbonCreditsProcess: ProcessSteps[] = [
     },
     {
         question: "Who is eligible for wheeling?",
-        answer: "Wheeling is available to businesses with direct billing from Eskom and those connected to Medium or High Voltage lines. While only certain municipalities currently allow wheeling, more are beginning to implement it, expanding accessibility. Eligible companies must meet specific infrastructure requirements and often work within municipal guidelines where wheeling is offered."
+        answer: "Wheeling is available to businesses connected to Medium or High Voltage line. While only certain municipalities currently allow wheeling, more are beginning to implement it, expanding accessibility. Eligible companies must meet specific infrastructure requirements and often work within municipal guidelines where wheeling is offered."
     },
     {
         question: "Does load-shedding affect wheeling?",
@@ -380,7 +380,7 @@ export const HydrogenFAQs = [
   },
   {
       question: "Can existing diesel engines be retrofitted for hydrogen injection?",
-      answer: "Yes, many existing diesel engines can be retrofitted with hydrogen injection systems, allowing operators to enhance efficiency and reduce emissions without replacing their current engines."
+      answer: "Yes, many existing diesel engines can be retrofitted with hydrogen injection systems, allowing operators to enhance efficiency and reduce emissions without replacing or modifying their current engines."
   },
   {
       question: "How does hydrogen injection affect engine performance?",
@@ -397,11 +397,11 @@ export interface TeamInfoProps {
 
 export const teamInfo: TeamInfoProps[] = [
 
-  {
-    fullname: "Tristen O'Brien",
-    bio: "The Visionary",
-    headshot: "/images/team/tristen-headshot.png"
-  },
+  // {
+  //   fullname: "Tristen O'Brien",
+  //   bio: "The Visionary",
+  //   headshot: "/images/team/tristen-headshot.png"
+  // },
   {
     fullname: "Erin Berman-Levy",
     bio: "The Strategist",

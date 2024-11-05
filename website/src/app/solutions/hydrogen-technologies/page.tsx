@@ -56,7 +56,7 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
                                 </h3>
                                 <div className="font-inter text-lg text-antiflashWhite">
                                     <p>
-                                    Achieve up to 15% greater generator efficiency by maximizing fuel utilization and getting more power out of every drop.
+                                    Achieve up to 15% greater efficiency by maximising fuel utilisation and getting more power out of every drop.
                                     </p>
                                 </div>
                             </div>
@@ -71,7 +71,7 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
                                 </h3>
                                 <div className="font-inter text-lg text-antiflashWhite">
                                     <p>
-                                    Reduce fuel consumption by 10-20%, translating into significant cost savings and more sustainable operations.
+                                    Reduce fuel consumption by up to 25%, translating into significant cost savings and more sustainable operations.
                                     </p>
                                 </div>
                             </div>
@@ -86,13 +86,13 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
                                 </h3>
                                 <div className="font-inter text-lg text-antiflashWhite">
                                     <p>
-                                    Improve combustion quality by reducing emissions up to 30%, enabling cleaner and more eco-friendly power production.
+                                    Improve combustion quality by reducing significantly reducing GHG emissions, enabling cleaner and more eco-friendly power production.
                                     </p>
                                 </div>
                             </div>
                         </div>
                     
-                        <div className="mt-6 flex align-middle items-center justify-center">
+                        <div className="p-6 flex align-middle items-center justify-center">
                             <AltGetInTouchButton />
                         </div>
 
@@ -100,8 +100,8 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
                 </ section>
 
 
-                {/*Why is matters for your business? */}
-                <section id="why-carbon-credits-matters" className="py-14 px-4">
+                {/*H2 Applications */}
+                <section id="why-carbon-credits-matters" className="pb-14 pt-8 px-4">
 
                     <div className="max-w-[1400px] mx-auto flex flex-col lg:flex-row lg:gap-12 space-y-12">
                         <div className="relative text-start lg:w-2/3">
@@ -115,7 +115,7 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
                                         </div>
                                         <div className="flex flex-col justify-start items-start gap-2">
                                             <h4 >Stationary Generators</h4>
-                                            <p className="">Hydrogen injection optimizes combustion, extending the lifespan of stationary generators and reducing maintenance needs, ultimately lowering lifetime operating costs.</p>
+                                            <p className="">Hydrogen injection optimises combustion, extending the lifespan of stationary generators and reducing fuel costs and maintenance needs, ultimately lowering lifetime operating costs.</p>
                                         </div>
                                     </li>
 
@@ -126,7 +126,7 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
                                         </div>
                                         <div className="flex flex-col justify-start items-start gap-2">
                                             <h4 >Heavy Machinery & Earth Moving Equipment</h4>
-                                            <p className="">Heavy machinery burns through fuel fast—hydrogen injection maximizes combustion efficiency, enabling engines to run longer and drive massive fuel cost savings. </p>
+                                            <p className="">Heavy machinery burns through fuel fast—hydrogen injection maximises combustion efficiency, enabling engines to run longer and drive massive fuel cost savings. </p>
                                         </div>
                                     </li>
 

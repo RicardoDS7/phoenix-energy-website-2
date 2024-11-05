@@ -21,12 +21,12 @@ const WasteValorization = () => {
               <section className='max-w-[1400px] mx-auto px-4'>
                   <HeroSectionS2S 
                       title='Transform Waste Into Energy & Profit'
-                      subtitle='Discover how waste valorization turns everyday waste into valuable resources, creating new revenue streams, reducing disposal costs, and advancing your business&apos;s sustainability efforts.'
+                      subtitle='Discover how waste valorisation turns everyday waste into valuable resources, creating new revenue streams, reducing disposal costs, and advancing your business&apos;s sustainability efforts.'
                       imagePath={`${basePath}/images/Waste-Valorization-Hero.png`}
                       altText='Carbon Credits Coin'
                       width={2048}
                       height={2048}
-                      sectionID='how-it-works-waste-valorization'
+                      sectionID='how-it-works-waste-valorisation'
                       howItWorksActive={true}
                   />
               </section>
@@ -45,7 +45,7 @@ const WasteValorization = () => {
                 </section>
 
               {/* Waste Valorization Solutions */}
-              <section id="waste-valorization-processes" className="relative 
+              <section id="waste-valorisation-processes" className="relative 
                                                                 bg-antiflashWhite 
                                                                 w-full
                                                                 pb-14
@@ -56,10 +56,10 @@ const WasteValorization = () => {
                                                                 overflow-hidden">
 
                     <div className="max-w-[1400px] mx-auto">
-                        <h2 className="text-charcoal text-center">Leading technologies in waste valorization</h2>
+                        <h2 className="text-charcoal text-center">Leading technologies in waste valorisation</h2>
                     
                         <p className="text-charcoal text-center mt-8 text-xl">
-                        Pyrolysis and Anaerobic Digestion are two of the most commercially adopted and reliable waste valorization processes, transforming waste into energy and high-value products that boost revenue and operational efficiency across industries like agriculture, food processing, and manufacturing.
+                        Pyrolysis and Anaerobic Digestion are two of the most commercially adopted and reliable waste valorisation processes, transforming waste into energy and high-value products that boost revenue and operational efficiency across industries like agriculture, food processing, and manufacturing.
                         </p>
 
                         {/* Pyrolysis */}
@@ -195,7 +195,7 @@ const WasteValorization = () => {
                                 <h2 className="font-bold text-antiflashWhite whitespace-pre-wrap">
                                     Anaerobic Digestion
                                 </h2>
-                                <p className="text-antiflashWhite">Anaerobic digestion is a biological process where microorganisms break down organic waste in the absence of oxygen, producing valuable by-products like biogas and biofertilizer. This method turns waste into renewable energy and nutrient-rich fertilizer, supporting sustainable waste management.</p>
+                                <p className="text-antiflashWhite">Anaerobic digestion is a biological process where microorganisms break down organic waste in the absence of oxygen, producing valuable by-products like biogas and biofertliser. This method turns waste into renewable energy and nutrient-rich fertliser, supporting sustainable waste management.</p>
                                 <div className='flex flex-col md:flex-row gap-8'>
 
                                     {/* Feedstocks */}
@@ -256,8 +256,8 @@ const WasteValorization = () => {
                                                 <div className="flex flex-row gap-4">
                                                     <Image className="object-scale-down object-top" src={`${basePath}/icons/product.png`} alt="icon" width={25} height={25} />
                                                     <div className="flex flex-col space-y-0">
-                                                        <p className="font-bold">Biofertilizer</p>
-                                                        <p className="">A nutrient-rich organic fertilizer that enhances soil health and supports sustainable agriculture.</p>
+                                                        <p className="font-bold">Biofertliser</p>
+                                                        <p className="">A nutrient-rich organic fertliser that enhances soil health and supports sustainable agriculture.</p>
                                                     </div>
                                                 </div>
                                             </li>
@@ -295,7 +295,7 @@ const WasteValorization = () => {
 
                 <div className="max-w-[1400px] mx-auto flex flex-col lg:flex-row lg:gap-12 space-y-12">
                     <div className="relative text-start lg:w-2/3">
-                        <h2 className="text-charcoal">The business case for waste valorization</h2>
+                        <h2 className="text-charcoal">The business case for waste valorisation</h2>
                     
                         <div className="py-10">
                             <ul className="space-y-6">
@@ -305,7 +305,7 @@ const WasteValorization = () => {
                                     </div>
                                     <div className="flex flex-col justify-start items-start gap-2">
                                         <h4 >Generate New Revenue Streams</h4>
-                                        <p className="text-xl">Waste valorization transforms waste into marketable products, creating profitable avenues from materials that would otherwise be discarded.</p>
+                                        <p className="text-xl">Waste valorisation transforms waste into marketable products, creating profitable avenues from materials that would otherwise be discarded.</p>
                                     </div>
                                 </li>
 
@@ -316,7 +316,7 @@ const WasteValorization = () => {
                                     </div>
                                     <div className="flex flex-col justify-start items-start gap-2">
                                         <h4 >Reduce Waste Management Costs</h4>
-                                        <p className="text-xl">By converting waste into reusable resources, waste valorization lowers disposal costs and optimizes waste handling, saving your business money.</p>
+                                        <p className="text-xl">By converting waste into reusable resources, waste valorisation lowers disposal costs and optimises waste handling, saving your business money.</p>
                                     </div>
                                 </li>
 
@@ -347,7 +347,7 @@ const WasteValorization = () => {
                 </section>
 
                 {/* Our Process */}
-                <section id="how-it-works-waste-valorization" className="relative w-full flex px-4 py-14 items-center justify-center">
+                <section id="how-it-works-waste-valorisation" className="relative w-full flex px-4 py-14 items-center justify-center">
 
                     <div className="relative text-center max-w-[1400px] mx-auto">
                         <h2 className="text-charcoal">How it works</h2>

@@ -230,7 +230,7 @@ link-small {
 
 .nav-item {
   position: relative;
-  @apply text-base;
+  @apply text-lg lg:text-base;
   @apply text-charcoal;
   text-decoration: none; /* No default underline */
   padding: 10px;

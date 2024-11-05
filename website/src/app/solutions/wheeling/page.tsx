@@ -68,7 +68,7 @@ const Wheeling = () => {
                         <div className="flex-col lg:flex-row mt-12">
                             <ul className="flex flex-wrap items-center justify-center gap-x-4 gap-y-4">
                                 <li>
-                                    <div className="flex items-center justify-center bg-white shadow rounded-3xl h-[150px] p-4">
+                                    <div className="flex items-center justify-center bg-white shadow rounded-3xl w-[150px] lg:w-[200px] h-[112.5px] lg:h-[150px] p-4">
                                         <Image
                                         src = {`${basePath}/images/brands/shoprite-logo.png`}
                                         alt= {"shoprite-logo"}   // Alt text for the logo
@@ -79,7 +79,7 @@ const Wheeling = () => {
                                 </li>
 
                                 <li>
-                                    <div className="flex items-center justify-center bg-white shadow rounded-3xl h-[150px] p-4">
+                                    <div className="flex items-center justify-center bg-white shadow rounded-3xl w-[150px] lg:w-[200px] h-[112.5px] lg:h-[150px] p-4">
                                         <Image
                                         src = {`${basePath}/images/brands/vodacom-logo.png`}
                                         alt= {"vodacom-logo"}   // Alt text for the logo
@@ -90,10 +90,21 @@ const Wheeling = () => {
                                 </li>
 
                                 <li>
-                                    <div className="flex items-center justify-center bg-white shadow rounded-3xl h-[150px] p-4">
+                                    <div className="flex items-center justify-center bg-white shadow rounded-3xl w-[150px] lg:w-[200px] h-[112.5px] lg:h-[150px] p-4">
                                         <Image
                                         src = {`${basePath}/images/brands/growthpoint-logo.png`}
                                         alt= {"growth-point-logo"}   // Alt text for the logo
+                                        width={150}
+                                        height={150}
+                                        />
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div className="flex items-center justify-center bg-white shadow rounded-3xl w-[150px] lg:w-[200px] h-[112.5px] lg:h-[150px] p-4">
+                                        <Image
+                                        src = {`${basePath}/images/brands/anglo-american-logo.png`}
+                                        alt= {"angloamerica-logo"}   // Alt text for the logo
                                         width={150}
                                         height={150}
                                         />
@@ -497,7 +508,7 @@ const Wheeling = () => {
 
                     <div className='flex w-full lg:w-1/2 flex-col gap-6 text-antiflashWhite'>
                         <h2>Partnering with the worlds largest low-carbon IPP</h2>
-                        <p>We&apos;re proud to partner with EDF, the world&apos;s largest low-carbon Independent Power Producer (IPP) and a NERSA-registered provider in South Africa. Through this partnership, we can offer wheeling services to local businesses, enabling access to EDF&apos;s nearly 750 MW of renewable energy projects across South Africa.</p>
+                        <p>We&apos;re proud to offer wheeling through EDF, the world&apos;s largest low-carbon Independent Power Producer (IPP) and a NERSA-registered provider in South Africa. This unique offering gives local businesses access to EDF&apos;s nearly 750 MW of renewable energy projects across South Africa.</p>
                         <div>
                             < AltGetInTouchButton />
                         </div>

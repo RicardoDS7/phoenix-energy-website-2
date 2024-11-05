@@ -20,13 +20,13 @@ const HomePage = () => {
         <section className="max-w-[1400px] mx-auto px-4">
             <HeroSectionS2S 
                 title="SAVE, EARN, & GROW WITH RENEWABLE ENERGY"
-                subtitle="Our turnkey embedded solar solutions deliver the flexibility, efficiency, and reliability your business needs, from custom design to goal-oriented financing."
+                subtitle="We empower African businesses with accessible, transformative renewable solutions—tailored to drive net-zero goals, boost efficiency, and open new revenue streams. It&apos;s more than saving; it&apos;s sustainable growth."
                 imagePath={`${basePath}/images/Home-Page-Hero.png`}
                 altText="Home Page Hero Image"
                 width={2048}
                 height={2048}
-                sectionID='how-it-works-solar'
-                howItWorksActive={true}
+                sectionID=''
+                howItWorksActive={false}
             />
         </section>
 
@@ -38,66 +38,76 @@ const HomePage = () => {
                 <div className="flex-col lg:flex-row mt-12">
                     <ul className="flex flex-wrap items-center justify-center gap-x-4 gap-y-4">
                         <li>
-                            <div className="flex items-center justify-center bg-white shadow rounded-3xl h-[150px] p-4">
-                                <Image
-                                src = {`${basePath}/images/brands/solar-supply-logo.png`}
-                                alt= {"nedbank-logo"}   // Alt text for the logo
-                                width={150}
-                                height={150}
-                                />
-                            </div>
+                            <a href="https://www.solarsupply.co.za" target="_blank" rel="noopener noreferrer">
+                                <div className="flex items-center justify-center bg-white shadow rounded-3xl w-[150px] lg:w-[200px] h-[112.5px] lg:h-[150px] p-4">
+                                    <Image
+                                    src = {`${basePath}/images/brands/solar-supply-logo.png`}
+                                    alt= {"solar-supply-logo"}   // Alt text for the logo
+                                    width={150}
+                                    height={150}
+                                    />
+                                </div>
+                            </a>
                         </li>
 
                         <li>
-                            <div className="flex items-center justify-center bg-white shadow rounded-3xl h-[150px] p-4">
-                                <Image
-                                src = {`${basePath}/images/brands/daisy-logo.png`}
-                                alt= {"nedbank-logo"}   // Alt text for the logo
-                                width={150}
-                                height={150}
-                                />
-                            </div>
+                            <a href="https://www.blueecho.co.za" target="_blank" rel="noopener noreferrer">
+                                <div className="flex items-center justify-center bg-white shadow rounded-3xl w-[150px] lg:w-[200px] h-[112.5px] lg:h-[150px] p-4">
+                                    <Image
+                                    src = {`${basePath}/images/brands/blueecho-logo.png`}
+                                    alt= {"blue-echo-logo"}   // Alt text for the logo
+                                    width={150}
+                                    height={150}
+                                    />
+                                </div>
+                            </a>
                         </li>
 
                         <li>
-                            <div className="flex items-center justify-center bg-white shadow rounded-3xl h-[150px] p-4">
-                                <Image
-                                src = {`${basePath}/images/brands/edf-logo.png`}
-                                alt= {"nedbank-logo"}   // Alt text for the logo
-                                width={150}
-                                height={150}
-                                />
-                            </div>
+                            <a href="https://www.south-africa.edf.com" target="_blank" rel="noopener noreferrer">
+                                <div className="flex items-center justify-center bg-white shadow rounded-3xl w-[150px] lg:w-[200px] h-[112.5px] lg:h-[150px] p-4">
+                                    <Image
+                                    src = {`${basePath}/images/brands/edf-logo.png`}
+                                    alt= {"edf-logo"}   // Alt text for the logo
+                                    width={150}
+                                    height={150}
+                                    />
+                                </div>
+                            </a>
                         </li>
 
 
                         <li>
-                            <div className="flex items-center justify-center bg-white shadow rounded-3xl h-[150px] p-4">
-                                <Image
-                                src = {`${basePath}/images/brands/standard-bank-logo.png`}
-                                alt= {"standard bank logo"}   // Alt text for the logo
-                                width={150}
-                                height={150}
-                                />
-                            </div>
+                            <a href="https://www.standardbank.com" target="_blank" rel="noopener noreferrer">
+                                <div className="flex items-center justify-center bg-white shadow rounded-3xl w-[150px] lg:w-[200px] h-[112.5px] lg:h-[150px] p-4">
+                                    <Image
+                                    src = {`${basePath}/images/brands/standard-bank-logo.png`}
+                                    alt= {"standard bank logo"}   // Alt text for the logo
+                                    width={150}
+                                    height={150}
+                                    />
+                                </div>
+                            </a>
                         </li>
 
                         <li>
-                            <div className="flex items-center justify-center bg-white shadow rounded-3xl h-[150px] p-4">
-                                <Image
-                                src = {`${basePath}/images/brands/captive-power-logo.png`}
-                                alt= {"captive power logo"}   // Alt text for the logo
-                                width={150}
-                                height={150}
-                                />
-                            </div>
+                            <a href="https://www.captive-power.com" target="_blank" rel="noopener noreferrer">
+                                <div className="flex items-center justify-center bg-white shadow rounded-3xl w-[150px] lg:w-[200px] h-[112.5px] lg:h-[150px] p-4">
+                                    <Image
+                                    src = {`${basePath}/images/brands/captive-power-logo.png`}
+                                    alt= {"captive power logo"}   // Alt text for the logo
+                                    width={150}
+                                    height={150}
+                                    />
+                                </div>
+                            </a>
                         </li>
                     </ul>
                 </div>
             </div>
         </section>
 
-      {/* Solar Finance Options */}
+      {/* Phoenix Solutions */}
       <section id="solar-finance-options" className="relative 
                                                       bg-paynesGray 
                                                       w-full
@@ -110,22 +120,22 @@ const HomePage = () => {
 
           <div className="max-w-[1400px] mx-auto">
               <div className="flex flex-col items-center text-center justify-center">
-                <h2 className="text-antiflashWhite">Flexible finance options</h2>
-                <p className="mt-4 text-antiflashWhite max-w-[1000px]">Founded in 2024, Phoenix Energy was created to make renewable energy both accessible and transformative across Africa. We set ourselves apart by providing bespoke, turnkey solutions that go beyond conventional energy savings. Our approach gives businesses a comprehensive roadmap and an array of renewable energy solutions designed not only to drive them toward Net Zero Carbon Emissions but also to enhance efficiency and unlock new revenue streams. For us, it&apos;s not just about saving—it&apos;s about empowering businesses to earn, grow, and thrive sustainably. </p>
+                <h2 className="text-antiflashWhite">A Fullstack Renewable Energy Solution</h2>
+                <p className="mt-4 text-antiflashWhite max-w-[1000px]">Achieving exponential, sustainable growth demands a strategic blend of advanced renewable technologies—each delivering distinct advantages and a competitive edge. Our comprehensive suite of solutions lays out a clear roadmap, guiding your business toward lasting success.</p>
               </div>
-              <div className="mt-12 flex flex-col flex-wrap w-full lg:flex-row gap-8 justify-center">
+              <div className="mt-12 flex flex-col flex-wrap w-full lg:flex-row gap-8 justify-center items-stretch">
                   
                   {/*Embedded Solar */}
-                  <div className="bg-antiflashWhite p-6 rounded-3xl shadow-md w-full lg:max-w-[420px] flex flex-col items-start justify-start text-start space-y-4">
+                  <div className="bg-antiflashWhite p-6 rounded-3xl shadow-md w-full lg:max-w-[420px] flex flex-col items-start justify-between text-start space-y-4">
                       <div className="rounded-full bg-powderBlue p-4 justify-end items-end">
                           <Image src={`${basePath}/icons/Solar.svg`} alt="solar-icon" width={25} height={25} />
                       </div>
                       <h3 className="text-paynesGray whitespace-pre-wrap font-bold">
                           Embedded Solar
                       </h3>
-                      <div className="font-inter text-lg text-charcoal space-y-6">
+                      <div className="flex-grow font-inter text-lg text-charcoal space-y-6">
                           <p>
-                              With our PPA option, we install and maintain the solar system on your property at no upfront cost. Your business pays only for the electricity the system generates, typically at a lower rate than traditional grid power. We handle all maintenance, ensuring reliable performance and long-term savings without added responsibility.
+                          Power your business with flexible, efficient, and reliable solar solutions — custom-designed and strategically financed for sustainable success.
                           </p>
 
                           <p className="font-bold text-2xl">Solutions:</p>
@@ -133,7 +143,7 @@ const HomePage = () => {
                           <ul className="space-y-6">
                               
                               <li className="gap-4 w-full">
-                                  <div className="flex flex-row gap-4">
+                                  <div className="flex flex-row gap-4 items-start">
                                       <Image className="object-scale-down object-top" src={`${basePath}/icons/Check.png`} alt="icon" width={25} height={25} />
                                       <div className="flex flex-col space-y-2">
                                           <p className="font-bold">Grid-Tied Solar Systems</p>
@@ -172,12 +182,13 @@ const HomePage = () => {
                                   </div>
                               </li>
                           </ul>
-
-                          <LearnMoreButton 
-                          buttonText="Learn More"
-                          path={SOLAR}/>
                           
                       </div>
+
+                        <LearnMoreButton 
+                        buttonText="Learn More"
+                        path={SOLAR}/>
+
                   </div>
 
                   {/* Wheeling */}
@@ -190,7 +201,7 @@ const HomePage = () => {
                       </h3>
                       <div className="font-inter text-lg text-charcoal space-y-6">
                           <p>
-                          Your business fully owns the solar system from day one. Purchasing outright provides maximum savings on energy costs, qualifies you for all tax incentives, and enables a quick return on investment. This approach grants you complete control over your energy production and secures long-term financial benefits.
+                          Access unlimited, 24/7 renewable power through the grid through wheeling — clean, cost-effective, and infrastructure-free.
                           </p>
 
                           <p className="font-bold text-2xl">Benefits:</p>
@@ -201,7 +212,7 @@ const HomePage = () => {
                                   <div className="flex flex-row gap-4">
                                       <Image className="object-scale-down object-top" src={`${basePath}/icons/Check.png`} alt="icon" width={25} height={25} />
                                       <div className="flex flex-col space-y-2">
-                                          <p className="font-bold">Maximum Savings & ROI</p>
+                                          <p className="font-bold">Zero Infrastructure</p>
                       
                                       </div>
                                   </div>
@@ -211,7 +222,7 @@ const HomePage = () => {
                                   <div className="flex flex-row gap-4">
                                       <Image className="object-scale-down object-top" src={`${basePath}/icons/Check.png`} alt="icon" width={25} height={25} />
                                       <div className="flex flex-col space-y-2">
-                                          <p className="font-bold">Full Ownership</p>
+                                          <p className="font-bold">Easily Scalable</p>
                                           
                                       </div>
                                   </div>
@@ -221,18 +232,19 @@ const HomePage = () => {
                                   <div className="flex flex-row gap-4">
                                       <Image className="object-scale-down object-top" src={`${basePath}/icons/Check.png`} alt="icon" width={25} height={25} />
                                       <div className="flex flex-col space-y-2">
-                                          <p className="font-bold">Tax Incentives</p>
+                                          <p className="font-bold">One Contract - Multiple Locations</p>
                                           
                                       </div>
                                   </div>
                               </li>
                           </ul>
-                          
-                          <LearnMoreButton 
-                          buttonText="Learn More"
-                          path={WHEELING}/>
 
                       </div>
+
+                    <LearnMoreButton 
+                    buttonText="Learn More"
+                    path={WHEELING}/>
+                      
                   </div>
 
                   {/*Hydrogen Technologies */}
@@ -245,10 +257,10 @@ const HomePage = () => {
                       </h3>
                       <div className="font-inter text-lg text-charcoal space-y-6">
                           <p>
-                              A loan purchase allows your business to finance the solar system through a loan from your preferred bank, spreading out payments over time while still gaining the benefits of system ownership. This approach lets you start saving on energy costs immediately, while gradually paying off the system.
+                          Cut emissions, boost efficiency, and save on fuel with hydrogen fuel injection for your engines and generators.
                           </p>
 
-                          <p className="font-bold text-2xl">Benefits:</p>
+                          <p className="font-bold text-2xl">Ideal For:</p>
                           
                           <ul className="space-y-6">
                               
@@ -256,7 +268,7 @@ const HomePage = () => {
                                   <div className="flex flex-row gap-4">
                                       <Image className="object-scale-down object-top" src={`${basePath}/icons/Check.png`} alt="icon" width={25} height={25} />
                                       <div className="flex flex-col space-y-2">
-                                          <p className="font-bold">Flexible Payments</p>
+                                          <p className="font-bold">Generators</p>
                                           
                                       </div>
                                   </div>
@@ -266,7 +278,7 @@ const HomePage = () => {
                                   <div className="flex flex-row gap-4">
                                       <Image className="object-scale-down object-top" src={`${basePath}/icons/Check.png`} alt="icon" width={25} height={25} />
                                       <div className="flex flex-col space-y-2">
-                                          <p className="font-bold">Ownership Benefits</p>
+                                          <p className="font-bold">Heavy Machinery & Equipment</p>
                                           
                                       </div>
                                   </div>
@@ -276,18 +288,29 @@ const HomePage = () => {
                                   <div className="flex flex-row gap-4">
                                       <Image className="object-scale-down object-top" src={`${basePath}/icons/Check.png`} alt="icon" width={25} height={25} />
                                       <div className="flex flex-col space-y-2">
-                                          <p className="font-bold">Immediate Savings</p>
+                                          <p className="font-bold">Logistics Fleets</p>
+                                          
+                                      </div>
+                                  </div>
+                              </li>
+
+                              <li className="gap-4 w-full">
+                                  <div className="flex flex-row gap-4">
+                                      <Image className="object-scale-down object-top" src={`${basePath}/icons/Check.png`} alt="icon" width={25} height={25} />
+                                      <div className="flex flex-col space-y-2">
+                                          <p className="font-bold">Maritime Ships</p>
                                           
                                       </div>
                                   </div>
                               </li>
                           </ul>
-
-                          <LearnMoreButton 
-                          buttonText="Learn More"
-                          path={HYDROGEN}/>
                           
                       </div>
+
+                      <LearnMoreButton 
+                          buttonText="Learn More"
+                          path={HYDROGEN}/>
+
                   </div>
 
                   {/*Waste Valorization */}
@@ -296,14 +319,14 @@ const HomePage = () => {
                           <Image src={`${basePath}/icons/product-alt.png`} alt="waste-valorization-icon" width={25} height={25} />
                       </div>
                       <h3 className="text-paynesGray whitespace-pre-wrap font-bold">
-                          Waste Valorization
+                          Waste Valorisation
                       </h3>
                       <div className="font-inter text-lg text-charcoal space-y-6">
                           <p>
-                              A loan purchase allows your business to finance the solar system through a loan from your preferred bank, spreading out payments over time while still gaining the benefits of system ownership. This approach lets you start saving on energy costs immediately, while gradually paying off the system.
+                          Turn your business into a circular economy with waste valorization—convert waste into valuable products and unlock new revenue opportunities.
                           </p>
 
-                          <p className="font-bold text-2xl">Benefits:</p>
+                          <p className="font-bold text-2xl">High-Value Products:</p>
                           
                           <ul className="space-y-6">
                               
@@ -311,7 +334,7 @@ const HomePage = () => {
                                   <div className="flex flex-row gap-4">
                                       <Image className="object-scale-down object-top" src={`${basePath}/icons/Check.png`} alt="icon" width={25} height={25} />
                                       <div className="flex flex-col space-y-2">
-                                          <p className="font-bold">Flexible Payments</p>
+                                          <p className="font-bold">Bio-Oil</p>
                                           
                                       </div>
                                   </div>
@@ -321,7 +344,7 @@ const HomePage = () => {
                                   <div className="flex flex-row gap-4">
                                       <Image className="object-scale-down object-top" src={`${basePath}/icons/Check.png`} alt="icon" width={25} height={25} />
                                       <div className="flex flex-col space-y-2">
-                                          <p className="font-bold">Ownership Benefits</p>
+                                          <p className="font-bold">Biogas</p>
                                           
                                       </div>
                                   </div>
@@ -331,18 +354,30 @@ const HomePage = () => {
                                   <div className="flex flex-row gap-4">
                                       <Image className="object-scale-down object-top" src={`${basePath}/icons/Check.png`} alt="icon" width={25} height={25} />
                                       <div className="flex flex-col space-y-2">
-                                          <p className="font-bold">Immediate Savings</p>
+                                          <p className="font-bold">Biochar</p>
                                           
                                       </div>
                                   </div>
                               </li>
+
+                              <li className="gap-4 w-full">
+                                  <div className="flex flex-row gap-4">
+                                      <Image className="object-scale-down object-top" src={`${basePath}/icons/Check.png`} alt="icon" width={25} height={25} />
+                                      <div className="flex flex-col space-y-2">
+                                          <p className="font-bold">Carbon Black</p>
+                                          
+                                      </div>
+                                  </div>
+                              </li>
+
                           </ul>
 
-                          <LearnMoreButton 
+                      </div>
+
+                      <LearnMoreButton 
                           buttonText="Learn More"
                           path={WASTE_VALOR}/>
                           
-                      </div>
                   </div>
 
                   {/*Carbon Credits */}
@@ -355,7 +390,7 @@ const HomePage = () => {
                       </h3>
                       <div className="font-inter text-lg text-charcoal space-y-6">
                           <p>
-                              A loan purchase allows your business to finance the solar system through a loan from your preferred bank, spreading out payments over time while still gaining the benefits of system ownership. This approach lets you start saving on energy costs immediately, while gradually paying off the system.
+                            Get financially rewarded for your sustainable practices that offset carbon emmissions. Earn carbon credits, and reduce your carbon tax simultaneously.
                           </p>
 
                           <p className="font-bold text-2xl">Benefits:</p>
@@ -393,11 +428,12 @@ const HomePage = () => {
                               </li>
                           </ul>
 
-                          <LearnMoreButton 
+                      </div>
+                      
+                      <LearnMoreButton 
                           buttonText="Learn More"
                           path={CARBON_CREDITS}/>
                           
-                      </div>
                   </div>
 
 

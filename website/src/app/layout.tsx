@@ -5,7 +5,7 @@ import Footer from './components/Footer';  // Import Footer component
 export const metadata = {
   title: 'Phoenix Energy - Renewable Energy Solutions',
   description: `Phoenix Energy offers innovative renewable energy solutions, including embedded solar systems, 
-                battery storage, hydrogen technology, waste valorization, carbon credits, and energy wheeling services. 
+                battery storage, hydrogen technology, waste valorisation, carbon credits, and energy wheeling services. 
                 Harness the power of sustainable energy for a greener future today!`,
 }
 

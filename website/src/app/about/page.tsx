@@ -14,7 +14,7 @@ const About = () => {
         <section className='flex max-w-[1400px] pb-14 mx-auto px-4 pt-28 justify-center items-center'>
           <div className="flex flex-col text-center  items-center justify-center space-y-6">
             <h1 className="text-charcoal uppercase font-extrabold">The <span className="text-paynesGray">Rise</span> of Phoenix <span className="text-paynesGray">Energy</span></h1>
-            <p className="mt-4 text-paynesGray max-w-[1000px]">Founded in 2024, Phoenix Energy was created to make renewable energy both accessible and transformative across Africa. We set ourselves apart by providing bespoke, turnkey solutions that go beyond conventional energy savings. Our approach gives businesses a comprehensive roadmap and an array of renewable energy solutions designed not only to drive them toward Net Zero Carbon Emissions but also to enhance efficiency and unlock new revenue streams. For us, it&apos;s not just about saving—it&apos;s about empowering businesses to earn, grow, and thrive sustainably. </p>
+            <p className="mt-4 text-paynesGray max-w-[1000px]">Phoenix Energy was created to make renewable energy both accessible and transformative across Africa. We set ourselves apart by providing bespoke, turnkey solutions that go beyond conventional energy savings. Our approach gives businesses a comprehensive roadmap and an array of renewable energy solutions designed not only to drive them toward Net Zero Carbon Emissions but also to enhance efficiency and unlock new revenue streams. For us, it&apos;s not just about saving—it&apos;s about empowering businesses to earn, grow, and thrive sustainably. </p>
           </div>
         </section>
 

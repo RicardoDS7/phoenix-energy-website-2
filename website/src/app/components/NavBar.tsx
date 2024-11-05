@@ -80,7 +80,7 @@ const NavBar = () => {
                               <div className="absolute w-full -left-1 z-50"> {/* Increased z-index to 50 */}
                                 <div className="z-50 mt-4 rounded-3xl transform -translate-x-44 grid grid-cols-2 gap-0 min-w-[450px] bg-white shadow-xl">
                                   <div className="rounded-3xl p-6 bg-white">
-                                    <p className="text-charcoal text-center text-sm">Maximize Savings</p>
+                                    <p className="text-charcoal text-center text-sm">Maximise Savings</p>
                                     <hr className="mt-2 h-[2px] bg-powderBlue border-none" />
                                     <ul className='space-y-6'>
                                       {mainItem.subMenu.map(
@@ -208,6 +208,13 @@ const NavBar = () => {
                             </div>
                             ))}
                         </ul>
+
+                          
+                        <div className='flex justify-center items-center mt-8'>
+                          <Image src={`${basePath}/logo.png`} alt="phoenix-energy-logo" width={50} height={50}/>
+                          <h1 className='font-inter font-bold text-xl text-charcoal'>Phoenix <span className='text-paynesGray font-semibold'>Energy</span></h1>
+                        </div>
+
                     </div>
 
                 </div>
