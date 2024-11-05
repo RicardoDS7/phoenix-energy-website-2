@@ -1,23 +1,23 @@
 import React, { useState, useEffect } from 'react';
 
-// Skeleton component (can be customized)
+// Loading spinner component
 const LoadingSkeleton: React.FC = () => (
-  <div className="bg-antiflashWhite flex justify-center w-full h-full" >
+  <div className="bg-white rounded-3xl flex flex-col justify-center items-center w-full h-[360px] space-y-4">
+    {/* Loading Spinner */}
+    <div className="animate-spin rounded-full h-12 w-12 border-t-4 border-atomicTangerine border-opacity-50"></div>
     <p className="font-bold text-charcoal">Loading form...</p>
   </div>
 );
 
 const ZohoFormEmbed: React.FC = () => {
-  // State to track whether the iframe has loaded
   const [isLoading, setIsLoading] = useState(true);
 
-  // Event handler for iframe load event
   const handleIframeLoad = () => {
     setIsLoading(false);
   };
 
   useEffect(() => {
-    // In case of an error loading the iframe, you can add a timeout here to fallback
+    // Optional: Fallback or timeout for loading errors
   }, []);
 
   return (
@@ -28,14 +28,7 @@ const ZohoFormEmbed: React.FC = () => {
       <iframe
         src="https://forms.zohopublic.com/russellphoeni1/form/TestEmbeddedForm/formperma/OjsIKLiy5r3GL9SIEhxsQeVZjV_JRfJw837vsS25Pzc?zf_rszfm=1"
         title="Zoho Embedded Form"
-        frameBorder="0"
-        style={{
-          height: '933px',
-          width: '100%',
-          border: 'none',
-          backgroundColor: '#f2f3f4',
-          display: isLoading ? 'none' : 'block', // Hide iframe until it is loaded
-        }}
+        className={`h-[1200px] w-full rounded-3xl border-none ${isLoading ? 'hidden' : 'block'}`}
         aria-label="Contact Form"
         onLoad={handleIframeLoad} // Triggered once iframe is fully loaded
       />
