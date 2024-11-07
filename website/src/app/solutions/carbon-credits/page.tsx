@@ -218,7 +218,7 @@ const CarbonCredits = () => {
 
                         </div>
 
-                        <div className="flex rounded-3xl h-[560px] lg:w-1/3">
+                        <div className="hidden lg:block flex rounded-3xl h-[560px] lg:w-1/3">
                             <Image className="rounded-3xl object-cover h-full w-full transform -scale-x-100" src={`${basePath}/images/home_page_banner.png`} alt="why carbon credits matter" width={360} height={640} />
                         </div>
                     </div>

@@ -340,7 +340,7 @@ const WasteValorization = () => {
 
                     </div>
 
-                    <div className="flex rounded-3xl h-[560px] lg:w-1/3 shadow">
+                    <div className="hidden lg:block flex rounded-3xl h-[560px] lg:w-1/3 shadow">
                         <Image className="rounded-3xl object-cover h-full w-full" src={`${basePath}/images/Waste-Valorization.png`} alt="why carbon credits matter" width={360} height={640} />
                     </div>
                 </div>
