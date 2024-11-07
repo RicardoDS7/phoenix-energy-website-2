@@ -13,7 +13,6 @@ const ContactUs = () => {
     const [visibleSection, setVisibleSection] = useState<string | null>(null);
     const [loading, setLoading] = useState(false);
     const iframeSolarRef = useRef<HTMLIFrameElement>(null);
-    const iframeWheelingRef = useRef<HTMLIFrameElement>(null);
     const iframeWasteRef = useRef<HTMLIFrameElement>(null);
     const iframeHydrogenRef = useRef<HTMLIFrameElement>(null);
     const iframeCarbonCreditsRef = useRef<HTMLIFrameElement>(null);
