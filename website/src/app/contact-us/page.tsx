@@ -47,13 +47,6 @@ const ContactUs = () => {
 
                         <button 
                             type="button" 
-                            onClick={() => handleButtonClick('wheeling-contact-form')}
-                            className="solution-options-form-button px-4 py-2 rounded-full hidden lg:block">
-                            Wheeling
-                        </button>
-
-                        <button 
-                            type="button" 
                             onClick={() => handleButtonClick('waste-valorisation-contact-form')}
                             className="solution-options-form-button px-4 py-2 rounded-full hidden lg:block">
                             Waste Valorisation
