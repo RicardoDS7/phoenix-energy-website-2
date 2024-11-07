@@ -21,7 +21,7 @@ const HomePage = () => {
             <HeroSectionS2S 
                 title="SAVE, EARN, & GROW WITH RENEWABLE ENERGY"
                 subtitle="We empower African businesses with accessible, transformative renewable solutions—tailored to drive net-zero goals, boost efficiency, and open new revenue streams. It&apos;s more than saving; it&apos;s sustainable growth."
-                imagePath={`${basePath}/images/Home-Page-Hero.png`}
+                imagePath={`${basePath}/images/Home-Page-Hero.webp`}
                 altText="Home Page Hero Image"
                 width={720}
                 height={405}

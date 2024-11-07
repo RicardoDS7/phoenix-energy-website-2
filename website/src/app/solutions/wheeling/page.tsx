@@ -53,8 +53,8 @@ const Wheeling = () => {
                       subtitle='Wheeled power gives businesses 24/7 access to renewable energy through the existing grid, providing clean, cost-effective power without the expense of on-site infrastructure.'
                       imagePath={`${basePath}/images/Wheeling-Hero-Image.png`}
                       altText='Wind Turbines'
-                      width={2048}
-                      height={2048}
+                      width={405}
+                      height={720}
                       sectionID='how-it-works-wheeling'
                       howItWorksActive={true}
                   />
