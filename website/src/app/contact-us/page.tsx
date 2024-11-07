@@ -192,7 +192,7 @@ const ContactUs = () => {
                             }}
                             ></iframe>
                             {loading && (
-                            <div className="absolute inset-0 flex flex-col items-center justify-center w-full h-[400px] bg-antiflashWhite bg-opacity-75">
+                            <div className="absolute inset-0 flex flex-col items-center justify-center w-full h-fit bg-antiflashWhite bg-opacity-75">
                                 <div className="loading-circle animate-spin border-4 border-t-4 border-t-paynesGray rounded-full w-12 h-12 mb-4"></div>
                                 <p className="text-charcoal font-medium">Loading form...</p>
                             </div>
