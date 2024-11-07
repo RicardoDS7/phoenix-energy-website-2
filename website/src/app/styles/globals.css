@@ -288,3 +288,39 @@ link-small {
 .clip-path-custom {
   clip-path: polygon(0 0, 100% 0%, 100% 40%, 0% 80%);
 }
+
+
+.solution-options-form-button {
+  @apply text-sm;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  font-weight: 600;               /* Semi-bold font weight */
+  padding: 10px 20px;             /* Add padding to make the button larger and more clickable */
+  border-radius: 'full';             /* Rounded corners */
+  background-color: white;    /* Background color for airSuperiorityBlue */
+  @apply text-charcoal;               /* Text color (antiflashWhite) */
+  @apply border-airSuperiorityBlue;
+  border-width: 1px;                   /* Remove border */
+  cursor: pointer;                /* Show pointer cursor */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.solution-options-form-button:hover {
+ @apply bg-airSuperiorityBlue;
+ @apply text-antiflashWhite;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Increase shadow on hover */
+}
+
+.solution-options-form-button:focus {
+  @apply bg-paynesGray;
+  @apply text-antiflashWhite;
+  outline: none;                  /* Remove default focus outline */
+  box-shadow: 0 0 0 4px rgba(118, 154, 176, 0.3); /* Add focus ring for accessibility */
+}
+
+.solution-options-form-button:active {
+  @apply bg-airSuperiorityBlue;
+  box-shadow: none;               /* Remove shadow on active state for a pressed effect */
+}

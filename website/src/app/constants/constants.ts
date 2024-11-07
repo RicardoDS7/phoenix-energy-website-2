@@ -57,8 +57,8 @@ export const SOCIAL_PROFILES = [
     {account: 'facebook', path: 'https://facebook.com', icon: '/icons/facebook.svg' },
 ]
 export const CONTACT_EMAIL = 'info@phoenixenergy.tech';
-export const PHONE_NUMBER = '+123 456 7890';
-export const ADDRESS = '123 Street, Johannesburg, South Africa';
+export const PHONE_NUMBER = '+27-79-892-8197';
+export const ADDRESS = '';
 
 //Carbon Credits Process
 export interface ProcessSteps {
