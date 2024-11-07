@@ -53,10 +53,10 @@ const EmbeddedSystems = () => {
                     <HeroSectionS2S 
                         title="The Cheapest, Most Reliable Energy Solution"
                         subtitle="Our turnkey embedded solar solutions deliver the flexibility, efficiency, and reliability your business needs, from custom design to goal-oriented financing."
-                        imagePath={`${basePath}/images/Solar-Hero_Image.png`}
+                        imagePath={`${basePath}/images/Solar-Hero_Image.webp`}
                         altText="Carbon Credits Coin"
-                        width={720}
-                        height={405}
+                        width={1024}
+                        height={1024}
                         sectionID='how-it-works-solar'
                         howItWorksActive={true}
                     />

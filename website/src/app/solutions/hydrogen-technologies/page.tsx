@@ -20,10 +20,10 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
                   <HeroSectionS2S 
                       title='Unlock superior performance'
                       subtitle='Achieve lower emissions, greater efficiency, and reduced fuel costs by integrating hydrogen fuel injection into your engine or generator.'
-                      imagePath={`${basePath}/images/Hydrogen-Hero-Image-2.png`}
+                      imagePath={`${basePath}/images/Hydrogen-Hero-Image-2.webp`}
                       altText='Carbon Credits Coin'
-                      width={720}
-                      height={405}
+                      width={1024}
+                      height={1024}
                       sectionID=''
                       howItWorksActive={false}
                   />

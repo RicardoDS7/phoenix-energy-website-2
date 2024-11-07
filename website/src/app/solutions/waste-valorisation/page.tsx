@@ -22,10 +22,10 @@ const WasteValorization = () => {
                   <HeroSectionS2S 
                       title='Transform Waste Into Energy & Profit'
                       subtitle='Discover how waste valorisation turns everyday waste into valuable resources, creating new revenue streams, reducing disposal costs, and advancing your business&apos;s sustainability efforts.'
-                      imagePath={`${basePath}/images/Waste-Valorization-Hero.png`}
+                      imagePath={`${basePath}/images/Waste-Valorization-Hero.webp`}
                       altText='Carbon Credits Coin'
-                      width={720}
-                      height={405}
+                      width={1024}
+                      height={1024}
                       sectionID='how-it-works-waste-valorisation'
                       howItWorksActive={true}
                   />

@@ -51,10 +51,10 @@ const Wheeling = () => {
                   <HeroSectionS2S 
                       title='Cheaper, Greener, Virtual Power.'
                       subtitle='Wheeled power gives businesses 24/7 access to renewable energy through the existing grid, providing clean, cost-effective power without the expense of on-site infrastructure.'
-                      imagePath={`${basePath}/images/Wheeling-Hero-Image.png`}
+                      imagePath={`${basePath}/images/Wheeling-Hero-Image.webp`}
                       altText='Wind Turbines'
-                      width={405}
-                      height={720}
+                      width={1024}
+                      height={1024}
                       sectionID='how-it-works-wheeling'
                       howItWorksActive={true}
                   />

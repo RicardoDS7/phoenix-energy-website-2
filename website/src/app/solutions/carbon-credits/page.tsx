@@ -21,10 +21,10 @@ const CarbonCredits = () => {
                     <HeroSectionS2S 
                         title="Sustainable Revenue From Carbon Credits"
                         subtitle="A carbon credit is a certificate representing the reduction of one ton of CO₂ from the atmosphere. Businesses can earn or purchase them by investing in emission-reducing projects like renewable energy or reforestation."
-                        imagePath={`${basePath}/images/Carbon-Credits-Hero.png`}
+                        imagePath={`${basePath}/images/Carbon-Credits-Hero.webp`}
                         altText="Carbon Credits Coin"
-                        width={720}
-                        height={405}
+                        width={1024}
+                        height={1024}
                         sectionID="how-it-works-carbon-credits"
                         howItWorksActive={true}
                     />
