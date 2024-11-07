@@ -42,7 +42,7 @@ const ContactUs = () => {
                             type="button" 
                             onClick={() => handleButtonClick('solar-contact-form')}
                             className="solution-options-form-button px-4 py-2 rounded-full hidden lg:block">
-                            Embedded Solar
+                            Embedded Solar & Wheeling
                         </button>
 
                         <button 
@@ -75,7 +75,7 @@ const ContactUs = () => {
                         
                     </div>
 
-                    {/* Embedded Solar Form*/}
+                    {/* Embedded Solar & Wheeling Form*/}
                     {visibleSection === 'solar-contact-form' && (
                         <div id="solar-contact-form" className="relative flex flex-grow">
                             <iframe
@@ -93,31 +93,6 @@ const ContactUs = () => {
                             ></iframe>
                             {loading && (
                             <div className="absolute inset-0 flex flex-col items-center justify-center w-full h-fit  bg-antiflashWhite bg-opacity-75">
-                                <div className="loading-circle animate-spin border-4 border-t-4 border-t-paynesGray rounded-full w-12 h-12 mb-4"></div>
-                                <p className="text-charcoal font-medium">Loading form...</p>
-                            </div>
-                            )}
-                        </div>
-                        )}
-
-                    {/* Wheeling Form*/}
-                    {visibleSection === 'wheeling-contact-form' && (
-                        <div id="wheeling-contact-form" className="relative">
-                            <iframe
-                            ref={iframeWheelingRef}
-                            className={`w-[calc(100%+3rem)] -mx-6  h-[1300px] lg:h-[1200px] ${loading ? 'opacity-0' : 'opacity-100'}`}
-                            src="https://us.bigin.online/org870703215/forms/wheeled-power"
-                            onLoad={() => {
-                                setLoading(false);
-                                if (iframeWheelingRef.current) {
-                                    const offset = 80; // Adjust this value to set your desired offset
-                                    const iframeTop = iframeWheelingRef.current.getBoundingClientRect().top + window.scrollY - offset;
-                                    window.scrollTo({ top: iframeTop, behavior: 'smooth' });
-                                }
-                            }}
-                            ></iframe>
-                            {loading && (
-                            <div className="absolute inset-0 flex flex-col items-center justify-center w-full h-fit bg-antiflashWhite bg-opacity-75">
                                 <div className="loading-circle animate-spin border-4 border-t-4 border-t-paynesGray rounded-full w-12 h-12 mb-4"></div>
                                 <p className="text-charcoal font-medium">Loading form...</p>
                             </div>
