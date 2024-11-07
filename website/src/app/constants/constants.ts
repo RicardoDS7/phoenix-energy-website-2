@@ -303,7 +303,7 @@ export const CarbonCreditsProcess: ProcessSteps[] = [
         "id": 6,
         "productName": "Biofertiliser",
         "description": "A nutrient-rich fertiliser derived from the digestate of anaerobic digestion, used to improve soil fertility and crop yields.",
-        "featuredImage": "/images/bio-fertiliser.png"
+        "featuredImage": "/images/bio-fertilizer.png"
     },
     
   ];

@@ -71,10 +71,7 @@ const Footer = () => {
                                 {PHONE_NUMBER}
                             </Link>
                         </li>
-                        <li className={`mr-5  flex items-center`}>
-                            <Image className={'object-fill mr-2'} src={`${basePath}/icons/address.png`} alt={`address icon`} width={15} height={15} />
-                            {ADDRESS}
-                        </li>
+                        
                         <li className={`mr-5  flex items-center`}>
                             <ul className='flex space-x-4'>
                                 {SOCIAL_PROFILES.map((socialItem) => (
