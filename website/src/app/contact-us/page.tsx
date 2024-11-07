@@ -80,7 +80,7 @@ const ContactUs = () => {
                         <div id="solar-contact-form" className="relative flex flex-grow">
                             <iframe
                             ref={iframeSolarRef}
-                            className={`w-[calc(100%+3rem)] -mx-6 h-[1450px] lg:h-[1375px] ${loading ? 'opacity-0' : 'opacity-100'}`}
+                            className={`w-[calc(100%+3rem)] -mx-6 h-[1475px] lg:h-[1350px] ${loading ? 'opacity-0' : 'opacity-100'}`}
                             src="https://us.bigin.online/org870703215/forms/embedded-solar-form"
                             onLoad={() => {
                                 setLoading(false);
