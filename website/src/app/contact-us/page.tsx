@@ -73,7 +73,7 @@ const ContactUs = () => {
                         <div id="solar-contact-form" className="relative flex flex-grow">
                             <iframe
                             ref={iframeSolarRef}
-                            className={`w-[calc(100%+3rem)] -mx-6 h-[1475px] lg:h-[1350px] ${loading ? 'opacity-0' : 'opacity-100'}`}
+                            className={`w-[calc(100%+3rem)] -mx-6 h-[1600px] lg:h-[1450px] ${loading ? 'opacity-0' : 'opacity-100'}`}
                             src="https://us.bigin.online/org870703215/forms/embedded-solar-form"
                             onLoad={() => {
                                 setLoading(false);
@@ -173,7 +173,7 @@ const ContactUs = () => {
                 <div className="flex flex-col gap-8 w-full lg:w-1/3 mx-auto">
                     <div className="bg-colombiaBlue rounded-3xl p-6 space-y-6">
                         <h4 className="text-charcoal">Our Contact Details</h4>
-
+                        <p className="text-charcoal text-base">For general inquiries or special requests, please contact us using the details provided below.</p>
                         <ul className="space-y-4 mt-2">
                             <li className="footer-item flex">
                                 <Image className="object-fill mr-2" src={`${basePath}/icons/email.svg`} alt="email icon" width={15} height={15} />
