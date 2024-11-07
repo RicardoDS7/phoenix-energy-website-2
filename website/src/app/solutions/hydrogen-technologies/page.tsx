@@ -22,8 +22,8 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
                       subtitle='Achieve lower emissions, greater efficiency, and reduced fuel costs by integrating hydrogen fuel injection into your engine or generator.'
                       imagePath={`${basePath}/images/Hydrogen-Hero-Image-2.png`}
                       altText='Carbon Credits Coin'
-                      width={2048}
-                      height={2048}
+                      width={720}
+                      height={405}
                       sectionID=''
                       howItWorksActive={false}
                   />

@@ -23,8 +23,8 @@ const HomePage = () => {
                 subtitle="We empower African businesses with accessible, transformative renewable solutions—tailored to drive net-zero goals, boost efficiency, and open new revenue streams. It&apos;s more than saving; it&apos;s sustainable growth."
                 imagePath={`${basePath}/images/Home-Page-Hero.png`}
                 altText="Home Page Hero Image"
-                width={2048}
-                height={2048}
+                width={720}
+                height={405}
                 sectionID=''
                 howItWorksActive={false}
             />

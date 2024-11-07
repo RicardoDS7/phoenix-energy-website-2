@@ -23,8 +23,8 @@ const CarbonCredits = () => {
                         subtitle="A carbon credit is a certificate representing the reduction of one ton of CO₂ from the atmosphere. Businesses can earn or purchase them by investing in emission-reducing projects like renewable energy or reforestation."
                         imagePath={`${basePath}/images/Carbon-Credits-Hero.png`}
                         altText="Carbon Credits Coin"
-                        width={2048}
-                        height={2048}
+                        width={720}
+                        height={405}
                         sectionID="how-it-works-carbon-credits"
                         howItWorksActive={true}
                     />

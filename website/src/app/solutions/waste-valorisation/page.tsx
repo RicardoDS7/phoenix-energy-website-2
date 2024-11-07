@@ -24,8 +24,8 @@ const WasteValorization = () => {
                       subtitle='Discover how waste valorisation turns everyday waste into valuable resources, creating new revenue streams, reducing disposal costs, and advancing your business&apos;s sustainability efforts.'
                       imagePath={`${basePath}/images/Waste-Valorization-Hero.png`}
                       altText='Carbon Credits Coin'
-                      width={2048}
-                      height={2048}
+                      width={720}
+                      height={405}
                       sectionID='how-it-works-waste-valorisation'
                       howItWorksActive={true}
                   />
