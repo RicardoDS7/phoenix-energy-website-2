@@ -1,5 +1,5 @@
 'use client';
-import { NAV_LINKS, HOME_PAGE, COMPANY_LINKS, SOCIAL_PROFILES, PHONE_NUMBER, ADDRESS, CONTACT_EMAIL } from '../constants/constants';  // Import the constants
+import { NAV_LINKS, HOME_PAGE, COMPANY_LINKS, SOCIAL_PROFILES, PHONE_NUMBER, CONTACT_EMAIL } from '../constants/constants';  // Import the constants
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
