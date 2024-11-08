@@ -18,7 +18,7 @@ export const projectDetails: ProjectInfo[] = [
       solutions: "Battery Energy Storage System (BESS)",
       production: "100 kWp + 120kWh",
       location: "Kempton Park, Gauteng, South Africa",
-      featured_image: `${basePath}/images/projects/condrou-manufacturing-featured-image.jpeg`,
+      featured_image: `${basePath}/images/projects/condrou-manufacturing-featured-image.webp`,
     },
     {
       id: 2,
@@ -27,7 +27,7 @@ export const projectDetails: ProjectInfo[] = [
       solutions: "Battery Energy Storage System (BESS)",
       production: "100 kWp + 240kWh",
       location: "Midrand, Gauteng, South Africa",
-      featured_image: `${basePath}/images/projects/cafe-mozart-featured-image.jpeg`,
+      featured_image: `${basePath}/images/projects/cafe-mozart-featured-image.webp`,
     },
     {
       id: 3,
@@ -36,7 +36,7 @@ export const projectDetails: ProjectInfo[] = [
       solutions: "Grid-Tied Solar",
       production: "270 kWp",
       location: "Rouxville, Gauteng, South Africa",
-      featured_image: `${basePath}/images/projects/framework-property-services-featured-image.jpeg`,
+      featured_image: `${basePath}/images/projects/framework-property-services-featured-image.webp`,
     },
     {
       id: 4,
@@ -45,7 +45,7 @@ export const projectDetails: ProjectInfo[] = [
       solutions: "Grid-Tied Solar",
       production: "41.25 kWp",
       location: "Cape Town, Western Cape, South Africa",
-      featured_image: `${basePath}/images/projects/portside-luxury-properties-featured-image.jpeg`,
+      featured_image: `${basePath}/images/projects/portside-luxury-properties-featured-image.webp`,
     },
     {
       id: 5,
@@ -54,6 +54,6 @@ export const projectDetails: ProjectInfo[] = [
       solutions: "Battery Energy Storage System (BESS)",
       production: "33 kWp + 120kWh",
       location: "Preotira, Gauteng, South Africa",
-      featured_image: `${basePath}/images/projects/go-gourmet-hydrophonics-featured-image.jpeg`,
+      featured_image: `${basePath}/images/projects/go-gourmet-hydrophonics-featured-image.webp`,
     },
   ];

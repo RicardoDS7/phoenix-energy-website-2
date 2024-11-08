@@ -279,31 +279,31 @@ export const CarbonCreditsProcess: ProcessSteps[] = [
       "id": 1,
       "productName": "Biogas/Syngas",
       "description": "A renewable gas produced from the breakdown of organic materials, used as a fuel for heating, electricity generation, or vehicle fuel.",
-      "featuredImage": "/images/biogas.png"
+      "featuredImage": "/images/biogas.webp"
     },
     {
       "id": 2,
       "productName": "Bio-oil",
       "description": "A synthetic oil produced through pyrolysis that can be refined into fuels or used as a feedstock for chemical production.",
-      "featuredImage": "/images/bio-oil.png"
+      "featuredImage": "/images/bio-oil.webp"
     },
     {
       "id": 3,
       "productName": "Biochar",
       "description": "A carbon-rich by-product of pyrolysis, used to enhance soil quality, retain moisture, and sequester carbon.",
-      "featuredImage": "/images/biochar.png"
+      "featuredImage": "/images/biochar.webp"
     },
     {
       "id": 5,
       "productName": "Carbon Black",
       "description": "A fine black powder from pyrolysis, used in manufacturing rubber products, inks, and coatings.",
-      "featuredImage": "/images/carbon-black.png"
+      "featuredImage": "/images/carbon-black.webp"
     },
     {
         "id": 6,
         "productName": "Biofertiliser",
         "description": "A nutrient-rich fertiliser derived from the digestate of anaerobic digestion, used to improve soil fertility and crop yields.",
-        "featuredImage": "/images/bio-fertilizer.png"
+        "featuredImage": "/images/bio-fertilizer.webp"
     },
     
   ];

@@ -300,7 +300,7 @@ const Wheeling = () => {
                             <div className="hidden lg:flex rounded-3xl shadow-md w-full lg:w-1/3"
                             style={{ height: `${manufacturingHeight}px` }}>
                                 <Image 
-                                    src={`${basePath}/images/Factory-Image.png`}
+                                    src={`${basePath}/images/Factory-Image.webp`}
                                     alt="Manufacturing Industry" 
                                     width={500} 
                                     height={500} 
@@ -369,7 +369,7 @@ const Wheeling = () => {
                             <div className="hidden lg:flex rounded-3xl shadow-md w-full lg:w-1/3"
                             style={{ height: `${miningHeight}px` }}>
                                 <Image className="object-cover rounded-3xl" 
-                                src={`${basePath}/images/Mining-Image.png`} 
+                                src={`${basePath}/images/Mining-Image.webp`} 
                                 alt="Mining Industry" 
                                 width={500} 
                                 height={500} />
@@ -491,7 +491,7 @@ const Wheeling = () => {
                             <div className="hidden lg:flex rounded-3xl shadow-md w-full lg:w-1/3"
                             style={{ height: `${agriHeight}px` }}>
                                 <Image className="object-cover rounded-3xl" 
-                                src={`${basePath}/images/Agriculture-Image.png`} 
+                                src={`${basePath}/images/Agriculture-Image.webp`} 
                                 alt="Agriculture Industry" 
                                 width={500} 
                                 height={500} />
@@ -559,7 +559,7 @@ const Wheeling = () => {
                     <div className="absolute inset-0 bg-paynesGrayOverlay"></div>
                     <div className="flex bg-cover bg-bottom w-full h-full py-14 items-center justify-center"
                          style={{
-                            backgroundImage: `url(${basePath}/images/Wheeling-CTA.png)`,
+                            backgroundImage: `url(${basePath}/images/Wheeling-CTA.webp)`,
                           }}>
                         <div className="text-xl relative text-center max-w-[1400px] mx-auto items-center justify-center">
                         

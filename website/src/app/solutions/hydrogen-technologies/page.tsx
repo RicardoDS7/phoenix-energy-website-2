@@ -163,7 +163,7 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
                         </div>
 
                         <div className="hidden lg:block flex rounded-3xl h-[560px] lg:w-1/3">
-                            <Image className="rounded-3xl object-cover h-full w-full" src={`${basePath}/images/h2pod.png`} alt="why carbon credits matter" width={360} height={640} />
+                            <Image className="rounded-3xl object-cover h-full w-full" src={`${basePath}/images/h2pod.webp`} alt="why carbon credits matter" width={360} height={640} />
                         </div>
                     </div>
                 </section>
@@ -187,7 +187,7 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
                     <div className="absolute inset-0 bg-paynesGrayOverlay"></div>
                     <div className="flex bg-cover bg-top w-full h-full py-14 items-center justify-center"
                          style={{
-                            backgroundImage: `url(${basePath}/images/Hydrogen-CTA.png)`,
+                            backgroundImage: `url(${basePath}/images/Hydrogen-CTA.webp)`,
                           }}>
                         <div className="text-xl relative text-center max-w-[1400px] mx-auto">
                         

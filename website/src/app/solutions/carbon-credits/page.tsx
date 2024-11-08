@@ -219,7 +219,7 @@ const CarbonCredits = () => {
                         </div>
 
                         <div className="hidden lg:block flex rounded-3xl h-[560px] lg:w-1/3">
-                            <Image className="rounded-3xl object-cover h-full w-full transform -scale-x-100" src={`${basePath}/images/home_page_banner.png`} alt="why carbon credits matter" width={360} height={640} />
+                            <Image className="rounded-3xl object-cover h-full w-full transform -scale-x-100" src={`${basePath}/images/home_page_banner.webp`} alt="why carbon credits matter" width={360} height={640} />
                         </div>
                     </div>
                 </section>
@@ -297,7 +297,7 @@ const CarbonCredits = () => {
                     <div className="absolute inset-0 bg-paynesGrayOverlay"></div>
                     <div className="flex bg-cover bg-bottom w-full h-full py-14 items-center justify-center"
                         style={{
-                            backgroundImage: `url(${basePath}/images/Carbon-Credits-CTA.png)`,
+                            backgroundImage: `url(${basePath}/images/Carbon-Credits-CTA.webp)`,
                           }}>
                         <div className="text-xl relative text-center max-w-[1400px] mx-auto">
                         

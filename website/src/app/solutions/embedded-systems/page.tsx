@@ -206,7 +206,7 @@ const EmbeddedSystems = () => {
                             <div className="hidden lg:flex rounded-3xl shadow-md w-full lg:w-1/3"
                             style={{ height: `${gridTiedHeight}px` }}>
                                 <Image 
-                                    src={`${basePath}/images/Solar-Hero.png`}
+                                    src={`${basePath}/images/Solar-Hero.webp`}
                                     alt="Solar Panels" 
                                     width={500} 
                                     height={500} 
@@ -273,7 +273,7 @@ const EmbeddedSystems = () => {
                             <div className="hidden lg:flex rounded-3xl shadow-md w-full lg:w-1/3"
                             style={{ height: `${bessHeight}px` }}>
                                 <Image 
-                                    src={`${basePath}/images/Battery-Storage.png`}
+                                    src={`${basePath}/images/Battery-Storage.webp`}
                                     alt="Battery storage for solar power" 
                                     width={500} 
                                     height={500} 
@@ -340,7 +340,7 @@ const EmbeddedSystems = () => {
                             <div className="hidden lg:flex rounded-3xl shadow-md w-full lg:w-1/3"
                             style={{ height: `${solarGenHeight}px` }}>
                                 <Image 
-                                    src={`${basePath}/images/Solar-Generator.png`}
+                                    src={`${basePath}/images/Solar-Generator.webp`}
                                     alt="Solar Generator Integration" 
                                     width={500} 
                                     height={500} 
@@ -406,7 +406,7 @@ const EmbeddedSystems = () => {
                             <div className="hidden lg:flex rounded-3xl shadow-md w-full lg:w-1/3"
                             style={{ height: `${pumpHeight}px` }}>
                                 <Image 
-                                    src={`${basePath}/images/solar-pump.png`}
+                                    src={`${basePath}/images/solar-pump.webp`}
                                     alt="Solar Pump for Farms" 
                                     width={500} 
                                     height={500} 
@@ -648,7 +648,7 @@ const EmbeddedSystems = () => {
                     <div className="absolute inset-0 bg-paynesGrayOverlay"></div>
                     <div className="flex bg-cover bg-bottom w-full h-full py-14 items-center justify-center"
                         style={{
-                            backgroundImage: `url(${basePath}/images/Solar-CTA.png)`,
+                            backgroundImage: `url(${basePath}/images/Solar-CTA.webp)`,
                           }}>
                         <div className="text-xl relative text-center max-w-[1400px] mx-auto">
                         

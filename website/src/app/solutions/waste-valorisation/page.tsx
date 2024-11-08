@@ -181,7 +181,7 @@ const WasteValorization = () => {
                             </div>
 
                             <div className="hidden lg:block rounded-3xl shadow-md w-full lg:w-1/3 flex flex-grow flex-col items-start justify-start text-start space-y-4">
-                                <Image className="object-center object-cover h-full rounded-3xl" src={`${basePath}/images/Pyrolysis-Plant-2.png`} alt="Battery Storage System" width={1080} height={1080} />
+                                <Image className="object-center object-cover h-full rounded-3xl" src={`${basePath}/images/Pyrolysis-Plant-2.webp`} alt="Battery Storage System" width={1080} height={1080} />
                             </div>
                         </div>
 
@@ -283,7 +283,7 @@ const WasteValorization = () => {
                             </div>
 
                             <div className="hidden lg:block rounded-3xl shadow-md w-full lg:w-1/3 flex flex-grow flex-col items-start justify-start text-start space-y-4">
-                                <Image className="object-cover h-full rounded-3xl" src={`${basePath}/images/anaerobic-digestion.png`} alt="Battery Storage System" width={500} height={500} />
+                                <Image className="object-cover h-full rounded-3xl" src={`${basePath}/images/anaerobic-digestion.webp`} alt="Battery Storage System" width={500} height={500} />
                             </div>
                         </div>
                     
@@ -341,7 +341,7 @@ const WasteValorization = () => {
                     </div>
 
                     <div className="hidden lg:block flex rounded-3xl h-[560px] lg:w-1/3 shadow">
-                        <Image className="rounded-3xl object-cover h-full w-full" src={`${basePath}/images/Waste-Valorization.png`} alt="why carbon credits matter" width={360} height={640} />
+                        <Image className="rounded-3xl object-cover h-full w-full" src={`${basePath}/images/Waste-Valorization.webp`} alt="why carbon credits matter" width={360} height={640} />
                     </div>
                 </div>
                 </section>
@@ -384,7 +384,7 @@ const WasteValorization = () => {
                     <div className="absolute inset-0 bg-paynesGrayOverlay"></div>
                     <div className="flex bg-cover bg-bottom w-full h-full py-14 items-center justify-center"
                         style={{
-                            backgroundImage: `url(${basePath}/images/Waste-Valorization-CTA.png)`,
+                            backgroundImage: `url(${basePath}/images/Waste-Valorization-CTA.webp)`,
                           }}>
                         <div className="text-xl relative text-center max-w-[1400px] mx-auto">
                         

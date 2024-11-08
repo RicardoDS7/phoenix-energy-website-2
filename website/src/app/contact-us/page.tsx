@@ -72,7 +72,7 @@ const ContactUs = () => {
                         <div id="solar-contact-form" className="relative flex flex-grow">
                             <iframe
                             ref={iframeSolarRef}
-                            className={`w-[calc(100%+3rem)] -mx-6 h-[1600px] lg:h-[1450px] ${loading ? 'opacity-0' : 'opacity-100'}`}
+                            className={`w-[calc(100%+3rem)] -mx-6 h-[1750px] lg:h-[1550px] ${loading ? 'opacity-0' : 'opacity-100'}`}
                             src="https://us.bigin.online/org870703215/forms/embedded-solar-form"
                             onLoad={() => {
                                 setLoading(false);
@@ -122,7 +122,7 @@ const ContactUs = () => {
                         <div id="hydrogen-contact-form" className="relative">
                             <iframe
                             ref={iframeHydrogenRef}
-                            className={`w-[calc(100%+3rem)] -mx-6 h-[1300px] lg:h-[1200px] ${loading ? 'opacity-0' : 'opacity-100'}`}
+                            className={`w-[calc(100%+3rem)] -mx-6 h-[1350px] lg:h-[1300px] ${loading ? 'opacity-0' : 'opacity-100'}`}
                             src="https://us.bigin.online/org870703215/forms/hydrogen-technologies"
                             onLoad={() => {
                                 setLoading(false);
@@ -147,7 +147,7 @@ const ContactUs = () => {
                         <div id="carbon-credits-contact-form" className="relative">
                             <iframe
                             ref={iframeCarbonCreditsRef}
-                            className={`w-[calc(100%+3rem)] -mx-6 h-[1050px] lg:h-[950px] ${loading ? 'opacity-0' : 'opacity-100'}`}
+                            className={`w-[calc(100%+3rem)] -mx-6 h-[1150px] lg:h-[1050px] ${loading ? 'opacity-0' : 'opacity-100'}`}
                             src="https://us.bigin.online/org870703215/forms/carbon-credits"
                             onLoad={() => {
                                 setLoading(false);
