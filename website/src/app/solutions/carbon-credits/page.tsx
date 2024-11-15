@@ -175,7 +175,7 @@ const CarbonCredits = () => {
                         <div className="relative text-start lg:w-2/3">
                             <h2 className="text-charcoal">Why it matters for your business</h2>
                         
-                            <div className="py-10">
+                            <div className="py-10 text-charcoal">
                                 <ul className="space-y-6">
                                     <li className="flex flex-col md:flex-row align-middle items-start md:items-center gap-6">
                                         <div className="rounded-full bg-powderBlue p-4 justify-end items-end flex-shrink-0">

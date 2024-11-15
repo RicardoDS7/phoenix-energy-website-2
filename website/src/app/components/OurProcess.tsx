@@ -25,7 +25,7 @@ const StepProcess: React.FC<StepProcessProps> = ({ steps }) => {
 
                 {/* Text and Description */}
                 <div className='ml-6 transform -translate-y-1.5 flex flex-col justify-start items-start gap-2'>
-                    <h4 className="text-start">{step.title}</h4>
+                    <h4 className="text-start text-charcoal">{step.title}</h4>
                     <p className="text-start text-gray-600">{step.description}</p>
                 </div>
             </li>

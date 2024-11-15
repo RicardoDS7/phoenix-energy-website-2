@@ -62,7 +62,14 @@ const ContactUs = () => {
                             type="button" 
                             onClick={() => handleButtonClick('carbon-credits-contact-form')}
                             className="solution-options-form-button px-4 py-2 rounded-full hidden lg:block">
-                            Carbon Credits
+                            Carbon Management & Credits
+                        </button>
+
+                        <button 
+                            type="button" 
+                            onClick={() => handleButtonClick('energy-management-contact-form')}
+                            className="solution-options-form-button px-4 py-2 rounded-full hidden lg:block">
+                           Energy Management
                         </button>
                         
                     </div>
@@ -145,6 +152,31 @@ const ContactUs = () => {
                     {/* Carbon Credits Form*/}
                     {visibleSection === 'carbon-credits-contact-form' && (
                         <div id="carbon-credits-contact-form" className="relative">
+                            <iframe
+                            ref={iframeCarbonCreditsRef}
+                            className={`w-[calc(100%+3rem)] -mx-6 h-[1150px] lg:h-[1050px] ${loading ? 'opacity-0' : 'opacity-100'}`}
+                            src="https://us.bigin.online/org870703215/forms/carbon-credits"
+                            onLoad={() => {
+                                setLoading(false);
+                                if (iframeCarbonCreditsRef.current) {
+                                    const offset = 80; // Adjust this value to set your desired offset
+                                    const iframeTop = iframeCarbonCreditsRef.current.getBoundingClientRect().top + window.scrollY - offset;
+                                    window.scrollTo({ top: iframeTop, behavior: 'smooth' });
+                                }
+                            }}
+                            ></iframe>
+                            {loading && (
+                            <div className="absolute inset-0 flex flex-col items-center justify-center w-full h-fit bg-antiflashWhite bg-opacity-75">
+                                <div className="loading-circle animate-spin border-4 border-t-4 border-t-paynesGray rounded-full w-12 h-12 mb-4"></div>
+                                <p className="text-charcoal font-medium">Loading form...</p>
+                            </div>
+                            )}
+                        </div>
+                        )}
+
+                    {/* Energy Management Form*/}
+                    {visibleSection === 'energy-management-contact-form' && (
+                        <div id="energy-management-contact-form" className="relative">
                             <iframe
                             ref={iframeCarbonCreditsRef}
                             className={`w-[calc(100%+3rem)] -mx-6 h-[1150px] lg:h-[1050px] ${loading ? 'opacity-0' : 'opacity-100'}`}

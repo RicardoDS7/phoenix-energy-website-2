@@ -22,12 +22,12 @@ const HeroSectionS2S: React.FC<HeroSectionProps> = ({title, subtitle,imagePath,a
       <div className="flex flex-col md:flex-row w-full justify-center items-center gap-8">
         
         {/* Text Content */}
-        <div className="w-full lg:w-1/2 text-center md:text-left space-y-6">
+        <div className="w-full lg:w-1/2 text-center md:text-left">
           <h1 className="text-charcoal uppercase font-extrabold">{title}</h1>
           {subtitle && (
             <p className="mt-4 text-paynesGray">{subtitle}</p>
           )}
-          <div className="mt-6 flex flex-row gap-4 justify-center md:justify-start items-center">
+          <div className="py-6 flex flex-row gap-4 justify-center md:justify-start items-center">
             {howItWorksActive && (
               <HowItWorksButton sectionID={sectionID} />
             )}

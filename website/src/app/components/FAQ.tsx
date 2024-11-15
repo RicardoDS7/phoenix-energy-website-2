@@ -19,7 +19,7 @@ const FAQItem: React.FC<FAQItemProps> = ({ question, answer }) => {
   };
 
   return (
-    <div className="border-b-2 border-gray-200 w-full">
+    <div className="border-b-2 border-gray-200 w-full lg:w-[768px]">
       <button
         onClick={toggleOpen}
         className="w-full flex justify-between items-center py-4 font-semibold text-gray-800 hover:text-gray-600 focus:outline-none"
@@ -30,7 +30,7 @@ const FAQItem: React.FC<FAQItemProps> = ({ question, answer }) => {
         </span>
       </button>
       {isOpen && (
-        <div className="faq-answer text-gray-600 pb-4">
+        <div className="faq-answer text-gray-600 pb-4 w-full lg:w-[768px]">
           {answer}
         </div>
       )}
@@ -43,7 +43,7 @@ const FAQ: React.FC<FAQProps> = ({ faqItems }) => {
 
   return (
     <div className="flex justify-center items-center">
-        <div className="flex flex-col justify-stretch w-full pt-10 text-left max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl mx-auto">
+        <div className="flex flex-col justify-stretch w-full pt-10 text-left mx-auto">
             {faqItems.map((faq, index) => (
             <FAQItem key={index} question={faq.question} answer={faq.answer} />
             ))}

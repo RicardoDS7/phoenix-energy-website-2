@@ -78,9 +78,9 @@ const NavBar = () => {
                           
                             {hoveredItem === index && mainItem.subMenu.length > 0 && (
                               <div className="absolute w-full -left-1 z-50"> {/* Increased z-index to 50 */}
-                                <div className="z-50 mt-4 rounded-3xl transform -translate-x-44 grid grid-cols-2 gap-0 min-w-[450px] bg-white shadow-xl">
+                                <div className="z-50 mt-4 rounded-3xl transform -translate-x-[350px] grid grid-cols-3 gap-0 min-w-[800px] bg-white shadow-xl">
                                   <div className="rounded-3xl p-6 bg-white">
-                                    <p className="text-charcoal text-center text-sm">Maximise Savings</p>
+                                    <p className="text-charcoal text-center text-sm font-semibold">SAVE</p>
                                     <hr className="mt-2 h-[2px] bg-powderBlue border-none" />
                                     <ul className='space-y-6'>
                                       {mainItem.subMenu.map(
@@ -90,18 +90,18 @@ const NavBar = () => {
                                               key={`${saveItem.name}-save`}
                                               onMouseEnter={() => setSubHoveredItem(saveItem.name)}
                                               onMouseLeave={() => setSubHoveredItem(null)}
-                                              className={`mt-4 font-normal flex items-center text-sm`}
+                                              className={`mt-4 font-normal flex items-center text-base`}
                                             >
                                               <Image
                                                 className={'object-fill mr-2'}
                                                 src={`${basePath}${saveItem.icon}`}
                                                 alt={`${saveItem.name} menu icon`}
-                                                width={16}
-                                                height={16}
+                                                width={25}
+                                                height={25}
                                               />
                                               <Link
                                                 href={saveItem.path}
-                                                className={`justify-normal text-sm ${
+                                                className={`justify-normal text-base ${
                                                   subHoveredItem === saveItem.name
                                                     ? 'font-semibold text-atomicTangerine'
                                                     : ''
@@ -115,8 +115,10 @@ const NavBar = () => {
                                       )}
                                     </ul>
                                   </div>
+
+                                  {/* Earn */}
                                   <div className="p-6 rounded-3xl bg-white">
-                                    <p className="text-charcoal text-center text-sm">Increase Revenue</p>
+                                    <p className="text-charcoal text-center text-sm font-semibold">EARN</p>
                                     <hr className="mt-2 h-[2px] bg-powderBlue border-none" />
                                     <ul className='space-y-6'>
                                       {mainItem.subMenu.map(
@@ -126,18 +128,18 @@ const NavBar = () => {
                                               key={`${earnItem.name}-submenu`}
                                               onMouseEnter={() => setSubHoveredItem(earnItem.name)}
                                               onMouseLeave={() => setSubHoveredItem(null)}
-                                              className={`mt-4 font-normal flex items-center text-sm`}
+                                              className={`mt-4 font-normal flex items-center text-base`}
                                             >
                                               <Image
                                                 className={'object-fill mr-2'}
                                                 src={`${basePath}${earnItem.icon}`}
                                                 alt={`${earnItem.name} menu icon`}
-                                                width={16}
-                                                height={16}
+                                                width={25}
+                                                height={25}
                                               />
                                               <Link
                                                 href={earnItem.path}
-                                                className={`justify-normal text-sm ${
+                                                className={`justify-normal text-base ${
                                                   subHoveredItem === earnItem.name
                                                     ? 'font-semibold text-atomicTangerine'
                                                     : ''
@@ -151,6 +153,46 @@ const NavBar = () => {
                                       )}
                                     </ul>
                                   </div>
+
+                                  {/* Manage */}
+                                  <div className="p-6  rounded-3xl bg-white">
+                                    <p className="text-charcoal text-center text-sm font-semibold">MANAGE</p>
+                                    <hr className="mt-2 h-[2px] bg-powderBlue border-none" />
+                                    <ul className='space-y-6'>
+                                      {mainItem.subMenu.map(
+                                        (manageItem) =>
+                                          manageItem.category === 'manage' && (
+                                            <li
+                                              key={`${manageItem.name}-submenu`}
+                                              onMouseEnter={() => setSubHoveredItem(manageItem.name)}
+                                              onMouseLeave={() => setSubHoveredItem(null)}
+                                              className={`mt-4 font-normal flex items-center text-base`}
+                                            >
+                                              <Image
+                                                className={'object-fill mr-2'}
+                                                src={`${basePath}${manageItem.icon}`}
+                                                alt={`${manageItem.name} menu icon`}
+                                                width={25}
+                                                height={25}
+                                              />
+                                              <Link
+                                                href={manageItem.path}
+                                                className={`justify-normal text-base ${
+                                                  subHoveredItem === manageItem.name
+                                                    ? 'font-semibold text-atomicTangerine'
+                                                    : ''
+                                                }`}
+                                                onClick={() => handleSubItemClick(manageItem)}
+                                              >
+                                                {manageItem.name}
+                                              </Link>
+                                            </li>
+                                          )
+                                      )}
+                                    </ul>
+                                  </div>
+
+
                                 </div>
                               </div>
                             )}
@@ -187,7 +229,14 @@ const NavBar = () => {
                                 className={`mr-5 nav-item ${pathname.startsWith(link.path) ? 'active' : ''}`}>
                                 <Link href={link.path}
                                     onClick={() => handleItemClick(link.name, link.subMenu)}>
-                                    {link.name}
+                                    <div className='flex items-center gap-2'>
+                                      {link.name}
+                                      {link.subMenu && link.subMenu.length > 1 && (
+                                          <Image className={`inline-block transition-transform duration-300 ${
+                                                            isSubMenuOpen === link.name ? 'scale-y-[-1]' : 'scale-y-100'}`}
+                                          src={`${basePath}/icons/down.svg`} width={14} height={14} alt='see more options'></Image>
+                                      )}
+                                    </div>
                                 </Link>
 
                             </li>

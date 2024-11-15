@@ -16,6 +16,8 @@ export const WHEELING = '/solutions/wheeling';
 export const CARBON_CREDITS = '/solutions/carbon-credits';
 export const WASTE_VALOR = '/solutions/waste-valorisation';
 export const HYDROGEN = '/solutions/hydrogen-technologies';
+export const CARBON_MANAGEMENT = '/solutions/carbon-management';
+export const ENERGY_MANAGMENT = '/solutions/energy-management';
 export const CAREERS = 'https://linkedin.com/';
 export const PRIVACY_POLICY = '/privacy-policy';
 
@@ -31,6 +33,8 @@ export const NAV_LINKS: NavLink[] = [
         { name: 'Waste Valorisation', path: WASTE_VALOR, category: 'earn' , icon: '/icons/product-alt.png'},
         { name: 'Carbon Credits', path: CARBON_CREDITS, category: 'earn' , icon: '/icons/Carbon-Credits.svg'},
         { name: 'Hydrogen Technologies', path: HYDROGEN, category: 'save' , icon: '/icons/Hydrogen.svg'},
+        { name: 'Carbon Management', path: CARBON_MANAGEMENT, category: 'manage' , icon: '/icons/carbon-management.png'},
+        { name: 'Energy Management', path: ENERGY_MANAGMENT, category: 'manage' , icon: '/icons/energy-management.png'},
       ],
     },
     { name: 'Our Projects', path: PROJECTS_PAGE, subMenu: [] },
@@ -53,8 +57,8 @@ export const BASE_URL = 'https://phoenixenergy.tech';
 
 // Other constants (e.g., API endpoints, contact info)
 export const SOCIAL_PROFILES = [
-    {account: 'linkedin', path: 'https://linkedin.com', icon: '/icons/linkedin.svg' },
-    {account: 'facebook', path: 'https://facebook.com', icon: '/icons/facebook.svg' },
+    {account: 'linkedin', path: 'https://www.linkedin.com/company/105465145', icon: '/icons/linkedin.svg' },
+    // {account: 'facebook', path: 'https://facebook.com', icon: '/icons/facebook.svg' },
 ]
 export const CONTACT_EMAIL = 'info@phoenixenergy.tech';
 export const PHONE_NUMBER = '+27-79-892-8197';
@@ -387,6 +391,73 @@ export const HydrogenFAQs = [
       answer: "Hydrogen injection can enhance engine performance by increasing torque and responsiveness, especially under heavy loads, due to the faster combustion properties of hydrogen."
   }
 ];
+
+
+//Carbon Management Process
+export const CarbonAccountingProcess: ProcessSteps[] = [
+]
+
+//Carbon Management
+export const CarbonAccountingFAQs = [
+  {
+    question: "What does the platform offer?",
+    answer: "The platform provides comprehensive tools for carbon accounting, including emissions calculation, supplier data collection, custom action plans, and reporting features that help companies achieve sustainability goals and meet compliance standards."
+  },
+  {
+    question: "How does the platform calculate my company's emissions?",
+    answer: "The platform calculates emissions by gathering data across all scopes (direct, indirect, and supply chain) and applying verified methodologies to ensure accuracy, covering all sources of emissions within your organization."
+  },
+  {
+    question: "Is it required by law to do a carbon assessment?",
+    answer: "In South Africa, conducting a carbon assessment is not required by law for most businesses. However, companies emitting over a certain threshold must report their emissions and may be subject to the carbon tax introduced under the Carbon Tax Act (No. 15 of 2019). While not all businesses are mandated to perform carbon assessments, conducting one voluntarily can help organizations prepare for future regulatory changes, improve efficiency, and align with sustainability expectations from investors and customers."
+  },
+  {
+    question: "Why should my company measure its carbon footprint?",
+    answer: "Measuring your carbon footprint helps identify emission sources, manage environmental impact, set reduction goals, and improve operational efficiency while demonstrating commitment to sustainability, which can enhance brand reputation and stakeholder trust."
+  },
+  {
+    question: "What is a Life Cycle Assessment?",
+    answer: "A Life Cycle Assessment (LCA) is an analysis of a product's environmental impact throughout its lifecycle—from raw material extraction and production to usage and disposal—enabling a complete understanding of its environmental footprint."
+  },
+  {
+    question: "Why do a Life Cycle Assessment?",
+    answer: "Performing an LCA helps identify areas for environmental improvement, reduce waste and resource use, and ensure that products align with sustainability goals, making it a valuable tool for enhancing eco-friendly practices and meeting market demands."
+  }
+]
+
+//Carbon Management Process
+export const EnergyManagementProcess: ProcessSteps[] = [
+]
+
+//Carbon Management
+export const EnergyManagementFAQs = [
+  {
+    question: "What is energy management?",
+    answer: "Energy management is the process of monitoring, controlling, and optimising energy use to reduce costs, improve efficiency, and support sustainability goals."
+  },
+  {
+    question: "Why is energy management important?",
+    answer: "Effective energy management lowers costs, enhances operational efficiency, ensures compliance with regulations, and reduces environmental impact."
+  },
+  {
+    question: "What is an energy audit?",
+    answer: "An energy audit is an assessment of your energy use to identify inefficiencies, wastage, and opportunities for cost savings and improved performance."
+  },
+  {
+    question: "What is the standard for energy management?",
+    answer: "The global standard for energy management is ISO 50001, which provides a framework to improve energy performance systematically."
+  },
+  {
+    question: "Why is ISO 50001 important?",
+    answer: "ISO 50001 helps businesses save energy, reduce costs, meet regulatory requirements, and build credibility as sustainable leaders."
+  },
+  {
+    question: "What is an energy management policy?",
+    answer: "An energy management policy is a formal document outlining a company’s commitment to managing energy efficiently and achieving specific energy performance goals."
+  },
+]
+
+
 
 //Team Details
 export interface TeamInfoProps {
