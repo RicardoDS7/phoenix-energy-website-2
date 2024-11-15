@@ -427,6 +427,23 @@ export const CarbonAccountingFAQs = [
 
 //Carbon Management Process
 export const EnergyManagementProcess: ProcessSteps[] = [
+  {
+    title: "Comprehensive Energy Audit",
+    description: "We start by conducting a detailed energy audit to identify inefficiencies, wastage, and opportunities for optimisation. This assessment provides a clear baseline of your energy use."
+  },
+  {
+    title: "Analyse & Plan",
+    description: "Our experts analyse the audit results to uncover actionable insights and create a tailored action plan. This roadmap highlights strategies like equipment upgrades, operational changes, and cost-saving measures designed specifically for your business."
+  },
+  {
+    title: "Develop Energy Policies",
+    description: "We help your business establish clear energy policies to ensure long-term sustainability. These policies set standards for energy use, equipment maintenance, and accountability across teams."
+  },
+  {
+    title: "Implementation & Monitoring",
+    description: "We work with you to implement the action plan and policies, seamlessly integrating energy-saving measures into your operations. Ongoing monitoring ensures progress is tracked, and strategies are refined as needed."
+  },
+
 ]
 
 //Carbon Management
