@@ -34,7 +34,7 @@ const EnergyManagement = () => {
               <section id="earn-carbon-credits" className="relative 
                                                                 bg-antiflashWhite 
                                                                 w-full
-                                                                pt-14
+                                                                py-14
                                                                 px-4
                                                                 flex 
                                                                 items-center 
@@ -93,7 +93,7 @@ const EnergyManagement = () => {
 
                         </div>
                     
-                        <div className="p-6 flex align-middle items-center justify-center">
+                        <div className="mt-6 flex align-middle items-center justify-center">
                             <AltGetInTouchButton />
                         </div>
 
@@ -102,7 +102,7 @@ const EnergyManagement = () => {
 
                 {/* ISO 500001 ACCREDITED */}
             <section className='bg-paynesGray'>
-                <div className='max-w-[1400px] mx-auto px-4 py-14'>
+                <div className='max-w-[1400px] mx-auto px-4 pt-7 pb-7'>
                 <div className='flex flex-col-reverse lg:flex-row w-full items-center justify-center'>
 
                     <div className='flex w-full lg:w-1/2 flex-col gap-6 text-antiflashWhite'>
