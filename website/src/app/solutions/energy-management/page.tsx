@@ -136,7 +136,7 @@ const EnergyManagement = () => {
 
                     <div className="max-w-[1400px] mx-auto">
                         <div className="flex flex-col gap-4">
-                            <h2 className="text-antiflashWhite text-center">A clear policy, a clear path to efficiency.</h2>
+                            <h2 className="text-antiflashWhite text-center">Optimised efficiency starts with clear, actionable policies</h2>
                             <p className="text-antiflashWhite text-center">Energy policies create the structure needed to turn insights from audits into actionable strategies, aligning energy use with business goals and sustainability commitments.</p>
                         </div>
                         <div className="mt-12 flex flex-col w-full lg:flex-row gap-8">
