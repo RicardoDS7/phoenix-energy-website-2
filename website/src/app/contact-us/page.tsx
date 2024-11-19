@@ -154,7 +154,7 @@ const ContactUs = () => {
                         <div id="carbon-credits-contact-form" className="relative">
                             <iframe
                             ref={iframeCarbonCreditsRef}
-                            className={`w-[calc(100%+3rem)] -mx-6 h-[1150px] lg:h-[1050px] ${loading ? 'opacity-0' : 'opacity-100'}`}
+                            className={`w-[calc(100%+3rem)] -mx-6 h-[1350px] lg:h-[1250px] ${loading ? 'opacity-0' : 'opacity-100'}`}
                             src="https://us.bigin.online/org870703215/forms/carbon-credits-and-carbon-management"
                             onLoad={() => {
                                 setLoading(false);
@@ -179,7 +179,7 @@ const ContactUs = () => {
                         <div id="energy-management-contact-form" className="relative">
                             <iframe
                             ref={iframeCarbonCreditsRef}
-                            className={`w-[calc(100%+3rem)] -mx-6 h-[1150px] lg:h-[1050px] ${loading ? 'opacity-0' : 'opacity-100'}`}
+                            className={`w-[calc(100%+3rem)] -mx-6 h-[1250px] lg:h-[1150px] ${loading ? 'opacity-0' : 'opacity-100'}`}
                             src="https://us.bigin.online/org870703215/forms/energy-management"
                             onLoad={() => {
                                 setLoading(false);
