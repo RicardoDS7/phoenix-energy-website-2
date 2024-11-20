@@ -234,7 +234,7 @@ const NavBar = () => {
                                       {link.subMenu && link.subMenu.length > 1 && (
                                           <Image className={`inline-block transition-transform duration-300 ${
                                                             isSubMenuOpen === link.name ? 'scale-y-[-1]' : 'scale-y-100'}`}
-                                          src={`${basePath}/icons/down.svg`} width={14} height={14} alt='see more options'></Image>
+                                          src={`${basePath}/icons/Down.svg`} width={14} height={14} alt='see more options'></Image>
                                       )}
                                     </div>
                                 </Link>
