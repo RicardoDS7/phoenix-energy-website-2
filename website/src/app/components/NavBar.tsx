@@ -208,7 +208,7 @@ const NavBar = () => {
                 {/* Mobile Menu */}
                 <div className='lg:hidden flex flex-1 justify-end items-center mr-4 z-20'>
                     <div className='z-20'>
-                        <img src={isMainMenuOpen ? `${basePath}/icons/Menu-1.svg` : `${basePath}/icons/close.svg`} 
+                        <Image src={isMainMenuOpen ? `${basePath}/icons/Menu-1.svg` : `${basePath}/icons/close.svg`} 
                         alt='menu'
                         width={28}
                         height={28}
