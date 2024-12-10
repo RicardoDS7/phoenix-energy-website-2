@@ -155,7 +155,7 @@ const About = () => {
                             <p className="max-w-[1000px]">We&apos;re always looking for passionate, ambitious and like-minded individuals who share our vision for a prosperous Africa. Join us in driving renewable energy forward and creating a lasting impact.</p>
                             <button 
                                     type="button" 
-                                    onClick={() => window.open("https://www.linkedin.com","_blank")}
+                                    onClick={() => window.open("https://www.linkedin.com/company/phoenix-energy-solutions/jobs/","_blank")}
                                     className="get-in-touch-button-alt px-4 py-2 rounded-full hidden lg:block">
                                     See career oppurtunities
                             </button>
