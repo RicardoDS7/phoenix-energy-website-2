@@ -53,7 +53,7 @@ export const projectDetails: ProjectInfo[] = [
       company: "Go Gourmet Hydroponics",
       solutions: "Battery Energy Storage System (BESS)",
       production: "33 kWp + 120kWh",
-      location: "Preotira, Gauteng, South Africa",
+      location: "Pretoria, Gauteng, South Africa",
       featured_image: `${basePath}/images/projects/go-gourmet-hydrophonics-featured-image.webp`,
     },
   ];
