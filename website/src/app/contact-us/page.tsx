@@ -4,6 +4,7 @@ import Link from "next/link";
 import React, { useState, useRef } from 'react';
 
 import { SOCIAL_PROFILES, PHONE_NUMBER, CONTACT_EMAIL } from '../constants/constants';  // Import the constants
+import Meta from "../components/Meta";
 
 const ContactUs = () => {
 
@@ -26,6 +27,12 @@ const ContactUs = () => {
     };
 
     return (
+    <>
+        <Meta
+        title="Partner With Us"
+        description="Learn how our tailored renewable energy solutions can help your business save money and generate new revenue through green technology."
+        />
+
         <div className="bg-antiflashWhite min-h-[900px]">
             <section className="max-w-[1400px] mx-auto px-4 pt-28 flex flex-col lg:flex-row gap-8 pb-14">
                 <div className="flex flex-col gap-8 w-full lg:w-2/3 mx-auto">
@@ -235,6 +242,7 @@ const ContactUs = () => {
                 </div>
             </section>
         </div>
+    </>
     );
 };
 

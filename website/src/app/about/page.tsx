@@ -2,12 +2,18 @@
 import Image from "next/image";
 import TeamMemberCard from "../components/TeamMemberCard";
 import { teamInfo } from "../constants/constants";
+import Meta from "../components/Meta";
 
 const About = () => {
 
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
     return (
+    <>
+      <Meta
+      title="Our Story - The Rise Of Phoenix Energy"
+      description="We believe in an Africa where renewable energy fuels unstoppable growth and lasting sustainability. Our mission is to deliver bespoke solutions that propel businesses toward Net Zero Carbon Emissions, optimize efficiency, and unlock new revenue streams."
+      />
       <div className='bg-antiflashWhite w-full'>
 
         {/* Hero Section */} 
@@ -168,6 +174,7 @@ const About = () => {
                 </section>
 
       </div>
+    </>
     );
   };
   
