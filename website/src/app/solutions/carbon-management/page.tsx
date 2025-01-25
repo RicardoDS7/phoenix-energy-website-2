@@ -7,6 +7,7 @@ import GetInTouchButton from "@/app/components/GetInTouchButton";
 import { CarbonAccountingFAQs } from "@/app/constants/constants";
 import AltGetInTouchButton from "@/app/components/AltGetInTouchButton";
 import HowItWorksButton from "@/app/components/HowItWorksButton";
+import Meta from "@/app/components/Meta";
 
 const CarbonManagement = () => {
 
@@ -15,6 +16,12 @@ const CarbonManagement = () => {
     const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
     return (
+    <>
+        <Meta
+        title="Carbon Management - Sustainability-As-A-Service"
+        description="A holistic carbon accounting platform for precise footprint measurement, reporting, and tailored action plans to ensure SBTi and CSRD compliance."
+        />
+
         <div className="bg-antiflashWhite overflow-hidden">
 
             {/* Hero Section */} 
@@ -436,6 +443,7 @@ const CarbonManagement = () => {
                 </section>
 
         </div>
+    </>
     )
 }
 

@@ -10,6 +10,7 @@ import Image from 'next/image';
 import AltGetInTouchButton from '@/app/components/AltGetInTouchButton';
 import OptimizedVideo from '@/app/components/Video';
 import React, { useRef, useEffect, useState } from 'react';
+import Meta from '@/app/components/Meta';
 
 const Wheeling = () => {
 
@@ -44,6 +45,11 @@ const Wheeling = () => {
     }, []);
 
   return (
+    <>
+    <Meta
+    title="Wheeling - Cheaper, Greener, Virtual Power."
+    description="Wheeled power gives businesses 24/7 access to renewable energy through the existing grid, providing clean, cost-effective power without the expense of on-site infrastructure."
+    />
           <div className='bg-antiflashWhite'>
 
               {/* Hero Section */} 
@@ -573,6 +579,7 @@ const Wheeling = () => {
                 </section>
               
           </div>
+    </>
   )
 }
 

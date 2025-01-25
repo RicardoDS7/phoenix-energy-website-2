@@ -7,12 +7,18 @@ import { EnergyManagementFAQs, EnergyManagementProcess } from "@/app/constants/c
 import StepProcess from "@/app/components/OurProcess";
 import FAQ from "@/app/components/FAQ";
 import GetInTouchButton from "@/app/components/GetInTouchButton";
+import Meta from "@/app/components/Meta";
 
 const EnergyManagement = () => {
 
     const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
     return (
+    <>
+        <Meta
+        title="Energy Management - The leaner, greener way to manage your business."
+        description="Save up to 30% on energy costs with an energy audit, and discover inefficiencies and oppurtunities to run your business more efficiently."
+        />
         <div className="bg-antiflashWhite">
 
                 {/* Hero Section */} 
@@ -354,6 +360,7 @@ const EnergyManagement = () => {
             </section>
 
         </div>
+    </>
     )
 }
 

@@ -9,12 +9,18 @@ import { WasteValorizationProducts, WasteValorizationProcess, WasteValorizationF
 import StepProcess from '@/app/components/OurProcess';
 import FAQ from '@/app/components/FAQ';
 import CallToAction from '@/app/components/CallToAction';
+import Meta from '@/app/components/Meta';
 
 const WasteValorization = () => {
 
     const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
   return (
+    <>
+        <Meta
+        title="Transform waste into energy and profit"
+        description="Discover how waste valorisation turns everyday waste into valuable resources, creating new revenue streams, reducing disposal costs, and advancing your business's sustainability efforts."
+        />
           <div className='bg-antiflashWhite'>
 
               {/* Hero Section */} 
@@ -398,6 +404,7 @@ const WasteValorization = () => {
                 </section>
               
           </div>
+    </>
   )
 }
 

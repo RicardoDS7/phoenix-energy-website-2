@@ -8,13 +8,20 @@ import { projectDetails } from "./projects/projectConstants";
 import { WHEELING, SOLAR, CARBON_CREDITS, WASTE_VALOR, HYDROGEN } from "./constants/constants";
 import LearnMoreButton from "./components/LearnMoreSolutionButton";
 import CallToAction from "./components/CallToAction";
+import Meta from "./components/Meta";
 
 const HomePage = () => {
 
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
   return (
-      <div className="bg-antiflashWhite">
+    <>
+    <Meta
+    title="Phoenix Energy - Renewable Energy Solutions"
+    description="Empowering African businesses with turnkey renewable energy solutions, to operate more efficiently and sustainably."
+    />
+
+    <div className="bg-antiflashWhite">
 
         {/* Hero Section */} 
         <section className="max-w-[1400px] mx-auto px-4">
@@ -481,6 +488,7 @@ const HomePage = () => {
       </section>
 
     </div>
+</>
 
   );
 };

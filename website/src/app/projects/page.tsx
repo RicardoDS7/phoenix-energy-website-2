@@ -2,12 +2,20 @@
 import CallToAction from "../components/CallToAction";
 import { projectDetails } from "./projectConstants";
 import ProjectCard from "../components/ProjectCard";
+import Meta from "../components/Meta";
 
 const Projects = () => {
 
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
     return (
+
+    <>
+      <Meta
+      title="Our Projects - Helping businesses grow, sustainably."
+      description="From embedded solar and battery storage to wheeled power, waste valorisation, hydrogen injection, and carbon credits, we empower businesses across all industries to earn, save, and thrive."
+      />
+
       <div className='bg-antiflashWhite w-full'>
 
         {/* Hero Section */} 
@@ -63,6 +71,7 @@ const Projects = () => {
                     </div>
                 </section>
       </div>
+      </>
     );
   };
   

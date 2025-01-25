@@ -36,8 +36,6 @@ export default function RootLayout({
           `}
         </Script>
         {/* End Google Tag Manager */}
-        <title>{metadata.title}</title>
-        <meta name="description" content={metadata.description} />
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href={`${basePath}/logo.png`} />

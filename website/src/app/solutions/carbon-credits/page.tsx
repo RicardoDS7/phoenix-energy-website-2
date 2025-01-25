@@ -8,12 +8,19 @@ import StepProcess from "@/app/components/OurProcess";
 import { CarbonCreditsProcess } from "@/app/constants/constants";
 import { CarbonCreditsFAQs } from "@/app/constants/constants";
 import CallToAction from "@/app/components/CallToAction";
+import Meta from "@/app/components/Meta";
 
 const CarbonCredits = () => {
 
     const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
     return (
+        <>
+            <Meta
+            title="Earn sustainable revenue with Carbon Credits"
+            description="Businesses can earn and sell carbon credits to offset emissions, generating revenue while reducing operational costs and boosting profits."
+            />
+
             <div className="bg-antiflashWhite">
 
                 {/* Hero Section */} 
@@ -310,6 +317,7 @@ const CarbonCredits = () => {
                     </div>
                 </section>
             </div>
+        </>
     )
 }
 

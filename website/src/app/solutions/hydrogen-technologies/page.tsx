@@ -6,6 +6,7 @@ import FAQ from '@/app/components/FAQ';
 import GetInTouchButton from '@/app/components/GetInTouchButton';
 import AltGetInTouchButton from '@/app/components/AltGetInTouchButton';
 import Image from 'next/image';
+import Meta from '@/app/components/Meta';
 
 
 const HydrogenTechnologies = () => {
@@ -13,6 +14,11 @@ const HydrogenTechnologies = () => {
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
   return (
+    <>
+        <Meta
+        title="Hydrogen Fuel Injection - Unlock superior performance."
+        description="Achieve lower emissions, greater efficiency, and reduced fuel costs by integrating hydrogen fuel injection into your engine or generator."
+        />
           <div className='bg-antiflashWhite'>
 
               {/* Hero Section */} 
@@ -202,6 +208,7 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
               
           </div>
+    </>
   )
 }
 

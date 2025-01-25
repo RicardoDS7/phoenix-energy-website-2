@@ -12,6 +12,7 @@ import Carousel from "@/app/components/SuccessStoriesCarousel";
 import { projectDetails } from "@/app/projects/projectConstants";
 import CallToAction from "@/app/components/CallToAction";
 import React, { useRef, useEffect, useState } from 'react';
+import Meta from "@/app/components/Meta";
 
 const EmbeddedSystems = () => {
 
@@ -46,6 +47,11 @@ const EmbeddedSystems = () => {
     }, []);
 
     return (
+        <>
+            <Meta
+            title="Solar Energy - The Cheapest, Most Reliable Energy Solution"
+            description="Our turnkey embedded solar solutions deliver the flexibility, efficiency, and reliability your business needs, from custom design to goal-oriented financing."
+            />
             <div className="bg-antiflashWhite">
 
                 {/* Hero Section */} 
@@ -661,6 +667,7 @@ const EmbeddedSystems = () => {
                     </div>
                 </section>
             </div>
+        </>
     )
 }
 
