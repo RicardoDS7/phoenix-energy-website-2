@@ -16,7 +16,7 @@ const EnergyManagement = () => {
     return (
     <>
         <Meta
-        title="Energy Management - The leaner, greener way to manage your business."
+        title="Energy Management - The Leaner, Greener Way To Manage Your Business"
         description="Save up to 30% on energy costs with an energy audit, and discover inefficiencies and oppurtunities to run your business more efficiently."
         />
         <div className="bg-antiflashWhite">

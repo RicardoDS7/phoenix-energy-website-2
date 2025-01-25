@@ -18,7 +18,7 @@ const WasteValorization = () => {
   return (
     <>
         <Meta
-        title="Transform waste into energy and profit"
+        title="Transform Waste Into Energy & Profit"
         description="Discover how waste valorisation turns everyday waste into valuable resources, creating new revenue streams, reducing disposal costs, and advancing your business's sustainability efforts."
         />
           <div className='bg-antiflashWhite'>

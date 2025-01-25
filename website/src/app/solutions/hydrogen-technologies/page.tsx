@@ -16,7 +16,7 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
   return (
     <>
         <Meta
-        title="Hydrogen Fuel Injection - Unlock superior performance."
+        title="Hydrogen Fuel Injection - Unlock Superior Performance"
         description="Achieve lower emissions, greater efficiency, and reduced fuel costs by integrating hydrogen fuel injection into your engine or generator."
         />
           <div className='bg-antiflashWhite'>

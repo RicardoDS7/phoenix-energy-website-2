@@ -17,7 +17,7 @@ const CarbonCredits = () => {
     return (
         <>
             <Meta
-            title="Earn sustainable revenue with Carbon Credits"
+            title="Earn Sustainable Revenue With Carbon Credits"
             description="Businesses can earn and sell carbon credits to offset emissions, generating revenue while reducing operational costs and boosting profits."
             />
 

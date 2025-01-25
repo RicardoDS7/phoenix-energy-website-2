@@ -12,7 +12,7 @@ const Projects = () => {
 
     <>
       <Meta
-      title="Our Projects - Helping businesses grow, sustainably."
+      title="Our Projects - See how we've helped businesses grow, sustainably"
       description="From embedded solar and battery storage to wheeled power, waste valorisation, hydrogen injection, and carbon credits, we empower businesses across all industries to earn, save, and thrive."
       />
 

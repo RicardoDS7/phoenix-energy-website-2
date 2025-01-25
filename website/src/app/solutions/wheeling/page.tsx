@@ -47,7 +47,7 @@ const Wheeling = () => {
   return (
     <>
     <Meta
-    title="Wheeling - Cheaper, Greener, Virtual Power."
+    title="Wheeling - Cheaper, Greener, Virtual Power"
     description="Wheeled power gives businesses 24/7 access to renewable energy through the existing grid, providing clean, cost-effective power without the expense of on-site infrastructure."
     />
           <div className='bg-antiflashWhite'>
