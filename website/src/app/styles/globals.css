@@ -1,0 +1,326 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.h1-display {
+  font-family: 'Inter', 'Helvetica Neue', 'Arial', sans-serif;
+  font-weight: 800; /* Heavy */
+  font-size: 56px;
+  line-height: 85%;
+  letter-spacing: 0;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .h1-display {
+    font-size: 96px;
+    margin-bottom: 32px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .h1-display {
+    font-size: 128px;
+  }
+}
+
+h1 {
+  @apply font-inter;
+  @apply text-4xl md:text-6xl lg:text-7xl;
+  @apply font-bold
+}
+
+h2 {
+  @apply font-inter;
+  @apply text-3xl md:text-4xl lg:text-5xl;
+  @apply font-bold;
+}
+
+h3 {
+  @apply font-inter;
+  @apply text-2xl md:text-3xl lg:text-4xl;
+  @apply font-semibold;
+}
+
+
+h4 {
+  @apply font-inter;
+  @apply text-xl md:text-2xl lg:text-2xl;
+  @apply font-bold;
+}
+
+p {
+  @apply font-inter;
+  @apply text-base md:text-lg lg:text-xl;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 15px;              /* Font size 20px for larger screens */
+    line-height: 24px;            /* Line height 28px for larger screens */
+  }
+}
+
+body-small {
+  font-weight: 400;               /* Regular */
+  font-size: 14px;                /* Font size 14px for small screens */
+  line-height: 22px;              /* Line height 22px for small screens */
+  letter-spacing: 0.01em;         /* Letter spacing 1% */
+  margin-bottom: 12px;            /* Paragraph spacing 12px */
+}
+
+@media (min-width: 768px) {
+  body-small {
+    font-size: 16px;              /* Font size 16px for larger screens */
+    line-height: 24px;            /* Line height 24px for larger screens */
+    letter-spacing: 0.0125em;     /* Letter spacing 1.25% for larger screens */
+  }
+}
+
+
+link {
+  font-weight: 600;               /* Semi Bold */
+  font-size: 18px;                /* Font size 18px for small screens */
+  line-height: 26px;              /* Line height 26px for small screens */
+  letter-spacing: -0.005em;       /* Letter spacing -0.5% */
+  margin-bottom: 16px;            /* Paragraph spacing 16px */
+  text-decoration: underline;     /* Underlined text */
+}
+
+@media (min-width: 768px) {
+  link {
+    font-size: 20px;              /* Font size 20px for larger screens */
+    line-height: 28px;            /* Line height 28px for larger screens */
+    letter-spacing: 0.01em;       /* Letter spacing 1% for larger screens */
+  }
+}
+
+link-small {
+  font-weight: 600;               /* Semi Bold */
+  font-size: 14px;                /* Font size 14px for small screens */
+  line-height: 22px;              /* Line height 22px for small screens */
+  letter-spacing: 0.01em;         /* Letter spacing 1% */
+  margin-bottom: 12px;            /* Paragraph spacing 12px */
+  text-decoration: underline;     /* Underlined text */
+}
+
+@media (min-width: 768px) {
+  link-small {
+    font-size: 16px;              /* Font size 16px for larger screens */
+    line-height: 24px;            /* Line height 24px for larger screens */
+    letter-spacing: 0.0125em;     /* Letter spacing 1.25% */
+    margin-bottom: 16px;          /* Paragraph spacing 16px */
+  }
+}
+
+.custom-select {
+  padding-right: 2rem; /* Add padding to allow space for the arrow */
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='gray'><path d='M7 10l5 5 5-5H7z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 0.5rem center;
+  background-size: 1rem;
+  -webkit-appearance: none; /* Removes default styling */
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.get-in-touch-button {
+  font-size: 1rem;                /* Font size for large screens */
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  line-height: 1.5rem;              /* Line height */
+  letter-spacing: -0.005em;       /* Letter spacing */
+  font-weight: 600;               /* Semi-bold font weight */
+  padding: 10px 20px;             /* Add padding to make the button larger and more clickable */
+  border-radius: 'full';             /* Rounded corners */
+  @apply bg-paynesGray;
+  color: #f2f6f8ff;               /* Text color (antiflashWhite) */
+  @apply border-paynesGray;                   /* Remove border */
+  cursor: pointer;                /* Show pointer cursor */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.get-in-touch-button:hover {
+ @apply bg-paynesGrayHighlight;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Increase shadow on hover */
+}
+
+.get-in-touch-button:focus {
+  outline: none;                  /* Remove default focus outline */
+  box-shadow: 0 0 0 4px rgba(118, 154, 176, 0.3); /* Add focus ring for accessibility */
+}
+
+.get-in-touch-button:active {
+  background-color: #2b4147ff;    /* Darker color for active state (charcoal) */
+  box-shadow: none;               /* Remove shadow on active state for a pressed effect */
+}
+
+/* GET IN TOUCH BUTTON ALTERNATIVE */
+.get-in-touch-button-alt {
+  font-size: 1rem;                /* Font size for large screens */
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  line-height: 1.5rem;              /* Line height */
+  letter-spacing: -0.005em;       /* Letter spacing */
+  font-weight: 600;               /* Semi-bold font weight */
+  padding: 10px 20px;             /* Add padding to make the button larger and more clickable */
+  border-radius: 'full';             /* Rounded corners */
+  background-color: white;    /* Background color for airSuperiorityBlue */
+  @apply text-charcoal;               /* Text color (antiflashWhite) */
+  @apply border-airSuperiorityBlue;
+  border-width: 1px;                   /* Remove border */
+  cursor: pointer;                /* Show pointer cursor */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+.get-in-touch-button-alt:hover {
+  @apply bg-airSuperiorityBlue;    /* Darker shade for hover (paynesGray) */
+  @apply text-antiflashWhite; 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Increase shadow on hover */
+}
+
+.get-in-touch-button-alt:focus {
+  outline: none;                  /* Remove default focus outline */
+  box-shadow: 0 0 0 4px rgba(118, 154, 176, 0.3); /* Add focus ring for accessibility */
+}
+
+.get-in-touch-button-alt:active {
+  background-color: #2b4147ff;    /* Darker color for active state (charcoal) */
+  box-shadow: none;               /* Remove shadow on active state for a pressed effect */
+}
+
+/* HOW IT WORKS BUTTON */
+.how-it-works-button {
+  font-size: 1rem;                /* Font size for large screens */
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  line-height: 1.5rem;              /* Line height */
+  letter-spacing: -0.005em;       /* Letter spacing */
+  font-weight: 600;               /* Semi-bold font weight */
+  padding: 10px 20px;             /* Add padding to make the button larger and more clickable */
+  border-radius: 'full';             /* Rounded corners */
+  background-color: white;    /* Background color for airSuperiorityBlue */
+  @apply text-charcoal;               /* Text color (antiflashWhite) */
+  @apply border-airSuperiorityBlue;
+  border-width: 1px;                   /* Remove border */
+  cursor: pointer;                /* Show pointer cursor */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+.how-it-works-button:hover {
+  background-color: #4c7380ff;    /* Darker shade for hover (paynesGray) */
+  @apply text-antiflashWhite; 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Increase shadow on hover */
+}
+
+.how-it-works-button:focus {
+  outline: none;                  /* Remove default focus outline */
+  box-shadow: 0 0 0 4px rgba(118, 154, 176, 0.3); /* Add focus ring for accessibility */
+}
+
+.how-it-works-button:active {
+  background-color: #2b4147ff;    /* Darker color for active state (charcoal) */
+  box-shadow: none;               /* Remove shadow on active state for a pressed effect */
+}
+
+.nav-item {
+  position: relative;
+  @apply text-lg lg:text-base;
+  @apply text-charcoal;
+  text-decoration: none; /* No default underline */
+  padding: 10px;
+}
+
+.nav-item::after {
+  content: none; /* Remove the pseudo-element on small screens */
+}
+
+@media (min-width: 1024px) {
+.nav-item::after {
+  content: ''; /* This creates the underline */
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0; /* Controls the vertical position (adjust as needed) */
+  height: 2px; /* Thickness of the underline */
+  background-color: #ffa07a; /* Default underline color */
+  transform: scaleX(0); /* Start with no underline (collapsed) */
+  transform-origin: left; /* Transition starts from the left */
+  transition: transform 0.3s ease; /* Smooth transition effect */
+}
+
+.nav-item:hover::after {
+  transform: scaleX(1); /* Full underline when hovered */
+}
+
+.nav-item.active::after {
+  transform: scaleX(1); /* Keeps the underline when active */
+}
+}
+.nav-item.active {
+  font-weight: 500; /* Optional: Bold font for active item */
+}
+
+.footer-item {
+  position: relative;
+  @apply text-base;
+  text-decoration: none; /* No default underline */
+
+}
+
+
+.footer-item:hover {
+  @apply text-atomicTangerine;
+  font-weight: 600;
+}
+
+
+.footer-item.active {
+  font-weight: 600; /* Optional: Bold font for active item */
+  @apply text-atomicTangerine;
+}
+
+.clip-path-custom {
+  clip-path: polygon(0 0, 100% 0%, 100% 40%, 0% 80%);
+}
+
+
+.solution-options-form-button {
+  @apply text-sm;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  font-weight: 600;               /* Semi-bold font weight */
+  padding: 10px 20px;             /* Add padding to make the button larger and more clickable */
+  border-radius: 'full';             /* Rounded corners */
+  background-color: white;    /* Background color for airSuperiorityBlue */
+  @apply text-charcoal;               /* Text color (antiflashWhite) */
+  @apply border-airSuperiorityBlue;
+  border-width: 1px;                   /* Remove border */
+  cursor: pointer;                /* Show pointer cursor */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.solution-options-form-button:hover {
+ @apply bg-airSuperiorityBlue;
+ @apply text-antiflashWhite;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Increase shadow on hover */
+}
+
+.solution-options-form-button:focus {
+  @apply bg-paynesGray;
+  @apply text-antiflashWhite;
+  outline: none;                  /* Remove default focus outline */
+  box-shadow: 0 0 0 4px rgba(118, 154, 176, 0.3); /* Add focus ring for accessibility */
+}
+
+.solution-options-form-button:active {
+  @apply bg-airSuperiorityBlue;
+  box-shadow: none;               /* Remove shadow on active state for a pressed effect */
+}
