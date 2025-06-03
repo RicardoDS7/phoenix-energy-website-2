@@ -212,7 +212,7 @@ const HomePage = () => {
                   </div>
 
                   {/* Wheeling */}
-                  <div className="bg-antiflashWhite p-6 rounded-3xl shadow-md w-full lg:max-w-[420px] flex flex-col items-start justify-start text-start space-y-6">
+                  {/* <div className="bg-antiflashWhite p-6 rounded-3xl shadow-md w-full lg:max-w-[420px] flex flex-col items-start justify-start text-start space-y-6">
                       <div className="rounded-full bg-powderBlue p-4 justify-end items-end">
                           <Image src={`${basePath}/icons/Wheeling.svg`} alt="wheeling-icon" width={25} height={25} />
                       </div>
@@ -265,7 +265,7 @@ const HomePage = () => {
                     buttonText="Learn More"
                     path={WHEELING}/>
                       
-                  </div>
+                  </div> */}
 
                   {/*Hydrogen Technologies */}
                   <div className="bg-antiflashWhite p-6 rounded-3xl shadow-md w-full lg:max-w-[420px] flex flex-col items-start justify-start text-start space-y-4">

@@ -33,7 +33,7 @@ export const NAV_LINKS: NavLink[] = [
       path: SOLUTIONS_PAGE,
       subMenu: [
         { name: 'Embedded Solar', path: SOLAR, category: 'save', icon: '/icons/Solar.svg' },
-        { name: 'Wheeled Power', path: WHEELING, category: 'save', icon: '/icons/Wheeling.svg' },
+        // { name: 'Wheeled Power', path: WHEELING, category: 'save', icon: '/icons/Wheeling.svg' },
         { name: 'Waste Valorisation', path: WASTE_VALOR, category: 'earn' , icon: '/icons/product-alt.png'},
         { name: 'Carbon Credits', path: CARBON_CREDITS, category: 'earn' , icon: '/icons/Carbon-Credits.svg'},
         { name: 'Hydrogen Technologies', path: HYDROGEN, category: 'save' , icon: '/icons/Hydrogen.svg'},
