@@ -5,7 +5,7 @@ import Carousel from "./components/SuccessStoriesCarousel";
 import GetInTouchButton from "./components/GetInTouchButton";
 import AltGetInTouchButton from "./components/AltGetInTouchButton";
 import { projectDetails } from "./projects/projectConstants";
-import { WHEELING, SOLAR, CARBON_CREDITS, WASTE_VALOR, HYDROGEN } from "./constants/constants";
+import { SOLAR, CARBON_CREDITS, WASTE_VALOR, HYDROGEN } from "./constants/constants";
 import LearnMoreButton from "./components/LearnMoreSolutionButton";
 import CallToAction from "./components/CallToAction";
 import Meta from "./components/Meta";
