@@ -41,7 +41,7 @@ export const NAV_LINKS: NavLink[] = [
         { name: 'Energy Management', path: ENERGY_MANAGMENT, category: 'manage' , icon: '/icons/energy-management.png'},
       ],
     },
-    { name: 'Our Projects', path: PROJECTS_PAGE, subMenu: [] },
+    // { name: 'Our Projects', path: PROJECTS_PAGE, subMenu: [] },
     { name: 'Distributor Store', path: STORE_URL, subMenu: [] },
     { name: 'Contact', path: CONTACT_PAGE, subMenu: [] },
   ];

@@ -1,10 +1,10 @@
 'use client';
 import Image from "next/image";
 import HeroSectionS2S from "./components/HeroSectionS2S";
-import Carousel from "./components/SuccessStoriesCarousel";
-import GetInTouchButton from "./components/GetInTouchButton";
+// import Carousel from "./components/SuccessStoriesCarousel";
+// import GetInTouchButton from "./components/GetInTouchButton";
 import AltGetInTouchButton from "./components/AltGetInTouchButton";
-import { projectDetails } from "./projects/projectConstants";
+// import { projectDetails } from "./projects/projectConstants";
 import { SOLAR, CARBON_CREDITS, WASTE_VALOR, HYDROGEN } from "./constants/constants";
 import LearnMoreButton from "./components/LearnMoreSolutionButton";
 import CallToAction from "./components/CallToAction";
@@ -469,7 +469,7 @@ const HomePage = () => {
       </ section>
 
       {/*Business Case Studies */}
-      <section id="solar-success-stories" className="py-14 px-4">
+      {/* <section id="solar-success-stories" className="py-14 px-4">
         <div className="block overflow-hidden">
         
             <Carousel 
@@ -479,7 +479,7 @@ const HomePage = () => {
             </div>
 
         </div>                        
-      </section>
+      </section> */}
 
       {/* CTA */}
       <section id="carbon-credits-cta" className="relative w-full flex items-center justify-center"
